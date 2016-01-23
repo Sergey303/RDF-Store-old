@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7EB60F80-87CA-4645-9E1F-051735195D92}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RDFCommon</RootNamespace>
+    <AssemblyName>RDFCommon</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mnemosyne">
+      <HintPath>..\packages\Mnemosyne.1.0.0.1\lib\Mnemosyne.dll</HintPath>
+    </Reference>
+    <Reference Include="PolarDB, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\RDFTripleStore\packages\PolarDB.1.0.0.0\lib\net45\PolarDB.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.HashFunction.Core">
+      <HintPath>..\packages\System.Data.HashFunction.Core.1.8.1.0\lib\net45\System.Data.HashFunction.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.HashFunction.Interfaces">
+      <HintPath>..\packages\System.Data.HashFunction.Interfaces.1.0.0.0\lib\net45\System.Data.HashFunction.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UniversalIndex, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\RDFTripleStore\packages\UniversalIndex.1.0.0.3\lib\net45\UniversalIndex.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Interfaces\IBlankNode.cs" />
+    <Compile Include="Interfaces\IGenerator.cs" />
+    <Compile Include="Interfaces\IGraph.cs" />
+    <Compile Include="Interfaces\ILanguageLiteral.cs" />
+    <Compile Include="Interfaces\ILiteralNode.cs" />
+    <Compile Include="Interfaces\INumLiteral.cs" />
+    <Compile Include="Interfaces\ISpecialGraph.cs" />
+    <Compile Include="Interfaces\IStore.cs" />
+    <Compile Include="Interfaces\IStoreNamedGraphs.cs" />
+    <Compile Include="Interfaces\IStringLiteralNode.cs" />
+    <Compile Include="Interfaces\IIriNode.cs" />
+    <Compile Include="OVns\date\OV_duration.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OVns\date\OV_gDay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OVns\date\OV_gMonth.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OVns\date\OV_gYear.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OVns\date\OV_gYearMonth.cs" />
+    <Compile Include="OVns\date\OV_gMonthDay.cs" />
+    <Compile Include="OVns\date\OV_yearMonthDuration.cs" />
+    <Compile Include="OVns\date\OV_dayTimeDuration.cs" />
+    <Compile Include="OVns\NodeGenerator.cs" />
+    <Compile Include="OVns\NodeGeneratorInt.cs" />
+    <Compile Include="OVns\numeric\OV_byte.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OVns\numeric\OV_decimal.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OVns\numeric\OV_double.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OVns\numeric\OV_float.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OVns\numeric\OV_index.cs" />
+    <Compile Include="OVns\numeric\OV_int.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OVns\numeric\OV_integer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OVns\numeric\OV_long.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OVns\numeric\OV_negativeInteger.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OVns\numeric\OV_nonNegativeInteger.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OVns\numeric\OV_nonPositiveInteger.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OVns\numeric\OV_positiveInteger.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OVns\numeric\OV_short.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OVns\numeric\OV_unsignedByte.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OVns\numeric\OV_unsignedInt.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OVns\numeric\OV_unsignedLong.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OVns\numeric\OV_unsignedShort.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OVns\ObjectVariantEnum.cs" />
+    <Compile Include="OVns\ObjectVariants.cs" />
+    <Compile Include="OVns\ObjectVariantsEx.cs" />
+    <Compile Include="OVns\ObjectVariantsPolarType.cs" />
+    <Compile Include="OVns\other\OV_anyURI.cs" />
+    <Compile Include="OVns\other\OV_language.cs" />
+    <Compile Include="OVns\other\OV_normalizedString.cs" />
+    <Compile Include="OVns\other\OV_token.cs" />
+    <Compile Include="OVns\other\OV_NMTOKEN.cs" />
+    <Compile Include="OVns\other\OV_Name.cs" />
+    <Compile Include="OVns\other\OV_NCName.cs" />
+    <Compile Include="OVns\general\OV_bool.cs" />
+    <Compile Include="OVns\date\OV_date.cs" />
+    <Compile Include="OVns\date\OV_dateTime.cs" />
+    <Compile Include="OVns\date\OV_dateTimeStamp.cs" />
+    <Compile Include="OVns\general\OV_iri.cs" />
+    <Compile Include="OVns\general\OV_iriint.cs" />
+    <Compile Include="OVns\general\OV_langstring.cs" />
+    <Compile Include="OVns\general\OV_string.cs" />
+    <Compile Include="OVns\date\OV_time.cs" />
+    <Compile Include="OVns\general\OV_typed.cs" />
+    <Compile Include="OVns\general\OV_typedint.cs" />
+    <Compile Include="OVns\SpecialTypes.cs" />
+    <Compile Include="Prologue.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RDFGraphSerialization.cs" />
+    <Compile Include="Triple.cs" />
+    <Compile Include="WebClient.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Concepts.txt" />
+    <Content Include="Specifications.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
