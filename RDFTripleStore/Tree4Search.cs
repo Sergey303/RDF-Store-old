@@ -10,41 +10,30 @@ namespace RDFTripleStore
 {
    public class Tree4Search
     {
-        private Dictionary<int, long> searchIndex;
-        private readonly PaCell paCell;
+       protected Dictionary<int, long> searchIndex;
+       protected PaCell paCell;
         private int maxChildrenCount;
-        private readonly Dictionary<int, int> coding;
-        private readonly Dictionary<int, int> decoding = new Dictionary<int, int>();
-        private readonly int height;
-        private Dictionary<int, HashSet<int>> direct;
-        private Dictionary<int, HashSet<int>> inverse;
-        private readonly List<int> roots;
+       protected readonly Dictionary<int, int> coding = new Dictionary<int, int>();
+       protected readonly Dictionary<int, int> decoding = new Dictionary<int, int>();
+       protected int height;
+       protected Dictionary<int, HashSet<int>> direct = new Dictionary<int, HashSet<int>>();
+       protected readonly List<int> roots=new List<int>();
 
 
-        public Tree4Search(KeyValuePair<int, int>[] edges)
+        public virtual void ReCreate(KeyValuePair<int, int>[] edges)
         {
-            coding = new Dictionary<int, int>();
-            direct = new Dictionary<int, HashSet<int>>();
-            inverse = new Dictionary<int, HashSet<int>>();
-            foreach (var pair in edges)
-            {
-                if(!direct.ContainsKey(pair.Key)) direct.Add(pair.Key, new HashSet<int>());
-                if (!inverse.ContainsKey(pair.Value)) inverse.Add(pair.Value, new HashSet<int>());
-                direct[pair.Key].Add(pair.Value);
-                inverse[pair.Value].Add(pair.Key);
-            }
 
-
-            roots = direct.Keys.Where(dirNode => !inverse.ContainsKey(dirNode)).ToList();
-            if(!roots.Any()) throw new Exception("roots empty");
-            
-            
-            maxChildrenCount = direct.Max(pair => pair.Value.Count);
+            ReCreateDirectAndRoots(edges);
+                        maxChildrenCount = direct.Max(pair => pair.Value.Count);
 
 
             height = direct.Any() ? roots.Max(i => GetTreeHeight(i)) : 0;//edges.Count();
-             
-                for (int i = 1; i < roots.Count + 1; i++)
+
+            if (roots.Count > maxChildrenCount)
+                maxChildrenCount = roots.Count;
+
+            coding.Clear();
+            for (int i = 1; i < roots.Count + 1; i++)
             {
                 CreateCoding(roots[i - 1], i);
             }
@@ -58,10 +47,28 @@ namespace RDFTripleStore
             ReCreate();
        
             direct.Clear();
-            inverse.Clear();
         }
 
-        private void CreateCoding(int node, int code)
+       protected virtual void ReCreateDirectAndRoots(KeyValuePair<int, int>[] edges)
+       {
+           var inverse = new HashSet<int>();
+            
+            foreach (var pair in edges)
+           {
+               if (!direct.ContainsKey(pair.Key)) direct.Add(pair.Key, new HashSet<int>());
+               // if (inverse.ContainsKey(pair.Value)) throw new Exception();
+               direct[pair.Key].Add(pair.Value);
+                if (!inverse.Contains(pair.Value))
+                    inverse.Add(pair.Value);
+            }
+
+
+           roots.Clear();
+           roots.AddRange(direct.Keys.Where(dirNode => !inverse.Contains(dirNode)));
+           if (!roots.Any()) throw new Exception("roots empty");
+       }
+
+       protected virtual void CreateCoding(int node, int code)
         {
             coding.Add(node, code);
             decoding.Add(code, node);
@@ -84,7 +91,7 @@ namespace RDFTripleStore
         }
 
 
-        public void ReCreate()
+        private void ReCreate()
         {
             paCell.Clear();
             object content = null;
@@ -93,118 +100,121 @@ namespace RDFTripleStore
                 content = 0;
 
             }
-            else content = new object[] {0, roots.Select(c => CreateTreeObject(coding[c], c, 1)).ToArray()};
+            else content = new object[] {0, roots.Select(c => CreateTreeObject(c, 1)).ToArray()};
             paCell.Fill(content);
             searchIndex = new Dictionary<int, long>();
-            AddInIndex(paCell.Root);
+            if(paCell.Root.Type.Vid != PTypeEnumeration.integer)
+                foreach (var subroot in paCell.Root.Field(1).Elements())
+                    AddInIndex(subroot);
         }
 
-        private void AddInIndex(PaEntry entry)
+       protected virtual void AddInIndex(PaEntry entry)
         {
-            int code;
+            int node;
             if (entry.Type.Vid == PTypeEnumeration.integer)
             {
-                code = (int) entry.Get();
-                if (code != 0)
-                    searchIndex.Add(decoding[code], entry.offset);
+                node = (int) entry.Get();
+             
+                    searchIndex.Add(node, entry.offset);
             }
             else
             {
-                code = (int) entry.Field(0).Get();
-                if (code != 0)
-                    searchIndex.Add(decoding[code], entry.offset);
+                node = (int) entry.Field(0).Get();
+                    searchIndex.Add(node, entry.offset);
                 foreach (var chiledEntry in entry.Field(1).Elements())
-                {
                     AddInIndex(chiledEntry);
-                }
             }
 
         }
 
 
-       public object CreateTreeObject(int code, int node, int level)
+       protected virtual object CreateTreeObject(int node, int level)
        {
            return level != height
                ? (object)
                    new object[]
                    {
-                       code,
+                       node,
                        direct.ContainsKey(node)
-                           ? direct[node].Select(c => CreateTreeObject(coding[c], c, level + 1)).ToArray()
+                           ? direct[node].Select(c => CreateTreeObject(c, level + 1)).ToArray()
                            : new object[0]
                    }
-               : coding[node];
+               : node;
        }
 
        private int GetTreeHeight(int node) => direct.ContainsKey(node)
            ? direct[node].Max(x1 => GetTreeHeight(x1) + 1)
            : 1;
 
-        public int[] GetChildren(int node)
+        public int[]   GetChildren(int node)
         {
             if (paCell.Root.Type.Vid == PTypeEnumeration.integer)
                 return new int[0];
             var paEntry = paCell.Root;
             if (searchIndex.ContainsKey(node))
-            {
-                paEntry.offset = searchIndex[node];return paEntry.Field(1).Elements().Select(entry => (int)entry.Field(0).Get())
-                .Select(c => decoding[c]).ToArray();}
-            else 
+              {
+                paEntry.offset = searchIndex[node];
+                var elements = paEntry.Field(1).Elements().Select(entry => (int)entry.Field(0).Get()).ToArray();
+                return elements;
+            }
+            else
                 return new int[0];
         }
 
 
 
 
-        public bool TestConnection( int node1, int node2)
+        public virtual bool TestConnection( int node1, int node2)
         {
-            int code1, code2, div;
+            int code1, code2;
             if (!coding.TryGetValue(node1, out code1)) return false;
             if (!coding.TryGetValue(node2, out code2)) return false;
-            if (code2 > code1)
-            {
-                div = code2;
-                return
-                    Enumerable.Range(1, height)
-                        .Any(i =>
-                        {
-                            div = div / maxChildrenCount;
-                            return code1 == div;
-                        });
-            }
-            else
-                div = code1;
-            return
-                Enumerable.Range(1, height)
-                    .Any(i =>
-                    {
-                        div = div / maxChildrenCount;
-                        return code2 == div;
-                    });
+            return TestConnectionByCodes(code1, code2);
         }
 
-        public IEnumerable<int> GetParents(int node)
+       protected bool TestConnectionByCodes(int code1, int code2)
+       {
+           int div, res;
+           if (code2 > code1)
+           {
+               div = code2;
+               res = code1;
+           }
+           else
+           {
+               div = code1;
+               res = code2;
+           }
+           
+               while ((div = div / maxChildrenCount) > 0)
+                if (res == div) return true;
+            return false;
+        }
+
+       public virtual IEnumerable<int> GetParents(int node)
         {
             int code;
             if (!coding.TryGetValue(node, out code))
-                yield break;
-            while (code > 0)
-            {
-                code = code / maxChildrenCount;
-                yield return decoding[code];
-            }
+                return Enumerable.Empty<int>();
+            return GetParentsByCode(code);
         }
-    }
 
-    public static class PaCellCopy
-    {
-        public static PaCell Copy(this PaCell cell, string oldPath, string newPath)
-        {
-            cell.Close();
-            File.Copy(oldPath, newPath);
-            
-            cell=new PaCell(cell.Type, oldPath, false);
-            return new PaCell(cell.Type, newPath, false);
-        }
+       protected  virtual IEnumerable<int> GetParentsByCode(int code)
+       {
+           while ((code = code / maxChildrenCount) > 0)
+           {
+               yield return decoding[code];
+           }
+       }
+
+       public Tree<int> GetAllSubTree(int node)
+                {
+           var children = GetChildren(node);
+           return new Tree<int>()
+           {
+               Item = node,
+               Children = children.Select(GetAllSubTree).ToArray()
+           };
+       }
     }
 }

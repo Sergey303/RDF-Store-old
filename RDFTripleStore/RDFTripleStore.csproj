@@ -38,9 +38,8 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\Polar\PolarDB\bin\Debug\PolarDB.dll</HintPath>
     </Reference>
-    <Reference Include="RDFCommon, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Testing\bin\Debug\RDFCommon.dll</HintPath>
+    <Reference Include="RDFCommon">
+      <HintPath>..\RDFCommon\bin\Debug\RDFCommon.dll</HintPath>
     </Reference>
     <Reference Include="RDFTurtleParser, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\RDFTurtleParser.1.0.0.0\lib\net45\RDFTurtleParser.dll</HintPath>
@@ -65,9 +64,8 @@
       <HintPath>..\..\Polar\UniversalIndex\bin\Debug\System.Data.HashFunction.Interfaces.dll</HintPath>
     </Reference>
     <Reference Include="System.Web" />
-    <Reference Include="UniversalIndex, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Testing\bin\Debug\UniversalIndex.dll</HintPath>
+    <Reference Include="UniversalIndex">
+      <HintPath>..\..\Polar\UniversalIndex\bin\Debug\UniversalIndex.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -81,6 +79,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StoreCascadingInt.cs" />
     <Compile Include="GraphCascadingInt.cs" />
+    <Compile Include="NormalizedGraph4Search.cs" />
+    <Compile Include="Tree.cs" />
     <Compile Include="Tree4Search.cs" />
   </ItemGroup>
   <ItemGroup>
