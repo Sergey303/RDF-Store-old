@@ -5,28 +5,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using PolarDB;
+using UniversalIndex;
 
 namespace RDFTripleStore
 {
    public class NormalizedGraph4Search : Tree4Search
    {
 
-       private readonly Dictionary<int, List<int>> otherParentsCoding = new Dictionary<int, List<int>>();
+        protected readonly IndexDynamic<int, IndexToSortableTableImmutable<int>> otherParentsCoding;
 
-   
-
-       protected override void CreateCoding(int node, int code)
-        {
-           if (coding.ContainsKey(node))
+        protected override void CreateCoding(int node, int code, Dictionary<int, HashSet<int>> direct)
+       {
+           var codePa = codingIndex.GetAllByKey(node).ToArray();
+           if (codePa.Any())
            {
-               List<int> codes;
-               if (otherParentsCoding.TryGetValue(node, out codes))
-                   codes.Add(code);
-               else otherParentsCoding.Add(node, new List<int>() {code});
+             otherParentsCoding.Table.AppendValue(new object[]{ node, code});
            }
            else
            {
-               base.CreateCoding(node, code);
+               base.CreateCoding(node, code, direct);
            }
 
         }
@@ -53,17 +50,18 @@ namespace RDFTripleStore
             }
         }
 
-       protected override object CreateTreeObject(int node, int level)
+       protected override object CreateTreeObject(int node, int level, Dictionary<int, HashSet<int>> direct)
        {
            if (level != height)
            {
                var treeObject = new object[2];
                treeObject[0] = node;
-               if (direct.ContainsKey(node))
+               var direct1 = new Dictionary<int, HashSet<int>>();
+               if (direct1.ContainsKey(node))
                {
-                   var objects = direct[node].Select(c => CreateTreeObject(c, level + 1)).ToArray();
+                   var objects = direct1[node].Select(c => CreateTreeObject(c, level + 1, direct1)).ToArray();
                    treeObject[1] = objects;
-                   direct.Remove(node);
+                   direct1.Remove(node);
                }
                else treeObject[1] = new object[0];
                return treeObject;
@@ -73,11 +71,12 @@ namespace RDFTripleStore
 
        public override bool TestConnection( int node1, int node2)
         {
-            int code1, code2;
-            if (!coding.TryGetValue(node1, out code1)) return false;
-            if (!coding.TryGetValue(node2, out code2)) return false;
-            if (TestConnectionByCodes(code2, code1)) return true;
-
+            var codes1 = codingIndex.GetAllByKey(node1).ToArray();
+            if (!codes1.Any()) return false;
+            var codes2 = codingIndex.GetAllByKey(node2).ToArray();
+            if (!codes2.Any()) return false;
+           int code1 = (int) codes1[0].Get();
+           int code2 = (int) codes1[0].Get();
             List<int> others1, others2;
             if (otherParentsCoding.TryGetValue(node1, out others1))
             {
@@ -102,6 +101,10 @@ namespace RDFTripleStore
                foreach (var result in codes.Select(i => GetParentsByCode(i).ToArray()))
                    yield return result;
 
+       }
+
+       public NormalizedGraph4Search(string path) : base(path)
+       {
        }
    }
 

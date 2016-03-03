@@ -65,22 +65,16 @@
     </Reference>
     <Reference Include="System.Web" />
     <Reference Include="UniversalIndex">
-      <HintPath>..\..\Polar\UniversalIndex\bin\Debug\UniversalIndex.dll</HintPath>
+      <HintPath>..\..\Polar\UniversalIndex\bin\Release\UniversalIndex.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ICache.cs" />
     <Compile Include="NamedGraphSerialize.cs" />
-    <Compile Include="CachingGraphRamDict.cs" />
-    <Compile Include="RamDictGraph.cs" />
     <Compile Include="RamListOfTriplesGraph.cs" />
-    <Compile Include="RamListOftriplesStore.cs" />
     <Compile Include="RdfNamedGraphs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StoreCascadingInt.cs" />
-    <Compile Include="GraphCascadingInt.cs" />
-    <Compile Include="NormalizedGraph4Search.cs" />
-    <Compile Include="Tree.cs" />
+    <Compile Include="Store.cs" />
+    <Compile Include="RDFGraph.cs" />
     <Compile Include="Tree4Search.cs" />
   </ItemGroup>
   <ItemGroup>

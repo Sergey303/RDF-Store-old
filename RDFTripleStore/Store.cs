@@ -5,17 +5,17 @@ using SparqlQuery.SparqlClasses.Query.Result;
 
 namespace RDFTripleStore
 {
-    public class StoreCascadingInt : GraphCascadingInt, IStore //CacheMeasure  GraphCached   InterpretMeasure
+    public class Store : RDFGraph, IStore //CacheMeasure  GraphCached   InterpretMeasure
     {
 
-        public StoreCascadingInt(string path)
+        public Store(string path)
             //        : base(new SecondStringGraph(path)) 
             : base(path)
         {
 
             NodeGenerator =
                 ng = NodeGeneratorInt.Create(path, table.TableCell.IsEmpty);
-            NamedGraphs = new NamedGraphsByFolders(new DirectoryInfo(path), ng, d => new GraphCascadingInt(d.FullName + "/") { NodeGenerator = NodeGenerator },
+            NamedGraphs = new NamedGraphsByFolders(new DirectoryInfo(path), ng, d => new RDFGraph(d.FullName + "/") { NodeGenerator = NodeGenerator },
                 d => { d.Delete(true); });
         }
 

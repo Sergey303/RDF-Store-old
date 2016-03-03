@@ -12,7 +12,7 @@ using UniversalIndex;
 
 namespace RDFTripleStore
 {
-    public class GraphCascadingInt :  IGraph
+    public class RDFGraph :  IGraph
     {
 
         public void Add(ObjectVariants s, ObjectVariants p, ObjectVariants o)
@@ -120,7 +120,7 @@ namespace RDFTripleStore
         public TableView Table { get { return table; } }
         private IndexCascadingDynamic<int> ps_index;
         private IndexCascadingDynamic<ObjectVariants> po_index;
-        public GraphCascadingInt(string path)
+        public RDFGraph(string path)
         {
             if (!Directory.Exists(path)) Directory.CreateDirectory(path);
             PType tp_triple = new PTypeRecord(
@@ -178,7 +178,7 @@ namespace RDFTripleStore
             Console.WriteLine("ps_index.Build() ok. Duration={0}", sw.ElapsedMilliseconds);
             sw.Restart();
 
-         //   po_index.Build();
+            po_index.Build();
             
             sw.Stop();
             Console.WriteLine("Build index ok. Duration={0}", sw.ElapsedMilliseconds);

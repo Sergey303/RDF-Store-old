@@ -11,7 +11,7 @@ namespace NormalizedGraphSearchTestNS
     [TestClass]
     public class NormalizedGraphSearchTest
     {
-        private StoreCascadingInt store;
+        private Store store;
         private NormalizedGraph4Search normalizedGraph4Search;
         private KeyValuePair<int, int>[] edges;
         private int[] Children;
@@ -22,7 +22,7 @@ namespace NormalizedGraphSearchTestNS
 
         public NormalizedGraphSearchTest()
         {
-            store = new StoreCascadingInt(@"..\..\..\Databases\int based\");
+            store = new Store(@"..\..\..\Databases\int based\");
             store.ClearAll();
 
             //Performance.ComputeTime(() => store.ReloadFrom(Config.Source_data_folder_path + "10M.ttl"), "load 10 млн ", true);
@@ -34,7 +34,7 @@ namespace NormalizedGraphSearchTestNS
                      from item in store.GetTriplesWithSubjectPredicate(triple.Subject, inCollectionPredicate)
                 select new KeyValuePair<int, int>((int)item.WritableValue, (int)triple.Object.WritableValue)).ToArray();
             vertexes = edges.Select(pair => pair.Key).Concat(edges.Select(pair => pair.Value)).Distinct();
-            normalizedGraph4Search = new NormalizedGraph4Search();
+            normalizedGraph4Search = new NormalizedGraph4Search(@"..\..\..\Databases\int based\tree\");
             normalizedGraph4Search.ReCreate(edges);
 
             var allSubTree = normalizedGraph4Search.GetAllSubTree(edges[0].Key);
