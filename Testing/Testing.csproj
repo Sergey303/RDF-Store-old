@@ -1,0 +1,440 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{17DDD8B8-D2BA-48BE-B53F-C366D3467EA3}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TestingNs</RootNamespace>
+    <AssemblyName>Testing</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr4.Runtime.net45, Version=4.3.0.0, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\RDF-Store-Polar-DB-Lab\VirtuosoBigData\bin\Debug\Antlr4.Runtime.net45.dll</HintPath>
+    </Reference>
+    <Reference Include="EngineVirtuoso">
+      <HintPath>..\..\..\RDF-Store-Polar-DB-Lab\VirtuosoBigData\DLLs\EngineVirtuoso.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="sema2012m">
+      <HintPath>..\..\..\RDF-Store-Polar-DB-Lab\VirtuosoBigData\DLLs\sema2012m.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+    <Reference Include="virtado4">
+      <HintPath>..\..\..\RDF-Store-Polar-DB-Lab\VirtuosoBigData\DLLs\virtado4.dll</HintPath>
+    </Reference>
+    <Reference Include="VirtuosoBigData">
+      <HintPath>..\..\..\RDF-Store-Polar-DB-Lab\VirtuosoBigData\bin\Debug\VirtuosoBigData.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BSBmParams.cs" />
+    <Compile Include="Config.cs" />
+    <Compile Include="examples\bsbm\queries\parameters\Sarr.cs" />
+    <Compile Include="Performance.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SparqlExamplesTesting.cs" />
+    <Compile Include="SparqlTesting.cs" />
+    <Compile Include="Testing.cs" />
+    <Compile Include="Virtuoso\BSBm.cs" />
+    <Compile Include="Virtuoso\Sarr.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="all.fog.ttl" />
+    <None Include="App.config" />
+    <None Include="examples\10.1 BIND Assigning to Variables\Data.ttl" />
+    <None Include="examples\10.1 BIND Assigning to Variables\query1.rq" />
+    <None Include="examples\10.1 BIND Assigning to Variables\query2.rq" />
+    <None Include="examples\10.2.2 VALUES Examples\Data.ttl" />
+    <None Include="examples\10.2.2 VALUES Examples\query1.rq" />
+    <None Include="examples\10.2.2 VALUES Examples\query2.rq" />
+    <None Include="examples\10.2.2 VALUES Examples\query3.rq" />
+    <None Include="examples\11.1 Aggregate Example\Data.ttl" />
+    <None Include="examples\11.1 Aggregate Example\query1.rq" />
+    <None Include="examples\11.5 Aggregate Example %28with errors%29\Data.ttl" />
+    <None Include="examples\11.5 Aggregate Example %28with errors%29\query1.rq with error" />
+    <None Include="examples\12 Subqueries\Data.ttl" />
+    <None Include="examples\12 Subqueries\query1.rq" />
+    <None Include="examples\12 Subqueries\query2.rq" />
+    <None Include="examples\13.2.1 Specifying the Default Graph\Data.ttl" />
+    <None Include="examples\13.2.1 Specifying the Default Graph\query1.rq" />
+    <None Include="examples\13.2.2 Specifying Named Graphs — копия\Data.ttl" />
+    <None Include="examples\13.2.2 Specifying Named Graphs — копия\query1.rq" />
+    <None Include="examples\13.2.2 Specifying Named Graphs\Data.ttl" />
+    <None Include="examples\13.2.2 Specifying Named Graphs\query1.rq" />
+    <None Include="examples\15.3 Duplicate Solutions\Data.ttl" />
+    <None Include="examples\15.3 Duplicate Solutions\query1.rq" />
+    <None Include="examples\15.3 Duplicate Solutions\query2.rq" />
+    <None Include="examples\15.3 Duplicate Solutions\query3.rq" />
+    <None Include="examples\15.4 OFFSET\data.ttl" />
+    <None Include="examples\15.4 OFFSET\query1.rq" />
+    <None Include="examples\16.2 CONSTRUCT\Data.ttl" />
+    <None Include="examples\16.2 CONSTRUCT\query1.rq" />
+    <None Include="examples\16.2.3 Solution Modifiers and CONSTRUCT\Data.ttl" />
+    <None Include="examples\16.2.3 Solution Modifiers and CONSTRUCT\query1.rq" />
+    <None Include="examples\17 Expressions and Testing Values\Data.ttl" />
+    <None Include="examples\17 Expressions and Testing Values\query1" />
+    <None Include="examples\17.4.1.1 bound\Data.ttl" />
+    <None Include="examples\17.4.1.1 bound\query1.rq" />
+    <None Include="examples\17.4.1.1 bound\query2.rq" />
+    <None Include="examples\2.5 Creating Values with Expressions\data.ttl" />
+    <None Include="examples\2.5 Creating Values with Expressions\query1.rq" />
+    <None Include="examples\2.5 Creating Values with Expressions\query2.rq" />
+    <None Include="examples\2.5 Creating Values with Expressions\rdf test.egt" />
+    <None Include="examples\2.5 Creating Values with Expressions\rdf.egt" />
+    <None Include="examples\2.6 Building RDF Graphs\Data.ttl" />
+    <None Include="examples\2.6 Building RDF Graphs\query1.rq" />
+    <None Include="examples\3.1 Restricting the Value of Strings\Data.ttl" />
+    <None Include="examples\3.1 Restricting the Value of Strings\query1.rq" />
+    <None Include="examples\3.1 Restricting the Value of Strings\query2.rq" />
+    <None Include="examples\3.2 Restricting Numeric Values\Data.ttl" />
+    <None Include="examples\3.2 Restricting Numeric Values\query1.rq" />
+    <None Include="examples\6.1 Optional Pattern Matching\Data.ttl" />
+    <None Include="examples\6.1 Optional Pattern Matching\query1.rq" />
+    <None Include="examples\6.2 Constraints in Optional Pattern Matching\Data.ttl" />
+    <None Include="examples\6.2 Constraints in Optional Pattern Matching\query1.rq" />
+    <None Include="examples\6.3 Multiple Optional Graph Patterns\Data.ttl" />
+    <None Include="examples\6.3 Multiple Optional Graph Patterns\query1.rq" />
+    <None Include="examples\7 Matching Alternatives\Data.ttl" />
+    <None Include="examples\7 Matching Alternatives\query1.rq" />
+    <None Include="examples\7 Matching Alternatives\query2.rq" />
+    <None Include="examples\7 Matching Alternatives\query3.rq" />
+    <None Include="examples\8.1.1 Testing For the Absence of a Pattern\Data.ttl" />
+    <None Include="examples\8.1.1 Testing For the Absence of a Pattern\query1.rq" />
+    <None Include="examples\8.1.2 Testing For the Presence of a Pattern\Data.ttl" />
+    <None Include="examples\8.1.2 Testing For the Presence of a Pattern\query1.rq" />
+    <None Include="examples\8.2 Removing Possible Solutions\Data.ttl" />
+    <None Include="examples\8.2 Removing Possible Solutions\query1.rq" />
+    <None Include="examples\8.3.1 Example Sharing of variables\Data.ttl" />
+    <None Include="examples\8.3.1 Example Sharing of variables\query1.rq" />
+    <None Include="examples\8.3.1 Example Sharing of variables\query2.rq" />
+    <None Include="examples\8.3.2 Example Fixed pattern\Data.ttl" />
+    <None Include="examples\8.3.2 Example Fixed pattern\query1.rq" />
+    <None Include="examples\8.3.2 Example Fixed pattern\query2.rq" />
+    <None Include="examples\8.3.3 Example Inner FILTERs\Data.ttl" />
+    <None Include="examples\8.3.3 Example Inner FILTERs\query1.rq" />
+    <None Include="examples\8.3.3 Example Inner FILTERs\query2.rq" />
+    <None Include="examples\9.3 Property Paths and Equivalent Patterns\Data.ttl" />
+    <None Include="examples\9.3 Property Paths and Equivalent Patterns\query1.rq" />
+    <None Include="examples\9.3 Property Paths and Equivalent Patterns\query2.rq" />
+    <None Include="examples\9.3 Property Paths and Equivalent Patterns\query3.rq" />
+    <None Include="examples\9.4 Arbitrary Length Path Matching\Data.ttl" />
+    <None Include="examples\9.4 Arbitrary Length Path Matching\query1.rq" />
+    <None Include="examples\9.4 Arbitrary Length Path Matching\query2.rq" />
+    <None Include="examples\bsbm\0.rq" />
+    <None Include="examples\bsbm\1.rq" />
+    <None Include="examples\bsbm\10.rq" />
+    <None Include="examples\bsbm\11.rq" />
+    <None Include="examples\bsbm\12.rq" />
+    <None Include="examples\bsbm\13.rq" />
+    <None Include="examples\bsbm\14.rq" />
+    <None Include="examples\bsbm\15.rq" />
+    <None Include="examples\bsbm\16.rq" />
+    <None Include="examples\bsbm\17.rq" />
+    <None Include="examples\bsbm\18.rq" />
+    <None Include="examples\bsbm\1M.ttl" />
+    <None Include="examples\bsbm\2.rq" />
+    <None Include="examples\bsbm\3.rq" />
+    <None Include="examples\bsbm\4.rq" />
+    <None Include="examples\bsbm\41.rq" />
+    <None Include="examples\bsbm\42.rq" />
+    <None Include="examples\bsbm\43.rq" />
+    <None Include="examples\bsbm\5.rq" />
+    <None Include="examples\bsbm\6.rq" />
+    <None Include="examples\bsbm\7.rq" />
+    <None Include="examples\bsbm\8.rq" />
+    <None Include="examples\bsbm\9.rq" />
+    <None Include="examples\bsbm\queries\parameters\1.rq" />
+    <None Include="examples\bsbm\queries\parameters\10.rq" />
+    <None Include="examples\bsbm\queries\parameters\11.rq" />
+    <None Include="examples\bsbm\queries\parameters\12.rq" />
+    <None Include="examples\bsbm\queries\parameters\2.rq" />
+    <None Include="examples\bsbm\queries\parameters\3.rq" />
+    <None Include="examples\bsbm\queries\parameters\4.rq" />
+    <None Include="examples\bsbm\queries\parameters\5.rq" />
+    <None Include="examples\bsbm\queries\parameters\50.rq" />
+    <None Include="examples\bsbm\queries\parameters\6.rq" />
+    <None Include="examples\bsbm\queries\parameters\7.rq" />
+    <None Include="examples\bsbm\queries\parameters\8.rq" />
+    <None Include="examples\bsbm\queries\parameters\9.rq" />
+    <None Include="examples\bsbm\queries\with constants\0.rq" />
+    <None Include="examples\bsbm\queries\with constants\1.rq" />
+    <None Include="examples\bsbm\queries\with constants\10.rq" />
+    <None Include="examples\bsbm\queries\with constants\11.rq" />
+    <None Include="examples\bsbm\queries\with constants\12.rq" />
+    <None Include="examples\bsbm\queries\with constants\2.rq" />
+    <None Include="examples\bsbm\queries\with constants\3.rq" />
+    <None Include="examples\bsbm\queries\with constants\4.rq" />
+    <None Include="examples\bsbm\queries\with constants\5.rq" />
+    <None Include="examples\bsbm\queries\with constants\6.rq" />
+    <None Include="examples\bsbm\queries\with constants\7.rq" />
+    <None Include="examples\bsbm\queries\with constants\8.rq" />
+    <None Include="examples\bsbm\queries\with constants\9.rq" />
+    <None Include="examples\federated subquery\Data.ttl" />
+    <None Include="examples\federated subquery\query1.rq" />
+    <None Include="examples\federated\Data.ttl" />
+    <None Include="examples\federated\insert in service.rq" />
+    <None Include="examples\federated\query1.rq" />
+    <None Include="examples\insert data\Data.ttl" />
+    <None Include="examples\insert data\query1.rq" />
+    <None Include="examples\insert data\query2.rq" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="examples\10.1 BIND Assigning to Variables\query1.rq expected results.txt" />
+    <Content Include="examples\10.1 BIND Assigning to Variables\query1.rq results of run.txt" />
+    <Content Include="examples\10.1 BIND Assigning to Variables\query2.rq expected results.txt" />
+    <Content Include="examples\10.1 BIND Assigning to Variables\query2.rq results of run.txt" />
+    <Content Include="examples\10.2.2 VALUES Examples\query1.rq expected results.txt" />
+    <Content Include="examples\10.2.2 VALUES Examples\query1.rq results of run.txt" />
+    <Content Include="examples\10.2.2 VALUES Examples\query2.rq expected results.txt" />
+    <Content Include="examples\10.2.2 VALUES Examples\query2.rq results of run.txt" />
+    <Content Include="examples\10.2.2 VALUES Examples\query3.rq expected results.txt" />
+    <Content Include="examples\10.2.2 VALUES Examples\query3.rq results of run.txt" />
+    <Content Include="examples\11.1 Aggregate Example\query1.rq expected results.txt" />
+    <Content Include="examples\11.1 Aggregate Example\query1.rq results of run.txt" />
+    <Content Include="examples\11.5 Aggregate Example %28with errors%29\query1.rq expected results.txt" />
+    <Content Include="examples\12 Subqueries\query1.rq expected results.txt" />
+    <Content Include="examples\12 Subqueries\query1.rq results of run.txt" />
+    <Content Include="examples\12 Subqueries\query2.rq expected results.txt" />
+    <Content Include="examples\12 Subqueries\query2.rq results of run.txt" />
+    <Content Include="examples\13.2.1 Specifying the Default Graph\named graphs\1.txt" />
+    <Content Include="examples\13.2.1 Specifying the Default Graph\query1.rq expected results.txt" />
+    <Content Include="examples\13.2.1 Specifying the Default Graph\query1.rq results of run.txt" />
+    <Content Include="examples\13.2.2 Specifying Named Graphs — копия\named graphs\1 — копия.txt" />
+    <Content Include="examples\13.2.2 Specifying Named Graphs — копия\named graphs\1.txt" />
+    <Content Include="examples\13.2.2 Specifying Named Graphs — копия\query1.rq expected results.txt" />
+    <Content Include="examples\13.2.2 Specifying Named Graphs — копия\query1.rq results of run.txt" />
+    <Content Include="examples\13.2.2 Specifying Named Graphs\named graphs\1 — копия.txt" />
+    <Content Include="examples\13.2.2 Specifying Named Graphs\named graphs\1.txt" />
+    <Content Include="examples\13.2.2 Specifying Named Graphs\query1.rq expected results.txt" />
+    <Content Include="examples\13.2.2 Specifying Named Graphs\query1.rq results of run.txt" />
+    <Content Include="examples\15.3 Duplicate Solutions\query1.rq expected results.txt" />
+    <Content Include="examples\15.3 Duplicate Solutions\query1.rq results of run.txt" />
+    <Content Include="examples\15.3 Duplicate Solutions\query2.rq expected results.txt" />
+    <Content Include="examples\15.3 Duplicate Solutions\query2.rq results of run.txt" />
+    <Content Include="examples\15.3 Duplicate Solutions\query3.rq expected results.txt" />
+    <Content Include="examples\15.3 Duplicate Solutions\query3.rq results of run.txt" />
+    <Content Include="examples\15.4 OFFSET\query1.rq results of run.txt" />
+    <Content Include="examples\16.2 CONSTRUCT\query1.rq expected results.txt" />
+    <Content Include="examples\16.2 CONSTRUCT\query1.rq results of run.txt" />
+    <Content Include="examples\16.2.3 Solution Modifiers and CONSTRUCT\query1.rq expected results.txt" />
+    <Content Include="examples\16.2.3 Solution Modifiers and CONSTRUCT\query1.rq results of run.txt" />
+    <Content Include="examples\17 Expressions and Testing Values\query1.rq expected results.txt" />
+    <Content Include="examples\17 Expressions and Testing Values\query1.rq results of run.txt" />
+    <Content Include="examples\17.4.1.1 bound\query1.rq expected results.txt" />
+    <Content Include="examples\17.4.1.1 bound\query1.rq results of run.txt" />
+    <Content Include="examples\17.4.1.1 bound\query2.rq expected results.txt" />
+    <Content Include="examples\17.4.1.1 bound\query2.rq results of run.txt" />
+    <Content Include="examples\2.5 Creating Values with Expressions\query1.rq expected results.txt" />
+    <Content Include="examples\2.5 Creating Values with Expressions\query1.rq results of run.txt" />
+    <Content Include="examples\2.5 Creating Values with Expressions\query2.rq expected results.txt" />
+    <Content Include="examples\2.5 Creating Values with Expressions\query2.rq results of run.txt" />
+    <Content Include="examples\2.6 Building RDF Graphs\query1.rq expected results.txt" />
+    <Content Include="examples\2.6 Building RDF Graphs\query1.rq results of run.txt" />
+    <Content Include="examples\3.1 Restricting the Value of Strings\query1.rq expected results.txt" />
+    <Content Include="examples\3.1 Restricting the Value of Strings\query1.rq results of run.txt" />
+    <Content Include="examples\3.1 Restricting the Value of Strings\query2.rq expected results.txt" />
+    <Content Include="examples\3.1 Restricting the Value of Strings\query2.rq results of run.txt" />
+    <Content Include="examples\3.2 Restricting Numeric Values\query1.rq expected results.txt" />
+    <Content Include="examples\3.2 Restricting Numeric Values\query1.rq results of run.txt" />
+    <Content Include="examples\6.1 Optional Pattern Matching\query1.rq expected results.txt" />
+    <Content Include="examples\6.1 Optional Pattern Matching\query1.rq results of run.txt" />
+    <Content Include="examples\6.2 Constraints in Optional Pattern Matching\query1.rq expected results.txt" />
+    <Content Include="examples\6.2 Constraints in Optional Pattern Matching\query1.rq results of run.txt" />
+    <Content Include="examples\6.3 Multiple Optional Graph Patterns\query1.rq expected results.txt" />
+    <Content Include="examples\6.3 Multiple Optional Graph Patterns\query1.rq results of run.txt" />
+    <Content Include="examples\7 Matching Alternatives\query1.rq expected results.txt" />
+    <Content Include="examples\7 Matching Alternatives\query1.rq results of run.txt" />
+    <Content Include="examples\7 Matching Alternatives\query2.rq expected results.txt" />
+    <Content Include="examples\7 Matching Alternatives\query2.rq results of run.txt" />
+    <Content Include="examples\7 Matching Alternatives\query3.rq expected results.txt" />
+    <Content Include="examples\7 Matching Alternatives\query3.rq results of run.txt" />
+    <Content Include="examples\8.1.1 Testing For the Absence of a Pattern\query1.rq expected results.txt" />
+    <Content Include="examples\8.1.1 Testing For the Absence of a Pattern\query1.rq results of run.txt" />
+    <Content Include="examples\8.1.2 Testing For the Presence of a Pattern\query1.rq expected results.txt" />
+    <Content Include="examples\8.1.2 Testing For the Presence of a Pattern\query1.rq results of run.txt" />
+    <Content Include="examples\8.2 Removing Possible Solutions\query1.rq expected results.txt" />
+    <Content Include="examples\8.2 Removing Possible Solutions\query1.rq results of run.txt" />
+    <Content Include="examples\8.3.1 Example Sharing of variables\query1.rq expected results.txt" />
+    <Content Include="examples\8.3.1 Example Sharing of variables\query1.rq results of run.txt" />
+    <Content Include="examples\8.3.1 Example Sharing of variables\query2.rq expected results.txt" />
+    <Content Include="examples\8.3.1 Example Sharing of variables\query2.rq results of run.txt" />
+    <Content Include="examples\8.3.2 Example Fixed pattern\query1.rq expected results.txt" />
+    <Content Include="examples\8.3.2 Example Fixed pattern\query1.rq results of run.txt" />
+    <Content Include="examples\8.3.2 Example Fixed pattern\query2.rq expected results.txt" />
+    <Content Include="examples\8.3.2 Example Fixed pattern\query2.rq results of run.txt" />
+    <Content Include="examples\8.3.3 Example Inner FILTERs\query1.rq expected results.txt" />
+    <Content Include="examples\8.3.3 Example Inner FILTERs\query1.rq results of run.txt" />
+    <Content Include="examples\8.3.3 Example Inner FILTERs\query2.rq expected results.txt" />
+    <Content Include="examples\8.3.3 Example Inner FILTERs\query2.rq results of run.txt" />
+    <Content Include="examples\9.3 Property Paths and Equivalent Patterns\query1.rq expected results.txt" />
+    <Content Include="examples\9.3 Property Paths and Equivalent Patterns\query1.rq results of run.txt" />
+    <Content Include="examples\9.3 Property Paths and Equivalent Patterns\query2.rq expected results.txt" />
+    <Content Include="examples\9.3 Property Paths and Equivalent Patterns\query2.rq results of run.txt" />
+    <Content Include="examples\9.3 Property Paths and Equivalent Patterns\query3.rq expected results.txt" />
+    <Content Include="examples\9.3 Property Paths and Equivalent Patterns\query3.rq results of run.txt" />
+    <Content Include="examples\9.4 Arbitrary Length Path Matching\query1.rq expected results.txt" />
+    <Content Include="examples\9.4 Arbitrary Length Path Matching\query1.rq results of run.txt" />
+    <Content Include="examples\9.4 Arbitrary Length Path Matching\query2.rq expected results.txt" />
+    <Content Include="examples\9.4 Arbitrary Length Path Matching\query2.rq results of run.txt" />
+    <Content Include="examples\bsbm\0.rq results of run.txt" />
+    <Content Include="examples\bsbm\1.rq results of run.txt" />
+    <Content Include="examples\bsbm\1.txt" />
+    <Content Include="examples\bsbm\10.rq results of run.txt" />
+    <Content Include="examples\bsbm\10.txt" />
+    <Content Include="examples\bsbm\11.rq results of run.txt" />
+    <Content Include="examples\bsbm\11.txt" />
+    <Content Include="examples\bsbm\12.rq results of run.txt" />
+    <Content Include="examples\bsbm\12.txt" />
+    <Content Include="examples\bsbm\13.rq results of run.txt" />
+    <Content Include="examples\bsbm\14.rq results of run.txt" />
+    <Content Include="examples\bsbm\15.rq results of run.txt" />
+    <Content Include="examples\bsbm\16.rq results of run.txt" />
+    <Content Include="examples\bsbm\17.rq results of run.txt" />
+    <Content Include="examples\bsbm\18.rq results of run.txt" />
+    <Content Include="examples\bsbm\2.rq results of run.txt" />
+    <Content Include="examples\bsbm\2.txt" />
+    <Content Include="examples\bsbm\3.rq results of run.txt" />
+    <Content Include="examples\bsbm\3.txt" />
+    <Content Include="examples\bsbm\4.rq results of run.txt" />
+    <Content Include="examples\bsbm\4.txt" />
+    <Content Include="examples\bsbm\41.rq results of run.txt" />
+    <Content Include="examples\bsbm\42.rq results of run.txt" />
+    <Content Include="examples\bsbm\43.rq results of run.txt" />
+    <Content Include="examples\bsbm\5.rq results of run.txt" />
+    <Content Include="examples\bsbm\5.txt" />
+    <Content Include="examples\bsbm\6.rq results of run.txt" />
+    <Content Include="examples\bsbm\6.txt" />
+    <Content Include="examples\bsbm\7.rq results of run.txt" />
+    <Content Include="examples\bsbm\7.txt" />
+    <Content Include="examples\bsbm\8.rq results of run.txt" />
+    <Content Include="examples\bsbm\8.txt" />
+    <Content Include="examples\bsbm\9.rq results of run.txt" />
+    <Content Include="examples\bsbm\9.txt" />
+    <Content Include="examples\bsbm\Description.txt" />
+    <Content Include="examples\bsbm\queries\parameters\1.txt" />
+    <Content Include="examples\bsbm\queries\parameters\10.txt" />
+    <Content Include="examples\bsbm\queries\parameters\11.txt" />
+    <Content Include="examples\bsbm\queries\parameters\12.txt" />
+    <Content Include="examples\bsbm\queries\parameters\2.txt" />
+    <Content Include="examples\bsbm\queries\parameters\3.txt" />
+    <Content Include="examples\bsbm\queries\parameters\4.txt" />
+    <Content Include="examples\bsbm\queries\parameters\5.txt" />
+    <Content Include="examples\bsbm\queries\parameters\6.txt" />
+    <Content Include="examples\bsbm\queries\parameters\7.txt" />
+    <Content Include="examples\bsbm\queries\parameters\8.txt" />
+    <Content Include="examples\bsbm\queries\parameters\9.txt" />
+    <Content Include="examples\bsbm\queries\parameters\param values for1 m.txt" />
+    <Content Include="examples\bsbm\queries\parameters\param values for10 m.txt" />
+    <Content Include="examples\bsbm\queries\parameters\param values for100 m.txt" />
+    <Content Include="examples\bsbm\queries\parameters\param values for1000 m.txt" />
+    <Content Include="examples\bsbm\queries\parameters\titlewords.txt" />
+    <Content Include="examples\bsbm\queries\with constants\1.txt" />
+    <Content Include="examples\bsbm\queries\with constants\10.txt" />
+    <Content Include="examples\bsbm\queries\with constants\11.txt" />
+    <Content Include="examples\bsbm\queries\with constants\12.txt" />
+    <Content Include="examples\bsbm\queries\with constants\2.txt" />
+    <Content Include="examples\bsbm\queries\with constants\3.txt" />
+    <Content Include="examples\bsbm\queries\with constants\4.txt" />
+    <Content Include="examples\bsbm\queries\with constants\5.txt" />
+    <Content Include="examples\bsbm\queries\with constants\6.txt" />
+    <Content Include="examples\bsbm\queries\with constants\7.txt" />
+    <Content Include="examples\bsbm\queries\with constants\8.txt" />
+    <Content Include="examples\bsbm\queries\with constants\9.txt" />
+    <Content Include="examples\bsbm\queries\with constants\res.txt" />
+    <Content Include="examples\bsbm\queries\with constants\верные\1.txt" />
+    <Content Include="examples\bsbm\queries\with constants\верные\10.txt" />
+    <Content Include="examples\bsbm\queries\with constants\верные\11.txt" />
+    <Content Include="examples\bsbm\queries\with constants\верные\12.txt" />
+    <Content Include="examples\bsbm\queries\with constants\верные\2.txt" />
+    <Content Include="examples\bsbm\queries\with constants\верные\3.txt" />
+    <Content Include="examples\bsbm\queries\with constants\верные\4.txt" />
+    <Content Include="examples\bsbm\queries\with constants\верные\5.txt" />
+    <Content Include="examples\bsbm\queries\with constants\верные\6.txt" />
+    <Content Include="examples\bsbm\queries\with constants\верные\7.txt" />
+    <Content Include="examples\bsbm\queries\with constants\верные\8.txt" />
+    <Content Include="examples\bsbm\queries\with constants\верные\9.txt" />
+    <Content Include="examples\federated subquery\query1.rq expected results.txt" />
+    <Content Include="examples\federated subquery\query1.rq results of run.txt" />
+    <Content Include="examples\federated subquery\Новый текстовый документ.txt" />
+    <Content Include="examples\federated\insert in service.rq results of run.txt" />
+    <Content Include="examples\federated\query1.rq expected results.txt" />
+    <Content Include="examples\federated\query1.rq results of run.txt" />
+    <Content Include="examples\insert data\query1.rq expected results.txt" />
+    <Content Include="examples\insert data\query1.rq results of run.txt" />
+    <Content Include="examples\insert data\query2.rq expected results.txt" />
+    <Content Include="examples\insert data\query2.rq results of run.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Polar\PolarDB\PolarDB.csproj">
+      <Project>{e418d12c-9027-4292-aab4-d8130c6e3829}</Project>
+      <Name>PolarDB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Polar\UniversalIndex\UniversalIndex.csproj">
+      <Project>{E4AB7A63-7B55-43E9-B1AA-C8E0F8AA87E3}</Project>
+      <Name>UniversalIndex</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RDFCommon\RDFCommon.csproj">
+      <Project>{7eb60f80-87ca-4645-9e1f-051735195d92}</Project>
+      <Name>RDFCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RDFTripleStore\RDFTripleStore.csproj">
+      <Project>{16601fe6-f095-410b-9f63-efc948c2b939}</Project>
+      <Name>RDFTripleStore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RDFTurtleParser\RDFTurtleParser.csproj">
+      <Project>{BBDC3BA5-1ECD-40B5-B3A3-C6B498E07CD1}</Project>
+      <Name>RDFTurtleParser</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SparqlQuery\SparqlQuery.csproj">
+      <Project>{FB42AD1D-B327-4720-87B3-88DADDF0ADF3}</Project>
+      <Name>SparqlQuery</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

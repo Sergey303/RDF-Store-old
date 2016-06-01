@@ -1,0 +1,16 @@
+C:\Users\Admin\Source\Repos\next\RDF-Store\SparqlQuery\bin\Debug\SparqlQuery.dll
+C:\Users\Admin\Source\Repos\next\RDF-Store\SparqlQuery\bin\Debug\SparqlQuery.pdb
+C:\Users\Admin\Source\Repos\next\RDF-Store\SparqlQuery\bin\Debug\Antlr4.Runtime.net45.dll
+C:\Users\Admin\Source\Repos\next\RDF-Store\SparqlQuery\bin\Debug\RDFCommon.dll
+C:\Users\Admin\Source\Repos\next\RDF-Store\SparqlQuery\bin\Debug\UniversalIndex.dll
+C:\Users\Admin\Source\Repos\next\RDF-Store\SparqlQuery\bin\Debug\PolarDB.dll
+C:\Users\Admin\Source\Repos\next\RDF-Store\SparqlQuery\bin\Debug\System.Data.HashFunction.BernsteinHash.dll
+C:\Users\Admin\Source\Repos\next\RDF-Store\SparqlQuery\bin\Debug\Antlr4.Runtime.net45.xml
+C:\Users\Admin\Source\Repos\next\RDF-Store\SparqlQuery\bin\Debug\RDFCommon.pdb
+C:\Users\Admin\Source\Repos\next\RDF-Store\SparqlQuery\bin\Debug\UniversalIndex.pdb
+C:\Users\Admin\Source\Repos\next\RDF-Store\SparqlQuery\bin\Debug\UniversalIndex.xml
+C:\Users\Admin\Source\Repos\next\RDF-Store\SparqlQuery\bin\Debug\PolarDB.pdb
+C:\Users\Admin\Source\Repos\next\RDF-Store\SparqlQuery\bin\Debug\System.Data.HashFunction.BernsteinHash.xml
+C:\Users\Admin\Source\Repos\next\RDF-Store\SparqlQuery\obj\Debug\SparqlQuery.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Source\Repos\next\RDF-Store\SparqlQuery\obj\Debug\SparqlQuery.dll
+C:\Users\Admin\Source\Repos\next\RDF-Store\SparqlQuery\obj\Debug\SparqlQuery.pdb

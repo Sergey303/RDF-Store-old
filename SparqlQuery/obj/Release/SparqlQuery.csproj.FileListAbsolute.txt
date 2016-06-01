@@ -1,0 +1,8 @@
+C:\Users\Admin\Source\Repos\next\RDF-Store\SparqlQuery\bin\Release\SparqlQuery.dll
+C:\Users\Admin\Source\Repos\next\RDF-Store\SparqlQuery\bin\Release\SparqlQuery.pdb
+C:\Users\Admin\Source\Repos\next\RDF-Store\SparqlQuery\bin\Release\Antlr4.Runtime.net45.dll
+C:\Users\Admin\Source\Repos\next\RDF-Store\SparqlQuery\bin\Release\RDFCommon.dll
+C:\Users\Admin\Source\Repos\next\RDF-Store\SparqlQuery\bin\Release\Antlr4.Runtime.net45.xml
+C:\Users\Admin\Source\Repos\next\RDF-Store\SparqlQuery\obj\Release\SparqlQuery.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Source\Repos\next\RDF-Store\SparqlQuery\obj\Release\SparqlQuery.dll
+C:\Users\Admin\Source\Repos\next\RDF-Store\SparqlQuery\obj\Release\SparqlQuery.pdb

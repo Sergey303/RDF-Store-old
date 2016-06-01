@@ -1,0 +1,4273 @@
+milions 1
+date time 09.05.2015 7:51:30
+max memory usage 11862180
+average 2040, 62, 6493, 2512, 3, 3, 82, 428, 1020, 152, 2347, 173
+minimums 0, 5, 0, 0, 32, 239, 1, 0, 0, 0, 0, 3
+maximums 184, 105, 15, 13, 1413, 1361, 70, 18, 28, 63, 9, 36
+total parse 164, 30, 34, 15, 15, 10, 51, 21, 3, 15, 3, 43
+total run 50, 7634, 6, 46, 134827, 150609, 5650, 899, 441, 3046, 147, 2557
+total 404 305 912
+milions 1
+date time 09.05.2015 8:09:30
+max memory usage 11 816 696
+average 2336, 65, 11363, 3125, 3, 3, 90, 465, 1187, 168, 2994, 188
+minimums 0, 5, 0, 0, 29, 227, 1, 0, 0, 0, 0, 3
+maximums 184, 105, 20, 8, 1742, 1006, 38, 22, 18, 31, 6, 29
+total parse 156, 18, 19, 17, 2, 9, 29, 7, 1, 4, 1, 16
+total run 37, 7289, 3, 22, 126521, 141243, 5220, 853, 381, 2767, 115, 2337
+total 279286788
+milions 1
+date time 09.05.2015 8:33:54
+max memory usage 12049032
+average 2032, 66, 8474, 2976, 3, 3, 87, 459, 1136, 164, 2873, 186
+minimums 0, 4, 0, 0, 27, 226, 1, 0, 0, 0, 0, 3
+maximums 210, 104, 19, 10, 1912, 1061, 71, 14, 21, 48, 5, 28
+total parse 183, 28, 22, 13, 15, 4, 33, 10, 2, 5, 1, 34
+total run 39, 7243, 13, 27, 128825, 141528, 5363, 817, 390, 2841, 125, 2344
+total 350289555
+milions 1
+date time 09.05.2015 8:46:37
+max memory usage 12087832
+average 2994, 72, 19230, 4716, 4, 3, 98, 540, 1510, 186, 5000, 206
+minimums 0, 5, 0, 0, 28, 229, 1, 0, 0, 0, 0, 3
+maximums 153, 87, 17, 3, 617, 372, 30, 7, 18, 26, 6, 13
+total parse 130, 7, 16, 4, 1, 5, 18, 5, 0, 3, 2, 12
+total run 29, 6586, 2, 8, 116907, 129185, 4770, 702, 282, 2509, 61, 2120
+total 203263161
+
+case
+milions 1
+date time 09.05.2015 14:03:57
+max memory usage 12203764
+average 2439, 65, 7812, 2941, 3, 3, 88, 440, 1160, 159, 2923, 184
+minimums 0, 7, 0, 0, 28, 241, 1, 0, 0, 0, 0, 3
+maximums 164, 88, 16, 9, 1483, 1040, 44, 18, 16, 43, 14, 31
+total parse 146, 14, 19, 9, 14, 6, 24, 6, 2, 8, 3, 21
+total run 34, 7283, 14, 29, 128588, 141045, 5317, 875, 380, 2910, 117, 2395
+total 272288987
+milions 1
+date time 09.05.2015 14:10:09
+max memory usage 12135636
+average 2008, 63, 7575, 2631, 3, 3, 85, 441, 1118, 156, 2252, 178
+minimums 0, 5, 0, 0, 30, 231, 1, 0, 0, 0, 0, 3
+maximums 198, 101, 20, 7, 1555, 1179, 64, 14, 26, 41, 13, 31
+total parse 174, 26, 27, 19, 8, 10, 51, 16, 4, 12, 0, 36
+total run 45, 7573, 4, 38, 132438, 147444, 5482, 865, 388, 2974, 155, 2465
+total 383299871
+milions 1
+date time 09.05.2015 14:18:41
+max memory usage 11794132
+average 2314, 64, 8620, 2688, 3, 3, 85, 428, 1126, 158, 2717, 175
+minimums 0, 5, 0, 0, 30, 250, 1, 0, 0, 0, 0, 3
+maximums 175, 94, 15, 13, 2241, 1379, 91, 36, 17, 70, 6, 38
+total parse 150, 24, 24, 18, 22, 5, 30, 15, 3, 15, 1, 32
+total run 39, 7448, 6, 36, 134085, 146570, 5526, 905, 388, 2930, 131, 2516
+total 339300580
+
+кеш
+date time 10.05.2015 9:46:16
+max memory usage 86325628
+average 700, 279, 850, 349, 18, 50, 94, 407, 1428, 166, 33333, 1639
+minimums 0, 0, 0, 0, 11, 12, 0, 0, 0, 0, 0, 0
+maximums 181, 83, 11, 7, 124, 260, 28, 9, 19, 30, 4, 16
+total parse 155, 9, 10, 7, 1, 4, 18, 3, 2, 2, 2, 14
+total run 456, 1499, 424, 1197, 27046, 9900, 4970, 989, 306, 2809, 5, 44
+total 22749645
+milions 1
+date time 10.05.2015 9:48:47
+max memory usage 88718628
+average 599, 243, 670, 301, 16, 44, 83, 344, 1123, 147, 9090, 1182
+minimums 0, 1, 0, 0, 14, 13, 0, 0, 0, 0, 0, 0
+maximums 174, 57, 13, 22, 252, 268, 68, 21, 19, 41, 4, 17
+total parse 147, 39, 22, 16, 17, 4, 43, 17, 1, 10, 1, 48
+total run 565, 1725, 549, 1413, 30156, 11176, 5684, 1198, 394, 3191, 42, 115
+total 36556208
+
+без кешей и без ToArray
+milions 1
+date time 10.05.2015 10:06:16
+max memory usage 8136216
+average 2358, 64, 7575, 3184, 3, 3, 87, 446, 1165, 167, 3246, 183
+minimums 0, 5, 0, 0, 29, 225, 1, 0, 0, 0, 0, 3
+maximums 174, 92, 17, 10, 1958, 1039, 74, 20, 18, 40, 4, 30
+total parse 156, 20, 25, 13, 12, 5, 31, 16, 1, 10, 0, 30
+total run 33, 7434, 9, 31, 127331, 131498, 5418, 857, 376, 2793, 107, 2412
+total 319278299
+milions 1
+date time 10.05.2015 10:13:00
+max memory usage 8016840
+average 2427, 64, 9259, 3676, 3, 3, 89, 468, 1272, 167, 3333, 183
+minimums 0, 5, 0, 0, 28, 225, 1, 0, 0, 0, 0, 3
+maximums 178, 77, 19, 7, 1173, 1048, 83, 16, 18, 39, 4, 30
+total parse 154, 21, 23, 12, 17, 5, 29, 6, 1, 9, 0, 25
+total run 36, 7394, 7, 24, 126547, 131943, 5274, 825, 346, 2787, 97, 2390
+total 302277670
+
+без кешей с ToArray
+
+milions 1
+date time 10.05.2015 10:21:22
+max memory usage 11980764
+average 2100, 65, 5952, 2604, 3, 3, 88, 460, 1059, 162, 3125, 182
+minimums 0, 5, 0, 0, 28, 224, 1, 0, 0, 0, 0, 3
+maximums 204, 103, 24, 9, 2402, 1302, 73, 14, 54, 44, 5, 40
+total parse 181, 19, 51, 20, 13, 9, 28, 11, 5, 9, 1, 31
+total run 41, 7381, 9, 35, 129566, 143341, 5356, 832, 411, 2871, 114, 2419
+total 378292376
+milions 1
+date time 10.05.2015 10:29:23
+max memory usage 12172924
+average 2242, 64, 8771, 2906, 3, 3, 87, 438, 1144, 164, 2994, 184
+minimums 0, 5, 0, 0, 30, 226, 1, 0, 0, 0, 0, 3
+maximums 179, 96, 18, 8, 1746, 1074, 75, 21, 18, 47, 9, 35
+total parse 156, 22, 22, 14, 15, 6, 34, 13, 1, 9, 3, 27
+total run 48, 7420, 8, 36, 129423, 142147, 5399, 871, 372, 2848, 115, 2403
+total 322 291 090
+milions 1
+
+с кешем
+date time 10.05.2015 10:35:14
+max memory usage 87848064
+average 690, 268, 782, 338, 17, 48, 92, 390, 1295, 158, 25000, 1628
+minimums 0, 1, 0, 0, 12, 12, 1, 0, 0, 0, 0, 0
+maximums 188, 52, 9, 8, 124, 266, 33, 9, 20, 27, 3, 15
+total parse 155, 6, 13, 5, 5, 5, 17, 5, 1, 7, 1, 11
+total run 472, 1562, 460, 1232, 28131, 10252, 5092, 1059, 345, 2956, 7, 61
+total 23151629
+
+date time 12.05.2015 14:42:37
+max memory usage 86852248
+average 872, 324, 1059, 430, 22, 70, 116, 477, 1831, 221, 16666, 2242
+minimums 0, 0, 0, 0, 9, 9, 0, 0, 0, 0, 0, 0
+maximums 150, 71, 11, 7, 100, 237, 21, 8, 15, 15, 3, 11
+total parse 131, 19, 14, 10, 15, 16, 28, 9, 3, 8, 1, 23
+total run 366, 1307, 356, 981, 21932, 7005, 4036, 870, 240, 2127, 24, 59
+total 27739303
+milions 1
+date time 12.05.2015 14:43:21
+max memory usage 98830588
+average 643, 652, 656, 274, 24, 64, 967, 12820, 83333, 7246, 250000, 15151
+minimums 1, 0, 1, 3, 6, 13, 0, 0, 0, 0, 0, 0
+maximums 4, 39, 5, 8, 94, 24, 4, 2, 1, 2, 1, 1
+total parse 7, 16, 11, 12, 16, 7, 18, 10, 2, 11, 2, 18
+total run 687, 524, 636, 1613, 20133, 7712, 263, 16, 4, 20, 0, 5
+total 13031613
+
+идеальный кеш
+milions 1
+date time 11.05.2015 10:26:02
+max memory usage 717081528
+average 100000, 523, 125000, 27777, 111, 215, 152, 761, 2283, 306, 6578, 8771
+minimums 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0
+maximums 1, 6, 1, 1, 88, 217, 17, 6, 3, 13, 4, 2
+total parse 4, 17, 3, 18, 26, 6, 17, 5, 2, 10, 4, 13
+total run 1, 706, 1, 0, 4325, 2258, 3015, 511, 189, 1499, 63, 17
+total 12512585
+
+milions 1
+date time 11.05.2015 10:36:21
+max memory usage 718575140
+average 55555, 494, 31250, 50000, 108, 213, 151, 728, 2057, 293, 6944, 4504
+minimums 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0
+maximums 1, 47, 3, 1, 94, 211, 23, 7, 7, 13, 2, 2
+total parse 7, 17, 16, 9, 14, 6, 23, 13, 2, 11, 1, 24
+total run 2, 792, 0, 0, 4419, 2271, 3089, 518, 214, 1552, 48, 30
+total 14 312 935
+
+идеальное хранилище
+milions 1
+date time 11.05.2015 10:43:21
+max memory usage 744101844
+average 100000, 2164, 50000, 71428, 262, 248, 21739, 45454, 62500, 50000, 250000, 45454
+minimums 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0
+maximums 1, 4, 1, 1, 13, 9, 1, 1, 1, 1, 1, 1
+total parse 5, 11, 10, 7, 1, 2, 10, 9, 1, 8, 1, 9
+total run 0, 79, 0, 0, 1737, 1959, 4, 2, 7, 2, 1, 1
+total 743792
+
+milions 1
+date time 11.05.2015 10:48:17
+max memory usage 744725312
+average 50000, 1811, 41666, 29411, 245, 237, 11363, 45454, 41666, 31250, 71428, 23809
+minimums 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0
+maximums 1, 5, 2, 2, 14, 8, 1, 1, 1, 2, 1, 2
+total parse 9, 15, 12, 15, 10, 3, 14, 8, 1, 10, 3, 16
+total run 1, 103, 0, 1, 1850, 2061, 13, 3, 11, 3, 4, 3
+total 1164053
+
+
+
+date time 12.05.2015 10:03:31
+max memory usage 741827892
+average 38461, 1098, 35714, 33333, 205, 256, 5319, 23809, 71428, 22727, 55555, 13157
+minimums 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0
+maximums 1, 3, 1, 1, 15, 8, 2, 1, 1, 1, 1, 1
+total parse 12, 26, 14, 15, 22, 4, 24, 18, 2, 17, 6, 24
+total run 1, 155, 0, 0, 2196, 1861, 16, 1, 5, 4, 3, 5
+total 1844247
+milions 1
+
+
+date time 12.05.2015 12:47:15
+max memory usage 740511216
+average 35714, 1016, 41666, 16666, 200, 225, 5000, 20833, 38461, 18518, 45454, 15151
+minimums 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0
+maximums 1, 3, 1, 1, 17, 9, 2, 1, 1, 1, 1, 1
+total parse 12, 29, 11, 29, 13, 5, 27, 22, 4, 22, 5, 19
+total run 2, 191, 1, 1, 2255, 2120, 18, 2, 9, 5, 6, 8
+total 1984618
+milions 1
+date time 12.05.2015 12:53:11
+max memory usage 658453536
+average 2487, 74, 10869, 6578, 4, 4, 105, 579, 1488, 188, 4716, 224
+minimums 0, 4, 0, 0, 25, 224, 1, 0, 0, 0, 0, 3
+maximums 168, 167, 15, 3, 520, 332, 24, 6, 24, 16, 8, 13
+total parse 153, 26, 23, 13, 12, 13, 33, 17, 5, 12, 5, 36
+total run 46, 6397, 15, 26, 100765, 119119, 4490, 681, 305, 2480, 76, 1947
+total 348236347
+milions 1
+date time 12.05.2015 12:53:24
+max memory usage 740069804
+average 100000, 1582, 38461, 13888, 297, 333, 8771, 41666, 41666, 26315, 55555, 20000
+minimums 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0
+maximums 1, 2, 1, 1, 10, 6, 3, 1, 1, 1, 1, 1
+total parse 4, 22, 12, 35, 12, 2, 13, 12, 3, 12, 3, 16
+total run 1, 120, 1, 1, 1496, 1433, 20, 0, 9, 7, 6, 8
+total 1463102
+
+milions 1
+date time 12.05.2015 15:12:15
+max memory usage 7246636
+average 1552, 10416, 5050, 6024, 1552, 1602, 35714, 71428, 23809, 125000, 62500, 29411
+minimums 322, 48, 99, 83, 322, 312, 14, 7, 21, 4, 8, 17
+maximums 322, 48, 99, 83, 322, 312, 14, 7, 21, 4, 8, 17
+total parse 148, 8, 27, 7, 2, 11, 11, 3, 2, 2, 0, 11
+total run 173, 40, 72, 75, 319, 300, 2, 3, 18, 1, 8, 5
+total 2321016
+milions 1
+date time 12.05.2015 15:12:15
+max memory usage 10753000
+average 21739, 166666, 10416, 15151, 5952, 2475, 500000, 500000, 250000, 500000, inf, 500000
+minimums 23, 3, 48, 33, 84, 202, 1, 1, 2, 1, 0, 1
+maximums 23, 3, 48, 33, 84, 202, 1, 1, 2, 1, 0, 1
+total parse 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+total run 22, 2, 48, 33, 83, 202, 1, 0, 1, 1, 0, 0
+total 0393
+milions 1
+date time 12.05.2015 15:35:45
+max memory usage 634635052
+average 582, 57, 736, 325, 4, 3, 87, 386, 1340, 158, 3086, 203
+minimums 0, 5, 0, 0, 60, 232, 2, 0, 0, 0, 0, 3
+maximums 161, 160, 14, 11, 586, 365, 27, 9, 19, 18, 9, 19
+total parse 149, 29, 30, 33, 25, 13, 50, 26, 3, 18, 6, 42
+total run 603, 8419, 531, 1285, 120540, 126656, 5445, 1057, 333, 2989, 123, 2188
+total 424270169
+by s caches: 929
+by p caches: 0
+by o caches: 929
+by sp caches: 80298
+by po caches: 4915
+by spo caches: 17027
+sum of caches: 105027
+
+s calls: 71
+p calls: 0
+o calls: 1000
+sp calls: 2972302
+po calls: 14507
+spo calls: 39910
+sum of calls: 3027790
+
+milions 1
+date time 12.05.2015 15:36:10
+max memory usage 716887292
+average 100000, 459, 45454, 41666, 119, 303, 147, 683, 1865, 270, 4504, 5000
+minimums 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0
+maximums 1, 9, 1, 1, 78, 203, 19, 8, 3, 22, 7, 5
+total parse 5, 21, 11, 11, 19, 4, 12, 12, 4, 13, 4, 21
+total run 0, 831, 0, 1, 3994, 1566, 3186, 557, 233, 1699, 85, 28
+total 13712180
+milions 1
+date time 12.05.2015 15:43:50
+max memory usage 636389828
+average 579, 60, 734, 335, 4, 4, 87, 396, 1347, 162, 3401, 205
+minimums 0, 5, 0, 0, 60, 232, 1, 0, 0, 0, 0, 3
+maximums 171, 145, 15, 8, 585, 316, 29, 9, 20, 22, 9, 13
+total parse 156, 32, 29, 20, 21, 15, 45, 20, 2, 19, 10, 38
+total run 595, 7950, 509, 1273, 119083, 124515, 5409, 1054, 331, 2937, 108, 2179
+total 407265943
+by s caches: 929
+by p caches: 0
+by o caches: 929
+by sp caches: 80298
+by po caches: 4915
+by spo caches: 17027
+sum of caches: 105027
+
+s calls: 1000
+p calls: 0
+o calls: 1000
+sp calls: 2972302
+po calls: 14507
+spo calls: 39910
+sum of calls: 3028719
+
+milions 1
+date time 12.05.2015 15:44:14
+max memory usage 716514472
+average 71428, 488, 45454, 31250, 125, 316, 149, 710, 1865, 281, 6666, 5747
+minimums 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0
+maximums 1, 9, 1, 1, 73, 196, 18, 6, 2, 12, 2, 2
+total parse 7, 24, 11, 15, 11, 5, 20, 9, 3, 8, 2, 15
+total run 0, 787, 0, 0, 3804, 1510, 3136, 534, 236, 1638, 55, 25
+total 13011725
+milions 1
+date time 12.05.2015 16:39:03
+max memory usage 90757836
+average 841, 309, 1106, 411, 22, 70, 116, 481, 1937, 220, 35714, 2645
+minimums 0, 1, 0, 0, 9, 9, 0, 0, 0, 0, 0, 0
+maximums 156, 76, 9, 7, 107, 236, 33, 10, 21, 19, 3, 12
+total parse 135, 8, 10, 2, 4, 11, 15, 6, 1, 3, 2, 12
+total run 357, 1367, 321, 1005, 22103, 6971, 4044, 844, 240, 2121, 6, 21
+total 20 939 400
+one query 5, 1000 times
+milions 1
+date time 12.05.2015 20:16:14
+total ms 14463
+qps 69,1399697826528
+
+one query 5, 1000 times
+milions 1
+date time 12.05.2015 20:24:49
+total ms 238674
+qps 4,18980039642174
+
+one query 5, 1000 times
+milions 1
+date time 12.05.2015 20:30:44
+total ms 235416
+tics per q922703
+qps 4
+
+one query 50, 1000 times
+milions 1
+date time 12.05.2015 20:45:20
+total ms 291777
+tics per q 1143604
+qps 3
+
+one query 50, 10 times
+milions 1
+date time 12.05.2015 20:47:54
+total ms 3050
+tics per q 1195758
+qps 3
+
+one query 50, 10 times
+milions 1
+date time 13.05.2015 7:58:20
+total ms 46503
+tics per q 18226984
+qps 0
+
+one query 50, 10 times
+milions 1
+date time 13.05.2015 8:34:14
+total ms 2347
+tics per q 919919
+qps 4
+11 results count: 1644
+
+one query 50, 10 times
+milions 1
+date time 13.05.2015 10:52:36
+total ms 2339
+ms 233,9
+qps 4
+11 results count: 1644
+
+one query 50, 10 times
+milions 1
+date time 13.05.2015 10:55:32
+total ms 1272
+ms 127,2
+qps 7
+11 results count: 1644
+
+
+
+
+coding
+
+one query 50, 10 times
+milions 1
+date time 13.05.2015 15:48:33
+total ms 4776
+ms 477,6
+qps 2
+11 results count: 1644
+
+one query 50, 10 times
+milions 1
+date time 13.05.2015 15:49:08
+total ms 4424
+ms 442,4
+qps 2
+11 results count: 1644
+
+без кеша строки
+one query 50, 100 times
+milions 1
+date time 13.05.2015 16:54:15
+total ms 208816
+ms 2088,16
+qps 0
+11 results count: 995
+
+с разогревом
+one query 50, 100 times
+milions 1
+date time 13.05.2015 17:07:12
+total ms 196994
+ms 1969,94
+qps 0
+11 results count: 995
+
+строка с кешем и разогревом
+one query 50, 100 times
+milions 1
+date time 13.05.2015 17:27:52
+total ms 205006
+ms 2050,06
+qps 0
+11 results count: 995
+
+one query 50, 100 times
+milions 1
+date time 13.05.2015 17:29:14
+total ms 23477
+ms 234,77
+qps 4
+11 results count: 995
+
+кодирование с кешем
+one query 50, 100 times
+milions 1
+date time 13.05.2015 17:55:46
+total ms 48606
+ms 486,06
+qps 2
+11 results count: 995
+
+one query 50, 100 times
+milions 1
+date time 13.05.2015 17:56:54
+total ms 42187
+ms 421,87
+qps 2
+11 results count: 995
+
+one query 50, 100 times
+milions 1
+date time 13.05.2015 17:58:22
+total ms 42386
+ms 423,86
+qps 2
+11 results count: 995
+
+one query 50, 100 times
+milions 1
+date time 13.05.2015 18:01:05
+total ms 40311
+ms 403,11
+qps 2
+11 results count: 995
+
+one query 50, 100 times
+milions 1
+date time 13.05.2015 18:42:56
+total ms 38808
+ms 388,08
+qps 2
+11 results count: 995
+
+one query 50, 100 times
+milions 1
+date time 13.05.2015 18:45:41
+total ms 21967
+ms 219,67
+qps 4
+11 results count: 995
+
+one query 50, 100 times
+milions 1
+date time 14.05.2015 10:14:13
+total ms 25613
+ms 256,13
+qps 3
+11 results count: 0
+
+one query 50, 1 times
+milions 1
+date time 14.05.2015 15:03:21
+total ms 16394
+ms 16394
+qps 0
+11 results count: 0
+
+by s caches: 0
+by p caches: 0
+by o caches: 0
+by sp caches: 1482
+by po caches: 44
+by spo caches: 0
+sum of caches: 1526
+
+s calls: 0
+p calls: 0
+o calls: 0
+sp calls: 4694
+po calls: 44
+spo calls: 0
+sum of calls: 4738
+
+one query 50, 1 times
+milions 1
+date time 14.05.2015 17:51:48
+total ms 2545
+ms 2545
+qps 0
+next results count: 9
+
+one query 50, 1 times
+milions 1
+date time 14.05.2015 17:59:44
+total ms 448
+ms 448
+qps 2
+next results count: 9
+
+one query 50, 1 times
+milions 1
+date time 14.05.2015 18:09:52
+total ms 194
+ms 194
+qps 5
+next results count: 9
+
+one query 50, 1 times
+milions 1
+date time 14.05.2015 18:10:11
+total ms 173
+ms 173
+qps 5
+next results count: 9
+
+one query 50, 1 times
+milions 1
+date time 14.05.2015 18:10:21
+total ms 180
+ms 180
+qps 5
+next results count: 9
+
+one query 50, 1 times
+milions 1
+date time 14.05.2015 20:23:49
+total ms 206
+ms 206
+qps 4
+next results count: 9
+
+one query 50, 1 times
+milions 1
+date time 14.05.2015 20:24:09
+total ms 195
+ms 195
+qps 5
+next results count: 9
+
+one query 50, 1 times
+milions 1
+date time 14.05.2015 20:34:24
+total ms 198
+ms 198
+qps 5
+next results count: 9
+
+one query 50, 1 times
+milions 1
+date time 14.05.2015 20:34:50
+total ms 186
+ms 186
+qps 5
+next results count: 9
+1
+by s caches: 0
+by p caches: 0
+by o caches: 0
+by sp caches: 102
+by po caches: 1
+by spo caches: 260
+sum of caches: 363
+
+s calls: 0
+p calls: 0
+o calls: 0
+sp calls: 102
+po calls: 1
+spo calls: 260
+sum of calls: 363
+
+
+
+2
+by s caches: 0
+by p caches: 0
+by o caches: 0
+by sp caches: 36
+by po caches: 0
+by spo caches: 1
+sum of caches: 37
+
+s calls: 0
+p calls: 0
+o calls: 0
+sp calls: 212
+po calls: 0
+spo calls: 1
+sum of calls: 213
+
+3
+by s caches: 0
+by p caches: 0
+by o caches: 0
+by sp caches: 659
+by po caches: 1
+by spo caches: 307
+sum of caches: 967
+
+s calls: 0
+p calls: 0
+o calls: 0
+sp calls: 2073
+po calls: 3
+spo calls: 921
+sum of calls: 2997
+
+4
+by s caches: 0
+by p caches: 0
+by o caches: 0
+by sp caches: 334
+by po caches: 1
+by spo caches: 545
+sum of caches: 880
+
+s calls: 0
+p calls: 0
+o calls: 0
+sp calls: 372
+po calls: 2
+spo calls: 564
+sum of calls: 938
+
+5
+by s caches: 0
+by p caches: 0
+by o caches: 0
+by sp caches: 1251
+by po caches: 17
+by spo caches: 0
+sum of caches: 1268
+
+s calls: 0
+p calls: 0
+o calls: 0
+sp calls: 3451
+po calls: 17
+spo calls: 0
+sum of calls: 3468
+
+6
+by s caches: 0
+by p caches: 0
+by o caches: 0
+by sp caches: 2848
+by po caches: 1
+by spo caches: 0
+sum of caches: 2849
+
+s calls: 0
+p calls: 0
+o calls: 0
+sp calls: 2848
+po calls: 1
+spo calls: 0
+sum of calls: 2849
+
+7
+by s caches: 0
+by p caches: 0
+by o caches: 0
+by sp caches: 11
+by po caches: 3
+by spo caches: 315
+sum of caches: 329
+
+s calls: 0
+p calls: 0
+o calls: 0
+sp calls: 321
+po calls: 7
+spo calls: 315
+sum of calls: 643
+
+8
+by s caches: 0
+by p caches: 0
+by o caches: 0
+by sp caches: 6
+by po caches: 1
+by spo caches: 0
+sum of caches: 7
+
+s calls: 0
+p calls: 0
+o calls: 0
+sp calls: 6
+po calls: 1
+spo calls: 0
+sum of calls: 7
+
+9
+by s caches: 1
+by p caches: 0
+by o caches: 1
+by sp caches: 1
+by po caches: 0
+by spo caches: 0
+sum of caches: 4
+
+s calls: 1
+p calls: 0
+o calls: 1
+sp calls: 1
+po calls: 0
+spo calls: 0
+sum of calls: 3
+
+10
+by s caches: 0
+by p caches: 0
+by o caches: 0
+by sp caches: 11
+by po caches: 1
+by spo caches: 9
+sum of caches: 21
+
+s calls: 0
+p calls: 0
+o calls: 0
+sp calls: 11
+po calls: 1
+spo calls: 10
+sum of calls: 22
+
+11
+by s caches: 1
+by p caches: 0
+by o caches: 1
+by sp caches: 0
+by po caches: 0
+by spo caches: 0
+sum of caches: 3
+
+s calls: 1
+p calls: 0
+o calls: 1
+sp calls: 0
+po calls: 0
+spo calls: 0
+sum of calls: 2
+
+12
+by s caches: 0
+by p caches: 0
+by o caches: 0
+by sp caches: 9
+by po caches: 0
+by spo caches: 0
+sum of caches: 9
+
+s calls: 0
+p calls: 0
+o calls: 0
+sp calls: 72
+po calls: 0
+spo calls: 0
+sum of calls: 72
+
+8
+by s caches: 0
+by p caches: 0
+by o caches: 0
+by sp caches: 6
+by po caches: 1
+by spo caches: 0
+sum of caches: 7
+
+s calls: 0
+p calls: 0
+o calls: 0
+sp calls: 6
+po calls: 1
+spo calls: 0
+sum of calls: 7
+
+8
+by s caches: 0
+by p caches: 0
+by o caches: 0
+by sp caches: 6
+by po caches: 1
+by spo caches: 0
+sum of caches: 7
+
+s calls: 0
+p calls: 0
+o calls: 0
+sp calls: 6
+po calls: 1
+spo calls: 0
+sum of calls: 7
+
+date time 15.05.2015 15:51:27
+memory usage (bytes)3889524, 2922236, 2747272, 2560316, 1636480, 3527904, 3635956, 2013328, 1856156, 1909552, 1752384, 2467028
+parse (ms)143, 3, 14, 1, 1, 3, 14, 1, 1, 1, 0, 3
+total parse 185
+create linq stack 1, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 2
+total create linq stack 7
+run 96, 14, 77, 64, 308, 270, 42, 1, 0, 2, 1, 0
+parse + create linq stack + run 240, 17, 91, 65, 309, 273, 56, 2, 5, 3, 1, 5
+total run 875
+total 1857875
+date time 15.05.2015 15:51:36
+memory usage (bytes)3841876, 2892100, 2649456, 2513584, 1543892, 3448932, 3685440, 1931132, 1773764, 1836188, 1670912, 2389332
+parse (ms)120, 1, 12, 1, 0, 3, 13, 0, 0, 1, 0, 2
+total parse 153
+create linq stack 1, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 1
+total create linq stack 6
+run 68, 11, 68, 69, 255, 246, 36, 1, 0, 2, 1, 0
+parse + create linq stack + run 189, 12, 80, 70, 255, 249, 49, 1, 4, 3, 1, 3
+total run 757
+total 1536757
+date time 15.05.2015 15:55:14
+memory usage (bytes)3890960, 2922188, 2747224, 2560268, 1636484, 3527860, 3635912, 2013284, 1856092, 1909464, 1752296, 2466940
+parse (ms)127, 3,14, 17, 1,97, 0,92, 4,27, 14, 1,97, 1,56, 1,85, 0,43, 12
+total parse 186,11
+create linq stack 0,93, 0,11, 0,81, 0,24, 0, 0, 0, 0, 11, 0, 0, 2,36
+total create linq stack 15,45
+run 86, 14, 90, 73, 286, 316, 46, 1,62, 0,03, 2,64, 1,48, 0,24
+parse + create linq stack + run 213,93, 17,25, 107,81, 75,21, 286,92, 320,27, 60, 3,59, 12,59, 4,49, 1,91, 14,6
+total run 917,01
+total 186,1115,45917,01
+date time 15.05.2015 15:55:23
+memory usage (bytes)3841876, 2892100, 2649456, 2513584, 1543892, 3448932, 3685440, 1931132, 1773764, 1836188, 1670912, 2389332
+parse (ms)132, 1,63, 12, 1,01, 0,62, 3,79, 12, 1,02, 0,84, 1,29, 0,14, 2,66
+total parse 169
+create linq stack 1,09, 0,1, 0,56, 0,19, 0, 0, 0, 0, 3,9, 0, 0, 1,84
+total create linq stack 7,68
+run 69, 11, 70, 58, 263, 225, 36, 1,2, 0,02, 2,17, 1,05, 0,18
+parse + create linq stack + run 202,09, 12,73, 82,56, 59,2, 263,62, 228,79, 48, 2,22, 4,76, 3,46, 1,19, 4,68
+total run 736,62
+total 1697,68736,62
+
+date time 15.05.2015 16:20:06
+memory usage (bytes)3841876, 2891988, 2648396, 2513472, 1543780, 3448820, 3685328, 1931020, 1773652, 1836076, 1670796, 2389216
+parse (ms)158, 2,42, 17, 1,36, 0,6, 3,48, 13, 1,02, 0,91, 1,26, 0,14, 3,31
+total parse 202,5
+create linq stack 0,83, 0,16, 0,63, 0,27, 0, 0, 0, 0, 3,83, 0, 0, 2,03
+total create linq stack 7,75
+run 67, 16, 75, 60, 224, 260, 39, 1,23, 0,02, 2,06, 0,99, 0,17
+parse + create linq stack + run 225.83, 18.58, 92.63, 61.63, 224.6, 263.48, 52, 2.25, 4.76, 3.32, 1.13, 5.51
+total run 745,47
+total 955,72
+date time 15.05.2015 18:03:35
+memory usage (bytes)4177572, 2922932, 2773384, 2561012, 1637176, 3528600, 3636652, 2014024, 1856852, 1910248, 1753080, 2467724
+parse (ms)50, 2,78, 16, 2,71, 0,95, 3,84, 15, 2,52, 1,65, 1,53, 0,35, 4,19
+total parse 101,52
+create linq stack 0,93, 0,11, 0,89, 0,31, 0, 0, 0, 0,01, 12, 0, 0, 2,08
+total create linq stack 16,33
+run 96, 18, 84, 67, 271, 261, 48, 1,58, 0,02, 2,19, 1,11, 0,2
+parse + create linq stack + run 146.93, 20.89, 100.89, 70.02, 271.95, 264.84, 63, 4.11, 13.67, 3.72, 1.46, 6.47
+total run 850,1
+total 967,95
+date time 15.05.2015 18:07:07
+memory usage (bytes)3219252, 2678752, 2285184, 2406580, 3100808, 3452156, 3569112, 1938496, 1781392, 1834788, 1677620, 2392264
+parse (ms)0,88, 1,22, 3,53, 0,93, 0,14, 3,36, 12, 1, 0,81, 1,36, 0,14, 2,56
+total parse 27,93
+create linq stack 0,87, 0,13, 0,81, 0,19, 0, 0, 0, 0, 3,91, 0, 0, 1,71
+total create linq stack 7,62
+run 74, 12, 83, 61, 228, 255, 35, 1,19, 0,02, 2,07, 0,98, 0,17
+parse + create linq stack + run 75.75, 13.35, 87.34, 62.12, 228.14, 258.36, 47, 2.19, 4.74, 3.43, 1.12, 4.44
+total run 752,43
+total 787,98
+date time 15.05.2015 21:13:03
+memory usage (bytes)3936996, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+parse (ms)1,83, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+total parse 1,83
+create linq stack 1,01, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+total create linq stack 1,01
+run 93, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+parse + create linq stack + run 95.84, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+total run 93
+total 95,84
+
+date time 15.05.2015 22:39:28
+memory usage (bytes)0, 2339280, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+parse (ms)0, 1,28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+total parse 1,28
+create linq stack 0, 0,87, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+total create linq stack 0,87
+run 0, 36, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+parse + create linq stack + run 0, 38.15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+total run 36
+total 38,15
+date time 15.05.2015 22:54:46
+memory usage (bytes)0, 0, 2307448, 0, 0, 0, 0, 0, 0, 0, 0, 0
+parse (ms)0, 0, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0
+total parse 16
+create linq stack 0, 0, 2,07, 0, 0, 0, 0, 0, 0, 0, 0, 0
+total create linq stack 2,07
+run 0, 0, 145, 0, 0, 0, 0, 0, 0, 0, 0, 0
+parse + create linq stack + run 0, 0, 163.07, 0, 0, 0, 0, 0, 0, 0, 0, 0
+total run 145
+total 163,07
+date time 15.05.2015 23:08:14
+memory usage (bytes)0, 0, 2304072, 0, 0, 0, 0, 0, 0, 0, 0, 0
+parse (ms)0, 0, 13, 0, 0, 0, 0, 0, 0, 0, 0, 0
+total parse 13
+create linq stack 0, 0, 1,52, 0, 0, 0, 0, 0, 0, 0, 0, 0
+total create linq stack 1,52
+run 0, 0, 159, 0, 0, 0, 0, 0, 0, 0, 0, 0
+parse + create linq stack + run 0, 0, 173.52, 0, 0, 0, 0, 0, 0, 0, 0, 0
+total run 159
+total 173,52
+date time 15.05.2015 23:24:06
+memory usage (bytes)0, 0, 7001036, 0, 0, 0, 0, 0, 0, 0, 0, 0
+parse (ms)0, 0, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0
+total parse 15
+create linq stack 0, 0, 2,14, 0, 0, 0, 0, 0, 0, 0, 0, 0
+total create linq stack 2,14
+run 0, 0, 155, 0, 0, 0, 0, 0, 0, 0, 0, 0
+parse + create linq stack + run 0, 0, 172.14, 0, 0, 0, 0, 0, 0, 0, 0, 0
+total run 155
+total 172,14
+milions 1
+date time 16.05.2015 14:37:41
+max memory usage 129576748
+average 2890, 84, 17857, 8333, 4, 4, 113, 662, 1766, 213, 8771, 243
+minimums 0, 5, 0, 0, 24, 213, 1, 0, 0, 0, 0, 3
+maximums 160, 83, 9, 3, 530, 297, 22, 9, 36, 19, 3, 12
+total parse 143, 10, 14, 16, 5, 13, 19, 21, 2, 9, 4, 14
+total run 28, 5683, 11, 14, 104110, 112859, 4156, 573, 241, 2184, 34, 1797
+total 270231690
+milions 1
+date time 16.05.2015 14:55:53
+max memory usage 156187948
+average 2645, inf, inf, inf, 500000, inf, inf, inf, inf, inf, inf, inf
+minimums 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+maximums 159, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0
+total parse 146, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+total run 34, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+total 14634
+milions 1
+date time 16.05.2015 16:42:52
+max memory usage 186684028
+average inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf
+minimums 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+maximums 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+total parse 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+total run 302, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+total 0302
+milions 1
+date time 16.05.2015 17:24:45
+max memory usage 30890576
+average inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf
+minimums 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+maximums 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+total parse 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+total run 221, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+total 0221
+________________________________________________________________________________
+
+500
+
+q1
+by s caches: 0
+by p caches: 0
+by o caches: 0
+by sp caches: 0
+by po caches: 472
+by spo caches: 5430
+sum of caches: 5902
+
+s calls: 0
+p calls: 0
+o calls: 0
+sp calls: 0
+po calls: 500
+spo calls: 5430
+sum of calls: 5930
+
+
+q4
+by s caches: 0
+by p caches: 0
+by o caches: 0
+by sp caches: 0
+by po caches: 473
+by spo caches: 6131
+sum of caches: 6604
+
+s calls: 0
+p calls: 0
+o calls: 0
+sp calls: 0
+po calls: 1000
+spo calls: 11834
+sum of calls: 12834
+
+q6
+by s caches: 0
+by p caches: 0
+by o caches: 0
+by sp caches: 2848
+by po caches: 1
+by spo caches: 0
+sum of caches: 2849
+
+s calls: 0
+p calls: 0
+o calls: 0
+sp calls: 1424000
+po calls: 500
+spo calls: 0
+sum of calls: 1424500
+
+q7
+by s caches: 0
+by p caches: 0
+by o caches: 0
+by sp caches: 38079
+by po caches: 908
+by spo caches: 9000
+sum of caches: 47987
+
+s calls: 0
+p calls: 0
+o calls: 0
+sp calls: 44880
+po calls: 1000
+spo calls: 19500
+sum of calls: 65380
+
+q8
+by s caches: 0
+by p caches: 0
+by o caches: 0
+by sp caches: 9338
+by po caches: 463
+by spo caches: 0
+sum of caches: 9801
+
+s calls: 0
+p calls: 0
+o calls: 0
+sp calls: 10026
+po calls: 500
+spo calls: 0
+sum of calls: 10526
+
+q9
+by s caches: 415
+by p caches: 0
+by o caches: 415
+by sp caches: 496
+by po caches: 0
+by spo caches: 0
+sum of caches: 1741
+
+s calls: 500
+p calls: 0
+o calls: 500
+sp calls: 500
+po calls: 0
+spo calls: 0
+sum of calls: 1500
+
+q10
+by s caches: 0
+by p caches: 0
+by o caches: 0
+by sp caches: 16613
+by po caches: 454
+by spo caches: 8890
+sum of caches: 25957
+
+s calls: 0
+p calls: 0
+o calls: 0
+sp calls: 18389
+po calls: 500
+spo calls: 19588
+sum of calls: 38477
+
+q11
+by s caches: 498
+by p caches: 0
+by o caches: 498
+by sp caches: 0
+by po caches: 0
+by spo caches: 0
+sum of caches: 1494
+
+s calls: 500
+p calls: 0
+o calls: 500
+sp calls: 0
+po calls: 0
+spo calls: 0
+sum of calls: 1000
+
+q12
+by s caches: 0
+by p caches: 0
+by o caches: 0
+by sp caches: 3487
+by po caches: 0
+by spo caches: 0
+sum of caches: 3487
+
+s calls: 0
+p calls: 0
+o calls: 0
+sp calls: 36000
+po calls: 0
+spo calls: 0
+sum of calls: 36000
+
+q1
+by s caches: 0
+by p caches: 0
+by o caches: 0
+by sp caches: 0
+by po caches: 472
+by spo caches: 5430
+sum of caches: 5902
+
+s calls: 0
+p calls: 0
+o calls: 0
+sp calls: 0
+po calls: 500
+spo calls: 5430
+sum of calls: 5930
+
+q2
+by s caches: 0
+by p caches: 0
+by o caches: 0
+by sp caches: 8881
+by po caches: 0
+by spo caches: 459
+sum of caches: 9340
+
+s calls: 0
+p calls: 0
+o calls: 0
+sp calls: 93229
+po calls: 0
+spo calls: 500
+sum of calls: 93729
+
+q3
+by s caches: 0
+by p caches: 0
+by o caches: 0
+by sp caches: 218
+by po caches: 480
+by spo caches: 5649
+sum of caches: 6347
+
+s calls: 0
+p calls: 0
+o calls: 0
+sp calls: 218
+po calls: 500
+spo calls: 5715
+sum of calls: 6433
+
+q5
+by s caches: 0
+by p caches: 0
+by o caches: 0
+by sp caches: 8972
+by po caches: 3418
+by spo caches: 0
+sum of caches: 12390
+
+s calls: 0
+p calls: 0
+o calls: 0
+sp calls: 1504361
+po calls: 10259
+spo calls: 0
+sum of calls: 1514620
+
+100
+
+q1
+by s caches: 0
+by p caches: 0
+by o caches: 0
+by sp caches: 0
+by po caches: 99
+by spo caches: 1282
+sum of caches: 1381
+
+s calls: 0
+p calls: 0
+o calls: 0
+sp calls: 0
+po calls: 100
+spo calls: 1282
+sum of calls: 1382
+
+q2
+by s caches: 0
+by p caches: 0
+by o caches: 0
+by sp caches: 2625
+by po caches: 0
+by spo caches: 100
+sum of caches: 2725
+
+s calls: 0
+p calls: 0
+o calls: 0
+sp calls: 18761
+po calls: 0
+spo calls: 100
+sum of calls: 18861
+
+q3
+by s caches: 0
+by p caches: 0
+by o caches: 0
+by sp caches: 34
+by po caches: 100
+by spo caches: 1436
+sum of caches: 1570
+
+s calls: 0
+p calls: 0
+o calls: 0
+sp calls: 34
+po calls: 100
+spo calls: 1437
+sum of calls: 1571
+
+q5
+by s caches: 0
+by p caches: 0
+by o caches: 0
+by sp caches: 8157
+by po caches: 1354
+by spo caches: 0
+sum of caches: 9511
+
+s calls: 0
+p calls: 0
+o calls: 0
+sp calls: 301305
+po calls: 1990
+spo calls: 0
+sum of calls: 303295
+q4
+by s caches: 0
+by p caches: 0
+by o caches: 0
+by sp caches: 0
+by po caches: 95
+by spo caches: 1019
+sum of caches: 1114
+
+s calls: 0
+p calls: 0
+o calls: 0
+sp calls: 0
+po calls: 200
+spo calls: 1914
+sum of calls: 2114
+
+q6
+by s caches: 0
+by p caches: 0
+by o caches: 0
+by sp caches: 2848
+by po caches: 1
+by spo caches: 0
+sum of caches: 2849
+
+s calls: 0
+p calls: 0
+o calls: 0
+sp calls: 284800
+po calls: 100
+spo calls: 0
+sum of calls: 284900
+
+q7
+by s caches: 0
+by p caches: 0
+by o caches: 0
+by sp caches: 8643
+by po caches: 196
+by spo caches: 1955
+sum of caches: 10794
+
+s calls: 0
+p calls: 0
+o calls: 0
+sp calls: 9143
+po calls: 200
+spo calls: 3938
+sum of calls: 13281
+
+q8
+by s caches: 0
+by p caches: 0
+by o caches: 0
+by sp caches: 2002
+by po caches: 99
+by spo caches: 0
+sum of caches: 2101
+
+s calls: 0
+p calls: 0
+o calls: 0
+sp calls: 2040
+po calls: 100
+spo calls: 0
+sum of calls: 2140
+
+q9
+by s caches: 96
+by p caches: 0
+by o caches: 96
+by sp caches: 100
+by po caches: 0
+by spo caches: 0
+sum of caches: 388
+
+s calls: 100
+p calls: 0
+o calls: 100
+sp calls: 100
+po calls: 0
+spo calls: 0
+sum of calls: 300
+
+q10
+by s caches: 0
+by p caches: 0
+by o caches: 0
+by sp caches: 3697
+by po caches: 99
+by spo caches: 1992
+sum of caches: 5788
+
+s calls: 0
+p calls: 0
+o calls: 0
+sp calls: 3729
+po calls: 100
+spo calls: 3956
+sum of calls: 7785
+
+q11
+by s caches: 100
+by p caches: 0
+by o caches: 100
+by sp caches: 0
+by po caches: 0
+by spo caches: 0
+sum of caches: 300
+
+s calls: 100
+p calls: 0
+o calls: 100
+sp calls: 0
+po calls: 0
+spo calls: 0
+sum of calls: 200
+
+q12
+by s caches: 0
+by p caches: 0
+by o caches: 0
+by sp caches: 754
+by po caches: 0
+by spo caches: 0
+sum of caches: 754
+
+s calls: 0
+p calls: 0
+o calls: 0
+sp calls: 7200
+po calls: 0
+spo calls: 0
+sum of calls: 7200
+
+17.05.2015 13:01:04 +06:00
+q 1
+average 192,38
+qps 5,19
+min 0,26
+max 175,58
+memory usage (bytes)151406940
+parse (ms)1,5
+create linq stack 0,01
+run 0,43
+17.05.2015 13:05:57 +06:00
+q 1
+average 38,78
+qps 25,78
+min 0,27
+max 25,26
+memory usage (bytes)114110208
+parse (ms)0
+create linq stack 0,01
+run 0,39
+17.05.2015 13:10:36 +06:00
+q 1
+average 0,31
+qps 3225,8
+min 0,2
+max 24,3
+memory usage (bytes)2377832
+parse (ms)0,01
+create linq stack 0,01
+run 0,28
+17.05.2015 13:15:44 +06:00
+q 2
+average 8,41
+qps 118,9
+min 2,57
+max 47,6
+memory usage (bytes)31139448
+parse (ms)0,01
+create linq stack 0,01
+run 8,29
+17.05.2015 13:22:28 +06:00
+q 3
+average 1,03
+qps 970,87
+min 0,22
+max 53,09
+memory usage (bytes)35807828
+parse (ms)0,11
+create linq stack 0,01
+run 0,88
+17.05.2015 13:25:32 +06:00
+q 4
+average 0,64
+qps 1562,49
+min 0,39
+max 32,31
+memory usage (bytes)30818276
+parse (ms)0,02
+create linq stack 0,01
+run 0,46
+17.05.2015 13:29:23 +06:00
+q 5
+average 225,93
+qps 4,42
+min 30,16
+max 635,16
+memory usage (bytes)3232252
+parse (ms)0
+create linq stack 0,01
+run 225,91
+17.05.2015 13:32:52 +06:00
+q 6
+average 233,36
+qps 4,28
+min 220,06
+max 309,01
+memory usage (bytes)3658276
+parse (ms)0,31
+create linq stack 0,01
+run 233,04
+17.05.2015 13:36:16 +06:00
+q 7
+average 7,04999999999999
+qps 141,84
+min 0,92
+max 48,65
+memory usage (bytes)113362124
+parse (ms)0,03
+create linq stack 0
+run 6,86999999999999
+17.05.2015 13:42:22 +06:00
+q 8
+average 1,45
+qps 689,65
+min 0,4
+max 83,66
+memory usage (bytes)31468468
+parse (ms)0,2
+create linq stack 0,01
+run 1,05
+17.05.2015 13:45:32 +06:00
+q 9
+average 0,33
+qps 3030,3
+min 0,35
+max 31,29
+memory usage (bytes)113139468
+parse (ms)0,01
+create linq stack 0,31
+run 0
+17.05.2015 13:48:49 +06:00
+q 10
+average 2,97999999999999
+qps 335,57
+min 0,45
+max 107,43
+memory usage (bytes)150682020
+parse (ms)0,18
+create linq stack 0,01
+run 2,73
+17.05.2015 13:51:53 +06:00
+q 11
+average 0,24
+qps 4166,66
+min 0,28
+max 23,12
+memory usage (bytes)151329432
+parse (ms)0,01
+create linq stack 0
+run 0,21
+17.05.2015 13:55:08 +06:00
+q 12
+average 2,52
+qps 396,82
+min 1,98
+max 42,22
+memory usage (bytes)151672080
+parse (ms)0,12
+create linq stack 1,7
+run 0
+17.05.2015 13:58:16 +06:00
+q 12
+average 3,48
+qps 287,35
+min 1,91
+max 149,21
+memory usage (bytes)30707512
+parse (ms)1,23
+create linq stack 1,43
+run 0
+17.05.2015 14:03:53 +06:00
+q 12
+average 3,58
+qps 279,32
+min 1,9
+max 156,28
+memory usage (bytes)30803620
+parse (ms)1,29
+create linq stack 1,59
+run 0
+17.05.2015 14:15:33 +06:00
+____________________________кеш________________________________________________________
+q 1
+average 1,95
+qps 512,82
+min 0,27
+max 174,56
+memory usage (bytes)1882392
+parse (ms)1,41
+create linq stack 0,01
+run 0,53
+17.05.2015 14:15:37 +06:00
+q 2
+average 1,14
+qps 877,19
+min 0,93
+max 6,44
+memory usage (bytes)5387152
+parse (ms)0,02
+create linq stack 0
+run 0,870000000000001
+17.05.2015 14:15:44 +06:00
+q 3
+average 0,79
+qps 1265,82
+min 0,29
+max 39,14
+memory usage (bytes)6786680
+parse (ms)0,12
+create linq stack 0
+run 0,64
+17.05.2015 14:16:01 +06:00
+q 4
+average 0,55
+qps 1818,18
+min 0,49
+max 3,76
+memory usage (bytes)1886592
+parse (ms)0,01
+create linq stack 0
+run 0,29
+17.05.2015 14:16:16 +06:00
+q 5
+average 38,54
+qps 25,94
+min 3,91
+max 196,2
+memory usage (bytes)4236464
+parse (ms)0
+create linq stack 0
+run 38,54
+17.05.2015 14:16:33 +06:00
+q 6
+average 48,51
+qps 20,61
+min 40,08
+max 300,13
+memory usage (bytes)11255588
+parse (ms)0,04
+create linq stack 0
+run 48,47
+17.05.2015 14:16:57 +06:00
+q 7
+average 8,08
+qps 123,76
+min 1,42
+max 22,3
+memory usage (bytes)6772000
+parse (ms)0,01
+create linq stack 0
+run 7,95
+17.05.2015 14:17:09 +06:00
+q 8
+average 0,65
+qps 1538,46
+min 0,39
+max 3,59
+memory usage (bytes)10336224
+parse (ms)0,01
+create linq stack 0
+run 0,48
+17.05.2015 14:17:22 +06:00
+q 9
+average 0,15
+qps 6666,66
+min 0,39
+max 12,05
+memory usage (bytes)2414916
+parse (ms)0,01
+create linq stack 0,12
+run 0
+17.05.2015 14:17:26 +06:00
+q 10
+average 2,73
+qps 366,3
+min 0,57
+max 18,94
+memory usage (bytes)4177152
+parse (ms)0,01
+create linq stack 0
+run 2,54
+17.05.2015 14:17:41 +06:00
+q 11
+average 0,01
+qps 100000
+min 0,32
+max 1,92
+memory usage (bytes)2454868
+parse (ms)0
+create linq stack 0
+run 0,01
+17.05.2015 14:17:51 +06:00
+q 12
+average 0,11
+qps 9090,9
+min 0,44
+max 11,6
+memory usage (bytes)2617688
+parse (ms)0,11
+create linq stack 0
+run 0
+17.05.2015 14:29:56 +06:00
+q 6
+average 49,96
+qps 20,01
+min 40,08
+max 515,93
+memory usage (bytes)5296748
+parse (ms)1,7
+create linq stack 0
+run 48,26
+17.05.2015 14:30:22 +06:00
+q 9
+average 1,69
+qps 591,71
+min 0,35
+max 166,09
+memory usage (bytes)6905780
+parse (ms)1,19
+create linq stack 0,5
+run 0
+
+___________________идеальное хранилище
+train
+17.05.2015 14:55:20 +06:00
+q 1
+average 2,3446
+qps 426,51
+min 0,21
+max 172,53
+memory usage (bytes)2911092
+parse (ms)1,45
+create linq stack 0,01
+run 0,43
+history count 1382
+17.05.2015 14:55:22 +06:00
+q 1
+average 0,0892
+qps 11210,76
+min 0,06
+max 0,49
+memory usage (bytes)1778340
+parse (ms)0
+create linq stack 0
+run 0
+train
+17.05.2015 14:55:25 +06:00
+q 2
+average 9,2273
+qps 108,37
+min 2,54
+max 22,19
+memory usage (bytes)4492384
+parse (ms)0,01
+create linq stack 0
+run 8,83
+history count 18861
+17.05.2015 14:55:28 +06:00
+q 2
+average 0,2809
+qps 3559,98
+min 0,18
+max 1,46
+memory usage (bytes)5573212
+parse (ms)0,01
+create linq stack 0
+run 0
+train
+17.05.2015 14:55:30 +06:00
+q 3
+average 1,1778
+qps 849,04
+min 0,23
+max 56,13
+memory usage (bytes)9126488
+parse (ms)0,03
+create linq stack 0
+run 0,68
+history count 1571
+17.05.2015 14:55:32 +06:00
+q 3
+average 0,1085
+qps 9216,58
+min 0,09
+max 0,27
+memory usage (bytes)4759184
+parse (ms)0
+create linq stack 0
+run 0
+train
+17.05.2015 14:55:35 +06:00
+q 4
+average 0,9335
+qps 1071,23
+min 0,38
+max 2,94
+memory usage (bytes)5939112
+parse (ms)0
+create linq stack 0
+run 0,23
+history count 2114
+17.05.2015 14:55:37 +06:00
+q 4
+average 0,1698
+qps 5889,28
+min 0,13
+max 0,51
+memory usage (bytes)6079712
+parse (ms)0
+create linq stack 0
+run 0
+train
+17.05.2015 14:56:03 +06:00
+q 5
+average 232,7196
+qps 4,29
+min 26,19
+max 642,14
+memory usage (bytes)37945772
+parse (ms)0
+create linq stack 0
+run 232,53
+history count 303295
+17.05.2015 14:56:06 +06:00
+q 5
+average 1,7423
+qps 573,95
+min 0,26
+max 11,17
+memory usage (bytes)37803516
+parse (ms)0
+create linq stack 0
+run 1,12
+train
+17.05.2015 14:56:33 +06:00
+q 6
+average 246,9919
+qps 4,04
+min 234,06
+max 301,07
+memory usage (bytes)87937004
+parse (ms)0,04
+create linq stack 0
+run 246,87
+history count 284900
+17.05.2015 14:56:35 +06:00
+q 6
+average 1,4523
+qps 688,56
+min 1,17
+max 2,42
+memory usage (bytes)88438128
+parse (ms)0
+create linq stack 0
+run 1,05
+train
+17.05.2015 14:56:40 +06:00
+q 7
+average 7,2715
+qps 137,52
+min 0,89
+max 20,2
+memory usage (bytes)91722692
+parse (ms)0,01
+create linq stack 0
+run 6,78999999999999
+history count 13281
+17.05.2015 14:56:42 +06:00
+q 7
+average 0,228
+qps 4385,96
+min 0,14
+max 0,63
+memory usage (bytes)90811608
+parse (ms)0
+create linq stack 0
+run 0
+train
+17.05.2015 14:56:46 +06:00
+q 8
+average 1,0308
+qps 970,12
+min 0,34
+max 2,67
+memory usage (bytes)92513440
+parse (ms)0,02
+create linq stack 0
+run 0,36
+history count 2140
+17.05.2015 14:56:49 +06:00
+q 8
+average 0,1512
+qps 6613,75
+min 0,11
+max 0,84
+memory usage (bytes)91381504
+parse (ms)0
+create linq stack 0
+run 0
+train
+17.05.2015 14:56:56 +06:00
+q 9
+average 0,6274
+qps 1593,87
+min 0,35
+max 15,86
+memory usage (bytes)94651596
+parse (ms)0
+create linq stack 0,16
+run 0
+history count 400
+17.05.2015 14:56:58 +06:00
+q 9
+average 0,0116
+qps 86206,89
+min 0,01
+max 0,13
+memory usage (bytes)90233700
+parse (ms)0
+create linq stack 0
+run 0
+train
+17.05.2015 14:57:05 +06:00
+q 10
+average 2,7587
+qps 362,48
+min 0,49
+max 23,7
+memory usage (bytes)91378620
+parse (ms)0,01
+create linq stack 0
+run 2,1
+history count 7785
+17.05.2015 14:57:07 +06:00
+q 10
+average 0,1415
+qps 7067,13
+min 0,08
+max 0,52
+memory usage (bytes)91203968
+parse (ms)0
+create linq stack 0
+run 0
+train
+17.05.2015 14:57:14 +06:00
+q 11
+average 0,3869
+qps 2584,64
+min 0,28
+max 3,54
+memory usage (bytes)91478520
+parse (ms)0
+create linq stack 0
+run 0,02
+history count 200
+17.05.2015 14:57:16 +06:00
+q 11
+average 0,0283
+qps 35335,68
+min 0,02
+max 0,14
+memory usage (bytes)90538748
+parse (ms)0
+create linq stack 0
+run 0
+train
+17.05.2015 14:57:24 +06:00
+q 12
+average 2,3363
+qps 428,02
+min 1,91
+max 5,89
+memory usage (bytes)93707272
+parse (ms)0,03
+create linq stack 1,25
+run 0
+history count 8100
+17.05.2015 14:57:26 +06:00
+q 12
+average 0,23
+qps 4347,82
+min 0,17
+max 0,56
+memory usage (bytes)92955712
+parse (ms)0
+create linq stack 0
+run 0
+date time 13.06.2015 14:29:39
+memory usage (bytes)0, 0, 0, 0, 0, 0, 5335280, 0, 0, 0, 0, 0
+parse (ms)0, 0, 0, 0, 0, 0, 21, 0, 0, 0, 0, 0
+total parse 21
+create linq stack 0, 0, 0, 0, 0, 0, 2,58, 0, 0, 0, 0, 0
+total create linq stack 2,58
+run 0, 0, 0, 0, 0, 0, 122, 0, 0, 0, 0, 0
+parse + create linq stack + run 0, 0, 0, 0, 0, 0, 145.58, 0, 0, 0, 0, 0
+total run 122
+total 145,58
+date time 13.06.2015 14:53:00
+memory usage (bytes)0, 0, 0, 0, 0, 0, 5335280, 0, 0, 0, 0, 0
+parse (ms)0, 0, 0, 0, 0, 0, 21, 0, 0, 0, 0, 0
+total parse 21
+create linq stack 0, 0, 0, 0, 0, 0, 2,6, 0, 0, 0, 0, 0
+total create linq stack 2,6
+run 0, 0, 0, 0, 0, 0, 92, 0, 0, 0, 0, 0
+parse + create linq stack + run 0, 0, 0, 0, 0, 0, 115.6, 0, 0, 0, 0, 0
+total run 92
+total 115,6
+date time 13.06.2015 15:02:19
+memory usage (bytes)2761736, 4930000, 4632568, 3838440, 3457520, 3328536, 4539752, 3836216, 3668736, 3514048, 3501400, 4671568
+parse (ms)2,48, 3,16, 28, 3,63, 0,62, 17, 3,15, 2,47, 2,52, 3,65, 0,4, 18
+total parse 85,08
+create linq stack 2,81, 0,24, 0,09, 0,59, 0, 0, 0, 0, 25, 0, 0,01, 2,14
+total create linq stack 30,88
+run 99, 14, 16, 50, 118, 104, 3,03, 2,06, 0,01, 0,37, 2,62, 0,12
+parse + create linq stack + run 104.29, 17.4, 44.09, 54.22, 118.62, 121, 6.18, 4.53, 27.53, 4.02, 3.03, 20.26
+total run 409,21
+total 525,17
+date time 13.06.2015 15:11:43
+memory usage (bytes)4231872, 3028432, 4632568, 4464304, 3273400, 3203408, 4539816, 3834680, 3668800, 3514112, 3502728, 4671632
+parse (ms)2,5, 4,19, 29, 3,2, 1,09, 17, 3,04, 2,24, 1,98, 3,69, 0,27, 20
+total parse 88,2
+create linq stack 2,74, 0,35, 0,11, 0,61, 0, 0, 0, 0, 19, 0, 0, 1,55
+total create linq stack 24,36
+run 99, 17, 15, 25, 111, 105, 3,01, 1,66, 0,01, 0,38, 1,99, 0,08
+parse + create linq stack + run 104.24, 21.54, 44.11, 28.81, 112.09, 122, 6.05, 3.9, 20.99, 4.07, 2.26, 21.63
+total run 379,13
+total 491,69
+date time 13.06.2015 15:43:37
+memory usage (bytes)2898896, 3684664, 4879872, 4711608, 3430904, 3405320, 4787008, 4087192, 3916048, 3761360, 3749976, 4918880
+parse (ms)2,59, 4,12, 33, 3,25, 0,78, 17, 3,31, 3,51, 2,83, 12, 0,83, 21
+total parse 104,22
+create linq stack 3,04, 0,2, 0,09, 0,42, 0, 0, 0, 0, 25, 0, 0, 2
+total create linq stack 30,75
+run 139, 13, 14, 17, 37, 138, 3,44, 1,95, 0,01, 0,56, 2,57, 0,09
+parse + create linq stack + run 144.63, 17.32, 47.09, 20.67, 37.78, 155, 6.75, 5.46, 27.84, 12.56, 3.4, 23.09
+total run 366,62
+total 501,59
+date time 13.06.2015 15:45:08
+memory usage (bytes)2898904, 5067048, 3267304, 3084536, 3385400, 3295072, 4676760, 3973224, 3805800, 3651112, 3639728, 4808632
+parse (ms)2,91, 14, 35, 3,59, 0,81, 20, 3,69, 3, 2,75, 12, 0,64, 25
+total parse 123,39
+create linq stack 3,04, 0,65, 0,12, 0,48, 0, 0, 0, 0, 30, 0, 0, 2,31
+total create linq stack 36,6
+run 113, 19, 20, 21, 45, 124, 3,62, 1,78, 0,01, 0,56, 2,59, 0,14
+parse + create linq stack + run 118.95, 33.65, 55.12, 25.07, 45.81, 144, 7.31, 4.78, 32.76, 12.56, 3.23, 27.45
+total run 350,7
+total 510,69
+date time 13.06.2015 16:15:15
+memory usage (bytes)7807440, 3656920, 4852128, 4683864, 3403024, 3377656, 4759344, 4059448, 3888296, 3733600, 3722216, 4891120
+parse (ms)4,03, 12, 30, 4,11, 0,88, 22, 3,65, 3,05, 2,98, 3,92, 0,85, 20
+total parse 107,47
+create linq stack 523327, 0,32, 0,09, 0,61, 0, 0, 0, 0, 24, 0, 0,01, 1,65
+total create linq stack 523353,68
+run 127, 21, 16, 18, 43, 127, 3,55, 1,9, 0,01, 0,43, 3,08, 0,09
+parse + create linq stack + run 523458.03, 33.32, 46.09, 22.72, 43.88, 149, 7.2, 4.95, 26.99, 4.35, 3.94, 21.74
+total run 361,06
+total 523822,21
+date time 13.06.2015 16:19:12
+memory usage (bytes)2898864, 5067136, 3269800, 3092192, 3387664, 3326072, 4676968, 3971808, 3796536, 3831608, 3658360, 4836696
+parse (ms)2,45, 15, 27, 13, 0,78, 20, 3,15, 2,95, 2,38, 4,09, 0,87, 21
+total parse 112,67
+create linq stack 2,99, 0,4, 1,34, 0,85, 0, 0, 0, 1,73, 21, 0,66, 0, 1,77
+total create linq stack 30,74
+run 134, 16, 20, 22, 37, 122, 3,4, 0, 0,01, 3,21, 2,66, 0,1
+parse + create linq stack + run 139.44, 31.4, 48.34, 35.85, 37.78, 142, 6.55, 4.68, 23.39, 7.96, 3.53, 22.87
+total run 360,38
+total 503,79
+date time 13.06.2015 16:23:42
+memory usage (bytes)3266296, 5118768, 4902592, 3154680, 4601304, 4000656, 3307704, 4050032, 3881504, 4014880, 3759104, 4937440
+parse (ms)2,45, 11, 28, 3,21, 0,73, 20, 4,05, 3,26, 2,42, 11, 0,45, 21
+total parse 107,57
+create linq stack 2,75, 0,23, 1,08, 0,44, 0, 0, 0, 1,95, 24, 1,71, 0, 2,8
+total create linq stack 34,96
+run 132, 18, 18, 21, 49, 119, 13, 0, 0,02, 2,89, 2,15, 0,28
+parse + create linq stack + run 137.2, 29.23, 47.08, 24.65, 49.73, 139, 17.05, 5.21, 26.44, 15.6, 2.6, 24.08
+total run 375,34
+total 517,87
+date time 13.06.2015 16:31:40
+memory usage (bytes)3266296, 5118768, 4902592, 3137392, 4599984, 4000568, 3307616, 4049944, 3881504, 4014880, 3759184, 4937520
+parse (ms)2,95, 15, 27, 3,45, 0,81, 21, 3,51, 2,91, 2,37, 11, 0,46, 22
+total parse 112,46
+create linq stack 3,33, 0,33, 1,13, 0,47, 0, 0, 0, 1,79, 24, 1,74, 0, 2,12
+total create linq stack 34,91
+run 137, 18, 19, 21, 56, 124, 11, 0, 0,01, 3,8, 2,18, 0,15
+parse + create linq stack + run 143.28, 33.33, 47.13, 24.92, 56.81, 145, 14.51, 4.7, 26.38, 16.54, 2.64, 24.27
+total run 392,14
+total 539,51
+date time 13.06.2015 16:34:59
+memory usage (bytes)3266296, 5118768, 4902592, 3121648, 4582104, 4018784, 3307488, 4047936, 3881376, 4014752, 3759120, 4937456
+parse (ms)2,62, 12, 32, 4,28, 0,76, 22, 3,25, 2,91, 2,32, 11, 1,06, 30
+total parse 124,2
+create linq stack 3,37, 0,44, 1,07, 0,37, 0, 0, 0, 1,84, 22, 2,04, 0,01, 1,76
+total create linq stack 32,9
+run 127, 18, 28, 13, 63, 183, 11, 0, 0,01, 12, 3,13, 0,11
+parse + create linq stack + run 132.99, 30.44, 61.07, 17.65, 63.76, 205, 14.25, 4.75, 24.33, 25.04, 4.2, 31.87
+total run 458,25
+total 615,35
+date time 13.06.2015 16:46:01
+memory usage (bytes)8136496, 3708960, 5002280, 4740096, 4552024, 4174712, 3415816, 4148464, 3981224, 4130984, 3858936, 5043744
+parse (ms)2,71, 14, 44, 3,49, 0,92, 20, 3,34, 3,22, 3,04, 17, 1,04, 28
+total parse 140,76
+create linq stack 42308, 2077, 939, 867, 913, 869, 705, 915, 26, 318430, 2853, 2,27
+total create linq stack 370904,27
+run 147, 18, 21, 13, 50, 132, 13, 0, 0,01, 0,02, 2,74, 0,12
+parse + create linq stack + run 42457.71, 2109, 1004, 883.49, 963.92, 1021, 721.34, 918.22, 29.05, 318447.02, 2856.78, 30.39
+total run 396,89
+total 371441,92
+date time 13.06.2015 16:52:58
+memory usage (bytes)8118728, 3708472, 3477224, 4663168, 4194016, 3732608, 3360696, 4104480, 3925376, 4166288, 3847280, 5001040
+parse (ms)2,46, 12, 0,62, 12, 1,1, 50, 3,38, 3,41, 2,37, 11, 0,75, 28
+total parse 127,09
+create linq stack 5811, 0,32, 3,05, 0,47, 0,01, 0, 0, 1,67, 24, 4082, 0, 1,97
+total create linq stack 9924,49
+run 147, 22, 1,67, 14, 77, 139, 15, 0, 0,01, 3,86, 2,84, 0,14
+parse + create linq stack + run 5960.46, 34.32, 5.34, 26.47, 78.11, 189, 18.38, 5.08, 26.38, 4096.86, 3.59, 30.11
+total run 422,52
+total 10474,1
+date time 13.06.2015 17:00:00
+memory usage (bytes)8145520, 3707696, 3509208, 3151664, 4732432, 3710408, 3461568, 4140824, 3924688, 4198368, 3846976, 5000736
+parse (ms)2,62, 13, 0,46, 3,06, 0,83, 51, 3,14, 3,22, 3,1, 12, 0,52, 23
+total parse 115,95
+create linq stack 2,88, 0,27, 1,32, 0,34, 0,01, 0, 0, 644, 24, 669, 0, 2,2
+total create linq stack 1344,02
+run 191011, 17, 1128, 1161, 5529, 793, 2231, 0, 0,01, 3,48, 2,19, 0,13
+parse + create linq stack + run 191016.5, 30.27, 1129.78, 1164.4, 5529.84, 844, 2234.14, 647.22, 27.11, 684.48, 2.71, 25.33
+total run 201875,81
+total 203335,78
+date time 13.06.2015 17:11:37
+memory usage (bytes)3890144, 3182712, 3099608, 4573880, 4287744, 3650176, 3278264, 4022048, 3842944, 4083856, 3765048, 4918808
+parse (ms)3,02, 13, 0,2, 3,98, 1,15, 47, 3,22, 2,96, 2,4, 4,13, 0,5, 21
+total parse 102,56
+create linq stack 2,84, 0,26, 0,18, 1,75, 0,01, 0, 0, 1,74, 23, 1,78, 0, 1,75
+total create linq stack 33,31
+run 141, 16, 0,13, 12, 68, 127, 4,27, 0, 0,01, 12, 2,3, 0,13
+parse + create linq stack + run 146.86, 29.26, 0.51, 17.73, 69.16, 174, 7.49, 4.7, 25.41, 17.91, 2.8, 22.88
+total run 382,84
+total 518,71
+date time 13.06.2015 17:16:39
+memory usage (bytes)3266296, 5118768, 3099608, 4573880, 4433200, 3650176, 3278264, 4022048, 3842944, 4083856, 3765216, 4918976
+parse (ms)3,11, 11, 0,26, 11, 0,95, 42, 4,14, 3,3, 2,51, 12, 0,5, 21
+total parse 111,77
+create linq stack 3,13, 0,23, 0,19, 1,5, 0, 0, 0, 1,96, 26, 2,03, 0, 1,82
+total create linq stack 36,86
+run 139, 18, 0,21, 12, 58, 140, 12, 0, 0,01, 3,56, 2,13, 0,13
+parse + create linq stack + run 145.24, 29.23, 0.66, 24.5, 58.95, 182, 16.14, 5.26, 28.52, 17.59, 2.63, 22.95
+total run 385,04
+total 533,67
+date time 13.06.2015 17:17:49
+memory usage (bytes)3266304, 5118776, 3238856, 3056808, 4478256, 3701160, 3278272, 4027424, 3842952, 4083864, 3765040, 4918800
+parse (ms)2,62, 13, 0,28, 3,31, 0,82, 40, 3,11, 3,2, 2,46, 11, 0,54, 27
+total parse 107,34
+create linq stack 3,21, 0,31, 0, 1,5, 0,15, 0, 0, 2,12, 26, 2,66, 0, 2,22
+total create linq stack 38,17
+run 130, 18, 1,38, 15, 61, 123, 12, 0, 0,01, 4,25, 2,54, 0,18
+parse + create linq stack + run 135.83, 31.31, 1.66, 19.81, 61.97, 163, 15.11, 5.32, 28.47, 17.91, 3.08, 29.4
+total run 367,36
+total 512,87
+date time 13.06.2015 17:22:22
+memory usage (bytes)3266296, 5118768, 4061744, 3156584, 4576632, 4071744, 3307672, 4049992, 3881504, 4014880, 3759184, 4937520
+parse (ms)2,46, 11, 29, 3,12, 0,75, 17, 3,6, 4,18, 2,99, 13, 0,46, 21
+total parse 108,56
+create linq stack 2,72, 0,37, 1,12, 0,49, 0,12, 0, 0, 2,36, 27, 2,04, 0, 1,72
+total create linq stack 37,94
+run 122, 18, 74, 17, 117, 128, 14, 0, 0,01, 2,71, 2,19, 0,1
+parse + create linq stack + run 127.18, 29.37, 104.12, 20.61, 117.87, 145, 17.6, 6.54, 30, 17.75, 2.65, 22.82
+total run 495,01
+total 641,51
+date time 13.06.2015 17:30:35
+memory usage (bytes)4449544, 3329368, 4598968, 3865784, 3651904, 4199464, 3433200, 4174824, 4007072, 4124064, 3877232, 5055568
+parse (ms)2,53, 16, 32, 12, 1,05, 19, 3,94, 3,39, 2,66, 13, 0,46, 23
+total parse 129,03
+create linq stack 2,85, 0,23, 36123, 156, 168, 0, 0, 1,97, 28, 2,02, 0, 2,36
+total create linq stack 36484,43
+run 146, 15, 2,06, 3,17, 0,18, 130, 11, 0, 0,01, 1,95, 2,16, 0,12
+parse + create linq stack + run 151.38, 31.23, 36157.06, 171.17, 169.23, 149, 14.94, 5.36, 30.67, 16.97, 2.62, 25.48
+total run 311,65
+total 36925,11
+date time 13.06.2015 17:33:48
+memory usage (bytes)3266304, 5118776, 4180040, 3754624, 3540544, 4087928, 3322840, 4067496, 3896800, 4013792, 3766864, 4945200
+parse (ms)2,55, 12, 28, 3,08, 0,77, 19, 3,56, 3,52, 2,51, 4, 0,46, 21
+total parse 100,45
+create linq stack 2,86, 0,29, 93, 133, 156, 0, 0, 1,63, 22, 1,46, 0, 1,72
+total create linq stack 411,96
+run 122, 17, 2,24, 2,83, 0,25, 128, 15, 0, 0,01, 1,76, 2,17, 0,1
+parse + create linq stack + run 127.41, 29.29, 123.24, 138.91, 157.02, 147, 18.56, 5.15, 24.52, 7.22, 2.63, 22.82
+total run 291,36
+total 803,77
+date time 13.06.2015 18:01:34
+memory usage (bytes)3266296, 5118768, 4090688, 3730136, 3515552, 4080136, 3322880, 4062712, 3896896, 4013888, 3766776, 4945392
+parse (ms)2,43, 13, 30, 3,25, 0,8, 18, 3,17, 3,17, 2,29, 4,11, 0,46, 20
+total parse 100,68
+create linq stack 2,67, 0,29, 87, 125, 171, 0, 0, 1,7, 22, 1,49, 0, 1,73
+total create linq stack 412,88
+run 137, 17, 2,24, 1,09, 0,04, 122, 13, 0, 0,02, 1,79, 2,42, 0,1
+parse + create linq stack + run 142.1, 30.29, 119.24, 129.34, 171.84, 140, 16.17, 4.87, 24.31, 7.39, 2.88, 21.83
+total run 296,7
+total 810,26
+date time 13.06.2015 18:17:24
+memory usage (bytes)3266296, 5118768, 4159008, 3754712, 3530384, 4088504, 3322856, 4064832, 3896816, 4013808, 3766696, 4945312
+parse (ms)2,57, 12, 27, 3,24, 0,76, 18, 11, 3,2, 2,3, 4,1, 0,46, 21
+total parse 105,63
+create linq stack 2,82, 0,31, 88, 131, 153, 0, 0, 1,68, 25, 1,48, 0, 1,72
+total create linq stack 405,01
+run 134, 16, 1,86, 1,82, 0,05, 126, 16, 0, 0,01, 2,03, 2,23, 0,1
+parse + create linq stack + run 139.39, 28.31, 116.86, 136.06, 153.81, 144, 27, 4.88, 27.31, 7.61, 2.69, 22.82
+total run 300,1
+total 810,74
+date time 13.06.2015 18:41:45
+memory usage (bytes)3288016, 5122688, 4314792, 3758184, 3433592, 4059928, 3308736, 4049944, 3874568, 4008992, 3745592, 4924176
+parse (ms)2,51, 27, 30, 11, 0,75, 23, 14, 2,92, 3,24, 4,04, 0,46, 22
+total parse 140,92
+create linq stack 2,78, 0,3, 84, 120, 148, 0, 0, 1,77, 28, 1,51, 0, 1,72
+total create linq stack 388,08
+run 136, 31, 2,23, 1,7, 0,02, 123, 16, 0, 0,01, 1,81, 2,15, 0,1
+parse + create linq stack + run 141.29, 58.3, 116.23, 132.7, 148.77, 146, 30, 4.69, 31.25, 7.36, 2.61, 23.82
+total run 314,02
+total 843,02
+milions 1
+date time 14.06.2015 6:37:37
+max memory usage 8115896
+average inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf
+minimums 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+maximums 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+total parse 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+total run 1531, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+total 01531
+milions 1
+date time 14.06.2015 6:39:57
+max memory usage 8115896
+average inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf
+minimums 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+maximums 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+total parse 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+total run 1104, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+total 01104
+date time 14.06.2015 10:09:38
+memory usage (bytes)3287920, 5121520, 4224936, 3808520, 3420968, 4060968, 3313152, 4037712, 3874448, 4008864, 3745472, 4924056
+parse (ms)3,22, 14, 29, 3,18, 0,77, 18, 3,41, 2,9, 2,54, 11, 0,47, 24
+total parse 112,49
+create linq stack 2,93, 0,27, 94, 117, 171, 0, 0, 1,54, 23, 1,55, 0, 2,07
+total create linq stack 413,36
+run 151, 13, 2,32, 1,63, 0,03, 138, 11, 0, 0,01, 1,77, 2,18, 0,11
+parse + create linq stack + run 157.15, 27.27, 125.32, 121.81, 171.8, 156, 14.41, 4.44, 25.55, 14.32, 2.65, 26.18
+total run 321,05
+total 846,9
+
+one query 1, 100 times
+milions 1
+date time 14.06.2015 13:21:35
+total ms 1
+ms 0,01
+qps 100000
+next results count: 0
+
+one query 2, 100 times
+milions 1
+date time 14.06.2015 13:21:37
+total ms 884
+ms 8,84
+qps 113
+next results count: 20
+
+one query 3, 100 times
+milions 1
+date time 14.06.2015 13:21:38
+total ms 4
+ms 0,04
+qps 25000
+next results count: 0
+
+one query 4, 100 times
+milions 1
+date time 14.06.2015 13:21:40
+total ms 0
+ms 0
+qps -2147483648
+next results count: 0
+
+one query 5, 100 times
+milions 1
+date time 14.06.2015 13:21:56
+total ms 12
+ms 0,12
+qps 8333
+next results count: 5
+
+one query 6, 100 times
+milions 1
+date time 14.06.2015 13:22:10
+total ms 13125
+ms 131,25
+qps 7
+next results count: 0
+
+one query 7, 100 times
+milions 1
+date time 14.06.2015 13:22:13
+total ms 744
+ms 7,44
+qps 134
+next results count: 2
+
+one query 8, 100 times
+milions 1
+date time 14.06.2015 13:22:14
+total ms 0
+ms 0
+qps -2147483648
+next results count: 0
+
+one query 9, 100 times
+milions 1
+date time 14.06.2015 13:22:15
+total ms 5
+ms 0,05
+qps 20000
+next results count: 1
+
+one query 10, 100 times
+milions 1
+date time 14.06.2015 13:22:17
+total ms 8
+ms 0,08
+qps 12500
+next results count: 6
+
+one query 11, 100 times
+milions 1
+date time 14.06.2015 13:22:18
+total ms 192
+ms 1,92
+qps 520
+next results count: 10
+
+one query 12, 100 times
+milions 1
+date time 14.06.2015 13:22:20
+total ms 42
+ms 0,42
+qps 2380
+next results count: 1
+
+one query 1, 100 times
+milions 1
+date time 14.06.2015 13:25:16
+total ms 1
+ms 0,01
+qps 100000
+next results count: 0
+
+one query 2, 100 times
+milions 1
+date time 14.06.2015 13:25:18
+total ms 763
+ms 7,63
+qps 131
+next results count: 20
+
+one query 3, 100 times
+milions 1
+date time 14.06.2015 13:25:20
+total ms 4
+ms 0,04
+qps 25000
+next results count: 0
+
+one query 4, 100 times
+milions 1
+date time 14.06.2015 13:25:21
+total ms 0
+ms 0
+qps -2147483648
+next results count: 0
+
+one query 5, 100 times
+milions 1
+date time 14.06.2015 13:25:36
+total ms 11
+ms 0,11
+qps 9090
+next results count: 5
+
+one query 6, 100 times
+milions 1
+date time 14.06.2015 13:25:50
+total ms 12331
+ms 123,31
+qps 8
+next results count: 0
+
+one query 7, 100 times
+milions 1
+date time 14.06.2015 13:25:52
+total ms 698
+ms 6,98
+qps 143
+next results count: 2
+
+one query 8, 100 times
+milions 1
+date time 14.06.2015 13:25:53
+total ms 0
+ms 0
+qps -2147483648
+next results count: 0
+
+one query 9, 100 times
+milions 1
+date time 14.06.2015 13:25:54
+total ms 5
+ms 0,05
+qps 20000
+next results count: 1
+
+one query 10, 100 times
+milions 1
+date time 14.06.2015 13:25:56
+total ms 7
+ms 0,07
+qps 14285
+next results count: 6
+
+one query 11, 100 times
+milions 1
+date time 14.06.2015 13:25:57
+total ms 199
+ms 1,99
+qps 502
+next results count: 10
+
+one query 12, 100 times
+milions 1
+date time 14.06.2015 13:25:59
+total ms 39
+ms 0,39
+qps 2564
+next results count: 1
+date time 14.06.2015 13:28:57
+memory usage (bytes)3729704, 5083688, 3837912, 4517160, 4507624, 4078272, 3970128, 4040176, 3874624, 4008232, 3745640, 4898176
+parse (ms)2,52, 3,72, 31, 3,17, 0,76, 19, 3,22, 3,08, 2,62, 4,17, 0,5, 22
+total parse 95,76
+create linq stack 2,75, 0,2, 98, 158, 164, 0, 0, 1,9, 27, 1,96, 0, 1,8
+total create linq stack 455,61
+run 120, 14, 1,77, 1,97, 0,02, 150, 32, 0, 0,02, 1,87, 2,25, 0,1
+parse + create linq stack + run 125.27, 17.92, 130.77, 163.14, 164.78, 169, 35.22, 4.98, 29.64, 8, 2.75, 23.9
+total run 324
+total 875,37
+
+one query 1, 100 times
+milions 1
+date time 14.06.2015 13:45:38
+total ms 2
+ms 0,02
+qps 50000
+next results count: 0
+
+one query 2, 100 times
+milions 1
+date time 14.06.2015 13:45:40
+total ms 667
+ms 6,67
+qps 149
+next results count: 20
+
+one query 3, 100 times
+milions 1
+date time 14.06.2015 13:45:41
+total ms 4
+ms 0,04
+qps 25000
+next results count: 0
+
+one query 4, 100 times
+milions 1
+date time 14.06.2015 13:45:42
+total ms 0
+ms 0
+qps -2147483648
+next results count: 0
+
+one query 5, 100 times
+milions 1
+date time 14.06.2015 13:45:55
+total ms 10
+ms 0,1
+qps 10000
+next results count: 5
+
+one query 6, 100 times
+milions 1
+date time 14.06.2015 13:46:07
+total ms 10358
+ms 103,58
+qps 9
+next results count: 0
+
+one query 7, 100 times
+milions 1
+date time 14.06.2015 13:46:08
+total ms 618
+ms 6,18
+qps 161
+next results count: 2
+
+one query 8, 100 times
+milions 1
+date time 14.06.2015 13:46:10
+total ms 0
+ms 0
+qps -2147483648
+next results count: 0
+
+one query 9, 100 times
+milions 1
+date time 14.06.2015 13:46:11
+total ms 4
+ms 0,04
+qps 25000
+next results count: 1
+
+one query 10, 100 times
+milions 1
+date time 14.06.2015 13:46:12
+total ms 9
+ms 0,09
+qps 11111
+next results count: 6
+
+one query 11, 100 times
+milions 1
+date time 14.06.2015 13:46:13
+total ms 170
+ms 1,7
+qps 588
+next results count: 10
+
+one query 12, 100 times
+milions 1
+date time 14.06.2015 13:46:15
+total ms 33
+ms 0,33
+qps 3030
+next results count: 1
+14.06.2015 14:05:21 +06:00
+q 1
+average 5,294
+qps 188,89
+min 0,51
+max 313,7
+memory usage (bytes)2605048
+parse (ms)2,8
+create linq stack 1,51
+run 0
+14.06.2015 14:05:23 +06:00
+q 2
+average 4,7625
+qps 209,97
+min 2,92
+max 18,05
+memory usage (bytes)8033328
+parse (ms)1,07
+create linq stack 0
+run 2,62
+14.06.2015 14:05:25 +06:00
+q 3
+average 2,3282
+qps 429,51
+min 0,51
+max 61,32
+memory usage (bytes)4094480
+parse (ms)0,25
+create linq stack 1,18
+run 0,01
+14.06.2015 14:05:26 +06:00
+q 4
+average 2,4218
+qps 412,91
+min 1,03
+max 15,42
+memory usage (bytes)5193176
+parse (ms)0,840000000000001
+create linq stack 0,8
+run 0
+14.06.2015 14:05:41 +06:00
+q 5
+average 137,5324
+qps 7,27
+min 15,74
+max 392,85
+memory usage (bytes)4725224
+parse (ms)0,24
+create linq stack 136,56
+run 0,01
+14.06.2015 14:05:55 +06:00
+q 6
+average 131,0297
+qps 7,63
+min 117,41
+max 178,37
+memory usage (bytes)5391760
+parse (ms)0,21
+create linq stack 0
+run 130,54
+14.06.2015 14:05:57 +06:00
+q 7
+average 5,0268
+qps 198,93
+min 1,59
+max 16,05
+memory usage (bytes)7844496
+parse (ms)1,01
+create linq stack 0
+run 3,39
+14.06.2015 14:05:58 +06:00
+q 8
+average 1,3052
+qps 766,16
+min 0,7
+max 4,8
+memory usage (bytes)7720272
+parse (ms)0,06
+create linq stack 0,07
+run 0
+14.06.2015 14:05:59 +06:00
+q 9
+average 1,1831
+qps 845,23
+min 0,7
+max 28,6
+memory usage (bytes)7969272
+parse (ms)0,02
+create linq stack 0,27
+run 0
+14.06.2015 14:06:00 +06:00
+q 10
+average 2,3536
+qps 424,88
+min 0,72
+max 20,35
+memory usage (bytes)8979472
+parse (ms)0,07
+create linq stack 1,23
+run 0,02
+14.06.2015 14:06:01 +06:00
+q 11
+average 0,9731
+qps 1027,64
+min 0,64
+max 5,1
+memory usage (bytes)8724104
+parse (ms)0,02
+create linq stack 0
+run 0,12
+14.06.2015 14:06:03 +06:00
+q 12
+average 3,4884
+qps 286,66
+min 1,83
+max 24,52
+memory usage (bytes)12257816
+parse (ms)1,42
+create linq stack 0,890000000000001
+run 0
+14.06.2015 14:09:09 +06:00
+q 1
+average 2,1432
+qps 466,59
+min 0,43
+max 44,56
+memory usage (bytes)3094768
+parse (ms)0,03
+create linq stack 1,3
+run 0
+14.06.2015 14:09:10 +06:00
+q 2
+average 4,0279
+qps 248,26
+min 2,34
+max 13,67
+memory usage (bytes)5540128
+parse (ms)1,03
+create linq stack 0
+run 2,17
+14.06.2015 14:09:11 +06:00
+q 3
+average 2,0443
+qps 489,16
+min 0,44
+max 59,77
+memory usage (bytes)3133168
+parse (ms)0,21
+create linq stack 1,05
+run 0,02
+14.06.2015 14:09:12 +06:00
+q 4
+average 2,0498
+qps 487,85
+min 0,85
+max 14,88
+memory usage (bytes)4438400
+parse (ms)0,36
+create linq stack 0,65
+run 0
+14.06.2015 14:09:25 +06:00
+q 5
+average 117,8852
+qps 8,48
+min 12,84
+max 338,7
+memory usage (bytes)4453720
+parse (ms)0,01
+create linq stack 117,21
+run 0
+14.06.2015 14:09:36 +06:00
+q 6
+average 103,9068
+qps 9,62
+min 98,19
+max 131,32
+memory usage (bytes)6313424
+parse (ms)0,18
+create linq stack 0
+run 103,51
+14.06.2015 14:09:37 +06:00
+q 7
+average 3,5667
+qps 280,37
+min 1,14
+max 14,88
+memory usage (bytes)8461848
+parse (ms)0,35
+create linq stack 0
+run 2,13
+14.06.2015 14:09:38 +06:00
+q 8
+average 1,0302
+qps 970,68
+min 0,57
+max 4,39
+memory usage (bytes)6493904
+parse (ms)0,02
+create linq stack 0,03
+run 0
+14.06.2015 14:09:39 +06:00
+q 9
+average 0,9848
+qps 1015,43
+min 0,53
+max 24,1
+memory usage (bytes)7001760
+parse (ms)0,02
+create linq stack 0,22
+run 0
+14.06.2015 14:09:40 +06:00
+q 10
+average 2,1224
+qps 471,16
+min 0,59
+max 19,03
+memory usage (bytes)6092776
+parse (ms)0,03
+create linq stack 1,11
+run 0,02
+14.06.2015 14:09:40 +06:00
+q 11
+average 0,6851
+qps 1459,64
+min 0,49
+max 4,22
+memory usage (bytes)6108544
+parse (ms)0,02
+create linq stack 0
+run 0,01
+14.06.2015 14:09:42 +06:00
+q 12
+average 2,6745
+qps 373,9
+min 1,64
+max 19,94
+memory usage (bytes)6868616
+parse (ms)1,17
+create linq stack 0,65
+run 0
+date time 20.06.2015 10:42:52
+memory usage (bytes)3755272, 3104352, 3313152, 3339016, 30388128, 20202328, 3683080, 4031112, 3874128, 4006912, 3745096, 4897152
+parse (ms)3,09, 13, 25, 4,03, 1,25, 20, 3,76, 3,38, 2,38, 4,09, 0,54, 22
+total parse 102,52
+create linq stack 2,93, 0,25, 109, 154, 621299, 0, 0, 1,65, 17, 1,58, 0, 1,73
+total create linq stack 621587,14
+run 141, 17, 2,28, 1,75, 287, 154, 29, 0, 0,01, 1,77, 0,99, 0,13
+parse + create linq stack + run 147.02, 30.25, 136.28, 159.78, 621587.25, 174, 32.76, 5.03, 19.39, 7.44, 1.53, 23.86
+total run 634,93
+total 622324,59
+date time 20.06.2015 11:57:42
+memory usage (bytes)0, 0, 0, 0, 4607272, 0, 0, 0, 0, 0, 0, 0
+parse (ms)0, 0, 0, 0, 2,08, 0, 0, 0, 0, 0, 0, 0
+total parse 2,08
+create linq stack 0, 0, 0, 0, 7373, 0, 0, 0, 0, 0, 0, 0
+total create linq stack 7373
+run 0, 0, 0, 0, 4,13, 0, 0, 0, 0, 0, 0, 0
+parse + create linq stack + run 0, 0, 0, 0, 7379.21, 0, 0, 0, 0, 0, 0, 0
+total run 4,13
+total 7379,21
+date time 20.06.2015 12:00:18
+memory usage (bytes)0, 0, 0, 0, 4070352, 0, 0, 0, 0, 0, 0, 0
+parse (ms)0, 0, 0, 0, 1,86, 0, 0, 0, 0, 0, 0, 0
+total parse 1,86
+create linq stack 0, 0, 0, 0, 306, 0, 0, 0, 0, 0, 0, 0
+total create linq stack 306
+run 0, 0, 0, 0, 3,75, 0, 0, 0, 0, 0, 0, 0
+parse + create linq stack + run 0, 0, 0, 0, 311.61, 0, 0, 0, 0, 0, 0, 0
+total run 3,75
+total 311,61
+date time 20.06.2015 12:10:57
+memory usage (bytes)0, 0, 0, 0, 4072944, 0, 0, 0, 0, 0, 0, 0
+parse (ms)0, 0, 0, 0, 1,92, 0, 0, 0, 0, 0, 0, 0
+total parse 1,92
+create linq stack 0, 0, 0, 0, 270, 0, 0, 0, 0, 0, 0, 0
+total create linq stack 270
+run 0, 0, 0, 0, 3,72, 0, 0, 0, 0, 0, 0, 0
+parse + create linq stack + run 0, 0, 0, 0, 275.64, 0, 0, 0, 0, 0, 0, 0
+total run 3,72
+total 275,64
+
+20.06.2015 12:11:35 +06:00
+q 1
+average 2,6333
+qps 379,75
+min 0,51
+max 51,84
+memory usage (bytes)3747288
+parse (ms)0,03
+create linq stack 1,6
+run 0
+20.06.2015 12:11:37 +06:00
+q 2
+average 5,5366
+qps 180,61
+min 3
+max 44,26
+memory usage (bytes)4514776
+parse (ms)1,31
+create linq stack 0
+run 3,2
+20.06.2015 12:11:38 +06:00
+q 3
+average 2,4695
+qps 404,94
+min 0,59
+max 62,41
+memory usage (bytes)3061240
+parse (ms)0,31
+create linq stack 1,2
+run 0,01
+20.06.2015 12:11:39 +06:00
+q 4
+average 2,2754
+qps 439,48
+min 0,99
+max 14,96
+memory usage (bytes)5254096
+parse (ms)0,830000000000001
+create linq stack 0,68
+run 0
+20.06.2015 12:11:54 +06:00
+q 5
+average 136,1753
+qps 7,34
+min 16,71
+max 385,78
+memory usage (bytes)4188880
+parse (ms)0,07
+create linq stack 135,35
+run 0
+20.06.2015 12:12:07 +06:00
+q 6
+average 127,1532
+qps 7,86
+min 115,25
+max 164,28
+memory usage (bytes)9841864
+parse (ms)0,17
+create linq stack 0
+run 126,71
+20.06.2015 12:12:09 +06:00
+q 7
+average 6,3373
+qps 157,79
+min 1,35
+max 20,57
+memory usage (bytes)3706688
+parse (ms)1,04
+create linq stack 0
+run 4,58
+20.06.2015 12:12:10 +06:00
+q 8
+average 1,4822
+qps 674,67
+min 0,75
+max 14,81
+memory usage (bytes)4474600
+parse (ms)0,13
+create linq stack 0,22
+run 0
+20.06.2015 12:12:11 +06:00
+q 9
+average 1,16
+qps 862,06
+min 0,69
+max 24,04
+memory usage (bytes)4829544
+parse (ms)0,02
+create linq stack 0,25
+run 0
+20.06.2015 12:12:13 +06:00
+q 10
+average 2,3934
+qps 417,81
+min 0,74
+max 29,63
+memory usage (bytes)5163384
+parse (ms)0,13
+create linq stack 1,2
+run 0,02
+20.06.2015 12:12:14 +06:00
+q 11
+average 1,1021
+qps 907,35
+min 0,66
+max 5,29
+memory usage (bytes)3628160
+parse (ms)0,02
+create linq stack 0
+run 0,27
+20.06.2015 12:12:16 +06:00
+q 12
+average 3,4398
+qps 290,71
+min 1,96
+max 26,47
+memory usage (bytes)4781552
+parse (ms)1,34
+create linq stack 0,890000000000001
+run 0
+20.06.2015 12:15:19 +06:00
+
+q 1
+average 2,4963
+qps 400,59
+min 0,43
+max 60,04
+memory usage (bytes)3851864
+parse (ms)0,04
+create linq stack 1,55
+run 0
+20.06.2015 12:15:20 +06:00
+q 2
+average 4,1727
+qps 239,65
+min 2,43
+max 14,24
+memory usage (bytes)5676784
+parse (ms)1,04
+create linq stack 0
+run 2,28
+20.06.2015 12:15:21 +06:00
+q 3
+average 1,9995
+qps 500,12
+min 0,41
+max 57,53
+memory usage (bytes)3529392
+parse (ms)0,27
+create linq stack 0,98
+run 0,02
+20.06.2015 12:15:22 +06:00
+q 4
+average 1,852
+qps 539,95
+min 0,8
+max 12,81
+memory usage (bytes)4972560
+parse (ms)0,46
+create linq stack 0,45
+run 0
+20.06.2015 12:15:34 +06:00
+q 5
+average 116,2127
+qps 8,6
+min 12,7
+max 336,64
+memory usage (bytes)3727720
+parse (ms)0,01
+create linq stack 115,55
+run 0,01
+20.06.2015 12:15:46 +06:00
+q 6
+average 104,4326
+qps 9,57
+min 96,22
+max 139,37
+memory usage (bytes)6633464
+parse (ms)0,18
+create linq stack 0
+run 104,04
+20.06.2015 12:15:47 +06:00
+q 7
+average 3,4992
+qps 285,77
+min 1,09
+max 15,28
+memory usage (bytes)5719576
+parse (ms)0,22
+create linq stack 0
+run 2,09
+20.06.2015 12:15:48 +06:00
+q 8
+average 1,0462
+qps 955,84
+min 0,55
+max 5,26
+memory usage (bytes)6348672
+parse (ms)0,04
+create linq stack 0,02
+run 0
+20.06.2015 12:15:49 +06:00
+q 9
+average 1,1703
+qps 854,48
+min 0,54
+max 28,72
+memory usage (bytes)5201848
+parse (ms)0,02
+create linq stack 0,34
+run 0
+20.06.2015 12:15:50 +06:00
+q 10
+average 1,966
+qps 508,64
+min 0,56
+max 28,83
+memory usage (bytes)6390200
+parse (ms)0,12
+create linq stack 0,870000000000001
+run 0,03
+20.06.2015 12:15:50 +06:00
+q 11
+average 0,6937
+qps 1441,54
+min 0,48
+max 5,31
+memory usage (bytes)6338152
+parse (ms)0,02
+create linq stack 0
+run 0,03
+20.06.2015 12:15:52 +06:00
+q 12
+average 2,729
+qps 366,43
+min 1,67
+max 19,05
+memory usage (bytes)6226968
+parse (ms)1,17
+create linq stack 0,7
+run 0
+date time 22.06.2015 17:43:58
+memory usage (bytes)7774488, 3298840, 4343768, 3564136, 3998280, 4099560, 3610400, 3956456, 3840416, 3972904, 3711056, 4723848
+parse (ms)2,62, 2,12, 30, 2,51, 0,38, 18, 2,6, 2,42, 2,66, 3,87, 0,35, 18
+total parse 85,53
+create linq stack 3,8, 1,17, 90, 123, 172, 0,17, 0,15, 1,93, 22, 2,4, 0, 2,63
+total create linq stack 419,25
+run 1121, 13, 2,03, 2,36, 0,03, 130, 31, 0, 0,01, 1,94, 3,31, 0,12
+parse + create linq stack + run 1127.42, 16.29, 122.03, 127.87, 172.41, 148.17, 33.75, 4.35, 24.67, 8.21, 3.66, 20.75
+total run 1304,8
+total 1809,58
+date time 22.06.2015 17:46:27
+memory usage (bytes)3215472, 5076320, 4360928, 3591928, 4042640, 4127480, 3638872, 3984352, 3868392, 4000872, 3738952, 4751744
+parse (ms)2,39, 2,22, 29, 2,98, 0,3, 19, 2,4, 2,54, 2,5, 3,66, 0,41, 20
+total parse 87,4
+create linq stack 4,14, 1,67, 87, 130, 179, 0,16, 0,11, 2,08, 24, 2,04, 0, 2,69
+total create linq stack 432,89
+run 165, 14, 1,91, 2,51, 0,02, 144, 30, 0, 0,01, 2,04, 3,35, 0,1
+parse + create linq stack + run 171.53, 17.89, 117.91, 135.49, 179.32, 163.16, 32.51, 4.62, 26.51, 7.74, 3.76, 22.79
+total run 362,94
+total 883,23
+
+
+
+14.07.2015 12:41:56 +06:00
+q 1
+average 0,7405
+qps 1350,43
+min 0,1
+max 46,02
+memory usage (bytes)115400456
+parse (ms)0,03
+create linq stack 0,48
+run 0
+14.07.2015 12:41:57 +06:00
+q 2
+average 0,956
+qps 1046,02
+min 0,55
+max 3,55
+memory usage (bytes)115909744
+parse (ms)0,01
+create linq stack 0
+run 0,04
+14.07.2015 12:41:58 +06:00
+q 3
+average 2,2964
+qps 435,46
+min 0,11
+max 185,49
+memory usage (bytes)116389392
+parse (ms)0,19
+create linq stack 1,83
+run 0,04
+14.07.2015 12:41:58 +06:00
+q 4
+average 0,3854
+qps 2594,7
+min 0,2
+max 2,04
+memory usage (bytes)117267984
+parse (ms)0,01
+create linq stack 0
+run 0
+14.07.2015 12:42:02 +06:00
+q 5
+average 30,0631
+qps 33,26
+min 1,78
+max 84,22
+memory usage (bytes)119295696
+parse (ms)0
+create linq stack 29,78
+run 0,02
+14.07.2015 12:42:05 +06:00
+q 6
+average 33,365
+qps 29,97
+min 31,07
+max 62,02
+memory usage (bytes)117618240
+parse (ms)0,18
+create linq stack 0
+run 33,1
+14.07.2015 12:42:06 +06:00
+q 7
+average 0,7206
+qps 1387,73
+min 0,27
+max 3,2
+memory usage (bytes)119186248
+parse (ms)0,02
+create linq stack 0
+run 0,02
+14.07.2015 12:42:06 +06:00
+q 8
+average 0,3015
+qps 3316,74
+min 0,15
+max 4,68
+memory usage (bytes)119162168
+parse (ms)0,01
+create linq stack 0,02
+run 0
+14.07.2015 12:42:07 +06:00
+q 9
+average 0,4036
+qps 2477,7
+min 0,09
+max 25,73
+memory usage (bytes)119161776
+parse (ms)0,01
+create linq stack 0,24
+run 0
+14.07.2015 12:42:07 +06:00
+q 10
+average 0,5163
+qps 1936,85
+min 0,17
+max 9,43
+memory usage (bytes)119858888
+parse (ms)0,03
+create linq stack 0,02
+run 0,03
+14.07.2015 12:42:08 +06:00
+q 11
+average 0,2188
+qps 4570,38
+min 0,11
+max 5,71
+memory usage (bytes)119569856
+parse (ms)0,03
+create linq stack 0
+run 0,02
+14.07.2015 12:42:08 +06:00
+q 12
+average 0,4312
+qps 2319,1
+min 0,24
+max 14,92
+memory usage (bytes)119342944
+parse (ms)0,14
+create linq stack 0
+run 0
+
+
+14.07.2015 13:50:48 +06:00
+q 1
+average 0,9813
+qps 1019,05
+min 0,12
+max 52,32
+memory usage (bytes)115370232
+parse (ms)0,03
+create linq stack 0,63
+run 0
+14.07.2015 13:50:48 +06:00
+q 2
+average 1,0524
+qps 950,2
+min 0,54
+max 3,38
+memory usage (bytes)115483560
+parse (ms)0,01
+create linq stack 0
+run 0,06
+14.07.2015 13:50:49 +06:00
+q 3
+average 0,7798
+qps 1282,38
+min 0,12
+max 32,59
+memory usage (bytes)116352296
+parse (ms)0,23
+create linq stack 0,32
+run 0,02
+14.07.2015 13:50:49 +06:00
+q 4
+average 0,3852
+qps 2596,05
+min 0,21
+max 2,2
+memory usage (bytes)117688128
+parse (ms)0,01
+create linq stack 0
+run 0
+14.07.2015 13:50:52 +06:00
+q 5
+average 26,6327
+qps 37,54
+min 1,36
+max 72,22
+memory usage (bytes)116834384
+parse (ms)0
+create linq stack 26,39
+run 0,01
+14.07.2015 13:50:56 +06:00
+q 6
+average 28,3831
+qps 35,23
+min 27,06
+max 65,03
+memory usage (bytes)116608680
+parse (ms)0,22
+create linq stack 0
+run 28,09
+14.07.2015 13:50:56 +06:00
+q 7
+average 0,7119
+qps 1404,69
+min 0,3
+max 2,17
+memory usage (bytes)117324776
+parse (ms)0,01
+create linq stack 0
+run 0,03
+14.07.2015 13:50:57 +06:00
+q 8
+average 0,2835
+qps 3527,33
+min 0,15
+max 3,54
+memory usage (bytes)118279824
+parse (ms)0,01
+create linq stack 0,01
+run 0
+14.07.2015 13:50:57 +06:00
+q 9
+average 0,3421
+qps 2923,12
+min 0,09
+max 19,86
+memory usage (bytes)118287048
+parse (ms)0,01
+create linq stack 0,18
+run 0
+14.07.2015 13:50:57 +06:00
+q 10
+average 0,4712
+qps 2122,24
+min 0,15
+max 7,91
+memory usage (bytes)116761504
+parse (ms)0,03
+create linq stack 0,02
+run 0,02
+14.07.2015 13:50:58 +06:00
+q 11
+average 0,1948
+qps 5133,47
+min 0,11
+max 3,88
+memory usage (bytes)116374840
+parse (ms)0,02
+create linq stack 0
+run 0,01
+14.07.2015 13:50:58 +06:00
+q 12
+average 0,4596
+qps 2175,8
+min 0,24
+max 15,96
+memory usage (bytes)117477208
+parse (ms)0,15
+create linq stack 0
+run 0
+date time 15.07.2015 14:13:40
+memory usage (bytes)121410848, 115886784, 116271800, 116022960, 116959840, 116137160, 117386032, 116752208, 116634296, 116701704, 116488808, 117215880
+parse (ms)1,58, 1,29, 21, 1,6, 0,2, 17, 19, 2,33, 2,15, 3,43, 0,17, 14
+total parse 83,75
+create linq stack 3,16, 0,32, 22, 40, 45, 0,02, 0,03, 1,86, 20, 0,78, 0, 0,91
+total create linq stack 134,08
+run 70, 3,05, 2,09, 2,78, 0,02, 34, 13, 0, 0, 2,21, 1,93, 0,02
+parse + create linq stack + run 74.74, 4.66, 45.09, 44.38, 45.22, 51.02, 32.03, 4.19, 22.15, 6.42, 2.1, 14.93
+total run 129,1
+total 346,93
+15.07.2015 14:30:43 +06:00
+q 1
+average 0,6853
+qps 1459,21
+min 0,1
+max 40,89
+memory usage (bytes)115495504
+parse (ms)0,02
+create linq stack 0,43
+run 0
+15.07.2015 14:30:44 +06:00
+q 2
+average 0,9419
+qps 1061,68
+min 0,5
+max 3,67
+memory usage (bytes)117678104
+parse (ms)0,01
+create linq stack 0
+run 0,07
+15.07.2015 14:30:44 +06:00
+q 3
+average 0,7444
+qps 1343,36
+min 0,12
+max 32,08
+memory usage (bytes)116266880
+parse (ms)0,2
+create linq stack 0,33
+run 0,01
+15.07.2015 14:30:45 +06:00
+q 4
+average 0,4223
+qps 2367,98
+min 0,2
+max 2,11
+memory usage (bytes)116226736
+parse (ms)0,01
+create linq stack 0
+run 0
+15.07.2015 14:30:48 +06:00
+q 5
+average 26,8661
+qps 37,22
+min 1,3
+max 72,38
+memory usage (bytes)120439024
+parse (ms)0
+create linq stack 26,62
+run 0,01
+15.07.2015 14:30:51 +06:00
+q 6
+average 29,4448
+qps 33,96
+min 27,06
+max 51,02
+memory usage (bytes)116281240
+parse (ms)0,17
+create linq stack 0
+run 29,2
+15.07.2015 14:30:52 +06:00
+q 7
+average 0,6948
+qps 1439,26
+min 0,27
+max 1,96
+memory usage (bytes)117528904
+parse (ms)0,01
+create linq stack 0
+run 0,02
+15.07.2015 14:30:52 +06:00
+q 8
+average 0,2753
+qps 3632,4
+min 0,15
+max 3,33
+memory usage (bytes)117039832
+parse (ms)0,01
+create linq stack 0,01
+run 0
+15.07.2015 14:30:53 +06:00
+q 9
+average 0,3604
+qps 2774,69
+min 0,09
+max 20,78
+memory usage (bytes)117065168
+parse (ms)0,01
+create linq stack 0,19
+run 0
+15.07.2015 14:30:53 +06:00
+q 10
+average 0,495
+qps 2020,2
+min 0,16
+max 7,98
+memory usage (bytes)116895528
+parse (ms)0,03
+create linq stack 0,02
+run 0,02
+15.07.2015 14:30:53 +06:00
+q 11
+average 0,1813
+qps 5515,71
+min 0,11
+max 3,9
+memory usage (bytes)116561792
+parse (ms)0,01
+create linq stack 0
+run 0,01
+15.07.2015 14:30:54 +06:00
+q 12
+average 0,4416
+qps 2264,49
+min 0,24
+max 14,94
+memory usage (bytes)117372328
+parse (ms)0,14
+create linq stack 0
+run 0
+15.07.2015 17:20:49 +06:00
+q 1
+average 0,6865
+qps 1456,66
+min 0,1
+max 40,94
+memory usage (bytes)115492224
+parse (ms)0,02
+create linq stack 0,43
+run 0
+15.07.2015 17:20:50 +06:00
+q 2
+average 0,5541
+qps 1804,72
+min 0,36
+max 5,5
+memory usage (bytes)117072488
+parse (ms)0,01
+create linq stack 0
+run 0,04
+15.07.2015 17:20:50 +06:00
+q 3
+average 0,8348
+qps 1197,89
+min 0,11
+max 41,66
+memory usage (bytes)117242168
+parse (ms)0,2
+create linq stack 0,41
+run 0,02
+15.07.2015 17:20:51 +06:00
+q 4
+average 0,3941
+qps 2537,42
+min 0,2
+max 2,08
+memory usage (bytes)117444128
+parse (ms)0,01
+create linq stack 0
+run 0
+15.07.2015 17:20:52 +06:00
+q 5
+average 5,0276
+qps 198,9
+min 0,67
+max 29,17
+memory usage (bytes)119066480
+parse (ms)0
+create linq stack 4,41999999999999
+run 0,01
+15.07.2015 17:20:53 +06:00
+q 6
+average 5,0812
+qps 196,8
+min 3,7
+max 31,02
+memory usage (bytes)120159848
+parse (ms)0,17
+create linq stack 0
+run 4,15
+15.07.2015 17:20:54 +06:00
+q 7
+average 0,7552
+qps 1324,15
+min 0,27
+max 2,13
+memory usage (bytes)121716824
+parse (ms)0,01
+create linq stack 0
+run 0,05
+15.07.2015 17:20:54 +06:00
+q 8
+average 0,3267
+qps 3060,91
+min 0,16
+max 3,25
+memory usage (bytes)127353672
+parse (ms)0,01
+create linq stack 0,01
+run 0
+15.07.2015 17:20:55 +06:00
+q 9
+average 0,3448
+qps 2900,23
+min 0,09
+max 20,69
+memory usage (bytes)124369760
+parse (ms)0,01
+create linq stack 0,19
+run 0
+15.07.2015 17:20:55 +06:00
+q 10
+average 0,5196
+qps 1924,55
+min 0,16
+max 8,17
+memory usage (bytes)124308424
+parse (ms)0,03
+create linq stack 0,02
+run 0,02
+15.07.2015 17:20:55 +06:00
+q 11
+average 0,2003
+qps 4992,51
+min 0,12
+max 4,31
+memory usage (bytes)124065296
+parse (ms)0,02
+create linq stack 0
+run 0,02
+15.07.2015 17:20:56 +06:00
+q 12
+average 0,402999999999999
+qps 2481,38
+min 0,21
+max 14,89
+memory usage (bytes)124634408
+parse (ms)0,14
+create linq stack 0
+run 0
+date time 15.07.2015 17:24:45
+memory usage (bytes)230035504, 230469088, 230019008, 230285472, 230026800, 230357048, 231457928, 230864368, 230749744, 230808112, 230612544, 231299504
+parse (ms)1,65, 1,17, 20, 1,75, 0,17, 16, 12, 1,74, 1,91, 11, 0,17, 14
+total parse 81,56
+create linq stack 3,03, 0,27, 22, 19, 25, 0,02, 0,02, 1,61, 20, 1,03, 0, 0,92
+total create linq stack 92,9
+run 71, 1,04, 1,97, 2,19, 0,02, 43, 3,81, 0, 0, 2,32, 1,93, 0
+parse + create linq stack + run 75.68, 2.48, 43.97, 22.94, 25.19, 59.02, 15.83, 3.35, 21.91, 14.35, 2.1, 14.92
+total run 127,28
+total 301,74
+15.07.2015 19:30:40 +06:00
+q 6
+average 6,1684
+qps 162,11
+min 3,61
+max 134,02
+memory usage (bytes)117564688
+parse (ms)0,52
+create linq stack 0,03
+run 4,88999999999999
+15.07.2015 20:30:33 +06:00
+q 1
+average 0,8033
+qps 1244,86
+min 0,16
+max 41,07
+memory usage (bytes)116752960
+parse (ms)0,02
+create linq stack 0,44
+run 0
+15.07.2015 20:31:09 +06:00
+q 2
+average 1,1008
+qps 908,43
+min 0,53
+max 39,65
+memory usage (bytes)117313928
+parse (ms)0,03
+create linq stack 0,04
+run 0,34
+15.07.2015 20:31:20 +06:00
+q 3
+average 1,5499
+qps 645,2
+min 0,17
+max 67
+memory usage (bytes)116480504
+parse (ms)0,29
+create linq stack 0,95
+run 0,01
+15.07.2015 20:31:33 +06:00
+q 4
+average 0,9698
+qps 1031,14
+min 0,3
+max 45,28
+memory usage (bytes)115864424
+parse (ms)0,04
+create linq stack 0,43
+run 0
+15.07.2015 20:31:46 +06:00
+q 5
+average 7,112
+qps 140,6
+min 0,79
+max 114,99
+memory usage (bytes)117692416
+parse (ms)0
+create linq stack 6,38999999999999
+run 0,11
+15.07.2015 20:31:59 +06:00
+q 7
+average 1,6549
+qps 604,26
+min 0,43
+max 65,2
+memory usage (bytes)119655776
+parse (ms)0,23
+create linq stack 0,03
+run 0,68
+15.07.2015 21:06:33 +06:00
+q 1
+average 0,8634
+qps 1158,21
+min 0,16
+max 43,06
+memory usage (bytes)116770136
+parse (ms)0,02
+create linq stack 0,47
+run 0
+15.07.2015 21:06:34 +06:00
+q 2
+average 0,7385
+qps 1354,09
+min 0,5
+max 6,36
+memory usage (bytes)116663432
+parse (ms)0,04
+create linq stack 0
+run 0,03
+15.07.2015 21:06:35 +06:00
+q 3
+average 0,9099
+qps 1099,02
+min 0,18
+max 36,81
+memory usage (bytes)117413456
+parse (ms)0,21
+create linq stack 0,38
+run 0,01
+15.07.2015 21:06:36 +06:00
+q 4
+average 0,5263
+qps 1900,05
+min 0,3
+max 2,69
+memory usage (bytes)117366352
+parse (ms)0,02
+create linq stack 0,02
+run 0
+15.07.2015 21:06:37 +06:00
+q 5
+average 5,845
+qps 171,08
+min 0,76
+max 36,4
+memory usage (bytes)120521880
+parse (ms)0
+create linq stack 5,20999999999999
+run 0,01
+15.07.2015 21:06:39 +06:00
+q 6
+average 11,5096
+qps 86,88
+min 11,09
+max 32,03
+memory usage (bytes)120073096
+parse (ms)0,17
+create linq stack 0
+run 11,24
+15.07.2015 21:06:40 +06:00
+q 7
+average 1,0311
+qps 969,83
+min 0,46
+max 2,84
+memory usage (bytes)122128736
+parse (ms)0,01
+create linq stack 0
+run 0,27
+15.07.2015 21:06:40 +06:00
+q 8
+average 0,4123
+qps 2425,41
+min 0,22
+max 4,38
+memory usage (bytes)123788424
+parse (ms)0,02
+create linq stack 0,01
+run 0
+15.07.2015 21:06:41 +06:00
+q 9
+average 0,4267
+qps 2343,56
+min 0,14
+max 21,06
+memory usage (bytes)124875320
+parse (ms)0,02
+create linq stack 0,19
+run 0
+15.07.2015 21:06:42 +06:00
+q 10
+average 0,6786
+qps 1473,62
+min 0,23
+max 8,02
+memory usage (bytes)124335016
+parse (ms)0,03
+create linq stack 0,06
+run 0,01
+15.07.2015 21:06:42 +06:00
+q 11
+average 0,2512
+qps 3980,89
+min 0,17
+max 3,96
+memory usage (bytes)124023456
+parse (ms)0,01
+create linq stack 0
+run 0,01
+15.07.2015 21:06:43 +06:00
+q 12
+average 0,571
+qps 1751,31
+min 0,32
+max 18,95
+memory usage (bytes)126247816
+parse (ms)0,18
+create linq stack 0
+run 0
+15.07.2015 21:08:52 +06:00
+q 1
+average 0,8302
+qps 1204,52
+min 0,16
+max 41,21
+memory usage (bytes)115250872
+parse (ms)0,02
+create linq stack 0,44
+run 0
+15.07.2015 21:08:53 +06:00
+q 2
+average 0,7329
+qps 1364,44
+min 0,49
+max 6,29
+memory usage (bytes)117149296
+parse (ms)0,02
+create linq stack 0,01
+run 0,04
+15.07.2015 21:08:53 +06:00
+q 3
+average 1,0155
+qps 984,73
+min 0,18
+max 42,34
+memory usage (bytes)118294584
+parse (ms)0,23
+create linq stack 0,43
+run 0,02
+15.07.2015 21:08:54 +06:00
+q 4
+average 0,5214
+qps 1917,91
+min 0,31
+max 2,86
+memory usage (bytes)118650680
+parse (ms)0,02
+create linq stack 0,02
+run 0
+15.07.2015 21:08:56 +06:00
+q 5
+average 5,7894
+qps 172,72
+min 0,75
+max 36,24
+memory usage (bytes)119479336
+parse (ms)0
+create linq stack 5,16999999999999
+run 0,01
+15.07.2015 21:08:57 +06:00
+q 6
+average 11,3292
+qps 88,26
+min 11,09
+max 31,03
+memory usage (bytes)120288600
+parse (ms)0,16
+create linq stack 0
+run 11,07
+15.07.2015 21:08:58 +06:00
+q 7
+average 1,0404
+qps 961,16
+min 0,38
+max 2,77
+memory usage (bytes)122190656
+parse (ms)0,01
+create linq stack 0
+run 0,31
+15.07.2015 21:08:59 +06:00
+q 8
+average 0,4688
+qps 2133,1
+min 0,23
+max 3,75
+memory usage (bytes)127462856
+parse (ms)0,02
+create linq stack 0,01
+run 0
+15.07.2015 21:09:00 +06:00
+q 9
+average 0,4554
+qps 2195,87
+min 0,14
+max 20,99
+memory usage (bytes)124344288
+parse (ms)0,01
+create linq stack 0,19
+run 0
+15.07.2015 21:09:00 +06:00
+q 10
+average 0,689
+qps 1451,37
+min 0,22
+max 8,28
+memory usage (bytes)124280792
+parse (ms)0,03
+create linq stack 0,07
+run 0,02
+15.07.2015 21:09:01 +06:00
+q 11
+average 0,2465
+qps 4056,79
+min 0,17
+max 4,26
+memory usage (bytes)123945024
+parse (ms)0,02
+create linq stack 0
+run 0,02
+15.07.2015 21:09:02 +06:00
+q 12
+average 0,578400000000001
+qps 1728,9
+min 0,33
+max 18,99
+memory usage (bytes)125028704
+parse (ms)0,18
+create linq stack 0
+run 0
+15.07.2015 21:09:25 +06:00
+q 1
+average 0,8535
+qps 1171,64
+min 0,15
+max 41,03
+memory usage (bytes)116770376
+parse (ms)0,02
+create linq stack 0,44
+run 0
+15.07.2015 21:09:26 +06:00
+q 2
+average 0,7554
+qps 1323,8
+min 0,53
+max 6,51
+memory usage (bytes)117078224
+parse (ms)0,02
+create linq stack 0,02
+run 0,04
+15.07.2015 21:09:27 +06:00
+q 3
+average 0,9175
+qps 1089,91
+min 0,18
+max 35,82
+memory usage (bytes)117385104
+parse (ms)0,23
+create linq stack 0,37
+run 0,01
+15.07.2015 21:09:27 +06:00
+q 4
+average 0,5503
+qps 1817,19
+min 0,31
+max 3,51
+memory usage (bytes)117847832
+parse (ms)0,02
+create linq stack 0,03
+run 0
+15.07.2015 21:09:29 +06:00
+q 5
+average 6,0991
+qps 163,95
+min 0,75
+max 36,31
+memory usage (bytes)119107696
+parse (ms)0
+create linq stack 5,49999999999999
+run 0,01
+15.07.2015 21:09:31 +06:00
+q 6
+average 12,4895
+qps 80,06
+min 11,09
+max 32,03
+memory usage (bytes)120088888
+parse (ms)0,16
+create linq stack 0
+run 12,21
+15.07.2015 21:09:32 +06:00
+q 7
+average 1,067
+qps 937,2
+min 0,43
+max 3,23
+memory usage (bytes)121892120
+parse (ms)0,02
+create linq stack 0
+run 0,28
+15.07.2015 21:09:32 +06:00
+q 8
+average 0,403
+qps 2481,38
+min 0,23
+max 4,08
+memory usage (bytes)124127400
+parse (ms)0,02
+create linq stack 0,01
+run 0
+15.07.2015 21:09:33 +06:00
+q 9
+average 0,421
+qps 2375,29
+min 0,14
+max 20,95
+memory usage (bytes)124787488
+parse (ms)0,01
+create linq stack 0,19
+run 0
+15.07.2015 21:09:34 +06:00
+q 10
+average 0,6567
+qps 1522,76
+min 0,23
+max 7,98
+memory usage (bytes)125709448
+parse (ms)0,03
+create linq stack 0,03
+run 0,01
+15.07.2015 21:09:34 +06:00
+q 11
+average 0,2526
+qps 3958,82
+min 0,17
+max 3,99
+memory usage (bytes)124831992
+parse (ms)0,01
+create linq stack 0
+run 0,02
+15.07.2015 21:09:35 +06:00
+q 12
+average 0,6424
+qps 1556,66
+min 0,33
+max 23,26
+memory usage (bytes)125951776
+parse (ms)0,22
+create linq stack 0,01
+run 0
+15.07.2015 21:13:06 +06:00
+q 1
+average 0,8031
+qps 1245,17
+min 0,16
+max 41,2
+memory usage (bytes)115249968
+parse (ms)0,02
+create linq stack 0,44
+run 0
+15.07.2015 21:13:07 +06:00
+q 2
+average 1,2941
+qps 772,73
+min 0,82
+max 4,66
+memory usage (bytes)118980680
+parse (ms)0,02
+create linq stack 0
+run 0,28
+15.07.2015 21:13:07 +06:00
+q 3
+average 0,9215
+qps 1085,18
+min 0,18
+max 36,82
+memory usage (bytes)116267576
+parse (ms)0,22
+create linq stack 0,39
+run 0,01
+15.07.2015 21:13:08 +06:00
+q 4
+average 0,5484
+qps 1823,48
+min 0,31
+max 2,61
+memory usage (bytes)116405136
+parse (ms)0,01
+create linq stack 0,03
+run 0
+15.07.2015 21:13:13 +06:00
+q 5
+average 37,6232
+qps 26,57
+min 2,11
+max 97,31
+memory usage (bytes)120436112
+parse (ms)0
+create linq stack 37,31
+run 0,01
+15.07.2015 21:13:17 +06:00
+q 6
+average 39,8378
+qps 25,1
+min 38,09
+max 59,03
+memory usage (bytes)116906672
+parse (ms)0,16
+create linq stack 0
+run 39,58
+15.07.2015 21:13:18 +06:00
+q 7
+average 0,9769
+qps 1023,64
+min 0,46
+max 2,83
+memory usage (bytes)118077520
+parse (ms)0,01
+create linq stack 0
+run 0,2
+15.07.2015 21:13:19 +06:00
+q 8
+average 0,3921
+qps 2550,36
+min 0,22
+max 3,63
+memory usage (bytes)118204280
+parse (ms)0,02
+create linq stack 0,01
+run 0
+15.07.2015 21:13:19 +06:00
+q 9
+average 0,7302
+qps 1369,48
+min 0,14
+max 21,94
+memory usage (bytes)118185368
+parse (ms)0,01
+create linq stack 0,22
+run 0
+15.07.2015 21:13:20 +06:00
+q 10
+average 0,6476
+qps 1544,16
+min 0,23
+max 8,27
+memory usage (bytes)118133528
+parse (ms)0,03
+create linq stack 0,02
+run 0,02
+15.07.2015 21:13:21 +06:00
+q 11
+average 0,3486
+qps 2868,61
+min 0,17
+max 4
+memory usage (bytes)119327432
+parse (ms)0,02
+create linq stack 0
+run 0,06
+15.07.2015 21:13:22 +06:00
+q 12
+average 0,6423
+qps 1556,9
+min 0,38
+max 19,05
+memory usage (bytes)119882616
+parse (ms)0,18
+create linq stack 0,01
+run 0
+15.07.2015 21:16:43 +06:00
+q 1
+average 0,691
+qps 1447,17
+min 0,11
+max 40,97
+memory usage (bytes)115495504
+parse (ms)0,02
+create linq stack 0,42
+run 0
+15.07.2015 21:16:44 +06:00
+q 2
+average 1,0145
+qps 985,7
+min 0,59
+max 3,16
+memory usage (bytes)117678104
+parse (ms)0,01
+create linq stack 0
+run 0,06
+15.07.2015 21:16:44 +06:00
+q 3
+average 0,759
+qps 1317,52
+min 0,12
+max 29,93
+memory usage (bytes)116266880
+parse (ms)0,23
+create linq stack 0,3
+run 0,01
+15.07.2015 21:16:45 +06:00
+q 4
+average 0,4004
+qps 2497,5
+min 0,21
+max 2,05
+memory usage (bytes)116226736
+parse (ms)0,01
+create linq stack 0
+run 0
+15.07.2015 21:16:48 +06:00
+q 5
+average 27,1844
+qps 36,78
+min 1,55
+max 73,37
+memory usage (bytes)120439024
+parse (ms)0
+create linq stack 26,93
+run 0,01
+15.07.2015 21:16:51 +06:00
+q 6
+average 29,2292
+qps 34,21
+min 26,06
+max 51,07
+memory usage (bytes)116281240
+parse (ms)0,16
+create linq stack 0
+run 29
+15.07.2015 21:16:52 +06:00
+q 7
+average 0,7208
+qps 1387,34
+min 0,27
+max 2
+memory usage (bytes)117528904
+parse (ms)0,01
+create linq stack 0
+run 0,02
+15.07.2015 21:16:52 +06:00
+q 8
+average 0,2801
+qps 3570,15
+min 0,15
+max 3,5
+memory usage (bytes)117039832
+parse (ms)0,01
+create linq stack 0,01
+run 0
+15.07.2015 21:16:53 +06:00
+q 9
+average 0,3456
+qps 2893,51
+min 0,09
+max 19,88
+memory usage (bytes)117065168
+parse (ms)0,01
+create linq stack 0,18
+run 0
+15.07.2015 21:16:53 +06:00
+q 10
+average 0,4683
+qps 2135,38
+min 0,16
+max 8,09
+memory usage (bytes)116895528
+parse (ms)0,03
+create linq stack 0,02
+run 0,02
+15.07.2015 21:16:54 +06:00
+q 11
+average 0,176
+qps 5681,81
+min 0,11
+max 3,87
+memory usage (bytes)116561792
+parse (ms)0,01
+create linq stack 0
+run 0,01
+15.07.2015 21:16:54 +06:00
+q 12
+average 0,4374
+qps 2286,23
+min 0,24
+max 14,92
+memory usage (bytes)117372328
+parse (ms)0,14
+create linq stack 0
+run 0

@@ -44,6 +44,11 @@ namespace RDFTripleStore
             return triples.Where(triple => triple.Predicate .Equals( predicateNode) && triple.Object .Equals( objectNode)).Select(triple => triple.Subject);
         }
 
+        public IEnumerable<TripleOVStruct> GetTriplesWithTextObject(ObjectVariants obj)
+        {
+            throw new NotImplementedException();
+        }
+
         public IEnumerable<TripleOVStruct> GetTriplesWithPredicate(ObjectVariants predicateNode)
         {
             return triples.Where(triple => triple.Predicate .Equals( predicateNode)).Select(triple => new TripleOVStruct(triple.Subject, null, triple.Object));
@@ -92,6 +97,11 @@ namespace RDFTripleStore
             throw new NotImplementedException();
         }
 
+        public void FromTurtle(long iri_Count, string gString)
+        {
+            throw new NotImplementedException();
+        }
+
         public void FromTurtle(string fileName)
         {
             var generator = new TripleGeneratorBufferedParallel(fileName, Name);
@@ -105,6 +115,11 @@ namespace RDFTripleStore
         }
 
         public void Build(IEnumerable<TripleStrOV> triples)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Build(long nodesCount, IEnumerable<TripleStrOV> triples)
         {
             throw new NotImplementedException();
         }

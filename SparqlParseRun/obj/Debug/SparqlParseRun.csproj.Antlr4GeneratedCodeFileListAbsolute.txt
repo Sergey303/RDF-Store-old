@@ -1,0 +1,6 @@
+C:\Users\Admin\Source\Repos\RDF-Store-Polar-DB-Lab\SparqlParseRun\obj\Debug\sparq11lTranslatorLexer.cs
+C:\Users\Admin\Source\Repos\RDF-Store-Polar-DB-Lab\SparqlParseRun\obj\Debug\sparq11lTranslatorParser.cs
+C:\Users\Admin\Source\Repos\RDF-Store-Polar-DB-Lab\SparqlParseRun\obj\Debug\sparq11lTranslatorListener.cs
+C:\Users\Admin\Source\Repos\RDF-Store-Polar-DB-Lab\SparqlParseRun\obj\Debug\sparq11lTranslatorBaseListener.cs
+C:\Users\Admin\Source\Repos\RDF-Store-Polar-DB-Lab\SparqlParseRun\obj\Debug\sparq11lTranslatorVisitor.cs
+C:\Users\Admin\Source\Repos\RDF-Store-Polar-DB-Lab\SparqlParseRun\obj\Debug\sparq11lTranslatorBaseVisitor.cs

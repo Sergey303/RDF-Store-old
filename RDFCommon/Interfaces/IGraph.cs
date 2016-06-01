@@ -9,9 +9,39 @@ namespace RDFCommon
     {
         string Name { get; set; }
 
-        NodeGenerator NodeGenerator { get; }   
-      
+        NodeGenerator NodeGenerator { get; }
+
+        void Add(ObjectVariants s, ObjectVariants p, ObjectVariants o);
+
+        bool Any();
+
+        void Build(IEnumerable<TripleStrOV> triples);
+
+        void Build(long nodesCount, IEnumerable<TripleStrOV> triples);
+
         void Clear();
+
+        bool Contains(ObjectVariants subject, ObjectVariants predicate, ObjectVariants obj);
+
+        void Delete(ObjectVariants subject, ObjectVariants predicate, ObjectVariants obj);
+
+        void FromTurtle(long iri_Count, string gString);
+
+        void FromTurtle(string fullName);
+
+        IEnumerable<ObjectVariants> GetAllSubjects();
+
+        /// <summary>
+        /// Selects all Triples with the given Predicate and Object
+        /// </summary>
+        /// <param name="obj">Object</param>
+        /// <param name="pred">Predicate</param>
+        /// <returns></returns>
+        IEnumerable<ObjectVariants> GetSubjects(ObjectVariants pred, ObjectVariants obj);
+
+        IEnumerable<T> GetTriples<T>(Func<ObjectVariants, ObjectVariants, ObjectVariants, T> returns);
+
+        long GetTriplesCount();
 
         /// <summary>
         /// Selects all Triples where the Object is a given Node
@@ -19,6 +49,9 @@ namespace RDFCommon
         /// <param name="o">Node</param>
         /// <returns></returns>
         IEnumerable<TripleOVStruct> GetTriplesWithObject(ObjectVariants o);
+
+        IEnumerable<TripleOVStruct> GetTriplesWithTextObject(ObjectVariants obj);
+
 
         /// <summary>
         /// Selects all Triples where the Predicate is a given Node
@@ -36,14 +69,6 @@ namespace RDFCommon
         IEnumerable<TripleOVStruct> GetTriplesWithSubject(ObjectVariants s);
 
         /// <summary>
-        /// Selects all Triples with the given Subject and Predicate
-        /// </summary>
-        /// <param name="subj">Subject</param>
-        /// <param name="pred">Predicate</param>
-        /// <returns></returns>
-        IEnumerable<ObjectVariants> GetTriplesWithSubjectPredicate(ObjectVariants subj, ObjectVariants pred);
-
-        /// <summary>
         /// Selects all Triples with the given Subject and Object
         /// </summary>
         /// <param name="subj">Subject</param>
@@ -52,30 +77,12 @@ namespace RDFCommon
         IEnumerable<ObjectVariants> GetTriplesWithSubjectObject(ObjectVariants subj, ObjectVariants obj);
 
         /// <summary>
-        /// Selects all Triples with the given Predicate and Object
+        /// Selects all Triples with the given Subject and Predicate
         /// </summary>
+        /// <param name="subj">Subject</param>
         /// <param name="pred">Predicate</param>
-        /// <param name="obj">Object</param>
         /// <returns></returns>
-        IEnumerable<ObjectVariants> GetSubjects(ObjectVariants pred, ObjectVariants obj);
-        IEnumerable<T> GetTriples<T>(Func<ObjectVariants,ObjectVariants,ObjectVariants, T> returns );
-
-
-        void Add(ObjectVariants s, ObjectVariants p, ObjectVariants o);
-     
-       
-        bool Contains(ObjectVariants subject, ObjectVariants predicate, ObjectVariants obj);
-        void Delete(ObjectVariants subject, ObjectVariants predicate, ObjectVariants obj);
-      
-        IEnumerable<ObjectVariants> GetAllSubjects();
-        long GetTriplesCount();
-
-        bool Any();
-        void FromTurtle(string gString);
-        void Build(IEnumerable<TripleStrOV> triples);
-
-        void FromTurtle(Stream inputStream);
-
+        IEnumerable<ObjectVariants> GetTriplesWithSubjectPredicate(ObjectVariants subj, ObjectVariants pred);
         void Warmup();
     }
 }

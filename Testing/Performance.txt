@@ -1,0 +1,28 @@
+load 40000  170337ms
+1000 sPO ok. duration= 789ms
+1000 spO ok. duration= 122ms
+1000 spo ok duration= 110ms
+100 portraits ok. duration= 134ms
+load 40000  26963ms
+load 40000  25189ms
+1000 sPO ok. duration= 726ms
+1000 spO ok. duration= 417ms
+1000 spo ok duration= 498ms
+1000 portraits ok. duration= 1356ms
+load 40000  25129ms
+1000 sPO ok. duration= 670ms
+1000 spO ok. duration= 362ms
+1000 spo ok duration= 495ms
+1000 portraits ok. duration= 1324ms
+load 100млн  313765ms
+load 1000млн  136ms
+load 1000млн  90519ms
+load 1000млн  135ms
+load 1000млн  154ms
+load 1000млн  3841ms
+load 100млн  16980598ms
+load 1млн  38206ms
+load 1млн  42999ms
+load 10 млн  408047ms
+load 10 млн  431737ms
+load 10 млн  441753ms

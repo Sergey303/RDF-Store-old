@@ -34,42 +34,33 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="PolarDB, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Polar\PolarDB\bin\Debug\PolarDB.dll</HintPath>
-    </Reference>
-    <Reference Include="RDFCommon">
-      <HintPath>..\RDFCommon\bin\Debug\RDFCommon.dll</HintPath>
-    </Reference>
     <Reference Include="RDFTurtleParser, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\RDFTurtleParser.1.0.0.0\lib\net45\RDFTurtleParser.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="SparqlQuery, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\SparqlQuery\bin\Debug\SparqlQuery.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Data.HashFunction.BernsteinHash, Version=1.8.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Polar\UniversalIndex\bin\Debug\System.Data.HashFunction.BernsteinHash.dll</HintPath>
+    <Reference Include="System.Data.HashFunction.BernsteinHash, Version=1.8.2.2, Culture=neutral, PublicKeyToken=80c9288e394c1322, processorArchitecture=MSIL">
+      <HintPath>packages\System.Data.HashFunction.BernsteinHash.1.8.2.2\lib\net45\System.Data.HashFunction.BernsteinHash.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="System.Data.HashFunction.Core, Version=1.8.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Polar\UniversalIndex\bin\Debug\System.Data.HashFunction.Core.dll</HintPath>
+    <Reference Include="System.Data.HashFunction.Core, Version=1.8.2.2, Culture=neutral, PublicKeyToken=80c9288e394c1322, processorArchitecture=MSIL">
+      <HintPath>packages\System.Data.HashFunction.Core.1.8.2.2\lib\net45\System.Data.HashFunction.Core.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="System.Data.HashFunction.Interfaces, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Polar\UniversalIndex\bin\Debug\System.Data.HashFunction.Interfaces.dll</HintPath>
+    <Reference Include="System.Data.HashFunction.Interfaces, Version=1.0.0.2, Culture=neutral, PublicKeyToken=80c9288e394c1322, processorArchitecture=MSIL">
+      <HintPath>packages\System.Data.HashFunction.Interfaces.1.0.0.2\lib\net45\System.Data.HashFunction.Interfaces.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.HashFunction.SpookyHash, Version=1.8.2.2, Culture=neutral, PublicKeyToken=80c9288e394c1322, processorArchitecture=MSIL">
+      <HintPath>packages\System.Data.HashFunction.SpookyHash.1.8.2.2\lib\net45\System.Data.HashFunction.SpookyHash.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System.Web" />
-    <Reference Include="UniversalIndex">
-      <HintPath>..\..\Polar\UniversalIndex\bin\Release\UniversalIndex.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="NamedGraphSerialize.cs" />
+    <Compile Include="TextObjectIndex.cs" />
     <Compile Include="RamListOfTriplesGraph.cs" />
     <Compile Include="RdfNamedGraphs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -81,6 +72,24 @@
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Polar\PolarDB\PolarDB.csproj">
+      <Project>{e418d12c-9027-4292-aab4-d8130c6e3829}</Project>
+      <Name>PolarDB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Polar\UniversalIndex\UniversalIndex.csproj">
+      <Project>{e4ab7a63-7b55-43e9-b1aa-c8e0f8aa87e3}</Project>
+      <Name>UniversalIndex</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RDFCommon\RDFCommon.csproj">
+      <Project>{7eb60f80-87ca-4645-9e1f-051735195d92}</Project>
+      <Name>RDFCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SparqlQuery\SparqlQuery.csproj">
+      <Project>{fb42ad1d-b327-4720-87b3-88daddf0adf3}</Project>
+      <Name>SparqlQuery</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

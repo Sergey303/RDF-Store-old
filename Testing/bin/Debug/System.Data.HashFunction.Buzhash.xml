@@ -1,0 +1,157 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>System.Data.HashFunction.Buzhash</name>
+    </assembly>
+    <members>
+        <member name="T:System.Data.HashFunction.BuzHashBase">
+            <summary>
+            Base implementation of BuzHash as specified at http://www.serve.net/buz/hash.adt/java.002.html.
+            
+            Relies on a random table of 256 (preferably distinct) 64-bit integers.
+            Also can be set to use left or right rotation when running the rotate step.
+            </summary>
+        </member>
+        <member name="M:System.Data.HashFunction.BuzHashBase.#ctor(System.Collections.Generic.IReadOnlyList{System.UInt64},System.Data.HashFunction.BuzHashBase.CircularShiftDirection)">
+            <remarks>
+            Defaults <see cref="P:System.Data.HashFunction.HashFunctionBase.HashSize"/> to 64. <inheritdoc cref="M:System.Data.HashFunction.BuzHashBase.#ctor(System.Collections.Generic.IReadOnlyList{System.UInt64},System.Data.HashFunction.BuzHashBase.CircularShiftDirection,System.Int32)"/>
+            </remarks>
+            <inheritdoc cref="M:System.Data.HashFunction.BuzHashBase.#ctor(System.Collections.Generic.IReadOnlyList{System.UInt64},System.Data.HashFunction.BuzHashBase.CircularShiftDirection,System.Int32)"/>
+        </member>
+        <member name="M:System.Data.HashFunction.BuzHashBase.#ctor(System.Collections.Generic.IReadOnlyList{System.UInt64},System.Data.HashFunction.BuzHashBase.CircularShiftDirection,System.Int32)">
+            <remarks>
+            Defaults <see cref="P:System.Data.HashFunction.BuzHashBase.InitVal"/> to 0. <inheritdoc cref="M:System.Data.HashFunction.BuzHashBase.#ctor(System.Collections.Generic.IReadOnlyList{System.UInt64},System.Data.HashFunction.BuzHashBase.CircularShiftDirection,System.UInt64,System.Int32)"/>
+            </remarks>
+            <inheritdoc cref="M:System.Data.HashFunction.BuzHashBase.#ctor(System.Collections.Generic.IReadOnlyList{System.UInt64},System.Data.HashFunction.BuzHashBase.CircularShiftDirection,System.UInt64,System.Int32)"/>
+        </member>
+        <member name="M:System.Data.HashFunction.BuzHashBase.#ctor(System.Collections.Generic.IReadOnlyList{System.UInt64},System.Data.HashFunction.BuzHashBase.CircularShiftDirection,System.UInt64)">
+            <remarks>
+            Defaults <see cref="P:System.Data.HashFunction.HashFunctionBase.HashSize"/> to 64.
+            </remarks>
+            <inheritdoc cref="M:System.Data.HashFunction.BuzHashBase.#ctor(System.Collections.Generic.IReadOnlyList{System.UInt64},System.Data.HashFunction.BuzHashBase.CircularShiftDirection,System.UInt64,System.Int32)"/>
+        </member>
+        <member name="M:System.Data.HashFunction.BuzHashBase.#ctor(System.Collections.Generic.IReadOnlyList{System.UInt64},System.Data.HashFunction.BuzHashBase.CircularShiftDirection,System.UInt64,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:System.Data.HashFunction.BuzHashBase"/> class.
+            </summary>
+            <param name="rtab"><inheritdoc cref="P:System.Data.HashFunction.BuzHashBase.Rtab"/></param>
+            <param name="shiftDirection"><inheritdoc cref="P:System.Data.HashFunction.BuzHashBase.ShiftDirection"/></param>
+            <param name="initVal"><inheritdoc cref="P:System.Data.HashFunction.BuzHashBase.InitVal"/></param>
+            <param name="hashSize"><inheritdoc cref="M:System.Data.HashFunction.HashFunctionBase.#ctor(System.Int32)" select="param[name=hashSize]"/></param>
+            <exception cref="T:System.ArgumentOutOfRangeException">hashSize;hashSize must be contained within <see cref="P:System.Data.HashFunction.BuzHashBase.ValidHashSizes"/>.</exception>
+            <inheritdoc cref="M:System.Data.HashFunction.HashFunctionBase.#ctor(System.Int32)"/>
+        </member>
+        <member name="M:System.Data.HashFunction.BuzHashBase.ComputeHashInternal(System.Data.HashFunction.Utilities.UnifiedData.UnifiedData)">
+            <exception cref="T:System.InvalidOperationException">HashSize set to an invalid value.</exception>
+            <inheritdoc/>
+        </member>
+        <member name="M:System.Data.HashFunction.BuzHashBase.ComputeHashAsyncInternal(System.Data.HashFunction.Utilities.UnifiedData.UnifiedData)">
+            <exception cref="T:System.InvalidOperationException">HashSize set to an invalid value.</exception>
+            <inheritdoc/>
+        </member>
+        <member name="M:System.Data.HashFunction.BuzHashBase.CShift(System.Byte,System.Int32)">
+            <summary>
+            Rotate bits of input byte by amount specified.  Shifts left or right based on ShiftDirection parameter.
+            </summary>
+            <param name="n">Byte value to shift.</param>
+            <param name="shiftCount">Number of bits to shift the integer by.</param>
+            <returns>
+            Byte value after rotating by the specified amount of bits.
+            </returns>
+        </member>
+        <member name="M:System.Data.HashFunction.BuzHashBase.CShift(System.UInt16,System.Int32)">
+            <summary>
+            Rotate bits of input integer by amount specified.  Shifts left or right based on ShiftDirection parameter.
+            </summary>
+            <param name="n">UInt16 value to shift.</param>
+            <param name="shiftCount">Number of bits to shift the integer by.</param>
+            <returns>
+            UInt16 value after rotating by the specified amount of bits.
+            </returns>
+        </member>
+        <member name="M:System.Data.HashFunction.BuzHashBase.CShift(System.UInt32,System.Int32)">
+            <summary>
+            Rotate bits of input integer by amount specified.  Shifts left or right based on ShiftDirection parameter.
+            </summary>
+            <param name="n">UInt32 value to shift.</param>
+            <param name="shiftCount">Number of bits to shift the integer by.</param>
+            <returns>
+            UInt32 value after rotating by the specified amount of bits.
+            </returns>
+        </member>
+        <member name="M:System.Data.HashFunction.BuzHashBase.CShift(System.UInt64,System.Int32)">
+            <summary>
+            Rotate bits of input integer by amount specified.  Shifts left or right based on ShiftDirection parameter.
+            </summary>
+            <param name="n">UInt64 value to shift.</param>
+            <param name="shiftCount">Number of bits to shift the integer by.</param>
+            <returns>
+            UInt64 value after rotating by the specified amount of bits.
+            </returns>
+        </member>
+        <member name="P:System.Data.HashFunction.BuzHashBase.Rtab">
+            <summary>Table of 256 (preferably random and distinct) UInt64 values.</summary>
+        </member>
+        <member name="P:System.Data.HashFunction.BuzHashBase.ShiftDirection">
+            <summary>Direction that the circular shift step should use.</summary>
+        </member>
+        <member name="P:System.Data.HashFunction.BuzHashBase.InitVal">
+            <summary>Initialization value to use for the hash.</summary>
+        </member>
+        <member name="P:System.Data.HashFunction.BuzHashBase.ValidHashSizes">
+            <summary>The list of possible hash sizes that can be provided to the <see cref="T:System.Data.HashFunction.BuzHashBase"/> constructor.</summary>
+        </member>
+        <member name="T:System.Data.HashFunction.BuzHashBase.CircularShiftDirection">
+            <summary>Enumeration of possible directions a circular shift can be defined for.</summary>
+        </member>
+        <member name="F:System.Data.HashFunction.BuzHashBase.CircularShiftDirection.Left">
+            <summary>Shift bits left.</summary>
+        </member>
+        <member name="F:System.Data.HashFunction.BuzHashBase.CircularShiftDirection.Right">
+            <summary>Shift bits right.</summary>
+        </member>
+        <member name="T:System.Data.HashFunction.DefaultBuzHash">
+            <summary>
+            Basic implementation of <see cref="T:System.Data.HashFunction.BuzHashBase"/> class.  
+            
+            Uses randomly generated table and left circular shift.
+            </summary>
+        </member>
+        <member name="F:System.Data.HashFunction.DefaultBuzHash._Rtab">
+            <summary>
+            Array of 256 random and distinct UInt64 values.
+            </summary>
+        </member>
+        <member name="M:System.Data.HashFunction.DefaultBuzHash.#ctor">
+            <remarks>
+            Defaults <see cref="P:System.Data.HashFunction.BuzHashBase.ShiftDirection"/> to <see cref="F:System.Data.HashFunction.BuzHashBase.CircularShiftDirection.Left"/>.
+            <inheritdoc cref="M:System.Data.HashFunction.DefaultBuzHash.#ctor(System.Data.HashFunction.BuzHashBase.CircularShiftDirection)"/>
+            </remarks>
+            <inheritdoc cref="M:System.Data.HashFunction.DefaultBuzHash.#ctor(System.Data.HashFunction.BuzHashBase.CircularShiftDirection)"/>
+        </member>
+        <member name="M:System.Data.HashFunction.DefaultBuzHash.#ctor(System.Data.HashFunction.BuzHashBase.CircularShiftDirection)">
+            <param name="shiftDirection">The shift direction.</param>
+            <remarks>
+            Defaults <see cref="P:System.Data.HashFunction.BuzHashBase.InitVal"/> to 0x3CD05367FD0337D3.
+            <inheritdoc cref="M:System.Data.HashFunction.BuzHashBase.#ctor(System.Collections.Generic.IReadOnlyList{System.UInt64},System.Data.HashFunction.BuzHashBase.CircularShiftDirection,System.UInt64)"/>
+            </remarks>
+            <inheritdoc cref="M:System.Data.HashFunction.BuzHashBase.#ctor(System.Collections.Generic.IReadOnlyList{System.UInt64},System.Data.HashFunction.BuzHashBase.CircularShiftDirection,System.UInt64)"/>
+        </member>
+        <member name="M:System.Data.HashFunction.DefaultBuzHash.#ctor(System.Int32)">
+            <remarks>
+            Defaults <see cref="P:System.Data.HashFunction.BuzHashBase.ShiftDirection"/> to <see cref="F:System.Data.HashFunction.BuzHashBase.CircularShiftDirection.Left"/>.
+            <inheritdoc cref="M:System.Data.HashFunction.DefaultBuzHash.#ctor(System.Data.HashFunction.BuzHashBase.CircularShiftDirection,System.Int32)"/>
+            </remarks>
+            <inheritdoc cref="M:System.Data.HashFunction.DefaultBuzHash.#ctor(System.Data.HashFunction.BuzHashBase.CircularShiftDirection,System.Int32)"/>
+        </member>
+        <member name="M:System.Data.HashFunction.DefaultBuzHash.#ctor(System.Data.HashFunction.BuzHashBase.CircularShiftDirection,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:System.Data.HashFunction.DefaultBuzHash"/> class.
+            </summary>
+            <remarks>
+            Defaults <see cref="P:System.Data.HashFunction.BuzHashBase.InitVal"/> to 0x3CD05367FD0337D3.
+            </remarks>
+            <inheritdoc cref="M:System.Data.HashFunction.BuzHashBase.#ctor(System.Collections.Generic.IReadOnlyList{System.UInt64},System.Data.HashFunction.BuzHashBase.CircularShiftDirection,System.UInt64,System.Int32)"/>
+        </member>
+    </members>
+</doc>

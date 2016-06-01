@@ -1,0 +1,164 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>System.Data.HashFunction.SpookyHash</name>
+    </assembly>
+    <members>
+        <member name="T:System.Data.HashFunction.SpookyHashV2">
+            <summary>
+            Implements SpookyHash V2 as specified at http://burtleburtle.net/bob/hash/spooky.html.
+            </summary>
+        </member>
+        <member name="M:System.Data.HashFunction.SpookyHashV2.#ctor">
+            <remarks>
+            Defaults <see cref="P:System.Data.HashFunction.SpookyHashV2.InitVal1"/> to 0. <inheritdoc cref="M:System.Data.HashFunction.SpookyHashV2.#ctor(System.UInt64)"/>
+            </remarks>
+            <inheritdoc cref="M:System.Data.HashFunction.SpookyHashV2.#ctor(System.UInt64)"/>
+        </member>
+        <member name="M:System.Data.HashFunction.SpookyHashV2.#ctor(System.Int32)">
+            <remarks>
+            Defaults <see cref="P:System.Data.HashFunction.SpookyHashV2.InitVal1"/> to 0. <inheritdoc cref="M:System.Data.HashFunction.SpookyHashV2.#ctor(System.Int32,System.UInt64)"/>
+            </remarks>
+            <inheritdoc cref="M:System.Data.HashFunction.SpookyHashV2.#ctor(System.Int32,System.UInt64)"/>
+        </member>
+        <member name="M:System.Data.HashFunction.SpookyHashV2.#ctor(System.UInt64)">
+            <remarks>
+            Defaults <see cref="P:System.Data.HashFunction.SpookyHashV2.InitVal2"/> to 0. <inheritdoc cref="M:System.Data.HashFunction.SpookyHashV2.#ctor(System.UInt64,System.UInt64)"/>
+            </remarks>
+            <inheritdoc cref="M:System.Data.HashFunction.SpookyHashV2.#ctor(System.UInt64,System.UInt64)"/>
+        </member>
+        <member name="M:System.Data.HashFunction.SpookyHashV2.#ctor(System.UInt64,System.UInt64)">
+            <remarks>
+            Defaults <see cref="P:System.Data.HashFunction.HashFunctionBase.HashSize"/> to 128.
+            </remarks>
+            <inheritdoc cref="M:System.Data.HashFunction.SpookyHashV2.#ctor(System.Int32,System.UInt64,System.UInt64)"/>
+        </member>
+        <member name="M:System.Data.HashFunction.SpookyHashV2.#ctor(System.Int32,System.UInt64)">
+            <remarks>
+            Defaults <see cref="P:System.Data.HashFunction.SpookyHashV2.InitVal2"/> to 0.
+            </remarks>
+            <inheritdoc cref="M:System.Data.HashFunction.SpookyHashV2.#ctor(System.Int32,System.UInt64,System.UInt64)"/>
+        </member>
+        <member name="M:System.Data.HashFunction.SpookyHashV2.#ctor(System.Int32,System.UInt64,System.UInt64)">
+            <summary>
+            Initializes a new instance of the <see cref="T:System.Data.HashFunction.SpookyHashV2"/> class.
+            </summary>
+            <param name="hashSize"><inheritdoc cref="M:System.Data.HashFunction.HashFunctionBase.#ctor(System.Int32)"/></param>
+            <param name="initVal1"><inheritdoc cref="P:System.Data.HashFunction.SpookyHashV2.InitVal1"/></param>
+            <param name="initVal2"><inheritdoc cref="P:System.Data.HashFunction.SpookyHashV2.InitVal2"/></param>
+            <exception cref="T:System.ArgumentOutOfRangeException">hashSize;hashSize must be contained within SpookyHashV2.ValidHashSizes.</exception>
+            <inheritdoc cref="M:System.Data.HashFunction.HashFunctionBase.#ctor(System.Int32)"/>
+        </member>
+        <member name="M:System.Data.HashFunction.SpookyHashV2.ComputeHashInternal(System.Data.HashFunction.Utilities.UnifiedData.UnifiedData)">
+            <exception cref="T:System.InvalidOperationException">HashSize set to an invalid value.</exception>
+            <inheritdoc/>
+        </member>
+        <member name="P:System.Data.HashFunction.SpookyHashV2.InitVal1">
+            <summary>
+            First seed value for hash calculation.
+            </summary>
+            <value>
+            The first seed value for hash calculation.
+            </value>
+        </member>
+        <member name="P:System.Data.HashFunction.SpookyHashV2.InitVal2">
+            <summary>
+            Second seed value for hash calculation.
+            </summary>
+            <value>
+            The second seed value for hash calculation.
+            </value>
+            <remarks>
+            Not used for 32-bit and 64-bit modes, used as second seed for 128-bit mode.
+            </remarks>
+        </member>
+        <member name="P:System.Data.HashFunction.SpookyHashV2.ValidHashSizes">
+            <summary>
+            The list of possible hash sizes that can be provided to the <see cref="T:System.Data.HashFunction.SpookyHashV2"/> constructor.
+            </summary>
+            <value>
+            The list of valid hash sizes.
+            </value>
+        </member>
+        <member name="T:System.Data.HashFunction.SpookyHashV1">
+            <summary>
+            Implementation of SpookyHash V1 as specified at http://burtleburtle.net/bob/hash/spooky.html.
+            
+            This hash function has been superseded by <see cref="T:System.Data.HashFunction.SpookyHashV2"/> due to a loss of entropy from a 
+              coding error in the original specification.  It still passes the hash function tests the creator set for it,
+              but it is preferred that SpookyHash V2 is used.
+            </summary>
+        </member>
+        <member name="M:System.Data.HashFunction.SpookyHashV1.#ctor">
+            <remarks>
+            Defaults <see cref="P:System.Data.HashFunction.SpookyHashV1.InitVal1"/> to 0. <inheritdoc cref="M:System.Data.HashFunction.SpookyHashV1.#ctor(System.UInt64)"/>
+            </remarks>
+            <inheritdoc cref="M:System.Data.HashFunction.SpookyHashV1.#ctor(System.UInt64)"/>
+        </member>
+        <member name="M:System.Data.HashFunction.SpookyHashV1.#ctor(System.Int32)">
+            <remarks>
+            Defaults <see cref="P:System.Data.HashFunction.SpookyHashV1.InitVal1"/> to 0. <inheritdoc cref="M:System.Data.HashFunction.SpookyHashV1.#ctor(System.Int32,System.UInt64)"/>
+            </remarks>
+            <inheritdoc cref="M:System.Data.HashFunction.SpookyHashV1.#ctor(System.Int32,System.UInt64)"/>
+        </member>
+        <member name="M:System.Data.HashFunction.SpookyHashV1.#ctor(System.UInt64)">
+            <remarks>
+            Defaults <see cref="P:System.Data.HashFunction.SpookyHashV1.InitVal2"/> to 0. <inheritdoc cref="M:System.Data.HashFunction.SpookyHashV1.#ctor(System.UInt64,System.UInt64)"/>
+            </remarks>
+            <inheritdoc cref="M:System.Data.HashFunction.SpookyHashV1.#ctor(System.UInt64,System.UInt64)"/>
+        </member>
+        <member name="M:System.Data.HashFunction.SpookyHashV1.#ctor(System.UInt64,System.UInt64)">
+            <remarks>
+            Defaults <see cref="P:System.Data.HashFunction.HashFunctionBase.HashSize"/> to 128.
+            </remarks>
+            <inheritdoc cref="M:System.Data.HashFunction.SpookyHashV1.#ctor(System.Int32,System.UInt64,System.UInt64)"/>
+        </member>
+        <member name="M:System.Data.HashFunction.SpookyHashV1.#ctor(System.Int32,System.UInt64)">
+            <remarks>
+            Defaults <see cref="P:System.Data.HashFunction.SpookyHashV1.InitVal2"/> to 0.
+            </remarks>
+            <inheritdoc cref="M:System.Data.HashFunction.SpookyHashV1.#ctor(System.Int32,System.UInt64,System.UInt64)"/>
+        </member>
+        <member name="M:System.Data.HashFunction.SpookyHashV1.#ctor(System.Int32,System.UInt64,System.UInt64)">
+            <summary>
+            Initializes a new instance of the <see cref="T:System.Data.HashFunction.SpookyHashV1"/> class.
+            </summary>
+            <param name="hashSize"><inheritdoc cref="M:System.Data.HashFunction.HashFunctionBase.#ctor(System.Int32)" select="param[name=hashSize]"/></param>
+            <param name="initVal1"><inheritdoc cref="P:System.Data.HashFunction.SpookyHashV1.InitVal1"/></param>
+            <param name="initVal2"><inheritdoc cref="P:System.Data.HashFunction.SpookyHashV1.InitVal2"/></param>
+            <exception cref="T:System.ArgumentOutOfRangeException">hashSize;hashSize must be contained within SpookyHashV1.ValidHashSizes.</exception>
+            <inheritdoc cref="M:System.Data.HashFunction.HashFunctionBase.#ctor(System.Int32)"/>
+        </member>
+        <member name="M:System.Data.HashFunction.SpookyHashV1.ComputeHashInternal(System.Data.HashFunction.Utilities.UnifiedData.UnifiedData)">
+            <exception cref="T:System.InvalidOperationException">HashSize set to an invalid value.</exception>
+            <inheritdoc/>
+        </member>
+        <member name="P:System.Data.HashFunction.SpookyHashV1.InitVal1">
+            <summary>
+            First seed value for hash calculation.
+            </summary>
+            <value>
+            The first seed value for hash calculation.
+            </value>
+        </member>
+        <member name="P:System.Data.HashFunction.SpookyHashV1.InitVal2">
+            <summary>
+            Second seed value for hash calculation.
+            </summary>
+            <value>
+            The second seed value for hash calculation.
+            </value>
+            <remarks>
+            Not used for 32-bit and 64-bit modes, used as second seed for 128-bit mode.
+            </remarks>
+        </member>
+        <member name="P:System.Data.HashFunction.SpookyHashV1.ValidHashSizes">
+            <summary>
+            The list of possible hash sizes that can be provided to the <see cref="T:System.Data.HashFunction.SpookyHashV1"/> constructor.
+            </summary>
+            <value>
+            The list of valid hash sizes.
+            </value>
+        </member>
+    </members>
+</doc>

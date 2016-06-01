@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>UniversalIndex</name>
+    </assembly>
+    <members>
+        <member name="M:UniversalIndex.IndexCascadingImmutable`1.GetAllInDiap(PolarDB.Diapason,`0)">
+            <summary>
+            Получение триплетов из диапазона, соответствующих заданному второму ключу
+            </summary>
+            <param name="dia">Диапазон в индексном массиве. Есть специальные требования к диапазону</param>
+            <param name="key2">Ключ2 по которому фильтруется результарующее множество</param>
+            <returns>Возвращает поток триплетов в объектной форме</returns>
+        </member>
+    </members>
+</doc>

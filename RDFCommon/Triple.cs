@@ -47,13 +47,18 @@ namespace RDFCommon
             }
             public override int GetHashCode()
             {
-                return (o.ToString() + subject + predicate).GetHash();
+                return (o.ToString() + subject + predicate).GetHashModifiedBernstein();
             }
         }
     public class TripleIntOV : Triple<int, int, ObjectVariants>{
         public TripleIntOV(int s, int p, ObjectVariants o) : base(s, p, o)
         {
         }
+        public object[] ToWritable()
+        {
+            return new object[] { (object)Subject, (object)Predicate, (object)Object.ToWritable() };
+        }
+
     }
     public class TripleOV :Triple<ObjectVariants, ObjectVariants,ObjectVariants>{
         public TripleOV(ObjectVariants s, ObjectVariants p, ObjectVariants o) : base(s, p, o)
@@ -89,7 +94,7 @@ namespace RDFCommon
         }
         public override int GetHashCode()
         {
-            return (ov.ToString() + p).GetHash();
+            return (ov.ToString() + p).GetHashModifiedBernstein();
         }
 
     }
@@ -191,7 +196,7 @@ namespace RDFCommon
 
         public override int GetHashCode()
         {
-            return (ov.ToString() + p).GetHash();
+            return (ov.ToString() + p).GetHashModifiedBernstein();
         }
     }
 

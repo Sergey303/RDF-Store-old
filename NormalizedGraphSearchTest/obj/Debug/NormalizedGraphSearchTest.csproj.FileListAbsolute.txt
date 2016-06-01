@@ -1,0 +1,1 @@
+C:\Users\Admin\Source\Repos\next\RDF-Store\NormalizedGraphSearchTest\obj\Debug\NormalizedGraphSearchTest.csprojResolveAssemblyReference.cache

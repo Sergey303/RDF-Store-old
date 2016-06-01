@@ -1,0 +1,140 @@
+16.07.2015 22:52:02 +06:00
+q 1
+average 0,3338
+qps 2995,8
+min 0,23
+max 6,41
+memory usage (bytes)2258040
+parse (ms)0,03
+create linq stack 0,03
+run 0
+16.07.2015 22:52:02 +06:00
+q 2
+average 0,7344
+qps 1361,65
+min 0,52
+max 1,27
+memory usage (bytes)2958200
+parse (ms)0
+create linq stack 0,01
+run 0
+16.07.2015 22:52:03 +06:00
+q 3
+average 0,3027
+qps 3303,6
+min 0,22
+max 0,52
+memory usage (bytes)1998104
+parse (ms)0
+create linq stack 0
+run 0
+16.07.2015 22:52:03 +06:00
+q 4
+average 0,5
+qps 2000
+min 0,42
+max 0,93
+memory usage (bytes)3012152
+parse (ms)0
+create linq stack 0
+run 0
+16.07.2015 22:52:03 +06:00
+q 5
+average 0,3024
+qps 3306,87
+min 0,23
+max 0,55
+memory usage (bytes)2056096
+parse (ms)0
+create linq stack 0
+run 0
+16.07.2015 22:52:03 +06:00
+q 6
+average 0,1994
+qps 5015,04
+min 0,13
+max 0,39
+memory usage (bytes)3091952
+parse (ms)0
+create linq stack 0
+run 0
+16.07.2015 22:52:03 +06:00
+q 7
+average 0,5015
+qps 1994,01
+min 0,42
+max 0,75
+memory usage (bytes)1980064
+parse (ms)0
+create linq stack 0
+run 0
+16.07.2015 22:52:04 +06:00
+q 8
+average 0,5392
+qps 1854,59
+min 0,45
+max 0,94
+memory usage (bytes)2385840
+parse (ms)0
+create linq stack 0
+run 0
+16.07.2015 22:52:04 +06:00
+q 9
+average 0,6876
+qps 1454,33
+min 0,55
+max 1,45
+memory usage (bytes)2892336
+parse (ms)0
+create linq stack 0,01
+run 0
+16.07.2015 22:52:04 +06:00
+q 10
+average 0,3109
+qps 3216,46
+min 0,24
+max 0,69
+memory usage (bytes)3522976
+parse (ms)0
+create linq stack 0
+run 0
+16.07.2015 22:52:04 +06:00
+q 11
+average 0,2968
+qps 3369,27
+min 0,23
+max 0,7
+memory usage (bytes)2599304
+parse (ms)0
+create linq stack 0
+run 0
+16.07.2015 22:52:05 +06:00
+q 12
+average 0,5355
+qps 1867,41
+min 0,4
+max 0,98
+memory usage (bytes)2892256
+parse (ms)0
+create linq stack 0
+run 0
+16.07.2015 22:52:05 +06:00
+q 13
+average 0,3066
+qps 3261,57
+min 0,23
+max 0,8
+memory usage (bytes)3488456
+parse (ms)0
+create linq stack 0
+run 0
+16.07.2015 22:52:05 +06:00
+q 14
+average 0,178
+qps 5617,97
+min 0,13
+max 0,51
+memory usage (bytes)2959128
+parse (ms)0
+create linq stack 0
+run 0

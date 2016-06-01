@@ -1,0 +1,95 @@
+one query 1, 100 times
+milions 1
+date time 19.04.2016 12:58:10
+total ms 2
+ms 0,02
+qps 50000
+next results count: 0
+
+one query 2, 100 times
+milions 1
+date time 19.04.2016 12:59:12
+total ms 233
+ms 2,33
+qps 429
+next results count: 27
+
+one query 3, 100 times
+milions 1
+date time 19.04.2016 13:01:12
+total ms 13
+ms 0,13
+qps 7692
+next results count: 0
+
+one query 4, 100 times
+milions 1
+date time 19.04.2016 13:02:37
+total ms 0
+ms 0
+qps -2147483648
+next results count: 0
+
+one query 5, 100 times
+milions 1
+date time 19.04.2016 13:07:24
+total ms 322
+ms 3,22
+qps 310
+next results count: 5
+
+one query 6, 100 times
+milions 1
+date time 19.04.2016 13:17:37
+total ms 547515
+ms 5475,15
+qps 0
+next results count: 17
+
+one query 7, 100 times
+milions 1
+date time 19.04.2016 13:18:44
+total ms 131
+ms 1,31
+qps 763
+next results count: 1
+
+one query 8, 100 times
+milions 1
+date time 19.04.2016 13:20:31
+total ms 0
+ms 0
+qps -2147483648
+next results count: 0
+
+one query 9, 100 times
+milions 1
+date time 19.04.2016 13:22:23
+total ms 2
+ms 0,02
+qps 50000
+next results count: 1
+
+one query 10, 100 times
+milions 1
+date time 19.04.2016 13:23:25
+total ms 11
+ms 0,11
+qps 9090
+next results count: 0
+
+one query 11, 100 times
+milions 1
+date time 19.04.2016 13:25:07
+total ms 77
+ms 0,77
+qps 1298
+next results count: 10
+
+one query 12, 100 times
+milions 1
+date time 19.04.2016 13:26:44
+total ms 13
+ms 0,13
+qps 7692
+next results count: 1

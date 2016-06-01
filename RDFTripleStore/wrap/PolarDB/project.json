@@ -1,0 +1,11 @@
+{
+  "version": "1.0.0-*",
+  "frameworks": {
+    "net45": {
+      "bin": {
+        "assembly": "../../../RDFTurtleParser/bin/Debug/PolarDB.dll",
+        "pdb": "../../../RDFTurtleParser/bin/Debug/PolarDB.pdb"
+      }
+    }
+  }
+}

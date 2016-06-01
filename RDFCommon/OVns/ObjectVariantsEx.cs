@@ -90,7 +90,7 @@ namespace RDFCommon.OVns
             {
                 var nodeGeneratorInt = nt as NodeGeneratorInt;
                 if (nodeGeneratorInt != null)
-                    return Writable2OVariant((object[]) @object, nodeGeneratorInt.coding_table.GetStringByCode);
+                    return Writable2OVariant((object[]) @object, nodeGeneratorInt.coding_table.GetString);
             }
             return Writable2OVariant((object[]) @object);
         }

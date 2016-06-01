@@ -15,11 +15,11 @@ namespace RDFTripleStore
     {
 
         public NamedGraphsByFolders(DirectoryInfo directory, NodeGenerator ng, Func<DirectoryInfo, IGraph> graphCtor, Action<DirectoryInfo> graphDrop)
-            : base(ng, s => graphCtor(new DirectoryInfo(directory +"/"+ CodeGraphName2DirName(s))), s=> graphDrop(new DirectoryInfo(directory +"/"+ CodeGraphName2DirName(s))))
+            : base(ng, s => graphCtor(new DirectoryInfo(directory + "/named graph " + CodeGraphName2DirName(s))), s=> graphDrop(new DirectoryInfo(directory + "/named graph " + CodeGraphName2DirName(s))))
         {
             if(!directory.Exists) directory.Create();
-            foreach (var graphDir in directory.EnumerateDirectories())
-                named.Add(DecodeDirName2GraphName(graphDir.Name), graphCtor(graphDir));
+            foreach (var graphDir in directory.EnumerateDirectories("named graph *", SearchOption.TopDirectoryOnly))
+                named.Add(DecodeDirName2GraphName(graphDir.Name.Substring(12)), graphCtor(graphDir));
         }
 
         private static string CodeGraphName2DirName(string name)

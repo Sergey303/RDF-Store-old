@@ -1,0 +1,14 @@
+C:\Users\Admin\Source\Repos\next\RDF-Store\RDFTurtleParser\bin\Release\RDFTurtleParser.dll.config
+C:\Users\Admin\Source\Repos\next\RDF-Store\RDFTurtleParser\bin\Release\RDFTurtleParser.dll
+C:\Users\Admin\Source\Repos\next\RDF-Store\RDFTurtleParser\bin\Release\RDFTurtleParser.pdb
+C:\Users\Admin\Source\Repos\next\RDF-Store\RDFTurtleParser\bin\Release\RDFCommon.dll
+C:\Users\Admin\Source\Repos\next\RDF-Store\RDFTurtleParser\bin\Release\UniversalIndex.dll
+C:\Users\Admin\Source\Repos\next\RDF-Store\RDFTurtleParser\bin\Release\PolarDB.dll
+C:\Users\Admin\Source\Repos\next\RDF-Store\RDFTurtleParser\bin\Release\System.Data.HashFunction.BernsteinHash.dll
+C:\Users\Admin\Source\Repos\next\RDF-Store\RDFTurtleParser\bin\Release\UniversalIndex.pdb
+C:\Users\Admin\Source\Repos\next\RDF-Store\RDFTurtleParser\bin\Release\UniversalIndex.xml
+C:\Users\Admin\Source\Repos\next\RDF-Store\RDFTurtleParser\bin\Release\PolarDB.pdb
+C:\Users\Admin\Source\Repos\next\RDF-Store\RDFTurtleParser\bin\Release\System.Data.HashFunction.BernsteinHash.xml
+C:\Users\Admin\Source\Repos\next\RDF-Store\RDFTurtleParser\obj\Release\RDFTurtleParser.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Source\Repos\next\RDF-Store\RDFTurtleParser\obj\Release\RDFTurtleParser.dll
+C:\Users\Admin\Source\Repos\next\RDF-Store\RDFTurtleParser\obj\Release\RDFTurtleParser.pdb

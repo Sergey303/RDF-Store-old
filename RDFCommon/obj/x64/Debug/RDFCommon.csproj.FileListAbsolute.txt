@@ -1,0 +1,16 @@
+C:\Users\Admin\Source\Repos\RDF-Store-Polar-DB-Lab\RDFCommon\bin\x64\Debug\RDFCommon.dll.config
+C:\Users\Admin\Source\Repos\RDF-Store-Polar-DB-Lab\RDFCommon\bin\x64\Debug\RDFCommon.dll
+C:\Users\Admin\Source\Repos\RDF-Store-Polar-DB-Lab\RDFCommon\bin\x64\Debug\RDFCommon.pdb
+C:\Users\Admin\Source\Repos\RDF-Store-Polar-DB-Lab\RDFCommon\bin\x64\Debug\PolarDB.dll
+C:\Users\Admin\Source\Repos\RDF-Store-Polar-DB-Lab\RDFCommon\bin\x64\Debug\System.Data.HashFunction.BernsteinHash.dll
+C:\Users\Admin\Source\Repos\RDF-Store-Polar-DB-Lab\RDFCommon\bin\x64\Debug\System.Data.HashFunction.Core.dll
+C:\Users\Admin\Source\Repos\RDF-Store-Polar-DB-Lab\RDFCommon\bin\x64\Debug\System.Data.HashFunction.Interfaces.dll
+C:\Users\Admin\Source\Repos\RDF-Store-Polar-DB-Lab\RDFCommon\bin\x64\Debug\PolarDB.pdb
+C:\Users\Admin\Source\Repos\RDF-Store-Polar-DB-Lab\RDFCommon\bin\x64\Debug\System.Data.HashFunction.BernsteinHash.xml
+C:\Users\Admin\Source\Repos\RDF-Store-Polar-DB-Lab\RDFCommon\bin\x64\Debug\System.Data.HashFunction.Core.xml
+C:\Users\Admin\Source\Repos\RDF-Store-Polar-DB-Lab\RDFCommon\bin\x64\Debug\System.Data.HashFunction.Interfaces.xml
+C:\Users\Admin\Source\Repos\RDF-Store-Polar-DB-Lab\RDFCommon\obj\x64\Debug\RDFCommon.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Source\Repos\RDF-Store-Polar-DB-Lab\RDFCommon\obj\x64\Debug\RDFCommon.dll
+C:\Users\Admin\Source\Repos\RDF-Store-Polar-DB-Lab\RDFCommon\obj\x64\Debug\RDFCommon.pdb
+C:\Users\Admin\Source\Repos\RDF-Store-Polar-DB-Lab\RDFCommon\bin\x64\Debug\UniversalIndex.dll
+C:\Users\Admin\Source\Repos\RDF-Store-Polar-DB-Lab\RDFCommon\bin\x64\Debug\UniversalIndex.pdb

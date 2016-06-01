@@ -14,16 +14,16 @@ namespace RDFTripleStore
         {
 
             NodeGenerator =
-                ng = NodeGeneratorInt.Create(path, table.TableCell.IsEmpty);
+                ng = NodeGeneratorInt.Create(path);
             NamedGraphs = new NamedGraphsByFolders(new DirectoryInfo(path), ng, d => new RDFGraph(d.FullName + "/") { NodeGenerator = NodeGenerator },
                 d => { d.Delete(true); });
         }
 
         private readonly NodeGeneratorInt ng;
 
-        public void ReloadFrom(string fileName)
+        public void ReloadFrom(long iri_Count, string fileName)
         {
-            FromTurtle(fileName);
+            FromTurtle(iri_Count, fileName);
            // ActivateCache();
         }
 
@@ -48,7 +48,9 @@ namespace RDFTripleStore
             return new RamListOfTriplesGraph("temp");
         }
 
-
-
+        public void ReloadFrom(string filePath)
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

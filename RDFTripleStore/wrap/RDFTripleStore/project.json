@@ -1,0 +1,19 @@
+{
+  "version": "1.0.0-*",
+  "frameworks": {
+    "net45": {
+      "wrappedProject": "../../RDFTripleStore.csproj",
+      "bin": {
+        "assembly": "../../obj/{configuration}/RDFTripleStore.dll",
+        "pdb": "../../obj/{configuration}/RDFTripleStore.pdb"
+      },
+      "dependencies": {
+        "RDFCommon": "1.0.0-*",
+        "RDFTurtleParser": "1.0.0-*",
+        "SparqlParseRun": "1.0.0-*",
+        "PolarDB": "1.0.0-*",
+        "Task13UniversalIndex": "1.0.0-*"
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "version": "1.0.0-*",
+  "frameworks": {
+    "net45": {
+      "bin": {
+        "assembly": "../../../RDFTurtleParser/bin/Debug/Task13UniversalIndex.dll",
+        "pdb": "../../../RDFTurtleParser/bin/Debug/Task13UniversalIndex.pdb"
+      },
+      "dependencies": {
+        "PolarDB": "1.0.0-*"
+      }
+    }
+  }
+}

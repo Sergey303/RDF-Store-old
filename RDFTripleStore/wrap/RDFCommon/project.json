@@ -1,0 +1,18 @@
+{
+  "version": "1.0.0-*",
+  "frameworks": {
+    "net45": {
+      "bin": {
+        "assembly": "../../../RDFTurtleParser/bin/Debug/RDFCommon.dll",
+        "pdb": "../../../RDFTurtleParser/bin/Debug/RDFCommon.pdb"
+      },
+      "dependencies": {
+        "PolarDB": "1.0.0-*",
+        "SpookilySharp": "1.0.0-*",
+        "Task13UniversalIndex": "1.0.0-*",
+        "System.Data.HashFunction.BernsteinHash": "1.0.0-*",
+        "System.Data.HashFunction.Core": "1.0.0-*"
+      }
+    }
+  }
+}

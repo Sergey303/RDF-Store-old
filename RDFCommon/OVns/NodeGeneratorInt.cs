@@ -6,38 +6,30 @@ namespace RDFCommon.OVns
 {
     public class NodeGeneratorInt:NodeGenerator
     {
-        public NameTableUniversal coding_table;
-        public NodeGeneratorInt(string path, bool empty)
+        public INametable coding_table;
+        public NodeGeneratorInt(string path)
         {     
-            coding_table=new NameTableUniversal(path);
-            if (empty)
-            {
-                Clear();
-                coding_table.InsertPortion(Enumerable.Repeat(SpecialTypesClass.RdfType, 1));
-                coding_table.BuildScale();
-            }
+            coding_table=new NametableLinearBuffered(path);
             
-            SpecialTypes = new SpecialTypesClass(this);
-
         }
 
         public void Clear()
         {
              coding_table.Clear();
-            coding_table.Fill(new string[0]);
-            coding_table.BuildIndexes();
+            SpecialTypes = new SpecialTypesClass(this);
         }
         public override void Build()
         {
-           
+                SpecialTypes = new SpecialTypesClass(this);
+            coding_table.Save();
             //coding_table.InsertPortion(SpecialTypesClass.GetAll());
-            
-            coding_table.BuildScale();
-            
+
+            //  coding_table.BuildScale();
+
         }
-        public static NodeGeneratorInt Create(string path, bool isEmpty)
+        public static NodeGeneratorInt Create(string path)
         {
-            var ng = new NodeGeneratorInt(path, isEmpty);
+            var ng = new NodeGeneratorInt(path);
             ng.SpecialTypes = new SpecialTypesClass(ng);
             return ng;
         }
@@ -47,20 +39,20 @@ namespace RDFCommon.OVns
             var s = uri as string;
             if (s != null)
             {
-                int code = coding_table.GetCodeByString(s);
+                int code = coding_table.GetCode(s);
          
             if (code == -1)
                 return new OV_iri(s);
-            else return new OV_iriint(code, coding_table.GetStringByCode);
+            else return new OV_iriint(code, coding_table.GetString);
             }
             else  if(uri is int)
-                return new OV_iriint((int) uri, coding_table.GetStringByCode);
+                return new OV_iriint((int) uri, coding_table.GetString);
             throw new ArgumentException();
         }
 
         public override ObjectVariants AddIri(string iri)
         {
-            return new OV_iriint(coding_table.Add(iri), coding_table.GetStringByCode); ;
+            return new OV_iriint(coding_table.GetSetCode(iri), coding_table.GetString); ;
         }
 
 
@@ -77,11 +69,11 @@ namespace RDFCommon.OVns
 
         public override bool TryGetUri(OV_iri iriString, out ObjectVariants iriCoded)
         {
-            int code = coding_table.GetCodeByString(iriString.UriString);
+            int code = coding_table.GetCode(iriString.UriString);
             iriCoded = iriString;
             if (code == -1)
                 return false;
-            iriCoded=new OV_iriint(code, coding_table.GetStringByCode);
+            iriCoded=new OV_iriint(code, coding_table.GetString);
             return true;
         }
 

@@ -1,0 +1,4 @@
+PREFIX s: <s>
+
+SELECT ?p 
+WHERE { s:0 ?p ?o }

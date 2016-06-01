@@ -1,0 +1,6 @@
+C:\Users\Admin\Source\Repos\PolarDemo\SparqlParseRun\obj\Release\sparql2PacNSLexer.cs
+C:\Users\Admin\Source\Repos\PolarDemo\SparqlParseRun\obj\Release\sparql2PacNSParser.cs
+C:\Users\Admin\Source\Repos\PolarDemo\SparqlParseRun\obj\Release\sparql2PacNSListener.cs
+C:\Users\Admin\Source\Repos\PolarDemo\SparqlParseRun\obj\Release\sparql2PacNSBaseListener.cs
+C:\Users\Admin\Source\Repos\PolarDemo\SparqlParseRun\obj\Release\sparql2PacNSVisitor.cs
+C:\Users\Admin\Source\Repos\PolarDemo\SparqlParseRun\obj\Release\sparql2PacNSBaseVisitor.cs
