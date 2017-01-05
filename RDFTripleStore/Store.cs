@@ -13,8 +13,7 @@ namespace RDFTripleStore
             : base(path)
         {
 
-            NodeGenerator =
-                ng = NodeGeneratorInt.Create(path);
+       
             NamedGraphs = new NamedGraphsByFolders(new DirectoryInfo(path), ng, d => new RDFGraph(d.FullName + "/") { NodeGenerator = NodeGenerator },
                 d => { d.Delete(true); });
         }
@@ -23,7 +22,7 @@ namespace RDFTripleStore
 
         public void ReloadFrom(long iri_Count, string fileName)
         {
-            FromTurtle(iri_Count, fileName);
+            AddFromTurtle(iri_Count, fileName);
            // ActivateCache();
         }
 

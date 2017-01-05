@@ -97,7 +97,7 @@ namespace RDFTripleStore
             throw new NotImplementedException();
         }
 
-        public void FromTurtle(long iri_Count, string gString)
+        public void AddFromTurtle(long iri_Count, string gString)
         {
             throw new NotImplementedException();
         }

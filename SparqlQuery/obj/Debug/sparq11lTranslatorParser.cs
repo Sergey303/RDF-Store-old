@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generated from C:\Users\Admin\Source\Repos\RDF-Store-Polar-DB-Lab\SparqlQuery\sparq11lTranslator.g4 by ANTLR 4.3
+// Generated from C:\Repos\next\RDF-Store\SparqlQuery\sparq11lTranslator.g4 by ANTLR 4.3
 
 // Unreachable code detected
 #pragma warning disable 0162
@@ -19,6 +19,7 @@
 
 namespace SparqlQuery {
 
+	using System;
 	using System;
 	using System.Linq;	  
 	using SparqlQuery.SparqlClasses;
@@ -77,30 +78,29 @@ public partial class sparq11lTranslatorParser : Parser {
 		VARNAME=163, PN_CHARS=164, PN_PREFIX=165, PN_LOCAL=166, PLX=167, PERCENT=168, 
 		HEX=169, PN_LOCAL_ESC=170, LineComment=171, BASE=172, USING=173, SEPARATOR=174;
 	public static readonly string[] tokenNames = {
-		"<INVALID>", "','", "'*'", "'-'", "'<'", "'!='", "'<='", "'?'", "'{'", 
-		"'}'", "'^^'", "'^'", "'a'", "'.'", "'+'", "'='", "';'", "'&&'", "'||'", 
-		"'>'", "'/'", "'>='", "'|'", "'!'", "ADD", "ALL", "AS", "ASC", "ASK", 
-		"BIND", "BY", "CREATE", "CONSTRUCT", "COPY", "CLEAR", "DATA", "DROP", 
-		"DESCRIBE", "DELETE", "DESC", "DEFAULT", "SELECT", "DISTINCT", "FROM", 
-		"FILTER", "GRAPH", "HAVING", "IN", "INSERT", "INTO", "GROUP", "LOAD", 
-		"LIMIT", "MINUS", "MOVE", "NAMED", "NOT", "OFFSET", "ORDER", "OPTIONAL", 
-		"PREFIX", "REDUCED", "SILENT", "SERVICE", "TO", "UNDEF", "UNION", "VALUES", 
-		"WITH", "WHERE", "STR", "LANG", "LANGMATCHES", "DATATYPE", "BOUND", "IRI", 
-		"URI", "BNODE", "RAND", "ABS", "CEIL", "FLOOR", "ROUND", "CONCAT", "STRLEN", 
-		"UCASE", "LCASE", "ENCODE_FOR_URI", "CONTAINS", "STRSTARTS", "STRENDS", 
-		"STRBEFORE", "STRAFTER", "YEAR", "MONTH", "DAY", "HOURS", "MINUTES", "SECONDS", 
-		"TIMEZONE", "TZ", "NOW", "UUID", "STRUUID", "MD5", "SHA1", "SHA256", "SHA384", 
-		"SHA512", "COALESCE", "IF", "STRLANG", "STRDT", "SAMETERM", "ISIRI", "ISURI", 
-		"ISBLANK", "ISLITERAL", "ISNUMERIC", "REGEX", "SUBSTR", "REPLACE", "EXISTS", 
-		"COUNT", "SUM", "MIN", "MAX", "AVG", "SAMPLE", "GROUP_CONCAT", "TRUE", 
-		"FALSE", "IRIREF", "PNAME_LN", "PNAME_NS", "BLANK_NODE_LABEL", "VAR1", 
-		"VAR2", "LANGTAG", "INTEGER", "DECIMAL", "DOUBLE", "INTEGER_POSITIVE", 
-		"DECIMAL_POSITIVE", "DOUBLE_POSITIVE", "INTEGER_NEGATIVE", "DECIMAL_NEGATIVE", 
-		"DOUBLE_NEGATIVE", "EXPONENT", "STRING_LITERAL1", "STRING_LITERAL2", "STRING_LITERAL_LONG1", 
-		"STRING_LITERAL_LONG2", "ECHAR", "NIL", "'('", "')'", "WS", "ANON", "'['", 
-		"']'", "PN_CHARS_BASE", "PN_CHARS_U", "VARNAME", "PN_CHARS", "PN_PREFIX", 
-		"PN_LOCAL", "PLX", "PERCENT", "HEX", "PN_LOCAL_ESC", "LineComment", "BASE", 
-		"USING", "SEPARATOR"
+		"<INVALID>", "'/'", "'!='", "'^^'", "'||'", "';'", "'{'", "'&&'", "'='", 
+		"'}'", "'^'", "'?'", "'<='", "'*'", "','", "'.'", "'>='", "'<'", "'|'", 
+		"'>'", "'!'", "'a'", "'+'", "'-'", "ADD", "ALL", "AS", "ASC", "ASK", "BIND", 
+		"BY", "CREATE", "CONSTRUCT", "COPY", "CLEAR", "DATA", "DROP", "DESCRIBE", 
+		"DELETE", "DESC", "DEFAULT", "SELECT", "DISTINCT", "FROM", "FILTER", "GRAPH", 
+		"HAVING", "IN", "INSERT", "INTO", "GROUP", "LOAD", "LIMIT", "MINUS", "MOVE", 
+		"NAMED", "NOT", "OFFSET", "ORDER", "OPTIONAL", "PREFIX", "REDUCED", "SILENT", 
+		"SERVICE", "TO", "UNDEF", "UNION", "VALUES", "WITH", "WHERE", "STR", "LANG", 
+		"LANGMATCHES", "DATATYPE", "BOUND", "IRI", "URI", "BNODE", "RAND", "ABS", 
+		"CEIL", "FLOOR", "ROUND", "CONCAT", "STRLEN", "UCASE", "LCASE", "ENCODE_FOR_URI", 
+		"CONTAINS", "STRSTARTS", "STRENDS", "STRBEFORE", "STRAFTER", "YEAR", "MONTH", 
+		"DAY", "HOURS", "MINUTES", "SECONDS", "TIMEZONE", "TZ", "NOW", "UUID", 
+		"STRUUID", "MD5", "SHA1", "SHA256", "SHA384", "SHA512", "COALESCE", "IF", 
+		"STRLANG", "STRDT", "SAMETERM", "ISIRI", "ISURI", "ISBLANK", "ISLITERAL", 
+		"ISNUMERIC", "REGEX", "SUBSTR", "REPLACE", "EXISTS", "COUNT", "SUM", "MIN", 
+		"MAX", "AVG", "SAMPLE", "GROUP_CONCAT", "TRUE", "FALSE", "IRIREF", "PNAME_LN", 
+		"PNAME_NS", "BLANK_NODE_LABEL", "VAR1", "VAR2", "LANGTAG", "INTEGER", 
+		"DECIMAL", "DOUBLE", "INTEGER_POSITIVE", "DECIMAL_POSITIVE", "DOUBLE_POSITIVE", 
+		"INTEGER_NEGATIVE", "DECIMAL_NEGATIVE", "DOUBLE_NEGATIVE", "EXPONENT", 
+		"STRING_LITERAL1", "STRING_LITERAL2", "STRING_LITERAL_LONG1", "STRING_LITERAL_LONG2", 
+		"ECHAR", "NIL", "'('", "')'", "WS", "ANON", "'['", "']'", "PN_CHARS_BASE", 
+		"PN_CHARS_U", "VARNAME", "PN_CHARS", "PN_PREFIX", "PN_LOCAL", "PLX", "PERCENT", 
+		"HEX", "PN_LOCAL_ESC", "LineComment", "BASE", "USING", "SEPARATOR"
 	};
 	public const int
 		RULE_query = 0, RULE_prologue = 1, RULE_baseDecl = 2, RULE_prefixDecl = 3, 
@@ -183,6 +183,7 @@ public partial class sparq11lTranslatorParser : Parser {
 
 
 	public RdfQuery11Translator q;
+	public RdfQuery11Translator q1;
 	      
 
 	public sparq11lTranslatorParser(ITokenStream input)
@@ -199,14 +200,11 @@ public partial class sparq11lTranslatorParser : Parser {
 		public AskQueryContext _askQuery;
 		public ValuesClauseContext _valuesClause;
 		public UpdateContext _update;
-		public AskQueryContext askQuery() {
-			return GetRuleContext<AskQueryContext>(0);
+		public PrologueContext prologue() {
+			return GetRuleContext<PrologueContext>(0);
 		}
 		public DescribeQueryContext describeQuery() {
 			return GetRuleContext<DescribeQueryContext>(0);
-		}
-		public PrologueContext prologue() {
-			return GetRuleContext<PrologueContext>(0);
 		}
 		public UpdateContext update() {
 			return GetRuleContext<UpdateContext>(0);
@@ -214,30 +212,20 @@ public partial class sparq11lTranslatorParser : Parser {
 		public ValuesClauseContext valuesClause() {
 			return GetRuleContext<ValuesClauseContext>(0);
 		}
+		public SelectQueryContext selectQuery() {
+			return GetRuleContext<SelectQueryContext>(0);
+		}
 		public ConstructQueryContext constructQuery() {
 			return GetRuleContext<ConstructQueryContext>(0);
 		}
-		public SelectQueryContext selectQuery() {
-			return GetRuleContext<SelectQueryContext>(0);
+		public AskQueryContext askQuery() {
+			return GetRuleContext<AskQueryContext>(0);
 		}
 		public QueryContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_query; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterQuery(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitQuery(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitQuery(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -309,36 +297,23 @@ public partial class sparq11lTranslatorParser : Parser {
 	}
 
 	public partial class PrologueContext : ParserRuleContext {
-		public IReadOnlyList<BaseDeclContext> baseDecl() {
-			return GetRuleContexts<BaseDeclContext>();
-		}
 		public PrefixDeclContext prefixDecl(int i) {
 			return GetRuleContext<PrefixDeclContext>(i);
 		}
-		public BaseDeclContext baseDecl(int i) {
-			return GetRuleContext<BaseDeclContext>(i);
+		public IReadOnlyList<BaseDeclContext> baseDecl() {
+			return GetRuleContexts<BaseDeclContext>();
 		}
 		public IReadOnlyList<PrefixDeclContext> prefixDecl() {
 			return GetRuleContexts<PrefixDeclContext>();
+		}
+		public BaseDeclContext baseDecl(int i) {
+			return GetRuleContext<BaseDeclContext>(i);
 		}
 		public PrologueContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_prologue; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterPrologue(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitPrologue(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitPrologue(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -389,26 +364,13 @@ public partial class sparq11lTranslatorParser : Parser {
 
 	public partial class BaseDeclContext : ParserRuleContext {
 		public IToken _IRIREF;
-		public ITerminalNode BASE() { return GetToken(sparq11lTranslatorParser.BASE, 0); }
 		public ITerminalNode IRIREF() { return GetToken(sparq11lTranslatorParser.IRIREF, 0); }
+		public ITerminalNode BASE() { return GetToken(sparq11lTranslatorParser.BASE, 0); }
 		public BaseDeclContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_baseDecl; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterBaseDecl(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitBaseDecl(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitBaseDecl(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -438,26 +400,13 @@ public partial class sparq11lTranslatorParser : Parser {
 		public IToken _PNAME_NS;
 		public IToken _IRIREF;
 		public ITerminalNode PREFIX() { return GetToken(sparq11lTranslatorParser.PREFIX, 0); }
-		public ITerminalNode PNAME_NS() { return GetToken(sparq11lTranslatorParser.PNAME_NS, 0); }
 		public ITerminalNode IRIREF() { return GetToken(sparq11lTranslatorParser.IRIREF, 0); }
+		public ITerminalNode PNAME_NS() { return GetToken(sparq11lTranslatorParser.PNAME_NS, 0); }
 		public PrefixDeclContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_prefixDecl; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterPrefixDecl(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitPrefixDecl(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitPrefixDecl(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -494,36 +443,23 @@ public partial class sparq11lTranslatorParser : Parser {
 		public DatasetClauseContext datasetClause(int i) {
 			return GetRuleContext<DatasetClauseContext>(i);
 		}
-		public WhereClauseContext whereClause() {
-			return GetRuleContext<WhereClauseContext>(0);
-		}
 		public SelectClauseContext selectClause() {
 			return GetRuleContext<SelectClauseContext>(0);
 		}
-		public IReadOnlyList<DatasetClauseContext> datasetClause() {
-			return GetRuleContexts<DatasetClauseContext>();
-		}
 		public SolutionModifierContext solutionModifier() {
 			return GetRuleContext<SolutionModifierContext>(0);
+		}
+		public WhereClauseContext whereClause() {
+			return GetRuleContext<WhereClauseContext>(0);
+		}
+		public IReadOnlyList<DatasetClauseContext> datasetClause() {
+			return GetRuleContexts<DatasetClauseContext>();
 		}
 		public SelectQueryContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_selectQuery; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterSelectQuery(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitSelectQuery(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitSelectQuery(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -572,9 +508,6 @@ public partial class sparq11lTranslatorParser : Parser {
 		public WhereClauseContext _whereClause;
 		public SolutionModifierContext _solutionModifier;
 		public ValuesClauseContext _valuesClause;
-		public WhereClauseContext whereClause() {
-			return GetRuleContext<WhereClauseContext>(0);
-		}
 		public SelectClauseContext selectClause() {
 			return GetRuleContext<SelectClauseContext>(0);
 		}
@@ -584,24 +517,14 @@ public partial class sparq11lTranslatorParser : Parser {
 		public ValuesClauseContext valuesClause() {
 			return GetRuleContext<ValuesClauseContext>(0);
 		}
+		public WhereClauseContext whereClause() {
+			return GetRuleContext<WhereClauseContext>(0);
+		}
 		public SubSelectContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_subSelect; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterSubSelect(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitSubSelect(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitSubSelect(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -637,40 +560,27 @@ public partial class sparq11lTranslatorParser : Parser {
 		public ITerminalNode AS(int i) {
 			return GetToken(sparq11lTranslatorParser.AS, i);
 		}
-		public IReadOnlyList<ITerminalNode> AS() { return GetTokens(sparq11lTranslatorParser.AS); }
+		public IReadOnlyList<VarContext> var() {
+			return GetRuleContexts<VarContext>();
+		}
+		public ITerminalNode REDUCED() { return GetToken(sparq11lTranslatorParser.REDUCED, 0); }
 		public ExpressionContext expression(int i) {
 			return GetRuleContext<ExpressionContext>(i);
+		}
+		public ITerminalNode SELECT() { return GetToken(sparq11lTranslatorParser.SELECT, 0); }
+		public ITerminalNode DISTINCT() { return GetToken(sparq11lTranslatorParser.DISTINCT, 0); }
+		public IReadOnlyList<ExpressionContext> expression() {
+			return GetRuleContexts<ExpressionContext>();
 		}
 		public VarContext var(int i) {
 			return GetRuleContext<VarContext>(i);
 		}
-		public ITerminalNode DISTINCT() { return GetToken(sparq11lTranslatorParser.DISTINCT, 0); }
-		public ITerminalNode REDUCED() { return GetToken(sparq11lTranslatorParser.REDUCED, 0); }
-		public IReadOnlyList<ExpressionContext> expression() {
-			return GetRuleContexts<ExpressionContext>();
-		}
-		public IReadOnlyList<VarContext> var() {
-			return GetRuleContexts<VarContext>();
-		}
-		public ITerminalNode SELECT() { return GetToken(sparq11lTranslatorParser.SELECT, 0); }
+		public IReadOnlyList<ITerminalNode> AS() { return GetTokens(sparq11lTranslatorParser.AS); }
 		public SelectClauseContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_selectClause; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterSelectClause(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitSelectClause(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitSelectClause(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -697,7 +607,7 @@ public partial class sparq11lTranslatorParser : Parser {
 				_localctx.value.IsReduced=true;
 				}
 				break;
-			case T__21:
+			case T__10:
 			case VAR1:
 			case VAR2:
 			case BracketOpen:
@@ -747,9 +657,9 @@ public partial class sparq11lTranslatorParser : Parser {
 				} while ( ((((_la - 136)) & ~0x3f) == 0 && ((1L << (_la - 136)) & ((1L << (VAR1 - 136)) | (1L << (VAR2 - 136)) | (1L << (BracketOpen - 136)))) != 0) );
 				}
 				break;
-			case T__21:
+			case T__10:
 				{
-				State = 340; Match(T__21);
+				State = 340; Match(T__10);
 				_localctx.value.IsAll();
 				}
 				break;
@@ -775,44 +685,31 @@ public partial class sparq11lTranslatorParser : Parser {
 		public WhereClauseContext _whereClause;
 		public SolutionModifierContext _solutionModifier;
 		public TriplesTemplateContext _triplesTemplate;
-		public ITerminalNode WHERE() { return GetToken(sparq11lTranslatorParser.WHERE, 0); }
+		public ITerminalNode CONSTRUCT() { return GetToken(sparq11lTranslatorParser.CONSTRUCT, 0); }
+		public TriplesTemplateContext triplesTemplate() {
+			return GetRuleContext<TriplesTemplateContext>(0);
+		}
+		public ConstructTemplateContext constructTemplate() {
+			return GetRuleContext<ConstructTemplateContext>(0);
+		}
 		public DatasetClauseContext datasetClause(int i) {
 			return GetRuleContext<DatasetClauseContext>(i);
 		}
+		public SolutionModifierContext solutionModifier() {
+			return GetRuleContext<SolutionModifierContext>(0);
+		}
+		public ITerminalNode WHERE() { return GetToken(sparq11lTranslatorParser.WHERE, 0); }
 		public WhereClauseContext whereClause() {
 			return GetRuleContext<WhereClauseContext>(0);
 		}
 		public IReadOnlyList<DatasetClauseContext> datasetClause() {
 			return GetRuleContexts<DatasetClauseContext>();
 		}
-		public ConstructTemplateContext constructTemplate() {
-			return GetRuleContext<ConstructTemplateContext>(0);
-		}
-		public SolutionModifierContext solutionModifier() {
-			return GetRuleContext<SolutionModifierContext>(0);
-		}
-		public ITerminalNode CONSTRUCT() { return GetToken(sparq11lTranslatorParser.CONSTRUCT, 0); }
-		public TriplesTemplateContext triplesTemplate() {
-			return GetRuleContext<TriplesTemplateContext>(0);
-		}
 		public ConstructQueryContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_constructQuery; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterConstructQuery(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitConstructQuery(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitConstructQuery(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -827,7 +724,7 @@ public partial class sparq11lTranslatorParser : Parser {
 			_localctx.value = new SparqlConstructQuery(q);
 			State = 374;
 			switch (_input.La(1)) {
-			case T__15:
+			case T__17:
 				{
 				State = 346; _localctx._constructTemplate = constructTemplate();
 				State = 350;
@@ -865,7 +762,7 @@ public partial class sparq11lTranslatorParser : Parser {
 					_la = _input.La(1);
 				}
 				State = 363; Match(WHERE);
-				State = 364; Match(T__15);
+				State = 364; Match(T__17);
 				State = 368;
 				_la = _input.La(1);
 				if (((((_la - 130)) & ~0x3f) == 0 && ((1L << (_la - 130)) & ((1L << (TRUE - 130)) | (1L << (FALSE - 130)) | (1L << (IRIREF - 130)) | (1L << (PNAME_LN - 130)) | (1L << (PNAME_NS - 130)) | (1L << (BLANK_NODE_LABEL - 130)) | (1L << (VAR1 - 130)) | (1L << (VAR2 - 130)) | (1L << (INTEGER - 130)) | (1L << (DECIMAL - 130)) | (1L << (DOUBLE - 130)) | (1L << (INTEGER_POSITIVE - 130)) | (1L << (DECIMAL_POSITIVE - 130)) | (1L << (DOUBLE_POSITIVE - 130)) | (1L << (INTEGER_NEGATIVE - 130)) | (1L << (DECIMAL_NEGATIVE - 130)) | (1L << (DOUBLE_NEGATIVE - 130)) | (1L << (STRING_LITERAL1 - 130)) | (1L << (STRING_LITERAL2 - 130)) | (1L << (STRING_LITERAL_LONG1 - 130)) | (1L << (STRING_LITERAL_LONG2 - 130)) | (1L << (NIL - 130)) | (1L << (BracketOpen - 130)) | (1L << (ANON - 130)) | (1L << (SquareBracketOpen - 130)))) != 0)) {
@@ -901,8 +798,15 @@ public partial class sparq11lTranslatorParser : Parser {
 		public VarOrIriContext _varOrIri;
 		public WhereClauseContext _whereClause;
 		public SolutionModifierContext _solutionModifier;
+		public ITerminalNode DESCRIBE() { return GetToken(sparq11lTranslatorParser.DESCRIBE, 0); }
+		public VarOrIriContext varOrIri(int i) {
+			return GetRuleContext<VarOrIriContext>(i);
+		}
 		public DatasetClauseContext datasetClause(int i) {
 			return GetRuleContext<DatasetClauseContext>(i);
+		}
+		public SolutionModifierContext solutionModifier() {
+			return GetRuleContext<SolutionModifierContext>(0);
 		}
 		public WhereClauseContext whereClause() {
 			return GetRuleContext<WhereClauseContext>(0);
@@ -910,34 +814,14 @@ public partial class sparq11lTranslatorParser : Parser {
 		public IReadOnlyList<DatasetClauseContext> datasetClause() {
 			return GetRuleContexts<DatasetClauseContext>();
 		}
-		public VarOrIriContext varOrIri(int i) {
-			return GetRuleContext<VarOrIriContext>(i);
-		}
 		public IReadOnlyList<VarOrIriContext> varOrIri() {
 			return GetRuleContexts<VarOrIriContext>();
 		}
-		public SolutionModifierContext solutionModifier() {
-			return GetRuleContext<SolutionModifierContext>(0);
-		}
-		public ITerminalNode DESCRIBE() { return GetToken(sparq11lTranslatorParser.DESCRIBE, 0); }
 		public DescribeQueryContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_describeQuery; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterDescribeQuery(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitDescribeQuery(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitDescribeQuery(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -974,9 +858,9 @@ public partial class sparq11lTranslatorParser : Parser {
 				} while ( ((((_la - 132)) & ~0x3f) == 0 && ((1L << (_la - 132)) & ((1L << (IRIREF - 132)) | (1L << (PNAME_LN - 132)) | (1L << (PNAME_NS - 132)) | (1L << (VAR1 - 132)) | (1L << (VAR2 - 132)))) != 0) );
 				}
 				break;
-			case T__21:
+			case T__10:
 				{
-				State = 385; Match(T__21);
+				State = 385; Match(T__10);
 				_localctx.value.IsAll();
 				}
 				break;
@@ -998,7 +882,7 @@ public partial class sparq11lTranslatorParser : Parser {
 			}
 			State = 398;
 			_la = _input.La(1);
-			if (_la==T__15 || _la==WHERE) {
+			if (_la==T__17 || _la==WHERE) {
 				{
 				State = 395; _localctx._whereClause = whereClause();
 				_localctx.value.Create(_localctx._whereClause.value);
@@ -1027,6 +911,9 @@ public partial class sparq11lTranslatorParser : Parser {
 		public DatasetClauseContext datasetClause(int i) {
 			return GetRuleContext<DatasetClauseContext>(i);
 		}
+		public SolutionModifierContext solutionModifier() {
+			return GetRuleContext<SolutionModifierContext>(0);
+		}
 		public WhereClauseContext whereClause() {
 			return GetRuleContext<WhereClauseContext>(0);
 		}
@@ -1034,27 +921,11 @@ public partial class sparq11lTranslatorParser : Parser {
 			return GetRuleContexts<DatasetClauseContext>();
 		}
 		public ITerminalNode ASK() { return GetToken(sparq11lTranslatorParser.ASK, 0); }
-		public SolutionModifierContext solutionModifier() {
-			return GetRuleContext<SolutionModifierContext>(0);
-		}
 		public AskQueryContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_askQuery; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterAskQuery(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitAskQuery(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitAskQuery(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -1097,11 +968,11 @@ public partial class sparq11lTranslatorParser : Parser {
 	}
 
 	public partial class DatasetClauseContext : ParserRuleContext {
-		public NamedGraphClauseContext namedGraphClause() {
-			return GetRuleContext<NamedGraphClauseContext>(0);
-		}
 		public DefaultGraphClauseContext defaultGraphClause() {
 			return GetRuleContext<DefaultGraphClauseContext>(0);
+		}
+		public NamedGraphClauseContext namedGraphClause() {
+			return GetRuleContext<NamedGraphClauseContext>(0);
 		}
 		public ITerminalNode FROM() { return GetToken(sparq11lTranslatorParser.FROM, 0); }
 		public DatasetClauseContext(ParserRuleContext parent, int invokingState)
@@ -1109,19 +980,6 @@ public partial class sparq11lTranslatorParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_datasetClause; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterDatasetClause(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitDatasetClause(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitDatasetClause(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -1172,19 +1030,6 @@ public partial class sparq11lTranslatorParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_defaultGraphClause; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterDefaultGraphClause(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitDefaultGraphClause(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitDefaultGraphClause(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -1211,28 +1056,15 @@ public partial class sparq11lTranslatorParser : Parser {
 
 	public partial class NamedGraphClauseContext : ParserRuleContext {
 		public SourceSelectorContext _sourceSelector;
-		public ITerminalNode NAMED() { return GetToken(sparq11lTranslatorParser.NAMED, 0); }
 		public SourceSelectorContext sourceSelector() {
 			return GetRuleContext<SourceSelectorContext>(0);
 		}
+		public ITerminalNode NAMED() { return GetToken(sparq11lTranslatorParser.NAMED, 0); }
 		public NamedGraphClauseContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_namedGraphClause; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterNamedGraphClause(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitNamedGraphClause(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitNamedGraphClause(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -1269,19 +1101,6 @@ public partial class sparq11lTranslatorParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_sourceSelector; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterSourceSelector(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitSourceSelector(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitSourceSelector(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -1309,28 +1128,15 @@ public partial class sparq11lTranslatorParser : Parser {
 	public partial class WhereClauseContext : ParserRuleContext {
 		public ISparqlGraphPattern value;
 		public GroupGraphPatternContext _groupGraphPattern;
-		public ITerminalNode WHERE() { return GetToken(sparq11lTranslatorParser.WHERE, 0); }
 		public GroupGraphPatternContext groupGraphPattern() {
 			return GetRuleContext<GroupGraphPatternContext>(0);
 		}
+		public ITerminalNode WHERE() { return GetToken(sparq11lTranslatorParser.WHERE, 0); }
 		public WhereClauseContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_whereClause; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterWhereClause(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitWhereClause(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitWhereClause(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -1370,36 +1176,23 @@ public partial class sparq11lTranslatorParser : Parser {
 		public HavingClauseContext _havingClause;
 		public OrderClauseContext _orderClause;
 		public LimitOffsetClausesContext _limitOffsetClauses;
-		public LimitOffsetClausesContext limitOffsetClauses() {
-			return GetRuleContext<LimitOffsetClausesContext>(0);
-		}
-		public OrderClauseContext orderClause() {
-			return GetRuleContext<OrderClauseContext>(0);
-		}
 		public GroupClauseContext groupClause() {
 			return GetRuleContext<GroupClauseContext>(0);
 		}
 		public HavingClauseContext havingClause() {
 			return GetRuleContext<HavingClauseContext>(0);
 		}
+		public LimitOffsetClausesContext limitOffsetClauses() {
+			return GetRuleContext<LimitOffsetClausesContext>(0);
+		}
+		public OrderClauseContext orderClause() {
+			return GetRuleContext<OrderClauseContext>(0);
+		}
 		public SolutionModifierContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_solutionModifier; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterSolutionModifier(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitSolutionModifier(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitSolutionModifier(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -1463,32 +1256,19 @@ public partial class sparq11lTranslatorParser : Parser {
 	public partial class GroupClauseContext : ParserRuleContext {
 		public SparqlSolutionModifierGroup value;
 		public GroupConditionContext _groupCondition;
-		public ITerminalNode BY() { return GetToken(sparq11lTranslatorParser.BY, 0); }
+		public ITerminalNode GROUP() { return GetToken(sparq11lTranslatorParser.GROUP, 0); }
 		public GroupConditionContext groupCondition(int i) {
 			return GetRuleContext<GroupConditionContext>(i);
 		}
+		public ITerminalNode BY() { return GetToken(sparq11lTranslatorParser.BY, 0); }
 		public IReadOnlyList<GroupConditionContext> groupCondition() {
 			return GetRuleContexts<GroupConditionContext>();
 		}
-		public ITerminalNode GROUP() { return GetToken(sparq11lTranslatorParser.GROUP, 0); }
 		public GroupClauseContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_groupClause; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterGroupClause(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitGroupClause(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitGroupClause(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -1535,37 +1315,24 @@ public partial class sparq11lTranslatorParser : Parser {
 		public FunctionCallContext _functionCall;
 		public ExpressionContext _expression;
 		public VarContext _var;
-		public ITerminalNode AS() { return GetToken(sparq11lTranslatorParser.AS, 0); }
-		public BuiltInCallContext builtInCall() {
-			return GetRuleContext<BuiltInCallContext>(0);
-		}
 		public FunctionCallContext functionCall() {
 			return GetRuleContext<FunctionCallContext>(0);
-		}
-		public ExpressionContext expression() {
-			return GetRuleContext<ExpressionContext>(0);
 		}
 		public VarContext var() {
 			return GetRuleContext<VarContext>(0);
 		}
+		public ExpressionContext expression() {
+			return GetRuleContext<ExpressionContext>(0);
+		}
+		public BuiltInCallContext builtInCall() {
+			return GetRuleContext<BuiltInCallContext>(0);
+		}
+		public ITerminalNode AS() { return GetToken(sparq11lTranslatorParser.AS, 0); }
 		public GroupConditionContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_groupCondition; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterGroupCondition(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitGroupCondition(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitGroupCondition(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -1697,31 +1464,18 @@ public partial class sparq11lTranslatorParser : Parser {
 	public partial class HavingClauseContext : ParserRuleContext {
 		public SparqlSolutionModifierHaving value;
 		public HavingConditionContext _havingCondition;
+		public IReadOnlyList<HavingConditionContext> havingCondition() {
+			return GetRuleContexts<HavingConditionContext>();
+		}
 		public HavingConditionContext havingCondition(int i) {
 			return GetRuleContext<HavingConditionContext>(i);
 		}
 		public ITerminalNode HAVING() { return GetToken(sparq11lTranslatorParser.HAVING, 0); }
-		public IReadOnlyList<HavingConditionContext> havingCondition() {
-			return GetRuleContexts<HavingConditionContext>();
-		}
 		public HavingClauseContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_havingClause; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterHavingClause(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitHavingClause(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitHavingClause(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -1772,19 +1526,6 @@ public partial class sparq11lTranslatorParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_havingCondition; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterHavingCondition(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitHavingCondition(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitHavingCondition(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -1812,32 +1553,19 @@ public partial class sparq11lTranslatorParser : Parser {
 	public partial class OrderClauseContext : ParserRuleContext {
 		public SparqlSolutionModifierOrder value;
 		public OrderConditionContext _orderCondition;
-		public ITerminalNode ORDER() { return GetToken(sparq11lTranslatorParser.ORDER, 0); }
-		public ITerminalNode BY() { return GetToken(sparq11lTranslatorParser.BY, 0); }
-		public OrderConditionContext orderCondition(int i) {
-			return GetRuleContext<OrderConditionContext>(i);
-		}
 		public IReadOnlyList<OrderConditionContext> orderCondition() {
 			return GetRuleContexts<OrderConditionContext>();
 		}
+		public ITerminalNode ORDER() { return GetToken(sparq11lTranslatorParser.ORDER, 0); }
+		public OrderConditionContext orderCondition(int i) {
+			return GetRuleContext<OrderConditionContext>(i);
+		}
+		public ITerminalNode BY() { return GetToken(sparq11lTranslatorParser.BY, 0); }
 		public OrderClauseContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_orderClause; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterOrderClause(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitOrderClause(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitOrderClause(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -1885,6 +1613,13 @@ public partial class sparq11lTranslatorParser : Parser {
 		public BuiltInCallContext _builtInCall;
 		public FunctionCallContext _functionCall;
 		public VarContext _var;
+		public ITerminalNode ASC() { return GetToken(sparq11lTranslatorParser.ASC, 0); }
+		public FunctionCallContext functionCall() {
+			return GetRuleContext<FunctionCallContext>(0);
+		}
+		public VarContext var() {
+			return GetRuleContext<VarContext>(0);
+		}
 		public BrackettedExpressionContext brackettedExpression() {
 			return GetRuleContext<BrackettedExpressionContext>(0);
 		}
@@ -1892,31 +1627,11 @@ public partial class sparq11lTranslatorParser : Parser {
 		public BuiltInCallContext builtInCall() {
 			return GetRuleContext<BuiltInCallContext>(0);
 		}
-		public FunctionCallContext functionCall() {
-			return GetRuleContext<FunctionCallContext>(0);
-		}
-		public ITerminalNode ASC() { return GetToken(sparq11lTranslatorParser.ASC, 0); }
-		public VarContext var() {
-			return GetRuleContext<VarContext>(0);
-		}
 		public OrderConditionContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_orderCondition; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterOrderCondition(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitOrderCondition(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitOrderCondition(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -2133,30 +1848,17 @@ public partial class sparq11lTranslatorParser : Parser {
 		public SparqlSolutionModifierLimit value;
 		public LimitClauseContext _limitClause;
 		public OffsetClauseContext _offsetClause;
-		public OffsetClauseContext offsetClause() {
-			return GetRuleContext<OffsetClauseContext>(0);
-		}
 		public LimitClauseContext limitClause() {
 			return GetRuleContext<LimitClauseContext>(0);
+		}
+		public OffsetClauseContext offsetClause() {
+			return GetRuleContext<OffsetClauseContext>(0);
 		}
 		public LimitOffsetClausesContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_limitOffsetClauses; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterLimitOffsetClauses(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitLimitOffsetClauses(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitLimitOffsetClauses(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -2219,28 +1921,15 @@ public partial class sparq11lTranslatorParser : Parser {
 	public partial class LimitClauseContext : ParserRuleContext {
 		public int value;
 		public IntegerContext _integer;
-		public ITerminalNode LIMIT() { return GetToken(sparq11lTranslatorParser.LIMIT, 0); }
 		public IntegerContext integer() {
 			return GetRuleContext<IntegerContext>(0);
 		}
+		public ITerminalNode LIMIT() { return GetToken(sparq11lTranslatorParser.LIMIT, 0); }
 		public LimitClauseContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_limitClause; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterLimitClause(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitLimitClause(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitLimitClause(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -2278,19 +1967,6 @@ public partial class sparq11lTranslatorParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_offsetClause; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterOffsetClause(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitOffsetClause(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitOffsetClause(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -2325,19 +2001,6 @@ public partial class sparq11lTranslatorParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_integer; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterInteger(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitInteger(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitInteger(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -2365,28 +2028,15 @@ public partial class sparq11lTranslatorParser : Parser {
 	public partial class ValuesClauseContext : ParserRuleContext {
 		public ISparqlGraphPattern value;
 		public DataBlockContext _dataBlock;
+		public ITerminalNode VALUES() { return GetToken(sparq11lTranslatorParser.VALUES, 0); }
 		public DataBlockContext dataBlock() {
 			return GetRuleContext<DataBlockContext>(0);
 		}
-		public ITerminalNode VALUES() { return GetToken(sparq11lTranslatorParser.VALUES, 0); }
 		public ValuesClauseContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_valuesClause; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterValuesClause(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitValuesClause(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitValuesClause(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -2425,33 +2075,20 @@ public partial class sparq11lTranslatorParser : Parser {
 		public PrologueContext _prologue;
 		public Update1Context _update1;
 		public UpdateContext r;
-		public Update1Context update1() {
-			return GetRuleContext<Update1Context>(0);
-		}
 		public PrologueContext prologue() {
 			return GetRuleContext<PrologueContext>(0);
 		}
 		public UpdateContext update() {
 			return GetRuleContext<UpdateContext>(0);
 		}
+		public Update1Context update1() {
+			return GetRuleContext<Update1Context>(0);
+		}
 		public UpdateContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_update; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterUpdate(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitUpdate(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitUpdate(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -2473,9 +2110,9 @@ public partial class sparq11lTranslatorParser : Parser {
 				_localctx.value.Create(_localctx._update1.value);
 				State = 577;
 				_la = _input.La(1);
-				if (_la==T__7) {
+				if (_la==T__18) {
 					{
-					State = 573; Match(T__7);
+					State = 573; Match(T__18);
 					State = 574; _localctx.r = update();
 					_localctx.value.Add(_localctx.r.value);
 					}
@@ -2510,17 +2147,23 @@ public partial class sparq11lTranslatorParser : Parser {
 		public DeleteDataContext _deleteData;
 		public DeleteWhereContext _deleteWhere;
 		public ModifyContext _modify;
-		public ModifyContext modify() {
-			return GetRuleContext<ModifyContext>(0);
+		public CopyContext copy() {
+			return GetRuleContext<CopyContext>(0);
 		}
 		public DeleteDataContext deleteData() {
 			return GetRuleContext<DeleteDataContext>(0);
 		}
-		public AddContext add() {
-			return GetRuleContext<AddContext>(0);
+		public MoveContext move() {
+			return GetRuleContext<MoveContext>(0);
 		}
-		public DropContext drop() {
-			return GetRuleContext<DropContext>(0);
+		public CreateContext create() {
+			return GetRuleContext<CreateContext>(0);
+		}
+		public ModifyContext modify() {
+			return GetRuleContext<ModifyContext>(0);
+		}
+		public DeleteWhereContext deleteWhere() {
+			return GetRuleContext<DeleteWhereContext>(0);
 		}
 		public ClearContext clear() {
 			return GetRuleContext<ClearContext>(0);
@@ -2528,39 +2171,20 @@ public partial class sparq11lTranslatorParser : Parser {
 		public InsertDataContext insertData() {
 			return GetRuleContext<InsertDataContext>(0);
 		}
-		public DeleteWhereContext deleteWhere() {
-			return GetRuleContext<DeleteWhereContext>(0);
-		}
-		public CreateContext create() {
-			return GetRuleContext<CreateContext>(0);
-		}
-		public MoveContext move() {
-			return GetRuleContext<MoveContext>(0);
-		}
 		public LoadContext load() {
 			return GetRuleContext<LoadContext>(0);
 		}
-		public CopyContext copy() {
-			return GetRuleContext<CopyContext>(0);
+		public DropContext drop() {
+			return GetRuleContext<DropContext>(0);
+		}
+		public AddContext add() {
+			return GetRuleContext<AddContext>(0);
 		}
 		public Update1Context(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_update1; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterUpdate1(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitUpdate1(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitUpdate1(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -2675,32 +2299,19 @@ public partial class sparq11lTranslatorParser : Parser {
 		public IriContext _iri;
 		public GraphRefContext _graphRef;
 		public ITerminalNode SILENT() { return GetToken(sparq11lTranslatorParser.SILENT, 0); }
+		public ITerminalNode LOAD() { return GetToken(sparq11lTranslatorParser.LOAD, 0); }
 		public IriContext iri() {
 			return GetRuleContext<IriContext>(0);
 		}
-		public ITerminalNode INTO() { return GetToken(sparq11lTranslatorParser.INTO, 0); }
 		public GraphRefContext graphRef() {
 			return GetRuleContext<GraphRefContext>(0);
 		}
-		public ITerminalNode LOAD() { return GetToken(sparq11lTranslatorParser.LOAD, 0); }
+		public ITerminalNode INTO() { return GetToken(sparq11lTranslatorParser.INTO, 0); }
 		public LoadContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_load; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterLoad(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitLoad(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitLoad(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -2760,19 +2371,6 @@ public partial class sparq11lTranslatorParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_clear; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterClear(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitClear(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitClear(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -2822,19 +2420,6 @@ public partial class sparq11lTranslatorParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_drop; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterDrop(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitDrop(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitDrop(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -2874,29 +2459,16 @@ public partial class sparq11lTranslatorParser : Parser {
 	public partial class CreateContext : ParserRuleContext {
 		public SparqlUpdateCreate value;
 		public GraphRefContext _graphRef;
-		public ITerminalNode CREATE() { return GetToken(sparq11lTranslatorParser.CREATE, 0); }
 		public ITerminalNode SILENT() { return GetToken(sparq11lTranslatorParser.SILENT, 0); }
 		public GraphRefContext graphRef() {
 			return GetRuleContext<GraphRefContext>(0);
 		}
+		public ITerminalNode CREATE() { return GetToken(sparq11lTranslatorParser.CREATE, 0); }
 		public CreateContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_create; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterCreate(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitCreate(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitCreate(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -2937,33 +2509,20 @@ public partial class sparq11lTranslatorParser : Parser {
 		public SparqlUpdateAdd value;
 		public GraphOrDefaultContext g1;
 		public GraphOrDefaultContext g2;
-		public GraphOrDefaultContext graphOrDefault(int i) {
-			return GetRuleContext<GraphOrDefaultContext>(i);
-		}
 		public ITerminalNode SILENT() { return GetToken(sparq11lTranslatorParser.SILENT, 0); }
 		public IReadOnlyList<GraphOrDefaultContext> graphOrDefault() {
 			return GetRuleContexts<GraphOrDefaultContext>();
 		}
-		public ITerminalNode TO() { return GetToken(sparq11lTranslatorParser.TO, 0); }
+		public GraphOrDefaultContext graphOrDefault(int i) {
+			return GetRuleContext<GraphOrDefaultContext>(i);
+		}
 		public ITerminalNode ADD() { return GetToken(sparq11lTranslatorParser.ADD, 0); }
+		public ITerminalNode TO() { return GetToken(sparq11lTranslatorParser.TO, 0); }
 		public AddContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_add; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterAdd(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitAdd(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitAdd(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -3006,33 +2565,20 @@ public partial class sparq11lTranslatorParser : Parser {
 		public SparqlUpdateMove value;
 		public GraphOrDefaultContext g1;
 		public GraphOrDefaultContext g2;
-		public ITerminalNode MOVE() { return GetToken(sparq11lTranslatorParser.MOVE, 0); }
-		public GraphOrDefaultContext graphOrDefault(int i) {
-			return GetRuleContext<GraphOrDefaultContext>(i);
-		}
 		public ITerminalNode SILENT() { return GetToken(sparq11lTranslatorParser.SILENT, 0); }
 		public IReadOnlyList<GraphOrDefaultContext> graphOrDefault() {
 			return GetRuleContexts<GraphOrDefaultContext>();
 		}
+		public GraphOrDefaultContext graphOrDefault(int i) {
+			return GetRuleContext<GraphOrDefaultContext>(i);
+		}
 		public ITerminalNode TO() { return GetToken(sparq11lTranslatorParser.TO, 0); }
+		public ITerminalNode MOVE() { return GetToken(sparq11lTranslatorParser.MOVE, 0); }
 		public MoveContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_move; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterMove(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitMove(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitMove(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -3075,33 +2621,20 @@ public partial class sparq11lTranslatorParser : Parser {
 		public SparqlUpdateCopy value;
 		public GraphOrDefaultContext g1;
 		public GraphOrDefaultContext g2;
-		public ITerminalNode COPY() { return GetToken(sparq11lTranslatorParser.COPY, 0); }
-		public GraphOrDefaultContext graphOrDefault(int i) {
-			return GetRuleContext<GraphOrDefaultContext>(i);
-		}
 		public ITerminalNode SILENT() { return GetToken(sparq11lTranslatorParser.SILENT, 0); }
 		public IReadOnlyList<GraphOrDefaultContext> graphOrDefault() {
 			return GetRuleContexts<GraphOrDefaultContext>();
 		}
+		public GraphOrDefaultContext graphOrDefault(int i) {
+			return GetRuleContext<GraphOrDefaultContext>(i);
+		}
+		public ITerminalNode COPY() { return GetToken(sparq11lTranslatorParser.COPY, 0); }
 		public ITerminalNode TO() { return GetToken(sparq11lTranslatorParser.TO, 0); }
 		public CopyContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_copy; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterCopy(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitCopy(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitCopy(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -3144,28 +2677,15 @@ public partial class sparq11lTranslatorParser : Parser {
 		public SparqlUpdateInsertData value;
 		public QuadDataContext _quadData;
 		public ITerminalNode DATA() { return GetToken(sparq11lTranslatorParser.DATA, 0); }
+		public ITerminalNode INSERT() { return GetToken(sparq11lTranslatorParser.INSERT, 0); }
 		public QuadDataContext quadData() {
 			return GetRuleContext<QuadDataContext>(0);
 		}
-		public ITerminalNode INSERT() { return GetToken(sparq11lTranslatorParser.INSERT, 0); }
 		public InsertDataContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_insertData; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterInsertData(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitInsertData(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitInsertData(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -3195,29 +2715,16 @@ public partial class sparq11lTranslatorParser : Parser {
 	public partial class DeleteDataContext : ParserRuleContext {
 		public SparqlUpdateDeleteData value;
 		public QuadDataContext _quadData;
+		public ITerminalNode DELETE() { return GetToken(sparq11lTranslatorParser.DELETE, 0); }
 		public ITerminalNode DATA() { return GetToken(sparq11lTranslatorParser.DATA, 0); }
 		public QuadDataContext quadData() {
 			return GetRuleContext<QuadDataContext>(0);
 		}
-		public ITerminalNode DELETE() { return GetToken(sparq11lTranslatorParser.DELETE, 0); }
 		public DeleteDataContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_deleteData; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterDeleteData(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitDeleteData(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitDeleteData(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -3247,29 +2754,16 @@ public partial class sparq11lTranslatorParser : Parser {
 	public partial class DeleteWhereContext : ParserRuleContext {
 		public SparqlUpdateModify value;
 		public QuadPatternContext _quadPattern;
-		public ITerminalNode WHERE() { return GetToken(sparq11lTranslatorParser.WHERE, 0); }
-		public ITerminalNode DELETE() { return GetToken(sparq11lTranslatorParser.DELETE, 0); }
 		public QuadPatternContext quadPattern() {
 			return GetRuleContext<QuadPatternContext>(0);
 		}
+		public ITerminalNode DELETE() { return GetToken(sparq11lTranslatorParser.DELETE, 0); }
+		public ITerminalNode WHERE() { return GetToken(sparq11lTranslatorParser.WHERE, 0); }
 		public DeleteWhereContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_deleteWhere; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterDeleteWhere(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitDeleteWhere(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitDeleteWhere(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -3302,19 +2796,19 @@ public partial class sparq11lTranslatorParser : Parser {
 		public DeleteClauseContext _deleteClause;
 		public InsertClauseContext _insertClause;
 		public GroupGraphPatternContext _groupGraphPattern;
+		public GroupGraphPatternContext groupGraphPattern() {
+			return GetRuleContext<GroupGraphPatternContext>(0);
+		}
+		public ITerminalNode WITH() { return GetToken(sparq11lTranslatorParser.WITH, 0); }
+		public IriContext iri() {
+			return GetRuleContext<IriContext>(0);
+		}
 		public ITerminalNode WHERE() { return GetToken(sparq11lTranslatorParser.WHERE, 0); }
 		public IReadOnlyList<UsingClauseContext> usingClause() {
 			return GetRuleContexts<UsingClauseContext>();
 		}
 		public DeleteClauseContext deleteClause() {
 			return GetRuleContext<DeleteClauseContext>(0);
-		}
-		public IriContext iri() {
-			return GetRuleContext<IriContext>(0);
-		}
-		public ITerminalNode WITH() { return GetToken(sparq11lTranslatorParser.WITH, 0); }
-		public GroupGraphPatternContext groupGraphPattern() {
-			return GetRuleContext<GroupGraphPatternContext>(0);
 		}
 		public UsingClauseContext usingClause(int i) {
 			return GetRuleContext<UsingClauseContext>(i);
@@ -3327,19 +2821,6 @@ public partial class sparq11lTranslatorParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_modify; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterModify(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitModify(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitModify(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -3427,28 +2908,15 @@ public partial class sparq11lTranslatorParser : Parser {
 	public partial class DeleteClauseContext : ParserRuleContext {
 		public SparqlQuadsPattern value;
 		public QuadPatternContext _quadPattern;
-		public ITerminalNode DELETE() { return GetToken(sparq11lTranslatorParser.DELETE, 0); }
 		public QuadPatternContext quadPattern() {
 			return GetRuleContext<QuadPatternContext>(0);
 		}
+		public ITerminalNode DELETE() { return GetToken(sparq11lTranslatorParser.DELETE, 0); }
 		public DeleteClauseContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_deleteClause; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterDeleteClause(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitDeleteClause(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitDeleteClause(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -3477,28 +2945,15 @@ public partial class sparq11lTranslatorParser : Parser {
 	public partial class InsertClauseContext : ParserRuleContext {
 		public SparqlQuadsPattern value;
 		public QuadPatternContext _quadPattern;
-		public ITerminalNode INSERT() { return GetToken(sparq11lTranslatorParser.INSERT, 0); }
 		public QuadPatternContext quadPattern() {
 			return GetRuleContext<QuadPatternContext>(0);
 		}
+		public ITerminalNode INSERT() { return GetToken(sparq11lTranslatorParser.INSERT, 0); }
 		public InsertClauseContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_insertClause; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterInsertClause(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitInsertClause(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitInsertClause(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -3526,29 +2981,16 @@ public partial class sparq11lTranslatorParser : Parser {
 
 	public partial class UsingClauseContext : ParserRuleContext {
 		public IriContext _iri;
-		public ITerminalNode NAMED() { return GetToken(sparq11lTranslatorParser.NAMED, 0); }
 		public IriContext iri() {
 			return GetRuleContext<IriContext>(0);
 		}
 		public ITerminalNode USING() { return GetToken(sparq11lTranslatorParser.USING, 0); }
+		public ITerminalNode NAMED() { return GetToken(sparq11lTranslatorParser.NAMED, 0); }
 		public UsingClauseContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_usingClause; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterUsingClause(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitUsingClause(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitUsingClause(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -3595,29 +3037,16 @@ public partial class sparq11lTranslatorParser : Parser {
 	public partial class GraphOrDefaultContext : ParserRuleContext {
 		public string value;
 		public IriStringContext _iriString;
-		public ITerminalNode GRAPH() { return GetToken(sparq11lTranslatorParser.GRAPH, 0); }
-		public ITerminalNode DEFAULT() { return GetToken(sparq11lTranslatorParser.DEFAULT, 0); }
 		public IriStringContext iriString() {
 			return GetRuleContext<IriStringContext>(0);
 		}
+		public ITerminalNode GRAPH() { return GetToken(sparq11lTranslatorParser.GRAPH, 0); }
+		public ITerminalNode DEFAULT() { return GetToken(sparq11lTranslatorParser.DEFAULT, 0); }
 		public GraphOrDefaultContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_graphOrDefault; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterGraphOrDefault(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitGraphOrDefault(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitGraphOrDefault(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -3670,28 +3099,15 @@ public partial class sparq11lTranslatorParser : Parser {
 	public partial class GraphRefContext : ParserRuleContext {
 		public string value;
 		public IriStringContext _iriString;
-		public ITerminalNode GRAPH() { return GetToken(sparq11lTranslatorParser.GRAPH, 0); }
 		public IriStringContext iriString() {
 			return GetRuleContext<IriStringContext>(0);
 		}
+		public ITerminalNode GRAPH() { return GetToken(sparq11lTranslatorParser.GRAPH, 0); }
 		public GraphRefContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_graphRef; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterGraphRef(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitGraphRef(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitGraphRef(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -3721,30 +3137,17 @@ public partial class sparq11lTranslatorParser : Parser {
 		public UpdateGraph value;
 		public GraphRefContext _graphRef;
 		public IToken g;
-		public ITerminalNode ALL() { return GetToken(sparq11lTranslatorParser.ALL, 0); }
-		public ITerminalNode NAMED() { return GetToken(sparq11lTranslatorParser.NAMED, 0); }
-		public ITerminalNode DEFAULT() { return GetToken(sparq11lTranslatorParser.DEFAULT, 0); }
 		public GraphRefContext graphRef() {
 			return GetRuleContext<GraphRefContext>(0);
 		}
+		public ITerminalNode DEFAULT() { return GetToken(sparq11lTranslatorParser.DEFAULT, 0); }
+		public ITerminalNode NAMED() { return GetToken(sparq11lTranslatorParser.NAMED, 0); }
+		public ITerminalNode ALL() { return GetToken(sparq11lTranslatorParser.ALL, 0); }
 		public GraphRefAllContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_graphRefAll; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterGraphRefAll(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitGraphRefAll(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitGraphRefAll(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -3808,19 +3211,6 @@ public partial class sparq11lTranslatorParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_quadPattern; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterQuadPattern(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitQuadPattern(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitQuadPattern(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -3830,7 +3220,7 @@ public partial class sparq11lTranslatorParser : Parser {
 		try {
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 778; Match(T__15);
+			State = 778; Match(T__17);
 			State = 779; _localctx._quads = quads();
 			State = 780; Match(T__14);
 			_localctx.value = _localctx._quads.value;
@@ -3858,19 +3248,6 @@ public partial class sparq11lTranslatorParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_quadData; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterQuadData(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitQuadData(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitQuadData(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -3880,7 +3257,7 @@ public partial class sparq11lTranslatorParser : Parser {
 		try {
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 783; Match(T__15);
+			State = 783; Match(T__17);
 			State = 784; _localctx._quads = quads();
 			State = 785; Match(T__14);
 			_localctx.value = _localctx._quads.value;
@@ -3901,36 +3278,23 @@ public partial class sparq11lTranslatorParser : Parser {
 		public SparqlQuadsPattern value;
 		public TriplesTemplateContext _triplesTemplate;
 		public QuadsNotTriplesContext _quadsNotTriples;
-		public QuadsNotTriplesContext quadsNotTriples(int i) {
-			return GetRuleContext<QuadsNotTriplesContext>(i);
-		}
 		public TriplesTemplateContext triplesTemplate(int i) {
 			return GetRuleContext<TriplesTemplateContext>(i);
+		}
+		public IReadOnlyList<TriplesTemplateContext> triplesTemplate() {
+			return GetRuleContexts<TriplesTemplateContext>();
 		}
 		public IReadOnlyList<QuadsNotTriplesContext> quadsNotTriples() {
 			return GetRuleContexts<QuadsNotTriplesContext>();
 		}
-		public IReadOnlyList<TriplesTemplateContext> triplesTemplate() {
-			return GetRuleContexts<TriplesTemplateContext>();
+		public QuadsNotTriplesContext quadsNotTriples(int i) {
+			return GetRuleContext<QuadsNotTriplesContext>(i);
 		}
 		public QuadsContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_quads; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterQuads(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitQuads(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitQuads(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -3961,9 +3325,9 @@ public partial class sparq11lTranslatorParser : Parser {
 				_localctx.value.Add(_localctx._quadsNotTriples.value);
 				State = 797;
 				_la = _input.La(1);
-				if (_la==T__10) {
+				if (_la==T__8) {
 					{
-					State = 796; Match(T__10);
+					State = 796; Match(T__8);
 					}
 				}
 
@@ -3999,31 +3363,18 @@ public partial class sparq11lTranslatorParser : Parser {
 		public SparqlGraphGraph value;
 		public VarOrIriContext _varOrIri;
 		public TriplesTemplateContext _triplesTemplate;
+		public TriplesTemplateContext triplesTemplate() {
+			return GetRuleContext<TriplesTemplateContext>(0);
+		}
 		public ITerminalNode GRAPH() { return GetToken(sparq11lTranslatorParser.GRAPH, 0); }
 		public VarOrIriContext varOrIri() {
 			return GetRuleContext<VarOrIriContext>(0);
-		}
-		public TriplesTemplateContext triplesTemplate() {
-			return GetRuleContext<TriplesTemplateContext>(0);
 		}
 		public QuadsNotTriplesContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_quadsNotTriples; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterQuadsNotTriples(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitQuadsNotTriples(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitQuadsNotTriples(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -4037,7 +3388,7 @@ public partial class sparq11lTranslatorParser : Parser {
 			State = 809; Match(GRAPH);
 			State = 810; _localctx._varOrIri = varOrIri();
 			_localctx.value = new SparqlGraphGraph(_localctx._varOrIri.value);
-			State = 812; Match(T__15);
+			State = 812; Match(T__17);
 			State = 816;
 			_la = _input.La(1);
 			if (((((_la - 130)) & ~0x3f) == 0 && ((1L << (_la - 130)) & ((1L << (TRUE - 130)) | (1L << (FALSE - 130)) | (1L << (IRIREF - 130)) | (1L << (PNAME_LN - 130)) | (1L << (PNAME_NS - 130)) | (1L << (BLANK_NODE_LABEL - 130)) | (1L << (VAR1 - 130)) | (1L << (VAR2 - 130)) | (1L << (INTEGER - 130)) | (1L << (DECIMAL - 130)) | (1L << (DOUBLE - 130)) | (1L << (INTEGER_POSITIVE - 130)) | (1L << (DECIMAL_POSITIVE - 130)) | (1L << (DOUBLE_POSITIVE - 130)) | (1L << (INTEGER_NEGATIVE - 130)) | (1L << (DECIMAL_NEGATIVE - 130)) | (1L << (DOUBLE_NEGATIVE - 130)) | (1L << (STRING_LITERAL1 - 130)) | (1L << (STRING_LITERAL2 - 130)) | (1L << (STRING_LITERAL_LONG1 - 130)) | (1L << (STRING_LITERAL_LONG2 - 130)) | (1L << (NIL - 130)) | (1L << (BracketOpen - 130)) | (1L << (ANON - 130)) | (1L << (SquareBracketOpen - 130)))) != 0)) {
@@ -4076,19 +3427,6 @@ public partial class sparq11lTranslatorParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_triplesTemplate; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterTriplesTemplate(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitTriplesTemplate(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitTriplesTemplate(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -4103,9 +3441,9 @@ public partial class sparq11lTranslatorParser : Parser {
 			_localctx.value = _localctx._triplesSameSubject.value;
 			State = 828;
 			_la = _input.La(1);
-			if (_la==T__10) {
+			if (_la==T__8) {
 				{
-				State = 822; Match(T__10);
+				State = 822; Match(T__8);
 				State = 826;
 				_la = _input.La(1);
 				if (((((_la - 130)) & ~0x3f) == 0 && ((1L << (_la - 130)) & ((1L << (TRUE - 130)) | (1L << (FALSE - 130)) | (1L << (IRIREF - 130)) | (1L << (PNAME_LN - 130)) | (1L << (PNAME_NS - 130)) | (1L << (BLANK_NODE_LABEL - 130)) | (1L << (VAR1 - 130)) | (1L << (VAR2 - 130)) | (1L << (INTEGER - 130)) | (1L << (DECIMAL - 130)) | (1L << (DOUBLE - 130)) | (1L << (INTEGER_POSITIVE - 130)) | (1L << (DECIMAL_POSITIVE - 130)) | (1L << (DOUBLE_POSITIVE - 130)) | (1L << (INTEGER_NEGATIVE - 130)) | (1L << (DECIMAL_NEGATIVE - 130)) | (1L << (DOUBLE_NEGATIVE - 130)) | (1L << (STRING_LITERAL1 - 130)) | (1L << (STRING_LITERAL2 - 130)) | (1L << (STRING_LITERAL_LONG1 - 130)) | (1L << (STRING_LITERAL_LONG2 - 130)) | (1L << (NIL - 130)) | (1L << (BracketOpen - 130)) | (1L << (ANON - 130)) | (1L << (SquareBracketOpen - 130)))) != 0)) {
@@ -4146,19 +3484,6 @@ public partial class sparq11lTranslatorParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_groupGraphPattern; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterGroupGraphPattern(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitGroupGraphPattern(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitGroupGraphPattern(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -4168,7 +3493,7 @@ public partial class sparq11lTranslatorParser : Parser {
 		try {
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 830; Match(T__15);
+			State = 830; Match(T__17);
 			State = 837;
 			switch (_input.La(1)) {
 			case SELECT:
@@ -4177,7 +3502,7 @@ public partial class sparq11lTranslatorParser : Parser {
 				_localctx.value = _localctx._subSelect.value;
 				}
 				break;
-			case T__15:
+			case T__17:
 			case T__14:
 			case BIND:
 			case FILTER:
@@ -4237,14 +3562,14 @@ public partial class sparq11lTranslatorParser : Parser {
 		public SparqlGraphPattern value;
 		public TriplesBlockContext _triplesBlock;
 		public GraphPatternNotTriplesContext _graphPatternNotTriples;
-		public IReadOnlyList<GraphPatternNotTriplesContext> graphPatternNotTriples() {
-			return GetRuleContexts<GraphPatternNotTriplesContext>();
+		public TriplesBlockContext triplesBlock(int i) {
+			return GetRuleContext<TriplesBlockContext>(i);
 		}
 		public GraphPatternNotTriplesContext graphPatternNotTriples(int i) {
 			return GetRuleContext<GraphPatternNotTriplesContext>(i);
 		}
-		public TriplesBlockContext triplesBlock(int i) {
-			return GetRuleContext<TriplesBlockContext>(i);
+		public IReadOnlyList<GraphPatternNotTriplesContext> graphPatternNotTriples() {
+			return GetRuleContexts<GraphPatternNotTriplesContext>();
 		}
 		public IReadOnlyList<TriplesBlockContext> triplesBlock() {
 			return GetRuleContexts<TriplesBlockContext>();
@@ -4254,19 +3579,6 @@ public partial class sparq11lTranslatorParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_groupGraphPatternSub; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterGroupGraphPatternSub(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitGroupGraphPatternSub(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitGroupGraphPatternSub(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -4290,16 +3602,16 @@ public partial class sparq11lTranslatorParser : Parser {
 			State = 859;
 			_errHandler.Sync(this);
 			_la = _input.La(1);
-			while (((((_la - 8)) & ~0x3f) == 0 && ((1L << (_la - 8)) & ((1L << (T__15 - 8)) | (1L << (BIND - 8)) | (1L << (FILTER - 8)) | (1L << (GRAPH - 8)) | (1L << (MINUS - 8)) | (1L << (OPTIONAL - 8)) | (1L << (SERVICE - 8)) | (1L << (VALUES - 8)))) != 0)) {
+			while (((((_la - 6)) & ~0x3f) == 0 && ((1L << (_la - 6)) & ((1L << (T__17 - 6)) | (1L << (BIND - 6)) | (1L << (FILTER - 6)) | (1L << (GRAPH - 6)) | (1L << (MINUS - 6)) | (1L << (OPTIONAL - 6)) | (1L << (SERVICE - 6)) | (1L << (VALUES - 6)))) != 0)) {
 				{
 				{
 				State = 847; _localctx._graphPatternNotTriples = graphPatternNotTriples();
 				_localctx.value.Add(_localctx._graphPatternNotTriples.value); 
 				State = 850;
 				_la = _input.La(1);
-				if (_la==T__10) {
+				if (_la==T__8) {
 					{
-					State = 849; Match(T__10);
+					State = 849; Match(T__8);
 					}
 				}
 
@@ -4346,19 +3658,6 @@ public partial class sparq11lTranslatorParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_triplesBlock; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterTriplesBlock(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitTriplesBlock(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitTriplesBlock(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -4373,9 +3672,9 @@ public partial class sparq11lTranslatorParser : Parser {
 			_localctx.value = _localctx._triplesSameSubjectPath.value;
 			State = 870;
 			_la = _input.La(1);
-			if (_la==T__10) {
+			if (_la==T__8) {
 				{
-				State = 864; Match(T__10);
+				State = 864; Match(T__8);
 				State = 868;
 				_la = _input.La(1);
 				if (((((_la - 130)) & ~0x3f) == 0 && ((1L << (_la - 130)) & ((1L << (TRUE - 130)) | (1L << (FALSE - 130)) | (1L << (IRIREF - 130)) | (1L << (PNAME_LN - 130)) | (1L << (PNAME_NS - 130)) | (1L << (BLANK_NODE_LABEL - 130)) | (1L << (VAR1 - 130)) | (1L << (VAR2 - 130)) | (1L << (INTEGER - 130)) | (1L << (DECIMAL - 130)) | (1L << (DOUBLE - 130)) | (1L << (INTEGER_POSITIVE - 130)) | (1L << (DECIMAL_POSITIVE - 130)) | (1L << (DOUBLE_POSITIVE - 130)) | (1L << (INTEGER_NEGATIVE - 130)) | (1L << (DECIMAL_NEGATIVE - 130)) | (1L << (DOUBLE_NEGATIVE - 130)) | (1L << (STRING_LITERAL1 - 130)) | (1L << (STRING_LITERAL2 - 130)) | (1L << (STRING_LITERAL_LONG1 - 130)) | (1L << (STRING_LITERAL_LONG2 - 130)) | (1L << (NIL - 130)) | (1L << (BracketOpen - 130)) | (1L << (ANON - 130)) | (1L << (SquareBracketOpen - 130)))) != 0)) {
@@ -4411,48 +3710,35 @@ public partial class sparq11lTranslatorParser : Parser {
 		public FilterContext _filter;
 		public BindContext _bind;
 		public InlineDataContext _inlineData;
-		public InlineDataContext inlineData() {
-			return GetRuleContext<InlineDataContext>(0);
-		}
 		public FilterContext filter() {
 			return GetRuleContext<FilterContext>(0);
-		}
-		public GraphGraphPatternContext graphGraphPattern() {
-			return GetRuleContext<GraphGraphPatternContext>(0);
-		}
-		public BindContext bind() {
-			return GetRuleContext<BindContext>(0);
-		}
-		public ServiceGraphPatternContext serviceGraphPattern() {
-			return GetRuleContext<ServiceGraphPatternContext>(0);
-		}
-		public OptionalGraphPatternContext optionalGraphPattern() {
-			return GetRuleContext<OptionalGraphPatternContext>(0);
 		}
 		public MinusGraphPatternContext minusGraphPattern() {
 			return GetRuleContext<MinusGraphPatternContext>(0);
 		}
+		public BindContext bind() {
+			return GetRuleContext<BindContext>(0);
+		}
+		public OptionalGraphPatternContext optionalGraphPattern() {
+			return GetRuleContext<OptionalGraphPatternContext>(0);
+		}
 		public GroupOrUnionGraphPatternContext groupOrUnionGraphPattern() {
 			return GetRuleContext<GroupOrUnionGraphPatternContext>(0);
+		}
+		public ServiceGraphPatternContext serviceGraphPattern() {
+			return GetRuleContext<ServiceGraphPatternContext>(0);
+		}
+		public InlineDataContext inlineData() {
+			return GetRuleContext<InlineDataContext>(0);
+		}
+		public GraphGraphPatternContext graphGraphPattern() {
+			return GetRuleContext<GraphGraphPatternContext>(0);
 		}
 		public GraphPatternNotTriplesContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_graphPatternNotTriples; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterGraphPatternNotTriples(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitGraphPatternNotTriples(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitGraphPatternNotTriples(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -4462,7 +3748,7 @@ public partial class sparq11lTranslatorParser : Parser {
 		try {
 			State = 896;
 			switch (_input.La(1)) {
-			case T__15:
+			case T__17:
 				EnterOuterAlt(_localctx, 1);
 				{
 				State = 872; _localctx._groupOrUnionGraphPattern = groupOrUnionGraphPattern();
@@ -4536,28 +3822,15 @@ public partial class sparq11lTranslatorParser : Parser {
 	public partial class OptionalGraphPatternContext : ParserRuleContext {
 		public SparqlOptionalGraphPattern value;
 		public GroupGraphPatternContext _groupGraphPattern;
-		public ITerminalNode OPTIONAL() { return GetToken(sparq11lTranslatorParser.OPTIONAL, 0); }
 		public GroupGraphPatternContext groupGraphPattern() {
 			return GetRuleContext<GroupGraphPatternContext>(0);
 		}
+		public ITerminalNode OPTIONAL() { return GetToken(sparq11lTranslatorParser.OPTIONAL, 0); }
 		public OptionalGraphPatternContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_optionalGraphPattern; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterOptionalGraphPattern(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitOptionalGraphPattern(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitOptionalGraphPattern(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -4587,10 +3860,10 @@ public partial class sparq11lTranslatorParser : Parser {
 		public ISparqlGraphPattern value;
 		public VarOrIriContext _varOrIri;
 		public GroupGraphPatternContext _groupGraphPattern;
-		public ITerminalNode GRAPH() { return GetToken(sparq11lTranslatorParser.GRAPH, 0); }
 		public GroupGraphPatternContext groupGraphPattern() {
 			return GetRuleContext<GroupGraphPatternContext>(0);
 		}
+		public ITerminalNode GRAPH() { return GetToken(sparq11lTranslatorParser.GRAPH, 0); }
 		public VarOrIriContext varOrIri() {
 			return GetRuleContext<VarOrIriContext>(0);
 		}
@@ -4599,19 +3872,6 @@ public partial class sparq11lTranslatorParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_graphGraphPattern; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterGraphGraphPattern(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitGraphGraphPattern(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitGraphGraphPattern(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -4656,19 +3916,6 @@ public partial class sparq11lTranslatorParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_serviceGraphPattern; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterServiceGraphPattern(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitServiceGraphPattern(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitServiceGraphPattern(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -4710,32 +3957,19 @@ public partial class sparq11lTranslatorParser : Parser {
 		public SparqlExpressionAsVariable value;
 		public ExpressionContext _expression;
 		public VarContext _var;
-		public ITerminalNode AS() { return GetToken(sparq11lTranslatorParser.AS, 0); }
+		public VarContext var() {
+			return GetRuleContext<VarContext>(0);
+		}
 		public ITerminalNode BIND() { return GetToken(sparq11lTranslatorParser.BIND, 0); }
 		public ExpressionContext expression() {
 			return GetRuleContext<ExpressionContext>(0);
 		}
-		public VarContext var() {
-			return GetRuleContext<VarContext>(0);
-		}
+		public ITerminalNode AS() { return GetToken(sparq11lTranslatorParser.AS, 0); }
 		public BindContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_bind; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterBind(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitBind(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitBind(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -4768,28 +4002,15 @@ public partial class sparq11lTranslatorParser : Parser {
 	public partial class InlineDataContext : ParserRuleContext {
 		public ISparqlGraphPattern value;
 		public DataBlockContext _dataBlock;
+		public ITerminalNode VALUES() { return GetToken(sparq11lTranslatorParser.VALUES, 0); }
 		public DataBlockContext dataBlock() {
 			return GetRuleContext<DataBlockContext>(0);
 		}
-		public ITerminalNode VALUES() { return GetToken(sparq11lTranslatorParser.VALUES, 0); }
 		public InlineDataContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_inlineData; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterInlineData(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitInlineData(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitInlineData(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -4819,30 +4040,17 @@ public partial class sparq11lTranslatorParser : Parser {
 		public ISparqlGraphPattern value;
 		public InlineDataOneVarContext _inlineDataOneVar;
 		public InlineDataFullContext _inlineDataFull;
-		public InlineDataOneVarContext inlineDataOneVar() {
-			return GetRuleContext<InlineDataOneVarContext>(0);
-		}
 		public InlineDataFullContext inlineDataFull() {
 			return GetRuleContext<InlineDataFullContext>(0);
+		}
+		public InlineDataOneVarContext inlineDataOneVar() {
+			return GetRuleContext<InlineDataOneVarContext>(0);
 		}
 		public DataBlockContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_dataBlock; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterDataBlock(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitDataBlock(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitDataBlock(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -4887,33 +4095,20 @@ public partial class sparq11lTranslatorParser : Parser {
 		public SparqlInlineVariable value;
 		public VarContext _var;
 		public DataBlockValueContext _dataBlockValue;
-		public IReadOnlyList<DataBlockValueContext> dataBlockValue() {
-			return GetRuleContexts<DataBlockValueContext>();
-		}
 		public DataBlockValueContext dataBlockValue(int i) {
 			return GetRuleContext<DataBlockValueContext>(i);
 		}
 		public VarContext var() {
 			return GetRuleContext<VarContext>(0);
 		}
+		public IReadOnlyList<DataBlockValueContext> dataBlockValue() {
+			return GetRuleContexts<DataBlockValueContext>();
+		}
 		public InlineDataOneVarContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_inlineDataOneVar; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterInlineDataOneVar(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitInlineDataOneVar(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitInlineDataOneVar(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -4926,7 +4121,7 @@ public partial class sparq11lTranslatorParser : Parser {
 			{
 			State = 938; _localctx._var = var();
 			 _localctx.value = new SparqlInlineVariable(_localctx._var.value);
-			State = 940; Match(T__15);
+			State = 940; Match(T__17);
 			State = 946;
 			_errHandler.Sync(this);
 			_la = _input.La(1);
@@ -4959,40 +4154,27 @@ public partial class sparq11lTranslatorParser : Parser {
 		public SparqlInline value;
 		public VarContext _var;
 		public DataBlockValueContext _dataBlockValue;
-		public IReadOnlyList<DataBlockValueContext> dataBlockValue() {
-			return GetRuleContexts<DataBlockValueContext>();
-		}
-		public VarContext var(int i) {
-			return GetRuleContext<VarContext>(i);
-		}
 		public ITerminalNode NIL(int i) {
 			return GetToken(sparq11lTranslatorParser.NIL, i);
 		}
 		public DataBlockValueContext dataBlockValue(int i) {
 			return GetRuleContext<DataBlockValueContext>(i);
 		}
-		public IReadOnlyList<ITerminalNode> NIL() { return GetTokens(sparq11lTranslatorParser.NIL); }
 		public IReadOnlyList<VarContext> var() {
 			return GetRuleContexts<VarContext>();
 		}
+		public IReadOnlyList<DataBlockValueContext> dataBlockValue() {
+			return GetRuleContexts<DataBlockValueContext>();
+		}
+		public VarContext var(int i) {
+			return GetRuleContext<VarContext>(i);
+		}
+		public IReadOnlyList<ITerminalNode> NIL() { return GetTokens(sparq11lTranslatorParser.NIL); }
 		public InlineDataFullContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_inlineDataFull; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterInlineDataFull(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitInlineDataFull(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitInlineDataFull(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -5034,7 +4216,7 @@ public partial class sparq11lTranslatorParser : Parser {
 			default:
 				throw new NoViableAltException(this);
 			}
-			State = 965; Match(T__15);
+			State = 965; Match(T__17);
 			State = 980;
 			_errHandler.Sync(this);
 			_la = _input.La(1);
@@ -5097,40 +4279,27 @@ public partial class sparq11lTranslatorParser : Parser {
 		public RDFLiteralContext _rDFLiteral;
 		public NumericLiteralContext _numericLiteral;
 		public BooleanLiteralContext _booleanLiteral;
-		public RDFLiteralContext rDFLiteral() {
-			return GetRuleContext<RDFLiteralContext>(0);
-		}
-		public IriContext iri() {
-			return GetRuleContext<IriContext>(0);
-		}
-		public ITerminalNode UNDEF() { return GetToken(sparq11lTranslatorParser.UNDEF, 0); }
 		public BlankNodeContext blankNode() {
 			return GetRuleContext<BlankNodeContext>(0);
+		}
+		public NumericLiteralContext numericLiteral() {
+			return GetRuleContext<NumericLiteralContext>(0);
+		}
+		public ITerminalNode UNDEF() { return GetToken(sparq11lTranslatorParser.UNDEF, 0); }
+		public IriContext iri() {
+			return GetRuleContext<IriContext>(0);
 		}
 		public BooleanLiteralContext booleanLiteral() {
 			return GetRuleContext<BooleanLiteralContext>(0);
 		}
-		public NumericLiteralContext numericLiteral() {
-			return GetRuleContext<NumericLiteralContext>(0);
+		public RDFLiteralContext rDFLiteral() {
+			return GetRuleContext<RDFLiteralContext>(0);
 		}
 		public DataBlockValueContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_dataBlockValue; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterDataBlockValue(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitDataBlockValue(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitDataBlockValue(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -5215,28 +4384,15 @@ public partial class sparq11lTranslatorParser : Parser {
 	public partial class MinusGraphPatternContext : ParserRuleContext {
 		public SparqlMinusGraphPattern value;
 		public GroupGraphPatternContext _groupGraphPattern;
-		public ITerminalNode MINUS() { return GetToken(sparq11lTranslatorParser.MINUS, 0); }
 		public GroupGraphPatternContext groupGraphPattern() {
 			return GetRuleContext<GroupGraphPatternContext>(0);
 		}
+		public ITerminalNode MINUS() { return GetToken(sparq11lTranslatorParser.MINUS, 0); }
 		public MinusGraphPatternContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_minusGraphPattern; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterMinusGraphPattern(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitMinusGraphPattern(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitMinusGraphPattern(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -5269,30 +4425,17 @@ public partial class sparq11lTranslatorParser : Parser {
 		public IReadOnlyList<GroupGraphPatternContext> groupGraphPattern() {
 			return GetRuleContexts<GroupGraphPatternContext>();
 		}
-		public ITerminalNode UNION(int i) {
-			return GetToken(sparq11lTranslatorParser.UNION, i);
-		}
 		public GroupGraphPatternContext groupGraphPattern(int i) {
 			return GetRuleContext<GroupGraphPatternContext>(i);
+		}
+		public ITerminalNode UNION(int i) {
+			return GetToken(sparq11lTranslatorParser.UNION, i);
 		}
 		public GroupOrUnionGraphPatternContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_groupOrUnionGraphPattern; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterGroupOrUnionGraphPattern(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitGroupOrUnionGraphPattern(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitGroupOrUnionGraphPattern(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -5345,19 +4488,6 @@ public partial class sparq11lTranslatorParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_filter; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterFilter(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitFilter(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitFilter(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -5388,33 +4518,20 @@ public partial class sparq11lTranslatorParser : Parser {
 		public BrackettedExpressionContext _brackettedExpression;
 		public BuiltInCallContext _builtInCall;
 		public FunctionCallContext _functionCall;
+		public FunctionCallContext functionCall() {
+			return GetRuleContext<FunctionCallContext>(0);
+		}
 		public BrackettedExpressionContext brackettedExpression() {
 			return GetRuleContext<BrackettedExpressionContext>(0);
 		}
 		public BuiltInCallContext builtInCall() {
 			return GetRuleContext<BuiltInCallContext>(0);
 		}
-		public FunctionCallContext functionCall() {
-			return GetRuleContext<FunctionCallContext>(0);
-		}
 		public ConstraintContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_constraint; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterConstraint(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitConstraint(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitConstraint(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -5526,30 +4643,17 @@ public partial class sparq11lTranslatorParser : Parser {
 		public SparqlFunctionCall value;
 		public IriStringContext _iriString;
 		public ArgListContext _argList;
-		public IriStringContext iriString() {
-			return GetRuleContext<IriStringContext>(0);
-		}
 		public ArgListContext argList() {
 			return GetRuleContext<ArgListContext>(0);
+		}
+		public IriStringContext iriString() {
+			return GetRuleContext<IriStringContext>(0);
 		}
 		public FunctionCallContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_functionCall; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterFunctionCall(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitFunctionCall(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitFunctionCall(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -5582,28 +4686,15 @@ public partial class sparq11lTranslatorParser : Parser {
 			return GetRuleContext<ExpressionContext>(i);
 		}
 		public ITerminalNode DISTINCT() { return GetToken(sparq11lTranslatorParser.DISTINCT, 0); }
-		public ITerminalNode NIL() { return GetToken(sparq11lTranslatorParser.NIL, 0); }
 		public IReadOnlyList<ExpressionContext> expression() {
 			return GetRuleContexts<ExpressionContext>();
 		}
+		public ITerminalNode NIL() { return GetToken(sparq11lTranslatorParser.NIL, 0); }
 		public ArgListContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_argList; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterArgList(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitArgList(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitArgList(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -5639,10 +4730,10 @@ public partial class sparq11lTranslatorParser : Parser {
 				State = 1053;
 				_errHandler.Sync(this);
 				_la = _input.La(1);
-				while (_la==T__22) {
+				while (_la==T__9) {
 					{
 					{
-					State = 1047; Match(T__22);
+					State = 1047; Match(T__9);
 					State = 1048; _localctx._expression = expression();
 					 _localctx.value.Add(_localctx._expression.value); 
 					}
@@ -5675,28 +4766,15 @@ public partial class sparq11lTranslatorParser : Parser {
 		public ExpressionContext expression(int i) {
 			return GetRuleContext<ExpressionContext>(i);
 		}
-		public ITerminalNode NIL() { return GetToken(sparq11lTranslatorParser.NIL, 0); }
 		public IReadOnlyList<ExpressionContext> expression() {
 			return GetRuleContexts<ExpressionContext>();
 		}
+		public ITerminalNode NIL() { return GetToken(sparq11lTranslatorParser.NIL, 0); }
 		public ExpressionListContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_expressionList; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterExpressionList(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitExpressionList(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitExpressionList(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -5722,10 +4800,10 @@ public partial class sparq11lTranslatorParser : Parser {
 				State = 1070;
 				_errHandler.Sync(this);
 				_la = _input.La(1);
-				while (_la==T__22) {
+				while (_la==T__9) {
 					{
 					{
-					State = 1064; Match(T__22);
+					State = 1064; Match(T__9);
 					State = 1065; _localctx._expression = expression();
 					 _localctx.value.Add(_localctx._expression.value);
 					}
@@ -5763,19 +4841,6 @@ public partial class sparq11lTranslatorParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_constructTemplate; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterConstructTemplate(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitConstructTemplate(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitConstructTemplate(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -5786,7 +4851,7 @@ public partial class sparq11lTranslatorParser : Parser {
 		try {
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 1077; Match(T__15);
+			State = 1077; Match(T__17);
 			_localctx.value = new SparqlGraphPattern();
 			State = 1082;
 			_la = _input.La(1);
@@ -5815,30 +4880,17 @@ public partial class sparq11lTranslatorParser : Parser {
 		public SparqlGraphPattern value;
 		public TriplesSameSubjectContext _triplesSameSubject;
 		public ConstructTriplesContext c;
-		public ConstructTriplesContext constructTriples() {
-			return GetRuleContext<ConstructTriplesContext>(0);
-		}
 		public TriplesSameSubjectContext triplesSameSubject() {
 			return GetRuleContext<TriplesSameSubjectContext>(0);
+		}
+		public ConstructTriplesContext constructTriples() {
+			return GetRuleContext<ConstructTriplesContext>(0);
 		}
 		public ConstructTriplesContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_constructTriples; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterConstructTriples(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitConstructTriples(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitConstructTriples(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -5853,9 +4905,9 @@ public partial class sparq11lTranslatorParser : Parser {
 			_localctx.value = _localctx._triplesSameSubject.value;
 			State = 1094;
 			_la = _input.La(1);
-			if (_la==T__10) {
+			if (_la==T__8) {
 				{
-				State = 1088; Match(T__10);
+				State = 1088; Match(T__8);
 				State = 1092;
 				_la = _input.La(1);
 				if (((((_la - 130)) & ~0x3f) == 0 && ((1L << (_la - 130)) & ((1L << (TRUE - 130)) | (1L << (FALSE - 130)) | (1L << (IRIREF - 130)) | (1L << (PNAME_LN - 130)) | (1L << (PNAME_NS - 130)) | (1L << (BLANK_NODE_LABEL - 130)) | (1L << (VAR1 - 130)) | (1L << (VAR2 - 130)) | (1L << (INTEGER - 130)) | (1L << (DECIMAL - 130)) | (1L << (DOUBLE - 130)) | (1L << (INTEGER_POSITIVE - 130)) | (1L << (DECIMAL_POSITIVE - 130)) | (1L << (DOUBLE_POSITIVE - 130)) | (1L << (INTEGER_NEGATIVE - 130)) | (1L << (DECIMAL_NEGATIVE - 130)) | (1L << (DOUBLE_NEGATIVE - 130)) | (1L << (STRING_LITERAL1 - 130)) | (1L << (STRING_LITERAL2 - 130)) | (1L << (STRING_LITERAL_LONG1 - 130)) | (1L << (STRING_LITERAL_LONG2 - 130)) | (1L << (NIL - 130)) | (1L << (BracketOpen - 130)) | (1L << (ANON - 130)) | (1L << (SquareBracketOpen - 130)))) != 0)) {
@@ -5885,33 +4937,20 @@ public partial class sparq11lTranslatorParser : Parser {
 		public SparqlGraphPattern value;
 		public SubjectNodeContext _subjectNode;
 		public TriplesNodeContext _triplesNode;
-		public TriplesNodeContext triplesNode() {
-			return GetRuleContext<TriplesNodeContext>(0);
-		}
 		public SubjectNodeContext subjectNode() {
 			return GetRuleContext<SubjectNodeContext>(0);
 		}
 		public PropertyListNotEmptyContext propertyListNotEmpty() {
 			return GetRuleContext<PropertyListNotEmptyContext>(0);
 		}
+		public TriplesNodeContext triplesNode() {
+			return GetRuleContext<TriplesNodeContext>(0);
+		}
 		public TriplesSameSubjectContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_triplesSameSubject; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterTriplesSameSubject(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitTriplesSameSubject(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitTriplesSameSubject(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -5960,7 +4999,7 @@ public partial class sparq11lTranslatorParser : Parser {
 				State = 1101; _localctx._triplesNode = triplesNode(_localctx.value);
 				State = 1103;
 				_la = _input.La(1);
-				if (_la==T__11 || ((((_la - 132)) & ~0x3f) == 0 && ((1L << (_la - 132)) & ((1L << (IRIREF - 132)) | (1L << (PNAME_LN - 132)) | (1L << (PNAME_NS - 132)) | (1L << (VAR1 - 132)) | (1L << (VAR2 - 132)))) != 0)) {
+				if (_la==T__2 || ((((_la - 132)) & ~0x3f) == 0 && ((1L << (_la - 132)) & ((1L << (IRIREF - 132)) | (1L << (PNAME_LN - 132)) | (1L << (PNAME_NS - 132)) | (1L << (VAR1 - 132)) | (1L << (VAR2 - 132)))) != 0)) {
 					{
 					State = 1102; propertyListNotEmpty(_localctx.value, _localctx._triplesNode.value);
 					}
@@ -5987,8 +5026,8 @@ public partial class sparq11lTranslatorParser : Parser {
 		public SparqlGraphPattern triples;
 		public ObjectVariants subject;
 		public VerbContext _verb;
-		public IReadOnlyList<VerbContext> verb() {
-			return GetRuleContexts<VerbContext>();
+		public IReadOnlyList<ObjectListContext> objectList() {
+			return GetRuleContexts<ObjectListContext>();
 		}
 		public VerbContext verb(int i) {
 			return GetRuleContext<VerbContext>(i);
@@ -5996,8 +5035,8 @@ public partial class sparq11lTranslatorParser : Parser {
 		public ObjectListContext objectList(int i) {
 			return GetRuleContext<ObjectListContext>(i);
 		}
-		public IReadOnlyList<ObjectListContext> objectList() {
-			return GetRuleContexts<ObjectListContext>();
+		public IReadOnlyList<VerbContext> verb() {
+			return GetRuleContexts<VerbContext>();
 		}
 		public PropertyListNotEmptyContext(ParserRuleContext parent, int invokingState) : base(parent, invokingState) { }
 		public PropertyListNotEmptyContext(ParserRuleContext parent, int invokingState, SparqlGraphPattern triples, ObjectVariants subject)
@@ -6007,19 +5046,6 @@ public partial class sparq11lTranslatorParser : Parser {
 			this.subject = subject;
 		}
 		public override int RuleIndex { get { return RULE_propertyListNotEmpty; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterPropertyListNotEmpty(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitPropertyListNotEmpty(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitPropertyListNotEmpty(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -6035,13 +5061,13 @@ public partial class sparq11lTranslatorParser : Parser {
 			State = 1117;
 			_errHandler.Sync(this);
 			_la = _input.La(1);
-			while (_la==T__7) {
+			while (_la==T__18) {
 				{
 				{
-				State = 1109; Match(T__7);
+				State = 1109; Match(T__18);
 				State = 1113;
 				_la = _input.La(1);
-				if (_la==T__11 || ((((_la - 132)) & ~0x3f) == 0 && ((1L << (_la - 132)) & ((1L << (IRIREF - 132)) | (1L << (PNAME_LN - 132)) | (1L << (PNAME_NS - 132)) | (1L << (VAR1 - 132)) | (1L << (VAR2 - 132)))) != 0)) {
+				if (_la==T__2 || ((((_la - 132)) & ~0x3f) == 0 && ((1L << (_la - 132)) & ((1L << (IRIREF - 132)) | (1L << (PNAME_LN - 132)) | (1L << (PNAME_NS - 132)) | (1L << (VAR1 - 132)) | (1L << (VAR2 - 132)))) != 0)) {
 					{
 					State = 1110; _localctx._verb = verb();
 					State = 1111; objectList(_localctx.triples, _localctx.subject, _localctx._verb.value);
@@ -6078,19 +5104,6 @@ public partial class sparq11lTranslatorParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_verb; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterVerb(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitVerb(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitVerb(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -6111,10 +5124,10 @@ public partial class sparq11lTranslatorParser : Parser {
 				_localctx.value =  (ObjectVariants)_localctx._varOrIri.value;
 				}
 				break;
-			case T__11:
+			case T__2:
 				EnterOuterAlt(_localctx, 2);
 				{
-				State = 1123; Match(T__11);
+				State = 1123; Match(T__2);
 				_localctx.value =  q.Store.NodeGenerator.SpecialTypes.type;
 				}
 				break;
@@ -6152,19 +5165,6 @@ public partial class sparq11lTranslatorParser : Parser {
 			this.predicate = predicate;
 		}
 		public override int RuleIndex { get { return RULE_objectList; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterObjectList(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitObjectList(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitObjectList(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -6179,10 +5179,10 @@ public partial class sparq11lTranslatorParser : Parser {
 			State = 1132;
 			_errHandler.Sync(this);
 			_la = _input.La(1);
-			while (_la==T__22) {
+			while (_la==T__9) {
 				{
 				{
-				State = 1128; Match(T__22);
+				State = 1128; Match(T__9);
 				State = 1129; @object(_localctx.triples, _localctx.subject, _localctx.predicate);
 				}
 				}
@@ -6220,19 +5220,6 @@ public partial class sparq11lTranslatorParser : Parser {
 			this.predicate = predicate;
 		}
 		public override int RuleIndex { get { return RULE_object; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterObject(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitObject(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitObject(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -6275,19 +5262,6 @@ public partial class sparq11lTranslatorParser : Parser {
 			this.triples = triples;
 		}
 		public override int RuleIndex { get { return RULE_graphNode; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterGraphNode(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitGraphNode(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitGraphNode(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -6366,19 +5340,6 @@ public partial class sparq11lTranslatorParser : Parser {
 			this.triples = triples;
 		}
 		public override int RuleIndex { get { return RULE_collection; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterCollection(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitCollection(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitCollection(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -6423,11 +5384,11 @@ public partial class sparq11lTranslatorParser : Parser {
 		public SparqlGraphPattern triples;
 		public ObjectVariants value;
 		public CollectionContext _collection;
-		public BlankNodePropertyListContext blankNodePropertyList() {
-			return GetRuleContext<BlankNodePropertyListContext>(0);
-		}
 		public CollectionContext collection() {
 			return GetRuleContext<CollectionContext>(0);
+		}
+		public BlankNodePropertyListContext blankNodePropertyList() {
+			return GetRuleContext<BlankNodePropertyListContext>(0);
 		}
 		public TriplesNodeContext(ParserRuleContext parent, int invokingState) : base(parent, invokingState) { }
 		public TriplesNodeContext(ParserRuleContext parent, int invokingState, SparqlGraphPattern triples)
@@ -6436,19 +5397,6 @@ public partial class sparq11lTranslatorParser : Parser {
 			this.triples = triples;
 		}
 		public override int RuleIndex { get { return RULE_triplesNode; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterTriplesNode(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitTriplesNode(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitTriplesNode(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -6501,19 +5449,6 @@ public partial class sparq11lTranslatorParser : Parser {
 			this.subject = subject;
 		}
 		public override int RuleIndex { get { return RULE_blankNodePropertyList; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterBlankNodePropertyList(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitBlankNodePropertyList(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitBlankNodePropertyList(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -6550,19 +5485,6 @@ public partial class sparq11lTranslatorParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_subjectNode; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterSubjectNode(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitSubjectNode(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitSubjectNode(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -6605,19 +5527,6 @@ public partial class sparq11lTranslatorParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_triplesSameSubjectPath; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterTriplesSameSubjectPath(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitTriplesSameSubjectPath(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitTriplesSameSubjectPath(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -6666,7 +5575,7 @@ public partial class sparq11lTranslatorParser : Parser {
 				State = 1176; _localctx._triplesNodePath = triplesNodePath(_localctx.value);
 				State = 1178;
 				_la = _input.La(1);
-				if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__12) | (1L << T__11) | (1L << T__0))) != 0) || ((((_la - 132)) & ~0x3f) == 0 && ((1L << (_la - 132)) & ((1L << (IRIREF - 132)) | (1L << (PNAME_LN - 132)) | (1L << (PNAME_NS - 132)) | (1L << (VAR1 - 132)) | (1L << (VAR2 - 132)) | (1L << (BracketOpen - 132)))) != 0)) {
+				if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__13) | (1L << T__3) | (1L << T__2))) != 0) || ((((_la - 132)) & ~0x3f) == 0 && ((1L << (_la - 132)) & ((1L << (IRIREF - 132)) | (1L << (PNAME_LN - 132)) | (1L << (PNAME_NS - 132)) | (1L << (VAR1 - 132)) | (1L << (VAR2 - 132)) | (1L << (BracketOpen - 132)))) != 0)) {
 					{
 					State = 1177; propertyListPathNotEmpty(_localctx.value,_localctx._triplesNodePath.value);
 					}
@@ -6694,23 +5603,23 @@ public partial class sparq11lTranslatorParser : Parser {
 		public ObjectVariants subject;
 		public PathContext _path;
 		public VarContext _var;
-		public IReadOnlyList<PathContext> path() {
-			return GetRuleContexts<PathContext>();
-		}
-		public VarContext var(int i) {
-			return GetRuleContext<VarContext>(i);
+		public IReadOnlyList<ObjectListPathContext> objectListPath() {
+			return GetRuleContexts<ObjectListPathContext>();
 		}
 		public PathContext path(int i) {
 			return GetRuleContext<PathContext>(i);
-		}
-		public IReadOnlyList<ObjectListPathContext> objectListPath() {
-			return GetRuleContexts<ObjectListPathContext>();
 		}
 		public IReadOnlyList<VarContext> var() {
 			return GetRuleContexts<VarContext>();
 		}
 		public ObjectListPathContext objectListPath(int i) {
 			return GetRuleContext<ObjectListPathContext>(i);
+		}
+		public IReadOnlyList<PathContext> path() {
+			return GetRuleContexts<PathContext>();
+		}
+		public VarContext var(int i) {
+			return GetRuleContext<VarContext>(i);
 		}
 		public PropertyListPathNotEmptyContext(ParserRuleContext parent, int invokingState) : base(parent, invokingState) { }
 		public PropertyListPathNotEmptyContext(ParserRuleContext parent, int invokingState, SparqlGraphPattern triples, ObjectVariants subject)
@@ -6720,19 +5629,6 @@ public partial class sparq11lTranslatorParser : Parser {
 			this.subject = subject;
 		}
 		public override int RuleIndex { get { return RULE_propertyListPathNotEmpty; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterPropertyListPathNotEmpty(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitPropertyListPathNotEmpty(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitPropertyListPathNotEmpty(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -6745,9 +5641,9 @@ public partial class sparq11lTranslatorParser : Parser {
 			{
 			State = 1188;
 			switch (_input.La(1)) {
-			case T__12:
-			case T__11:
-			case T__0:
+			case T__13:
+			case T__3:
+			case T__2:
 			case IRIREF:
 			case PNAME_LN:
 			case PNAME_NS:
@@ -6770,19 +5666,19 @@ public partial class sparq11lTranslatorParser : Parser {
 			State = 1203;
 			_errHandler.Sync(this);
 			_la = _input.La(1);
-			while (_la==T__7) {
+			while (_la==T__18) {
 				{
 				{
-				State = 1190; Match(T__7);
+				State = 1190; Match(T__18);
 				State = 1199;
 				_la = _input.La(1);
-				if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__12) | (1L << T__11) | (1L << T__0))) != 0) || ((((_la - 132)) & ~0x3f) == 0 && ((1L << (_la - 132)) & ((1L << (IRIREF - 132)) | (1L << (PNAME_LN - 132)) | (1L << (PNAME_NS - 132)) | (1L << (VAR1 - 132)) | (1L << (VAR2 - 132)) | (1L << (BracketOpen - 132)))) != 0)) {
+				if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__13) | (1L << T__3) | (1L << T__2))) != 0) || ((((_la - 132)) & ~0x3f) == 0 && ((1L << (_la - 132)) & ((1L << (IRIREF - 132)) | (1L << (PNAME_LN - 132)) | (1L << (PNAME_NS - 132)) | (1L << (VAR1 - 132)) | (1L << (VAR2 - 132)) | (1L << (BracketOpen - 132)))) != 0)) {
 					{
 					State = 1197;
 					switch (_input.La(1)) {
-					case T__12:
-					case T__11:
-					case T__0:
+					case T__13:
+					case T__3:
+					case T__2:
 					case IRIREF:
 					case PNAME_LN:
 					case PNAME_NS:
@@ -6843,19 +5739,6 @@ public partial class sparq11lTranslatorParser : Parser {
 			this.predicate = predicate;
 		}
 		public override int RuleIndex { get { return RULE_objectListPath; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterObjectListPath(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitObjectListPath(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitObjectListPath(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -6870,10 +5753,10 @@ public partial class sparq11lTranslatorParser : Parser {
 			State = 1211;
 			_errHandler.Sync(this);
 			_la = _input.La(1);
-			while (_la==T__22) {
+			while (_la==T__9) {
 				{
 				{
-				State = 1207; Match(T__22);
+				State = 1207; Match(T__9);
 				State = 1208; objectPath(_localctx.triples, _localctx.subject, _localctx.predicate);
 				}
 				}
@@ -6911,19 +5794,6 @@ public partial class sparq11lTranslatorParser : Parser {
 			this.predicate = predicate;
 		}
 		public override int RuleIndex { get { return RULE_objectPath; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterObjectPath(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitObjectPath(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitObjectPath(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -6965,19 +5835,6 @@ public partial class sparq11lTranslatorParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_path; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterPath(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitPath(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitPath(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -6993,10 +5850,10 @@ public partial class sparq11lTranslatorParser : Parser {
 			State = 1225;
 			_errHandler.Sync(this);
 			_la = _input.La(1);
-			while (_la==T__1) {
+			while (_la==T__5) {
 				{
 				{
-				State = 1219; Match(T__1);
+				State = 1219; Match(T__5);
 				State = 1220; _localctx._pathSequence = pathSequence();
 				_localctx.value = _localctx.value.AddAlt(_localctx._pathSequence.value);
 				}
@@ -7032,19 +5889,6 @@ public partial class sparq11lTranslatorParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_pathSequence; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterPathSequence(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitPathSequence(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitPathSequence(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -7060,10 +5904,10 @@ public partial class sparq11lTranslatorParser : Parser {
 			State = 1236;
 			_errHandler.Sync(this);
 			_la = _input.La(1);
-			while (_la==T__3) {
+			while (_la==T__22) {
 				{
 				{
-				State = 1230; Match(T__3);
+				State = 1230; Match(T__22);
 				State = 1231; _localctx._pathEltOrInverse = pathEltOrInverse();
 				_localctx.value = _localctx.value.AddSeq(_localctx._pathEltOrInverse.value);
 				}
@@ -7096,19 +5940,6 @@ public partial class sparq11lTranslatorParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_pathEltOrInverse; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterPathEltOrInverse(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitPathEltOrInverse(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitPathEltOrInverse(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -7118,8 +5949,8 @@ public partial class sparq11lTranslatorParser : Parser {
 		try {
 			State = 1246;
 			switch (_input.La(1)) {
-			case T__11:
-			case T__0:
+			case T__3:
+			case T__2:
 			case IRIREF:
 			case PNAME_LN:
 			case PNAME_NS:
@@ -7130,10 +5961,10 @@ public partial class sparq11lTranslatorParser : Parser {
 				_localctx.value = _localctx._pathElt.value;
 				}
 				break;
-			case T__12:
+			case T__13:
 				EnterOuterAlt(_localctx, 2);
 				{
-				State = 1242; Match(T__12);
+				State = 1242; Match(T__13);
 				State = 1243; _localctx._pathElt = pathElt();
 				_localctx.value = _localctx._pathElt.value.Inverse();
 				}
@@ -7164,19 +5995,6 @@ public partial class sparq11lTranslatorParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_pathElt; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterPathElt(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitPathElt(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitPathElt(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -7190,26 +6008,26 @@ public partial class sparq11lTranslatorParser : Parser {
 			_localctx.value = _localctx._pathPrimary.value;
 			State = 1256;
 			switch (_input.La(1)) {
-			case T__16:
+			case T__12:
 				{
-				State = 1250; Match(T__16);
+				State = 1250; Match(T__12);
 				_localctx.value = new SparqlPathMaybeOne(_localctx.value);
 				}
 				break;
-			case T__21:
+			case T__10:
 				{
-				State = 1252; Match(T__21);
+				State = 1252; Match(T__10);
 				_localctx.value = new SparqlPathZeroOrMany(_localctx.value);
 				}
 				break;
-			case T__9:
+			case T__1:
 				{
-				State = 1254; Match(T__9);
+				State = 1254; Match(T__1);
 				_localctx.value = new SparqlPathOneOrMany(_localctx.value);
 				}
 				break;
-			case T__3:
-			case T__1:
+			case T__22:
+			case T__5:
 			case TRUE:
 			case FALSE:
 			case IRIREF:
@@ -7258,33 +6076,20 @@ public partial class sparq11lTranslatorParser : Parser {
 		public IriContext _iri;
 		public PathNegatedPropertySetContext _pathNegatedPropertySet;
 		public PathContext _path;
-		public PathContext path() {
-			return GetRuleContext<PathContext>(0);
+		public PathNegatedPropertySetContext pathNegatedPropertySet() {
+			return GetRuleContext<PathNegatedPropertySetContext>(0);
 		}
 		public IriContext iri() {
 			return GetRuleContext<IriContext>(0);
 		}
-		public PathNegatedPropertySetContext pathNegatedPropertySet() {
-			return GetRuleContext<PathNegatedPropertySetContext>(0);
+		public PathContext path() {
+			return GetRuleContext<PathContext>(0);
 		}
 		public PathPrimaryContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_pathPrimary; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterPathPrimary(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitPathPrimary(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitPathPrimary(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -7303,17 +6108,17 @@ public partial class sparq11lTranslatorParser : Parser {
 				 _localctx.value = new SparqlPathTranslator(_localctx._iri.value); 
 				}
 				break;
-			case T__11:
+			case T__2:
 				EnterOuterAlt(_localctx, 2);
 				{
-				State = 1261; Match(T__11);
+				State = 1261; Match(T__2);
 				_localctx.value = new SparqlPathTranslator(q.Store.NodeGenerator.SpecialTypes.type);
 				}
 				break;
-			case T__0:
+			case T__3:
 				EnterOuterAlt(_localctx, 3);
 				{
-				State = 1263; Match(T__0);
+				State = 1263; Match(T__3);
 				State = 1264; _localctx._pathNegatedPropertySet = pathNegatedPropertySet();
 				_localctx.value = _localctx._pathNegatedPropertySet.value;
 				}
@@ -7345,30 +6150,17 @@ public partial class sparq11lTranslatorParser : Parser {
 	public partial class PathNegatedPropertySetContext : ParserRuleContext {
 		public SparqlPathNotTranslator value;
 		public PathOneInPropertySetContext _pathOneInPropertySet;
-		public IReadOnlyList<PathOneInPropertySetContext> pathOneInPropertySet() {
-			return GetRuleContexts<PathOneInPropertySetContext>();
-		}
 		public PathOneInPropertySetContext pathOneInPropertySet(int i) {
 			return GetRuleContext<PathOneInPropertySetContext>(i);
+		}
+		public IReadOnlyList<PathOneInPropertySetContext> pathOneInPropertySet() {
+			return GetRuleContexts<PathOneInPropertySetContext>();
 		}
 		public PathNegatedPropertySetContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_pathNegatedPropertySet; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterPathNegatedPropertySet(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitPathNegatedPropertySet(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitPathNegatedPropertySet(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -7379,8 +6171,8 @@ public partial class sparq11lTranslatorParser : Parser {
 		try {
 			State = 1292;
 			switch (_input.La(1)) {
-			case T__12:
-			case T__11:
+			case T__13:
+			case T__2:
 			case IRIREF:
 			case PNAME_LN:
 			case PNAME_NS:
@@ -7396,17 +6188,17 @@ public partial class sparq11lTranslatorParser : Parser {
 				State = 1277; Match(BracketOpen);
 				State = 1289;
 				_la = _input.La(1);
-				if (_la==T__12 || _la==T__11 || ((((_la - 132)) & ~0x3f) == 0 && ((1L << (_la - 132)) & ((1L << (IRIREF - 132)) | (1L << (PNAME_LN - 132)) | (1L << (PNAME_NS - 132)))) != 0)) {
+				if (_la==T__13 || _la==T__2 || ((((_la - 132)) & ~0x3f) == 0 && ((1L << (_la - 132)) & ((1L << (IRIREF - 132)) | (1L << (PNAME_LN - 132)) | (1L << (PNAME_NS - 132)))) != 0)) {
 					{
 					State = 1278; _localctx._pathOneInPropertySet = pathOneInPropertySet();
 					 _localctx.value = new SparqlPathNotTranslator(_localctx._pathOneInPropertySet.value); 
 					State = 1286;
 					_errHandler.Sync(this);
 					_la = _input.La(1);
-					while (_la==T__1) {
+					while (_la==T__5) {
 						{
 						{
-						State = 1280; Match(T__1);
+						State = 1280; Match(T__5);
 						State = 1281; _localctx._pathOneInPropertySet = pathOneInPropertySet();
 						 _localctx.value.alt.Add(_localctx._pathOneInPropertySet.value); 
 						}
@@ -7447,19 +6239,6 @@ public partial class sparq11lTranslatorParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_pathOneInPropertySet; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterPathOneInPropertySet(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitPathOneInPropertySet(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitPathOneInPropertySet(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -7478,17 +6257,17 @@ public partial class sparq11lTranslatorParser : Parser {
 				_localctx.value =  new SparqlPathTranslator(_localctx._iri.value);
 				}
 				break;
-			case T__11:
+			case T__2:
 				EnterOuterAlt(_localctx, 2);
 				{
-				State = 1297; Match(T__11);
+				State = 1297; Match(T__2);
 				_localctx.value =  new SparqlPathTranslator(q.Store.NodeGenerator.SpecialTypes.type);
 				}
 				break;
-			case T__12:
+			case T__13:
 				EnterOuterAlt(_localctx, 3);
 				{
-				State = 1299; Match(T__12);
+				State = 1299; Match(T__13);
 				State = 1305;
 				switch (_input.La(1)) {
 				case IRIREF:
@@ -7499,9 +6278,9 @@ public partial class sparq11lTranslatorParser : Parser {
 					_localctx.value = new SparqlPathTranslator(_localctx._iri.value).Inverse();
 					}
 					break;
-				case T__11:
+				case T__2:
 					{
-					State = 1303; Match(T__11);
+					State = 1303; Match(T__2);
 					_localctx.value = new SparqlPathTranslator(q.Store.NodeGenerator.SpecialTypes.type).Inverse();
 					}
 					break;
@@ -7529,11 +6308,11 @@ public partial class sparq11lTranslatorParser : Parser {
 		public SparqlGraphPattern triples;
 		public ObjectVariants value;
 		public CollectionPathContext _collectionPath;
-		public CollectionPathContext collectionPath() {
-			return GetRuleContext<CollectionPathContext>(0);
-		}
 		public BlankNodePropertyListPathContext blankNodePropertyListPath() {
 			return GetRuleContext<BlankNodePropertyListPathContext>(0);
+		}
+		public CollectionPathContext collectionPath() {
+			return GetRuleContext<CollectionPathContext>(0);
 		}
 		public TriplesNodePathContext(ParserRuleContext parent, int invokingState) : base(parent, invokingState) { }
 		public TriplesNodePathContext(ParserRuleContext parent, int invokingState, SparqlGraphPattern triples)
@@ -7542,19 +6321,6 @@ public partial class sparq11lTranslatorParser : Parser {
 			this.triples = triples;
 		}
 		public override int RuleIndex { get { return RULE_triplesNodePath; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterTriplesNodePath(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitTriplesNodePath(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitTriplesNodePath(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -7607,19 +6373,6 @@ public partial class sparq11lTranslatorParser : Parser {
 			this.subject = subject;
 		}
 		public override int RuleIndex { get { return RULE_blankNodePropertyListPath; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterBlankNodePropertyListPath(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitBlankNodePropertyListPath(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitBlankNodePropertyListPath(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -7662,19 +6415,6 @@ public partial class sparq11lTranslatorParser : Parser {
 			this.triples = triples;
 		}
 		public override int RuleIndex { get { return RULE_collectionPath; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterCollectionPath(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitCollectionPath(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitCollectionPath(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -7720,11 +6460,11 @@ public partial class sparq11lTranslatorParser : Parser {
 		public ObjectVariants value;
 		public VarOrTermContext _varOrTerm;
 		public TriplesNodePathContext _triplesNodePath;
-		public VarOrTermContext varOrTerm() {
-			return GetRuleContext<VarOrTermContext>(0);
-		}
 		public TriplesNodePathContext triplesNodePath() {
 			return GetRuleContext<TriplesNodePathContext>(0);
+		}
+		public VarOrTermContext varOrTerm() {
+			return GetRuleContext<VarOrTermContext>(0);
 		}
 		public GraphNodePathContext(ParserRuleContext parent, int invokingState) : base(parent, invokingState) { }
 		public GraphNodePathContext(ParserRuleContext parent, int invokingState, SparqlGraphPattern triples)
@@ -7733,19 +6473,6 @@ public partial class sparq11lTranslatorParser : Parser {
 			this.triples = triples;
 		}
 		public override int RuleIndex { get { return RULE_graphNodePath; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterGraphNodePath(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitGraphNodePath(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitGraphNodePath(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -7811,30 +6538,17 @@ public partial class sparq11lTranslatorParser : Parser {
 		public ObjectVariants value;
 		public VarContext _var;
 		public GraphTermContext _graphTerm;
-		public GraphTermContext graphTerm() {
-			return GetRuleContext<GraphTermContext>(0);
-		}
 		public VarContext var() {
 			return GetRuleContext<VarContext>(0);
+		}
+		public GraphTermContext graphTerm() {
+			return GetRuleContext<GraphTermContext>(0);
 		}
 		public VarOrTermContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_varOrTerm; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterVarOrTerm(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitVarOrTerm(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitVarOrTerm(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -7898,30 +6612,17 @@ public partial class sparq11lTranslatorParser : Parser {
 		public ObjectVariants value;
 		public VarContext _var;
 		public IriContext _iri;
-		public IriContext iri() {
-			return GetRuleContext<IriContext>(0);
-		}
 		public VarContext var() {
 			return GetRuleContext<VarContext>(0);
+		}
+		public IriContext iri() {
+			return GetRuleContext<IriContext>(0);
 		}
 		public VarOrIriContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_varOrIri; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterVarOrIri(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitVarOrIri(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitVarOrIri(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -7974,19 +6675,6 @@ public partial class sparq11lTranslatorParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_var; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterVar(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitVar(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitVar(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -8012,26 +6700,13 @@ public partial class sparq11lTranslatorParser : Parser {
 	}
 
 	public partial class VarStringContext : ParserRuleContext {
-		public ITerminalNode VAR2() { return GetToken(sparq11lTranslatorParser.VAR2, 0); }
 		public ITerminalNode VAR1() { return GetToken(sparq11lTranslatorParser.VAR1, 0); }
+		public ITerminalNode VAR2() { return GetToken(sparq11lTranslatorParser.VAR2, 0); }
 		public VarStringContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_varString; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterVarString(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitVarString(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitVarString(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -8068,40 +6743,27 @@ public partial class sparq11lTranslatorParser : Parser {
 		public NumericLiteralContext _numericLiteral;
 		public BooleanLiteralContext _booleanLiteral;
 		public BlankNodeContext _blankNode;
-		public RDFLiteralContext rDFLiteral() {
-			return GetRuleContext<RDFLiteralContext>(0);
+		public NumericLiteralContext numericLiteral() {
+			return GetRuleContext<NumericLiteralContext>(0);
+		}
+		public BlankNodeContext blankNode() {
+			return GetRuleContext<BlankNodeContext>(0);
 		}
 		public IriContext iri() {
 			return GetRuleContext<IriContext>(0);
 		}
-		public ITerminalNode NIL() { return GetToken(sparq11lTranslatorParser.NIL, 0); }
-		public BlankNodeContext blankNode() {
-			return GetRuleContext<BlankNodeContext>(0);
-		}
 		public BooleanLiteralContext booleanLiteral() {
 			return GetRuleContext<BooleanLiteralContext>(0);
 		}
-		public NumericLiteralContext numericLiteral() {
-			return GetRuleContext<NumericLiteralContext>(0);
+		public ITerminalNode NIL() { return GetToken(sparq11lTranslatorParser.NIL, 0); }
+		public RDFLiteralContext rDFLiteral() {
+			return GetRuleContext<RDFLiteralContext>(0);
 		}
 		public GraphTermContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_graphTerm; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterGraphTerm(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitGraphTerm(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitGraphTerm(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -8198,19 +6860,6 @@ public partial class sparq11lTranslatorParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_expression; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterExpression(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitExpression(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitExpression(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -8226,10 +6875,10 @@ public partial class sparq11lTranslatorParser : Parser {
 			State = 1387;
 			_errHandler.Sync(this);
 			_la = _input.La(1);
-			while (_la==T__5) {
+			while (_la==T__19) {
 				{
 				{
-				State = 1381; Match(T__5);
+				State = 1381; Match(T__19);
 				State = 1382; _localctx.r = _localctx._conditionalAndExpression = conditionalAndExpression();
 				_localctx.value = new SparqlOrExpression(_localctx.value, _localctx.r.value);
 				}
@@ -8255,30 +6904,17 @@ public partial class sparq11lTranslatorParser : Parser {
 		public SparqlExpression value;
 		public RelationalExpressionContext _relationalExpression;
 		public RelationalExpressionContext r;
-		public IReadOnlyList<RelationalExpressionContext> relationalExpression() {
-			return GetRuleContexts<RelationalExpressionContext>();
-		}
 		public RelationalExpressionContext relationalExpression(int i) {
 			return GetRuleContext<RelationalExpressionContext>(i);
+		}
+		public IReadOnlyList<RelationalExpressionContext> relationalExpression() {
+			return GetRuleContexts<RelationalExpressionContext>();
 		}
 		public ConditionalAndExpressionContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_conditionalAndExpression; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterConditionalAndExpression(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitConditionalAndExpression(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitConditionalAndExpression(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -8294,10 +6930,10 @@ public partial class sparq11lTranslatorParser : Parser {
 			State = 1398;
 			_errHandler.Sync(this);
 			_la = _input.La(1);
-			while (_la==T__6) {
+			while (_la==T__16) {
 				{
 				{
-				State = 1392; Match(T__6);
+				State = 1392; Match(T__16);
 				State = 1393; _localctx.r = _localctx._relationalExpression = relationalExpression();
 				_localctx.value = new SparqlAndExpression(_localctx.value, _localctx.r.value);
 				}
@@ -8324,35 +6960,22 @@ public partial class sparq11lTranslatorParser : Parser {
 		public NumericExpressionContext _numericExpression;
 		public NumericExpressionContext r;
 		public ExpressionListContext _expressionList;
-		public ITerminalNode IN() { return GetToken(sparq11lTranslatorParser.IN, 0); }
-		public IReadOnlyList<NumericExpressionContext> numericExpression() {
-			return GetRuleContexts<NumericExpressionContext>();
-		}
+		public ITerminalNode NOT() { return GetToken(sparq11lTranslatorParser.NOT, 0); }
 		public NumericExpressionContext numericExpression(int i) {
 			return GetRuleContext<NumericExpressionContext>(i);
 		}
 		public ExpressionListContext expressionList() {
 			return GetRuleContext<ExpressionListContext>(0);
 		}
-		public ITerminalNode NOT() { return GetToken(sparq11lTranslatorParser.NOT, 0); }
+		public IReadOnlyList<NumericExpressionContext> numericExpression() {
+			return GetRuleContexts<NumericExpressionContext>();
+		}
+		public ITerminalNode IN() { return GetToken(sparq11lTranslatorParser.IN, 0); }
 		public RelationalExpressionContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_relationalExpression; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterRelationalExpression(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitRelationalExpression(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitRelationalExpression(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -8366,23 +6989,23 @@ public partial class sparq11lTranslatorParser : Parser {
 			 _localctx.value = _localctx._numericExpression.value; 
 			State = 1436;
 			switch (_input.La(1)) {
-			case T__8:
+			case T__15:
 				{
-				State = 1403; Match(T__8);
+				State = 1403; Match(T__15);
 				State = 1404; _localctx.r = _localctx._numericExpression = numericExpression();
 				_localctx.value = new SparqlEqualsExpression(_localctx.value, _localctx.r.value, q.Store.NodeGenerator);
 				}
 				break;
-			case T__18:
+			case T__21:
 				{
-				State = 1407; Match(T__18);
+				State = 1407; Match(T__21);
 				State = 1408; _localctx.r = _localctx._numericExpression = numericExpression();
 				_localctx.value =  new SparqlNotEqualsExpression(_localctx.value, _localctx.r.value, q.Store.NodeGenerator);
 				}
 				break;
-			case T__19:
+			case T__6:
 				{
-				State = 1411; Match(T__19);
+				State = 1411; Match(T__6);
 				State = 1412; _localctx.r = _localctx._numericExpression = numericExpression();
 				_localctx.value = SparqlExpression.Smaller(_localctx.value, _localctx.r.value);
 				}
@@ -8394,16 +7017,16 @@ public partial class sparq11lTranslatorParser : Parser {
 				_localctx.value = SparqlExpression.Greather(_localctx.value, _localctx.r.value);
 				}
 				break;
-			case T__17:
+			case T__11:
 				{
-				State = 1419; Match(T__17);
+				State = 1419; Match(T__11);
 				State = 1420; _localctx.r = _localctx._numericExpression = numericExpression();
 				_localctx.value = SparqlExpression.SmallerOrEquals(_localctx.value, _localctx.r.value);
 				}
 				break;
-			case T__2:
+			case T__7:
 				{
-				State = 1423; Match(T__2);
+				State = 1423; Match(T__7);
 				State = 1424; _localctx.r = _localctx._numericExpression = numericExpression();
 				_localctx.value = SparqlExpression.GreatherOrEquals(_localctx.value, _localctx.r.value);
 				}
@@ -8423,10 +7046,10 @@ public partial class sparq11lTranslatorParser : Parser {
 				_localctx.value = _localctx.value.NotInCollection(_localctx._expressionList.value);
 				}
 				break;
-			case T__22:
-			case T__7:
-			case T__6:
-			case T__5:
+			case T__19:
+			case T__18:
+			case T__16:
+			case T__9:
 			case AS:
 			case BracketClose:
 				break;
@@ -8453,26 +7076,26 @@ public partial class sparq11lTranslatorParser : Parser {
 		public NumericLiteralPositiveContext _numericLiteralPositive;
 		public NumericLiteralNegativeContext _numericLiteralNegative;
 		public UnaryExpressionContext _unaryExpression;
-		public IReadOnlyList<NumericLiteralPositiveContext> numericLiteralPositive() {
-			return GetRuleContexts<NumericLiteralPositiveContext>();
+		public NumericLiteralNegativeContext numericLiteralNegative(int i) {
+			return GetRuleContext<NumericLiteralNegativeContext>(i);
 		}
 		public IReadOnlyList<UnaryExpressionContext> unaryExpression() {
 			return GetRuleContexts<UnaryExpressionContext>();
 		}
-		public MultiplicativeExpressionContext multiplicativeExpression(int i) {
-			return GetRuleContext<MultiplicativeExpressionContext>(i);
+		public IReadOnlyList<NumericLiteralNegativeContext> numericLiteralNegative() {
+			return GetRuleContexts<NumericLiteralNegativeContext>();
 		}
 		public NumericLiteralPositiveContext numericLiteralPositive(int i) {
 			return GetRuleContext<NumericLiteralPositiveContext>(i);
 		}
-		public NumericLiteralNegativeContext numericLiteralNegative(int i) {
-			return GetRuleContext<NumericLiteralNegativeContext>(i);
-		}
-		public IReadOnlyList<NumericLiteralNegativeContext> numericLiteralNegative() {
-			return GetRuleContexts<NumericLiteralNegativeContext>();
-		}
 		public IReadOnlyList<MultiplicativeExpressionContext> multiplicativeExpression() {
 			return GetRuleContexts<MultiplicativeExpressionContext>();
+		}
+		public IReadOnlyList<NumericLiteralPositiveContext> numericLiteralPositive() {
+			return GetRuleContexts<NumericLiteralPositiveContext>();
+		}
+		public MultiplicativeExpressionContext multiplicativeExpression(int i) {
+			return GetRuleContext<MultiplicativeExpressionContext>(i);
 		}
 		public UnaryExpressionContext unaryExpression(int i) {
 			return GetRuleContext<UnaryExpressionContext>(i);
@@ -8482,19 +7105,6 @@ public partial class sparq11lTranslatorParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_numericExpression; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterNumericExpression(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitNumericExpression(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitNumericExpression(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -8510,20 +7120,20 @@ public partial class sparq11lTranslatorParser : Parser {
 			State = 1474;
 			_errHandler.Sync(this);
 			_la = _input.La(1);
-			while (_la==T__20 || _la==T__9 || ((((_la - 142)) & ~0x3f) == 0 && ((1L << (_la - 142)) & ((1L << (INTEGER_POSITIVE - 142)) | (1L << (DECIMAL_POSITIVE - 142)) | (1L << (DOUBLE_POSITIVE - 142)) | (1L << (INTEGER_NEGATIVE - 142)) | (1L << (DECIMAL_NEGATIVE - 142)) | (1L << (DOUBLE_NEGATIVE - 142)))) != 0)) {
+			while (_la==T__1 || _la==T__0 || ((((_la - 142)) & ~0x3f) == 0 && ((1L << (_la - 142)) & ((1L << (INTEGER_POSITIVE - 142)) | (1L << (DECIMAL_POSITIVE - 142)) | (1L << (DOUBLE_POSITIVE - 142)) | (1L << (INTEGER_NEGATIVE - 142)) | (1L << (DECIMAL_NEGATIVE - 142)) | (1L << (DOUBLE_NEGATIVE - 142)))) != 0)) {
 				{
 				State = 1472;
 				switch (_input.La(1)) {
-				case T__9:
+				case T__1:
 					{
-					State = 1440; Match(T__9);
+					State = 1440; Match(T__1);
 					State = 1441; _localctx.r = _localctx._multiplicativeExpression = multiplicativeExpression();
 					 _localctx.value += _localctx.r.value; 
 					}
 					break;
-				case T__20:
+				case T__0:
 					{
-					State = 1444; Match(T__20);
+					State = 1444; Match(T__0);
 					State = 1445; _localctx.r = _localctx._multiplicativeExpression = multiplicativeExpression();
 					 _localctx.value -= _localctx.r.value; 
 					}
@@ -8560,23 +7170,23 @@ public partial class sparq11lTranslatorParser : Parser {
 					State = 1467;
 					_errHandler.Sync(this);
 					_la = _input.La(1);
-					while (_la==T__21 || _la==T__3) {
+					while (_la==T__22 || _la==T__10) {
 						{
 						State = 1465;
 						switch (_input.La(1)) {
-						case T__21:
+						case T__10:
 							{
 							{
-							State = 1457; Match(T__21);
+							State = 1457; Match(T__10);
 							State = 1458; _localctx._unaryExpression = unaryExpression();
 							multExp *= _localctx._unaryExpression.value; 
 							}
 							}
 							break;
-						case T__3:
+						case T__22:
 							{
 							{
-							State = 1461; Match(T__3);
+							State = 1461; Match(T__22);
 							State = 1462; _localctx._unaryExpression = unaryExpression();
 							 multExp /= _localctx._unaryExpression.value; 
 							}
@@ -8629,19 +7239,6 @@ public partial class sparq11lTranslatorParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_multiplicativeExpression; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterMultiplicativeExpression(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitMultiplicativeExpression(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitMultiplicativeExpression(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -8657,20 +7254,20 @@ public partial class sparq11lTranslatorParser : Parser {
 			State = 1489;
 			_errHandler.Sync(this);
 			_la = _input.La(1);
-			while (_la==T__21 || _la==T__3) {
+			while (_la==T__22 || _la==T__10) {
 				{
 				State = 1487;
 				switch (_input.La(1)) {
-				case T__21:
+				case T__10:
 					{
-					State = 1479; Match(T__21);
+					State = 1479; Match(T__10);
 					State = 1480; _localctx.r = _localctx._unaryExpression = unaryExpression();
 					_localctx.value = _localctx.value*_localctx.r.value;
 					}
 					break;
-				case T__3:
+				case T__22:
 					{
-					State = 1483; Match(T__3);
+					State = 1483; Match(T__22);
 					State = 1484; _localctx.r = _localctx._unaryExpression = unaryExpression();
 					_localctx.value = _localctx.value/_localctx.r.value;
 					}
@@ -8707,19 +7304,6 @@ public partial class sparq11lTranslatorParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_unaryExpression; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterUnaryExpression(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitUnaryExpression(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitUnaryExpression(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -8729,26 +7313,26 @@ public partial class sparq11lTranslatorParser : Parser {
 		try {
 			State = 1507;
 			switch (_input.La(1)) {
-			case T__0:
+			case T__3:
 				EnterOuterAlt(_localctx, 1);
 				{
-				State = 1492; Match(T__0);
+				State = 1492; Match(T__3);
 				State = 1493; _localctx._primaryExpression = primaryExpression();
 				 _localctx.value = !_localctx._primaryExpression.value; 
 				}
 				break;
-			case T__9:
+			case T__1:
 				EnterOuterAlt(_localctx, 2);
 				{
-				State = 1496; Match(T__9);
+				State = 1496; Match(T__1);
 				State = 1497; _localctx._primaryExpression = primaryExpression();
 				 _localctx.value = _localctx._primaryExpression.value; 
 				}
 				break;
-			case T__20:
+			case T__0:
 				EnterOuterAlt(_localctx, 3);
 				{
-				State = 1500; Match(T__20);
+				State = 1500; Match(T__0);
 				State = 1501; _localctx._primaryExpression = primaryExpression();
 				 _localctx.value = -_localctx._primaryExpression.value; 
 				}
@@ -8866,48 +7450,35 @@ public partial class sparq11lTranslatorParser : Parser {
 		public NumericLiteralContext _numericLiteral;
 		public BooleanLiteralContext _booleanLiteral;
 		public VarContext _var;
-		public RDFLiteralContext rDFLiteral() {
-			return GetRuleContext<RDFLiteralContext>(0);
-		}
-		public BrackettedExpressionContext brackettedExpression() {
-			return GetRuleContext<BrackettedExpressionContext>(0);
-		}
-		public BuiltInCallContext builtInCall() {
-			return GetRuleContext<BuiltInCallContext>(0);
+		public ArgListContext argList() {
+			return GetRuleContext<ArgListContext>(0);
 		}
 		public IriStringContext iriString() {
 			return GetRuleContext<IriStringContext>(0);
 		}
-		public ArgListContext argList() {
-			return GetRuleContext<ArgListContext>(0);
+		public NumericLiteralContext numericLiteral() {
+			return GetRuleContext<NumericLiteralContext>(0);
 		}
 		public VarContext var() {
 			return GetRuleContext<VarContext>(0);
 		}
+		public BrackettedExpressionContext brackettedExpression() {
+			return GetRuleContext<BrackettedExpressionContext>(0);
+		}
 		public BooleanLiteralContext booleanLiteral() {
 			return GetRuleContext<BooleanLiteralContext>(0);
 		}
-		public NumericLiteralContext numericLiteral() {
-			return GetRuleContext<NumericLiteralContext>(0);
+		public BuiltInCallContext builtInCall() {
+			return GetRuleContext<BuiltInCallContext>(0);
+		}
+		public RDFLiteralContext rDFLiteral() {
+			return GetRuleContext<RDFLiteralContext>(0);
 		}
 		public PrimaryExpressionContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_primaryExpression; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterPrimaryExpression(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitPrimaryExpression(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitPrimaryExpression(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -9079,19 +7650,6 @@ public partial class sparq11lTranslatorParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_brackettedExpression; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterBrackettedExpression(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitBrackettedExpression(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitBrackettedExpression(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -9138,104 +7696,91 @@ public partial class sparq11lTranslatorParser : Parser {
 		public RegexExpressionContext _regexExpression;
 		public ExistsFuncContext _existsFunc;
 		public NotExistsFuncContext _notExistsFunc;
-		public ITerminalNode SHA256() { return GetToken(sparq11lTranslatorParser.SHA256, 0); }
-		public ITerminalNode COALESCE() { return GetToken(sparq11lTranslatorParser.COALESCE, 0); }
-		public ExpressionListContext expressionList() {
-			return GetRuleContext<ExpressionListContext>(0);
-		}
-		public ITerminalNode RAND() { return GetToken(sparq11lTranslatorParser.RAND, 0); }
-		public ITerminalNode NIL() { return GetToken(sparq11lTranslatorParser.NIL, 0); }
-		public ITerminalNode ABS() { return GetToken(sparq11lTranslatorParser.ABS, 0); }
-		public ITerminalNode SAMETERM() { return GetToken(sparq11lTranslatorParser.SAMETERM, 0); }
-		public ITerminalNode CONTAINS() { return GetToken(sparq11lTranslatorParser.CONTAINS, 0); }
-		public ITerminalNode IF() { return GetToken(sparq11lTranslatorParser.IF, 0); }
-		public ITerminalNode YEAR() { return GetToken(sparq11lTranslatorParser.YEAR, 0); }
-		public ITerminalNode SHA512() { return GetToken(sparq11lTranslatorParser.SHA512, 0); }
-		public ITerminalNode STR() { return GetToken(sparq11lTranslatorParser.STR, 0); }
-		public ITerminalNode SHA384() { return GetToken(sparq11lTranslatorParser.SHA384, 0); }
-		public ITerminalNode TZ() { return GetToken(sparq11lTranslatorParser.TZ, 0); }
-		public ITerminalNode STRBEFORE() { return GetToken(sparq11lTranslatorParser.STRBEFORE, 0); }
-		public ITerminalNode LANG() { return GetToken(sparq11lTranslatorParser.LANG, 0); }
-		public ITerminalNode ISBLANK() { return GetToken(sparq11lTranslatorParser.ISBLANK, 0); }
-		public ITerminalNode UUID() { return GetToken(sparq11lTranslatorParser.UUID, 0); }
-		public ExistsFuncContext existsFunc() {
-			return GetRuleContext<ExistsFuncContext>(0);
-		}
-		public ITerminalNode URI() { return GetToken(sparq11lTranslatorParser.URI, 0); }
-		public ITerminalNode ISIRI() { return GetToken(sparq11lTranslatorParser.ISIRI, 0); }
-		public ITerminalNode STRLEN() { return GetToken(sparq11lTranslatorParser.STRLEN, 0); }
-		public ITerminalNode ROUND() { return GetToken(sparq11lTranslatorParser.ROUND, 0); }
-		public RegexExpressionContext regexExpression() {
-			return GetRuleContext<RegexExpressionContext>(0);
-		}
-		public ITerminalNode STRLANG() { return GetToken(sparq11lTranslatorParser.STRLANG, 0); }
 		public NotExistsFuncContext notExistsFunc() {
 			return GetRuleContext<NotExistsFuncContext>(0);
 		}
-		public ITerminalNode CEIL() { return GetToken(sparq11lTranslatorParser.CEIL, 0); }
-		public ITerminalNode NOW() { return GetToken(sparq11lTranslatorParser.NOW, 0); }
-		public ITerminalNode STRDT() { return GetToken(sparq11lTranslatorParser.STRDT, 0); }
-		public ITerminalNode LCASE() { return GetToken(sparq11lTranslatorParser.LCASE, 0); }
-		public VarContext var() {
-			return GetRuleContext<VarContext>(0);
-		}
-		public ITerminalNode ISLITERAL() { return GetToken(sparq11lTranslatorParser.ISLITERAL, 0); }
-		public ITerminalNode IRI() { return GetToken(sparq11lTranslatorParser.IRI, 0); }
-		public ITerminalNode MONTH() { return GetToken(sparq11lTranslatorParser.MONTH, 0); }
-		public ITerminalNode MINUTES() { return GetToken(sparq11lTranslatorParser.MINUTES, 0); }
-		public SubstringExpressionContext substringExpression() {
-			return GetRuleContext<SubstringExpressionContext>(0);
-		}
-		public ITerminalNode DATATYPE() { return GetToken(sparq11lTranslatorParser.DATATYPE, 0); }
-		public ITerminalNode TIMEZONE() { return GetToken(sparq11lTranslatorParser.TIMEZONE, 0); }
-		public IReadOnlyList<ExpressionContext> expression() {
-			return GetRuleContexts<ExpressionContext>();
-		}
-		public ITerminalNode UCASE() { return GetToken(sparq11lTranslatorParser.UCASE, 0); }
-		public ITerminalNode HOURS() { return GetToken(sparq11lTranslatorParser.HOURS, 0); }
-		public ITerminalNode ISNUMERIC() { return GetToken(sparq11lTranslatorParser.ISNUMERIC, 0); }
-		public AggregateContext aggregate() {
-			return GetRuleContext<AggregateContext>(0);
-		}
-		public ITerminalNode ENCODE_FOR_URI() { return GetToken(sparq11lTranslatorParser.ENCODE_FOR_URI, 0); }
-		public ExpressionContext expression(int i) {
-			return GetRuleContext<ExpressionContext>(i);
-		}
-		public ITerminalNode STRAFTER() { return GetToken(sparq11lTranslatorParser.STRAFTER, 0); }
-		public ITerminalNode MD5() { return GetToken(sparq11lTranslatorParser.MD5, 0); }
-		public ITerminalNode BNODE() { return GetToken(sparq11lTranslatorParser.BNODE, 0); }
-		public ITerminalNode DAY() { return GetToken(sparq11lTranslatorParser.DAY, 0); }
-		public ITerminalNode LANGMATCHES() { return GetToken(sparq11lTranslatorParser.LANGMATCHES, 0); }
-		public ITerminalNode STRSTARTS() { return GetToken(sparq11lTranslatorParser.STRSTARTS, 0); }
-		public ITerminalNode SECONDS() { return GetToken(sparq11lTranslatorParser.SECONDS, 0); }
-		public ITerminalNode BOUND() { return GetToken(sparq11lTranslatorParser.BOUND, 0); }
+		public ITerminalNode IF() { return GetToken(sparq11lTranslatorParser.IF, 0); }
 		public ITerminalNode STRUUID() { return GetToken(sparq11lTranslatorParser.STRUUID, 0); }
-		public ITerminalNode ISURI() { return GetToken(sparq11lTranslatorParser.ISURI, 0); }
-		public ITerminalNode CONCAT() { return GetToken(sparq11lTranslatorParser.CONCAT, 0); }
-		public ITerminalNode SHA1() { return GetToken(sparq11lTranslatorParser.SHA1, 0); }
-		public ITerminalNode STRENDS() { return GetToken(sparq11lTranslatorParser.STRENDS, 0); }
+		public ITerminalNode ISBLANK() { return GetToken(sparq11lTranslatorParser.ISBLANK, 0); }
+		public ITerminalNode TZ() { return GetToken(sparq11lTranslatorParser.TZ, 0); }
+		public ITerminalNode SHA384() { return GetToken(sparq11lTranslatorParser.SHA384, 0); }
+		public ITerminalNode URI() { return GetToken(sparq11lTranslatorParser.URI, 0); }
+		public ITerminalNode BNODE() { return GetToken(sparq11lTranslatorParser.BNODE, 0); }
+		public ITerminalNode SHA256() { return GetToken(sparq11lTranslatorParser.SHA256, 0); }
+		public ITerminalNode SECONDS() { return GetToken(sparq11lTranslatorParser.SECONDS, 0); }
+		public ITerminalNode STRAFTER() { return GetToken(sparq11lTranslatorParser.STRAFTER, 0); }
+		public ExistsFuncContext existsFunc() {
+			return GetRuleContext<ExistsFuncContext>(0);
+		}
+		public ITerminalNode ROUND() { return GetToken(sparq11lTranslatorParser.ROUND, 0); }
 		public StrReplaceExpressionContext strReplaceExpression() {
 			return GetRuleContext<StrReplaceExpressionContext>(0);
 		}
+		public ITerminalNode STRBEFORE() { return GetToken(sparq11lTranslatorParser.STRBEFORE, 0); }
+		public ITerminalNode CEIL() { return GetToken(sparq11lTranslatorParser.CEIL, 0); }
+		public ITerminalNode SHA1() { return GetToken(sparq11lTranslatorParser.SHA1, 0); }
+		public ITerminalNode CONCAT() { return GetToken(sparq11lTranslatorParser.CONCAT, 0); }
+		public ITerminalNode SAMETERM() { return GetToken(sparq11lTranslatorParser.SAMETERM, 0); }
+		public ITerminalNode COALESCE() { return GetToken(sparq11lTranslatorParser.COALESCE, 0); }
+		public ITerminalNode ISLITERAL() { return GetToken(sparq11lTranslatorParser.ISLITERAL, 0); }
+		public ITerminalNode ENCODE_FOR_URI() { return GetToken(sparq11lTranslatorParser.ENCODE_FOR_URI, 0); }
+		public ITerminalNode BOUND() { return GetToken(sparq11lTranslatorParser.BOUND, 0); }
+		public ITerminalNode STRSTARTS() { return GetToken(sparq11lTranslatorParser.STRSTARTS, 0); }
+		public ITerminalNode LCASE() { return GetToken(sparq11lTranslatorParser.LCASE, 0); }
+		public ITerminalNode ISURI() { return GetToken(sparq11lTranslatorParser.ISURI, 0); }
+		public ITerminalNode ISIRI() { return GetToken(sparq11lTranslatorParser.ISIRI, 0); }
+		public RegexExpressionContext regexExpression() {
+			return GetRuleContext<RegexExpressionContext>(0);
+		}
+		public ITerminalNode UCASE() { return GetToken(sparq11lTranslatorParser.UCASE, 0); }
+		public ITerminalNode NOW() { return GetToken(sparq11lTranslatorParser.NOW, 0); }
+		public ITerminalNode STR() { return GetToken(sparq11lTranslatorParser.STR, 0); }
+		public ITerminalNode CONTAINS() { return GetToken(sparq11lTranslatorParser.CONTAINS, 0); }
+		public VarContext var() {
+			return GetRuleContext<VarContext>(0);
+		}
+		public ITerminalNode ABS() { return GetToken(sparq11lTranslatorParser.ABS, 0); }
+		public ExpressionContext expression(int i) {
+			return GetRuleContext<ExpressionContext>(i);
+		}
+		public AggregateContext aggregate() {
+			return GetRuleContext<AggregateContext>(0);
+		}
+		public ITerminalNode STRLEN() { return GetToken(sparq11lTranslatorParser.STRLEN, 0); }
+		public ITerminalNode LANG() { return GetToken(sparq11lTranslatorParser.LANG, 0); }
+		public ITerminalNode NIL() { return GetToken(sparq11lTranslatorParser.NIL, 0); }
+		public ITerminalNode STRLANG() { return GetToken(sparq11lTranslatorParser.STRLANG, 0); }
+		public ITerminalNode STRDT() { return GetToken(sparq11lTranslatorParser.STRDT, 0); }
+		public ITerminalNode DATATYPE() { return GetToken(sparq11lTranslatorParser.DATATYPE, 0); }
+		public ITerminalNode MONTH() { return GetToken(sparq11lTranslatorParser.MONTH, 0); }
+		public ITerminalNode DAY() { return GetToken(sparq11lTranslatorParser.DAY, 0); }
+		public ITerminalNode STRENDS() { return GetToken(sparq11lTranslatorParser.STRENDS, 0); }
+		public ITerminalNode YEAR() { return GetToken(sparq11lTranslatorParser.YEAR, 0); }
+		public ITerminalNode MINUTES() { return GetToken(sparq11lTranslatorParser.MINUTES, 0); }
+		public ITerminalNode UUID() { return GetToken(sparq11lTranslatorParser.UUID, 0); }
+		public ITerminalNode TIMEZONE() { return GetToken(sparq11lTranslatorParser.TIMEZONE, 0); }
+		public ITerminalNode LANGMATCHES() { return GetToken(sparq11lTranslatorParser.LANGMATCHES, 0); }
+		public ITerminalNode IRI() { return GetToken(sparq11lTranslatorParser.IRI, 0); }
+		public ITerminalNode HOURS() { return GetToken(sparq11lTranslatorParser.HOURS, 0); }
+		public ITerminalNode ISNUMERIC() { return GetToken(sparq11lTranslatorParser.ISNUMERIC, 0); }
+		public ITerminalNode SHA512() { return GetToken(sparq11lTranslatorParser.SHA512, 0); }
 		public ITerminalNode FLOOR() { return GetToken(sparq11lTranslatorParser.FLOOR, 0); }
+		public ExpressionListContext expressionList() {
+			return GetRuleContext<ExpressionListContext>(0);
+		}
+		public SubstringExpressionContext substringExpression() {
+			return GetRuleContext<SubstringExpressionContext>(0);
+		}
+		public ITerminalNode MD5() { return GetToken(sparq11lTranslatorParser.MD5, 0); }
+		public IReadOnlyList<ExpressionContext> expression() {
+			return GetRuleContexts<ExpressionContext>();
+		}
+		public ITerminalNode RAND() { return GetToken(sparq11lTranslatorParser.RAND, 0); }
 		public BuiltInCallContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_builtInCall; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterBuiltInCall(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitBuiltInCall(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitBuiltInCall(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -9284,7 +7829,7 @@ public partial class sparq11lTranslatorParser : Parser {
 				State = 1556; Match(LANGMATCHES);
 				State = 1557; Match(BracketOpen);
 				State = 1558; _localctx.lit = expression();
-				State = 1559; Match(T__22);
+				State = 1559; Match(T__9);
 				State = 1560; _localctx.lang = expression();
 				State = 1561; Match(BracketClose);
 				 _localctx.value = new SparqlLangMatches(_localctx.lit.value, _localctx.lang.value); 
@@ -9471,7 +8016,7 @@ public partial class sparq11lTranslatorParser : Parser {
 				State = 1659; Match(CONTAINS);
 				State = 1660; Match(BracketOpen);
 				State = 1661; _localctx.lit = expression();
-				State = 1662; Match(T__22);
+				State = 1662; Match(T__9);
 				State = 1663; _localctx.pattern = expression();
 				State = 1664; Match(BracketClose);
 				 _localctx.value = new SparqlContains(_localctx.lit.value, _localctx.pattern.value); 
@@ -9483,7 +8028,7 @@ public partial class sparq11lTranslatorParser : Parser {
 				State = 1667; Match(STRSTARTS);
 				State = 1668; Match(BracketOpen);
 				State = 1669; _localctx.lit = expression();
-				State = 1670; Match(T__22);
+				State = 1670; Match(T__9);
 				State = 1671; _localctx.pattern = expression();
 				State = 1672; Match(BracketClose);
 				 _localctx.value = new SparqlStrStarts(_localctx.lit.value, _localctx.pattern.value); 
@@ -9495,7 +8040,7 @@ public partial class sparq11lTranslatorParser : Parser {
 				State = 1675; Match(STRENDS);
 				State = 1676; Match(BracketOpen);
 				State = 1677; _localctx.lit = expression();
-				State = 1678; Match(T__22);
+				State = 1678; Match(T__9);
 				State = 1679; _localctx.pattern = expression();
 				State = 1680; Match(BracketClose);
 				 _localctx.value = new SparqlStrEnds(_localctx.lit.value, _localctx.pattern.value); 
@@ -9507,7 +8052,7 @@ public partial class sparq11lTranslatorParser : Parser {
 				State = 1683; Match(STRBEFORE);
 				State = 1684; Match(BracketOpen);
 				State = 1685; _localctx.lit = expression();
-				State = 1686; Match(T__22);
+				State = 1686; Match(T__9);
 				State = 1687; _localctx.pattern = expression();
 				State = 1688; Match(BracketClose);
 				 _localctx.value = new SparqlStrBefore(_localctx.lit.value, _localctx.pattern.value); 
@@ -9519,7 +8064,7 @@ public partial class sparq11lTranslatorParser : Parser {
 				State = 1691; Match(STRAFTER);
 				State = 1692; Match(BracketOpen);
 				State = 1693; _localctx.lit = expression();
-				State = 1694; Match(T__22);
+				State = 1694; Match(T__9);
 				State = 1695; _localctx.pattern = expression();
 				State = 1696; Match(BracketClose);
 				 _localctx.value = new SparqlStrAfter(_localctx.lit.value, _localctx.pattern.value); 
@@ -9693,9 +8238,9 @@ public partial class sparq11lTranslatorParser : Parser {
 				State = 1790; Match(IF);
 				State = 1791; Match(BracketOpen);
 				State = 1792; _localctx.condit = expression();
-				State = 1793; Match(T__22);
+				State = 1793; Match(T__9);
 				State = 1794; _localctx.ifTrue = expression();
-				State = 1795; Match(T__22);
+				State = 1795; Match(T__9);
 				State = 1796; _localctx.ifFalse = expression();
 				State = 1797; Match(BracketClose);
 				 _localctx.value = new SparqlIf(_localctx.condit.value, _localctx.ifTrue.value, _localctx.ifFalse.value); 
@@ -9707,7 +8252,7 @@ public partial class sparq11lTranslatorParser : Parser {
 				State = 1800; Match(STRLANG);
 				State = 1801; Match(BracketOpen);
 				State = 1802; _localctx.lit = expression();
-				State = 1803; Match(T__22);
+				State = 1803; Match(T__9);
 				State = 1804; _localctx.lang = expression();
 				State = 1805; Match(BracketClose);
 				 _localctx.value = new SparqlStringLang(_localctx.lit.value, _localctx.lang.value); 
@@ -9719,7 +8264,7 @@ public partial class sparq11lTranslatorParser : Parser {
 				State = 1808; Match(STRDT);
 				State = 1809; Match(BracketOpen);
 				State = 1810; _localctx.lit = expression();
-				State = 1811; Match(T__22);
+				State = 1811; Match(T__9);
 				State = 1812; _localctx.type = expression();
 				State = 1813; Match(BracketClose);
 				 _localctx.value = new SparqlStrDataType(_localctx.lit.value, _localctx.type.value,q.Store.NodeGenerator); 
@@ -9731,7 +8276,7 @@ public partial class sparq11lTranslatorParser : Parser {
 				State = 1816; Match(SAMETERM);
 				State = 1817; Match(BracketOpen);
 				State = 1818; _localctx.t1 = expression();
-				State = 1819; Match(T__22);
+				State = 1819; Match(T__9);
 				State = 1820; _localctx.t2 = expression();
 				State = 1821; Match(BracketClose);
 				 _localctx.value = new SparqlSameTerm(_localctx.t1.value, _localctx.t2.value); 
@@ -9840,19 +8385,6 @@ public partial class sparq11lTranslatorParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_regexExpression; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterRegexExpression(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitRegexExpression(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitRegexExpression(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -9867,14 +8399,14 @@ public partial class sparq11lTranslatorParser : Parser {
 			_localctx.value = new SparqlRegexExpression();
 			State = 1867; Match(BracketOpen);
 			State = 1868; _localctx.v = expression();
-			_localctx.value.SetVariableExpression(_localctx.v.value);
-			State = 1870; Match(T__22);
+			_localctx.value.SetVariableExpression(_localctx.v.value, q.Store);
+			State = 1870; Match(T__9);
 			State = 1871; _localctx.regex = expression();
 			State = 1876;
 			_la = _input.La(1);
-			if (_la==T__22) {
+			if (_la==T__9) {
 				{
-				State = 1872; Match(T__22);
+				State = 1872; Match(T__9);
 				State = 1873; _localctx.parameters = expression();
 				_localctx.value.SetParameters(_localctx.parameters.value);
 				}
@@ -9912,19 +8444,6 @@ public partial class sparq11lTranslatorParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_substringExpression; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterSubstringExpression(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitSubstringExpression(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitSubstringExpression(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -9940,14 +8459,14 @@ public partial class sparq11lTranslatorParser : Parser {
 			State = 1883; Match(BracketOpen);
 			State = 1884; _localctx.lit = expression();
 			_localctx.value.SetString(_localctx.lit.value);
-			State = 1886; Match(T__22);
+			State = 1886; Match(T__9);
 			State = 1887; _localctx.startExp = expression();
 			_localctx.value.SetStartPosition(_localctx.startExp.value);
 			State = 1893;
 			_la = _input.La(1);
-			if (_la==T__22) {
+			if (_la==T__9) {
 				{
-				State = 1889; Match(T__22);
+				State = 1889; Match(T__9);
 				State = 1890; _localctx.length = expression();
 				_localctx.value.SetLength(_localctx.length.value);
 				}
@@ -9973,10 +8492,10 @@ public partial class sparq11lTranslatorParser : Parser {
 		public ExpressionContext pattern;
 		public ExpressionContext replacement;
 		public ExpressionContext parameters;
+		public ITerminalNode REPLACE() { return GetToken(sparq11lTranslatorParser.REPLACE, 0); }
 		public ExpressionContext expression(int i) {
 			return GetRuleContext<ExpressionContext>(i);
 		}
-		public ITerminalNode REPLACE() { return GetToken(sparq11lTranslatorParser.REPLACE, 0); }
 		public IReadOnlyList<ExpressionContext> expression() {
 			return GetRuleContexts<ExpressionContext>();
 		}
@@ -9985,19 +8504,6 @@ public partial class sparq11lTranslatorParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_strReplaceExpression; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterStrReplaceExpression(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitStrReplaceExpression(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitStrReplaceExpression(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -10013,17 +8519,17 @@ public partial class sparq11lTranslatorParser : Parser {
 			State = 1899; Match(BracketOpen);
 			State = 1900; _localctx.lit = expression();
 			_localctx.value.SetString(_localctx.lit.value);
-			State = 1902; Match(T__22);
+			State = 1902; Match(T__9);
 			State = 1903; _localctx.pattern = expression();
 			_localctx.value.SetPattern(_localctx.lit.value);
-			State = 1905; Match(T__22);
+			State = 1905; Match(T__9);
 			State = 1906; _localctx.replacement = expression();
 			_localctx.value.SetReplacement(_localctx.replacement.value);
 			State = 1912;
 			_la = _input.La(1);
-			if (_la==T__22) {
+			if (_la==T__9) {
 				{
-				State = 1908; Match(T__22);
+				State = 1908; Match(T__9);
 				State = 1909; _localctx.parameters = expression();
 				_localctx.value.SetParameters(_localctx.parameters.value);
 				}
@@ -10056,19 +8562,6 @@ public partial class sparq11lTranslatorParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_existsFunc; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterExistsFunc(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitExistsFunc(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitExistsFunc(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -10097,29 +8590,16 @@ public partial class sparq11lTranslatorParser : Parser {
 	public partial class NotExistsFuncContext : ParserRuleContext {
 		public SparqlNotExistsExpression value;
 		public GroupGraphPatternContext _groupGraphPattern;
+		public ITerminalNode NOT() { return GetToken(sparq11lTranslatorParser.NOT, 0); }
 		public ITerminalNode EXISTS() { return GetToken(sparq11lTranslatorParser.EXISTS, 0); }
 		public GroupGraphPatternContext groupGraphPattern() {
 			return GetRuleContext<GroupGraphPatternContext>(0);
 		}
-		public ITerminalNode NOT() { return GetToken(sparq11lTranslatorParser.NOT, 0); }
 		public NotExistsFuncContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_notExistsFunc; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterNotExistsFunc(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitNotExistsFunc(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitNotExistsFunc(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -10151,38 +8631,25 @@ public partial class sparq11lTranslatorParser : Parser {
 		public ExpressionContext _expression;
 		public StringContext _string;
 		public ITerminalNode COUNT() { return GetToken(sparq11lTranslatorParser.COUNT, 0); }
-		public ITerminalNode SUM() { return GetToken(sparq11lTranslatorParser.SUM, 0); }
+		public ITerminalNode MIN() { return GetToken(sparq11lTranslatorParser.MIN, 0); }
+		public ITerminalNode SAMPLE() { return GetToken(sparq11lTranslatorParser.SAMPLE, 0); }
+		public ITerminalNode MAX() { return GetToken(sparq11lTranslatorParser.MAX, 0); }
+		public ITerminalNode SEPARATOR() { return GetToken(sparq11lTranslatorParser.SEPARATOR, 0); }
 		public StringContext @string() {
 			return GetRuleContext<StringContext>(0);
 		}
-		public ITerminalNode DISTINCT() { return GetToken(sparq11lTranslatorParser.DISTINCT, 0); }
 		public ITerminalNode GROUP_CONCAT() { return GetToken(sparq11lTranslatorParser.GROUP_CONCAT, 0); }
-		public ITerminalNode SEPARATOR() { return GetToken(sparq11lTranslatorParser.SEPARATOR, 0); }
-		public ITerminalNode AVG() { return GetToken(sparq11lTranslatorParser.AVG, 0); }
-		public ITerminalNode MIN() { return GetToken(sparq11lTranslatorParser.MIN, 0); }
+		public ITerminalNode DISTINCT() { return GetToken(sparq11lTranslatorParser.DISTINCT, 0); }
 		public ExpressionContext expression() {
 			return GetRuleContext<ExpressionContext>(0);
 		}
-		public ITerminalNode MAX() { return GetToken(sparq11lTranslatorParser.MAX, 0); }
-		public ITerminalNode SAMPLE() { return GetToken(sparq11lTranslatorParser.SAMPLE, 0); }
+		public ITerminalNode AVG() { return GetToken(sparq11lTranslatorParser.AVG, 0); }
+		public ITerminalNode SUM() { return GetToken(sparq11lTranslatorParser.SUM, 0); }
 		public AggregateContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_aggregate; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterAggregate(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitAggregate(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitAggregate(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -10210,14 +8677,14 @@ public partial class sparq11lTranslatorParser : Parser {
 
 				State = 1938;
 				switch (_input.La(1)) {
-				case T__21:
+				case T__10:
 					{
-					State = 1933; Match(T__21);
+					State = 1933; Match(T__10);
 					_localctx.value.IsAll();
 					}
 					break;
-				case T__20:
-				case T__9:
+				case T__3:
+				case T__1:
 				case T__0:
 				case NOT:
 				case STR:
@@ -10431,11 +8898,11 @@ public partial class sparq11lTranslatorParser : Parser {
 				_localctx.value.Expression=_localctx._expression.value;
 				State = 2011;
 				_la = _input.La(1);
-				if (_la==T__7) {
+				if (_la==T__18) {
 					{
-					State = 2005; Match(T__7);
+					State = 2005; Match(T__18);
 					State = 2006; Match(SEPARATOR);
-					State = 2007; Match(T__8);
+					State = 2007; Match(T__15);
 					State = 2008; _localctx._string = @string();
 					_localctx.value.Separator=(_localctx._string!=null?_input.GetText(_localctx._string.start,_localctx._string.stop):null);
 					}
@@ -10476,19 +8943,6 @@ public partial class sparq11lTranslatorParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_rDFLiteral; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterRDFLiteral(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitRDFLiteral(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitRDFLiteral(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -10522,7 +8976,7 @@ public partial class sparq11lTranslatorParser : Parser {
 				{
 				{
 				State = 2024; _localctx._string = @string();
-				State = 2025; Match(T__13);
+				State = 2025; Match(T__20);
 				State = 2026; _localctx._iriString = iriString();
 				 _localctx.value = q.Store.NodeGenerator.CreateLiteralNode((_localctx._string!=null?_input.GetText(_localctx._string.start,_localctx._string.stop):null), _localctx._iriString.value);
 				}
@@ -10546,33 +9000,20 @@ public partial class sparq11lTranslatorParser : Parser {
 		public NumericLiteralUnsignedContext _numericLiteralUnsigned;
 		public NumericLiteralPositiveContext _numericLiteralPositive;
 		public NumericLiteralNegativeContext _numericLiteralNegative;
-		public NumericLiteralPositiveContext numericLiteralPositive() {
-			return GetRuleContext<NumericLiteralPositiveContext>(0);
-		}
 		public NumericLiteralNegativeContext numericLiteralNegative() {
 			return GetRuleContext<NumericLiteralNegativeContext>(0);
 		}
 		public NumericLiteralUnsignedContext numericLiteralUnsigned() {
 			return GetRuleContext<NumericLiteralUnsignedContext>(0);
 		}
+		public NumericLiteralPositiveContext numericLiteralPositive() {
+			return GetRuleContext<NumericLiteralPositiveContext>(0);
+		}
 		public NumericLiteralContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_numericLiteral; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterNumericLiteral(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitNumericLiteral(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitNumericLiteral(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -10629,27 +9070,14 @@ public partial class sparq11lTranslatorParser : Parser {
 		public IToken _INTEGER;
 		public IToken _DECIMAL;
 		public IToken _DOUBLE;
-		public ITerminalNode DOUBLE() { return GetToken(sparq11lTranslatorParser.DOUBLE, 0); }
-		public ITerminalNode INTEGER() { return GetToken(sparq11lTranslatorParser.INTEGER, 0); }
 		public ITerminalNode DECIMAL() { return GetToken(sparq11lTranslatorParser.DECIMAL, 0); }
+		public ITerminalNode INTEGER() { return GetToken(sparq11lTranslatorParser.INTEGER, 0); }
+		public ITerminalNode DOUBLE() { return GetToken(sparq11lTranslatorParser.DOUBLE, 0); }
 		public NumericLiteralUnsignedContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_numericLiteralUnsigned; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterNumericLiteralUnsigned(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitNumericLiteralUnsigned(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitNumericLiteralUnsigned(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -10700,27 +9128,14 @@ public partial class sparq11lTranslatorParser : Parser {
 		public IToken _INTEGER_POSITIVE;
 		public IToken _DECIMAL_POSITIVE;
 		public IToken _DOUBLE_POSITIVE;
-		public ITerminalNode DOUBLE_POSITIVE() { return GetToken(sparq11lTranslatorParser.DOUBLE_POSITIVE, 0); }
 		public ITerminalNode DECIMAL_POSITIVE() { return GetToken(sparq11lTranslatorParser.DECIMAL_POSITIVE, 0); }
+		public ITerminalNode DOUBLE_POSITIVE() { return GetToken(sparq11lTranslatorParser.DOUBLE_POSITIVE, 0); }
 		public ITerminalNode INTEGER_POSITIVE() { return GetToken(sparq11lTranslatorParser.INTEGER_POSITIVE, 0); }
 		public NumericLiteralPositiveContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_numericLiteralPositive; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterNumericLiteralPositive(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitNumericLiteralPositive(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitNumericLiteralPositive(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -10771,27 +9186,14 @@ public partial class sparq11lTranslatorParser : Parser {
 		public IToken _INTEGER_NEGATIVE;
 		public IToken _DECIMAL_NEGATIVE;
 		public IToken _DOUBLE_NEGATIVE;
-		public ITerminalNode DOUBLE_NEGATIVE() { return GetToken(sparq11lTranslatorParser.DOUBLE_NEGATIVE, 0); }
 		public ITerminalNode INTEGER_NEGATIVE() { return GetToken(sparq11lTranslatorParser.INTEGER_NEGATIVE, 0); }
 		public ITerminalNode DECIMAL_NEGATIVE() { return GetToken(sparq11lTranslatorParser.DECIMAL_NEGATIVE, 0); }
+		public ITerminalNode DOUBLE_NEGATIVE() { return GetToken(sparq11lTranslatorParser.DOUBLE_NEGATIVE, 0); }
 		public NumericLiteralNegativeContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_numericLiteralNegative; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterNumericLiteralNegative(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitNumericLiteralNegative(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitNumericLiteralNegative(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -10848,19 +9250,6 @@ public partial class sparq11lTranslatorParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_booleanLiteral; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterBooleanLiteral(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitBooleanLiteral(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitBooleanLiteral(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -10887,26 +9276,13 @@ public partial class sparq11lTranslatorParser : Parser {
 
 	public partial class BooleanContext : ParserRuleContext {
 		public bool value;
-		public ITerminalNode TRUE() { return GetToken(sparq11lTranslatorParser.TRUE, 0); }
 		public ITerminalNode FALSE() { return GetToken(sparq11lTranslatorParser.FALSE, 0); }
+		public ITerminalNode TRUE() { return GetToken(sparq11lTranslatorParser.TRUE, 0); }
 		public BooleanContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_boolean; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterBoolean(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitBoolean(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitBoolean(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -10946,28 +9322,15 @@ public partial class sparq11lTranslatorParser : Parser {
 	}
 
 	public partial class StringContext : ParserRuleContext {
-		public ITerminalNode STRING_LITERAL1() { return GetToken(sparq11lTranslatorParser.STRING_LITERAL1, 0); }
-		public ITerminalNode STRING_LITERAL_LONG2() { return GetToken(sparq11lTranslatorParser.STRING_LITERAL_LONG2, 0); }
 		public ITerminalNode STRING_LITERAL_LONG1() { return GetToken(sparq11lTranslatorParser.STRING_LITERAL_LONG1, 0); }
 		public ITerminalNode STRING_LITERAL2() { return GetToken(sparq11lTranslatorParser.STRING_LITERAL2, 0); }
+		public ITerminalNode STRING_LITERAL1() { return GetToken(sparq11lTranslatorParser.STRING_LITERAL1, 0); }
+		public ITerminalNode STRING_LITERAL_LONG2() { return GetToken(sparq11lTranslatorParser.STRING_LITERAL_LONG2, 0); }
 		public StringContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_string; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterString(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitString(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitString(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -11008,19 +9371,6 @@ public partial class sparq11lTranslatorParser : Parser {
 		{
 		}
 		public override int RuleIndex { get { return RULE_iri; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterIri(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitIri(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitIri(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -11050,27 +9400,14 @@ public partial class sparq11lTranslatorParser : Parser {
 		public IToken _IRIREF;
 		public IToken _PNAME_LN;
 		public IToken _PNAME_NS;
-		public ITerminalNode PNAME_NS() { return GetToken(sparq11lTranslatorParser.PNAME_NS, 0); }
-		public ITerminalNode PNAME_LN() { return GetToken(sparq11lTranslatorParser.PNAME_LN, 0); }
 		public ITerminalNode IRIREF() { return GetToken(sparq11lTranslatorParser.IRIREF, 0); }
+		public ITerminalNode PNAME_LN() { return GetToken(sparq11lTranslatorParser.PNAME_LN, 0); }
+		public ITerminalNode PNAME_NS() { return GetToken(sparq11lTranslatorParser.PNAME_NS, 0); }
 		public IriStringContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_iriString; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterIriString(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitIriString(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitIriString(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -11119,26 +9456,13 @@ public partial class sparq11lTranslatorParser : Parser {
 	public partial class BlankNodeContext : ParserRuleContext {
 		public ObjectVariants value;
 		public IToken _BLANK_NODE_LABEL;
-		public ITerminalNode ANON() { return GetToken(sparq11lTranslatorParser.ANON, 0); }
 		public ITerminalNode BLANK_NODE_LABEL() { return GetToken(sparq11lTranslatorParser.BLANK_NODE_LABEL, 0); }
+		public ITerminalNode ANON() { return GetToken(sparq11lTranslatorParser.ANON, 0); }
 		public BlankNodeContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
 		}
 		public override int RuleIndex { get { return RULE_blankNode; } }
-		public override void EnterRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.EnterBlankNode(this);
-		}
-		public override void ExitRule(IParseTreeListener listener) {
-			Isparq11lTranslatorListener typedListener = listener as Isparq11lTranslatorListener;
-			if (typedListener != null) typedListener.ExitBlankNode(this);
-		}
-		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
-			Isparq11lTranslatorVisitor<TResult> typedVisitor = visitor as Isparq11lTranslatorVisitor<TResult>;
-			if (typedVisitor != null) return typedVisitor.VisitBlankNode(this);
-			else return visitor.VisitChildren(this);
-		}
 	}
 
 	[RuleVersion(0)]
@@ -11410,7 +9734,7 @@ public partial class sparq11lTranslatorParser : Parser {
 		"\x14C\x14D\x5\xD0i\x2\x14D\x14E\a\x1C\x2\x2\x14E\x14F\x5\xCA\x66\x2\x14F"+
 		"\x150\b\b\x1\x2\x150\x151\a\x9E\x2\x2\x151\x153\x3\x2\x2\x2\x152\x148"+
 		"\x3\x2\x2\x2\x152\x14B\x3\x2\x2\x2\x153\x154\x3\x2\x2\x2\x154\x152\x3"+
-		"\x2\x2\x2\x154\x155\x3\x2\x2\x2\x155\x159\x3\x2\x2\x2\x156\x157\a\x4\x2"+
+		"\x2\x2\x2\x154\x155\x3\x2\x2\x2\x155\x159\x3\x2\x2\x2\x156\x157\a\xF\x2"+
 		"\x2\x157\x159\b\b\x1\x2\x158\x152\x3\x2\x2\x2\x158\x156\x3\x2\x2\x2\x159"+
 		"\xF\x3\x2\x2\x2\x15A\x15B\a\"\x2\x2\x15B\x178\b\t\x1\x2\x15C\x160\x5\x90"+
 		"I\x2\x15D\x15F\x5\x16\f\x2\x15E\x15D\x3\x2\x2\x2\x15F\x162\x3\x2\x2\x2"+
@@ -11419,14 +9743,14 @@ public partial class sparq11lTranslatorParser : Parser {
 		"\b\t\x1\x2\x166\x179\x3\x2\x2\x2\x167\x169\x5\x16\f\x2\x168\x167\x3\x2"+
 		"\x2\x2\x169\x16C\x3\x2\x2\x2\x16A\x168\x3\x2\x2\x2\x16A\x16B\x3\x2\x2"+
 		"\x2\x16B\x16D\x3\x2\x2\x2\x16C\x16A\x3\x2\x2\x2\x16D\x16E\aG\x2\x2\x16E"+
-		"\x172\a\n\x2\x2\x16F\x170\x5\x66\x34\x2\x170\x171\b\t\x1\x2\x171\x173"+
+		"\x172\a\b\x2\x2\x16F\x170\x5\x66\x34\x2\x170\x171\b\t\x1\x2\x171\x173"+
 		"\x3\x2\x2\x2\x172\x16F\x3\x2\x2\x2\x172\x173\x3\x2\x2\x2\x173\x174\x3"+
 		"\x2\x2\x2\x174\x175\a\v\x2\x2\x175\x176\x5 \x11\x2\x176\x177\b\t\x1\x2"+
 		"\x177\x179\x3\x2\x2\x2\x178\x15C\x3\x2\x2\x2\x178\x16A\x3\x2\x2\x2\x179"+
 		"\x11\x3\x2\x2\x2\x17A\x17B\a\'\x2\x2\x17B\x185\b\n\x1\x2\x17C\x17D\x5"+
 		"\xC8\x65\x2\x17D\x17E\b\n\x1\x2\x17E\x180\x3\x2\x2\x2\x17F\x17C\x3\x2"+
 		"\x2\x2\x180\x181\x3\x2\x2\x2\x181\x17F\x3\x2\x2\x2\x181\x182\x3\x2\x2"+
-		"\x2\x182\x186\x3\x2\x2\x2\x183\x184\a\x4\x2\x2\x184\x186\b\n\x1\x2\x185"+
+		"\x2\x182\x186\x3\x2\x2\x2\x183\x184\a\xF\x2\x2\x184\x186\b\n\x1\x2\x185"+
 		"\x17F\x3\x2\x2\x2\x185\x183\x3\x2\x2\x2\x186\x18A\x3\x2\x2\x2\x187\x189"+
 		"\x5\x16\f\x2\x188\x187\x3\x2\x2\x2\x189\x18C\x3\x2\x2\x2\x18A\x188\x3"+
 		"\x2\x2\x2\x18A\x18B\x3\x2\x2\x2\x18B\x190\x3\x2\x2\x2\x18C\x18A\x3\x2"+
@@ -11492,7 +9816,7 @@ public partial class sparq11lTranslatorParser : Parser {
 		"\x235\x236\x5z>\x2\x236\x237\b\x1C\x1\x2\x237\x239\x3\x2\x2\x2\x238\x234"+
 		"\x3\x2\x2\x2\x238\x239\x3\x2\x2\x2\x239\x37\x3\x2\x2\x2\x23A\x23B\x5\x4"+
 		"\x3\x2\x23B\x23C\b\x1D\x1\x2\x23C\x245\b\x1D\x1\x2\x23D\x23E\x5:\x1E\x2"+
-		"\x23E\x243\b\x1D\x1\x2\x23F\x240\a\x12\x2\x2\x240\x241\x5\x38\x1D\x2\x241"+
+		"\x23E\x243\b\x1D\x1\x2\x23F\x240\a\a\x2\x2\x240\x241\x5\x38\x1D\x2\x241"+
 		"\x242\b\x1D\x1\x2\x242\x244\x3\x2\x2\x2\x243\x23F\x3\x2\x2\x2\x243\x244"+
 		"\x3\x2\x2\x2\x244\x246\x3\x2\x2\x2\x245\x23D\x3\x2\x2\x2\x245\x246\x3"+
 		"\x2\x2\x2\x246\x39\x3\x2\x2\x2\x247\x248\x5<\x1F\x2\x248\x249\b\x1E\x1"+
@@ -11561,37 +9885,37 @@ public partial class sparq11lTranslatorParser : Parser {
 		"/\x1\x2\x303\x30B\x3\x2\x2\x2\x304\x305\a*\x2\x2\x305\x30B\b/\x1\x2\x306"+
 		"\x307\a\x39\x2\x2\x307\x30B\b/\x1\x2\x308\x309\a\x1B\x2\x2\x309\x30B\b"+
 		"/\x1\x2\x30A\x301\x3\x2\x2\x2\x30A\x304\x3\x2\x2\x2\x30A\x306\x3\x2\x2"+
-		"\x2\x30A\x308\x3\x2\x2\x2\x30B]\x3\x2\x2\x2\x30C\x30D\a\n\x2\x2\x30D\x30E"+
+		"\x2\x30A\x308\x3\x2\x2\x2\x30B]\x3\x2\x2\x2\x30C\x30D\a\b\x2\x2\x30D\x30E"+
 		"\x5\x62\x32\x2\x30E\x30F\a\v\x2\x2\x30F\x310\b\x30\x1\x2\x310_\x3\x2\x2"+
-		"\x2\x311\x312\a\n\x2\x2\x312\x313\x5\x62\x32\x2\x313\x314\a\v\x2\x2\x314"+
+		"\x2\x311\x312\a\b\x2\x2\x312\x313\x5\x62\x32\x2\x313\x314\a\v\x2\x2\x314"+
 		"\x315\b\x31\x1\x2\x315\x61\x3\x2\x2\x2\x316\x31A\b\x32\x1\x2\x317\x318"+
 		"\x5\x66\x34\x2\x318\x319\b\x32\x1\x2\x319\x31B\x3\x2\x2\x2\x31A\x317\x3"+
 		"\x2\x2\x2\x31A\x31B\x3\x2\x2\x2\x31B\x328\x3\x2\x2\x2\x31C\x31D\x5\x64"+
-		"\x33\x2\x31D\x31F\b\x32\x1\x2\x31E\x320\a\xF\x2\x2\x31F\x31E\x3\x2\x2"+
+		"\x33\x2\x31D\x31F\b\x32\x1\x2\x31E\x320\a\x11\x2\x2\x31F\x31E\x3\x2\x2"+
 		"\x2\x31F\x320\x3\x2\x2\x2\x320\x324\x3\x2\x2\x2\x321\x322\x5\x66\x34\x2"+
 		"\x322\x323\b\x32\x1\x2\x323\x325\x3\x2\x2\x2\x324\x321\x3\x2\x2\x2\x324"+
 		"\x325\x3\x2\x2\x2\x325\x327\x3\x2\x2\x2\x326\x31C\x3\x2\x2\x2\x327\x32A"+
 		"\x3\x2\x2\x2\x328\x326\x3\x2\x2\x2\x328\x329\x3\x2\x2\x2\x329\x63\x3\x2"+
 		"\x2\x2\x32A\x328\x3\x2\x2\x2\x32B\x32C\a/\x2\x2\x32C\x32D\x5\xC8\x65\x2"+
-		"\x32D\x32E\b\x33\x1\x2\x32E\x332\a\n\x2\x2\x32F\x330\x5\x66\x34\x2\x330"+
+		"\x32D\x32E\b\x33\x1\x2\x32E\x332\a\b\x2\x2\x32F\x330\x5\x66\x34\x2\x330"+
 		"\x331\b\x33\x1\x2\x331\x333\x3\x2\x2\x2\x332\x32F\x3\x2\x2\x2\x332\x333"+
 		"\x3\x2\x2\x2\x333\x334\x3\x2\x2\x2\x334\x335\a\v\x2\x2\x335\x65\x3\x2"+
-		"\x2\x2\x336\x337\x5\x94K\x2\x337\x33E\b\x34\x1\x2\x338\x33C\a\xF\x2\x2"+
+		"\x2\x2\x336\x337\x5\x94K\x2\x337\x33E\b\x34\x1\x2\x338\x33C\a\x11\x2\x2"+
 		"\x339\x33A\x5\x66\x34\x2\x33A\x33B\b\x34\x1\x2\x33B\x33D\x3\x2\x2\x2\x33C"+
 		"\x339\x3\x2\x2\x2\x33C\x33D\x3\x2\x2\x2\x33D\x33F\x3\x2\x2\x2\x33E\x338"+
-		"\x3\x2\x2\x2\x33E\x33F\x3\x2\x2\x2\x33Fg\x3\x2\x2\x2\x340\x347\a\n\x2"+
+		"\x3\x2\x2\x2\x33E\x33F\x3\x2\x2\x2\x33Fg\x3\x2\x2\x2\x340\x347\a\b\x2"+
 		"\x2\x341\x342\x5\f\a\x2\x342\x343\b\x35\x1\x2\x343\x348\x3\x2\x2\x2\x344"+
 		"\x345\x5j\x36\x2\x345\x346\b\x35\x1\x2\x346\x348\x3\x2\x2\x2\x347\x341"+
 		"\x3\x2\x2\x2\x347\x344\x3\x2\x2\x2\x348\x349\x3\x2\x2\x2\x349\x34A\a\v"+
 		"\x2\x2\x34Ai\x3\x2\x2\x2\x34B\x34F\b\x36\x1\x2\x34C\x34D\x5l\x37\x2\x34D"+
 		"\x34E\b\x36\x1\x2\x34E\x350\x3\x2\x2\x2\x34F\x34C\x3\x2\x2\x2\x34F\x350"+
 		"\x3\x2\x2\x2\x350\x35D\x3\x2\x2\x2\x351\x352\x5n\x38\x2\x352\x354\b\x36"+
-		"\x1\x2\x353\x355\a\xF\x2\x2\x354\x353\x3\x2\x2\x2\x354\x355\x3\x2\x2\x2"+
-		"\x355\x359\x3\x2\x2\x2\x356\x357\x5l\x37\x2\x357\x358\b\x36\x1\x2\x358"+
+		"\x1\x2\x353\x355\a\x11\x2\x2\x354\x353\x3\x2\x2\x2\x354\x355\x3\x2\x2"+
+		"\x2\x355\x359\x3\x2\x2\x2\x356\x357\x5l\x37\x2\x357\x358\b\x36\x1\x2\x358"+
 		"\x35A\x3\x2\x2\x2\x359\x356\x3\x2\x2\x2\x359\x35A\x3\x2\x2\x2\x35A\x35C"+
 		"\x3\x2\x2\x2\x35B\x351\x3\x2\x2\x2\x35C\x35F\x3\x2\x2\x2\x35D\x35B\x3"+
 		"\x2\x2\x2\x35D\x35E\x3\x2\x2\x2\x35Ek\x3\x2\x2\x2\x35F\x35D\x3\x2\x2\x2"+
-		"\x360\x361\x5\xA8U\x2\x361\x368\b\x37\x1\x2\x362\x366\a\xF\x2\x2\x363"+
+		"\x360\x361\x5\xA8U\x2\x361\x368\b\x37\x1\x2\x362\x366\a\x11\x2\x2\x363"+
 		"\x364\x5l\x37\x2\x364\x365\b\x37\x1\x2\x365\x367\x3\x2\x2\x2\x366\x363"+
 		"\x3\x2\x2\x2\x366\x367\x3\x2\x2\x2\x367\x369\x3\x2\x2\x2\x368\x362\x3"+
 		"\x2\x2\x2\x368\x369\x3\x2\x2\x2\x369m\x3\x2\x2\x2\x36A\x36B\x5\x84\x43"+
@@ -11617,7 +9941,7 @@ public partial class sparq11lTranslatorParser : Parser {
 		"y\x3\x2\x2\x2\x3A4\x3A5\x5|?\x2\x3A5\x3A6\b>\x1\x2\x3A6\x3AB\x3\x2\x2"+
 		"\x2\x3A7\x3A8\x5~@\x2\x3A8\x3A9\b>\x1\x2\x3A9\x3AB\x3\x2\x2\x2\x3AA\x3A4"+
 		"\x3\x2\x2\x2\x3AA\x3A7\x3\x2\x2\x2\x3AB{\x3\x2\x2\x2\x3AC\x3AD\x5\xCA"+
-		"\x66\x2\x3AD\x3AE\b?\x1\x2\x3AE\x3B4\a\n\x2\x2\x3AF\x3B0\x5\x80\x41\x2"+
+		"\x66\x2\x3AD\x3AE\b?\x1\x2\x3AE\x3B4\a\b\x2\x2\x3AF\x3B0\x5\x80\x41\x2"+
 		"\x3B0\x3B1\b?\x1\x2\x3B1\x3B3\x3\x2\x2\x2\x3B2\x3AF\x3\x2\x2\x2\x3B3\x3B6"+
 		"\x3\x2\x2\x2\x3B4\x3B2\x3\x2\x2\x2\x3B4\x3B5\x3\x2\x2\x2\x3B5\x3B7\x3"+
 		"\x2\x2\x2\x3B6\x3B4\x3\x2\x2\x2\x3B7\x3B8\a\v\x2\x2\x3B8}\x3\x2\x2\x2"+
@@ -11626,7 +9950,7 @@ public partial class sparq11lTranslatorParser : Parser {
 		"\x2\x2\x3C0\x3C3\x3\x2\x2\x2\x3C1\x3BF\x3\x2\x2\x2\x3C1\x3C2\x3\x2\x2"+
 		"\x2\x3C2\x3C4\x3\x2\x2\x2\x3C3\x3C1\x3\x2\x2\x2\x3C4\x3C6\a\x9E\x2\x2"+
 		"\x3C5\x3BA\x3\x2\x2\x2\x3C5\x3BB\x3\x2\x2\x2\x3C6\x3C7\x3\x2\x2\x2\x3C7"+
-		"\x3D6\a\n\x2\x2\x3C8\x3CE\a\x9D\x2\x2\x3C9\x3CA\x5\x80\x41\x2\x3CA\x3CB"+
+		"\x3D6\a\b\x2\x2\x3C8\x3CE\a\x9D\x2\x2\x3C9\x3CA\x5\x80\x41\x2\x3CA\x3CB"+
 		"\b@\x1\x2\x3CB\x3CD\x3\x2\x2\x2\x3CC\x3C9\x3\x2\x2\x2\x3CD\x3D0\x3\x2"+
 		"\x2\x2\x3CE\x3CC\x3\x2\x2\x2\x3CE\x3CF\x3\x2\x2\x2\x3CF\x3D1\x3\x2\x2"+
 		"\x2\x3D0\x3CE\x3\x2\x2\x2\x3D1\x3D2\b@\x1\x2\x3D2\x3D5\a\x9E\x2\x2\x3D3"+
@@ -11655,381 +9979,382 @@ public partial class sparq11lTranslatorParser : Parser {
 		"\x3\x2\x2\x2\x410\x425\a\x9C\x2\x2\x411\x412\bG\x1\x2\x412\x415\a\x9D"+
 		"\x2\x2\x413\x414\a,\x2\x2\x414\x416\bG\x1\x2\x415\x413\x3\x2\x2\x2\x415"+
 		"\x416\x3\x2\x2\x2\x416\x417\x3\x2\x2\x2\x417\x418\x5\xD0i\x2\x418\x41F"+
-		"\bG\x1\x2\x419\x41A\a\x3\x2\x2\x41A\x41B\x5\xD0i\x2\x41B\x41C\bG\x1\x2"+
+		"\bG\x1\x2\x419\x41A\a\x10\x2\x2\x41A\x41B\x5\xD0i\x2\x41B\x41C\bG\x1\x2"+
 		"\x41C\x41E\x3\x2\x2\x2\x41D\x419\x3\x2\x2\x2\x41E\x421\x3\x2\x2\x2\x41F"+
 		"\x41D\x3\x2\x2\x2\x41F\x420\x3\x2\x2\x2\x420\x422\x3\x2\x2\x2\x421\x41F"+
 		"\x3\x2\x2\x2\x422\x423\a\x9E\x2\x2\x423\x425\x3\x2\x2\x2\x424\x410\x3"+
 		"\x2\x2\x2\x424\x411\x3\x2\x2\x2\x425\x8D\x3\x2\x2\x2\x426\x436\a\x9C\x2"+
 		"\x2\x427\x428\a\x9D\x2\x2\x428\x429\x5\xD0i\x2\x429\x430\bH\x1\x2\x42A"+
-		"\x42B\a\x3\x2\x2\x42B\x42C\x5\xD0i\x2\x42C\x42D\bH\x1\x2\x42D\x42F\x3"+
+		"\x42B\a\x10\x2\x2\x42B\x42C\x5\xD0i\x2\x42C\x42D\bH\x1\x2\x42D\x42F\x3"+
 		"\x2\x2\x2\x42E\x42A\x3\x2\x2\x2\x42F\x432\x3\x2\x2\x2\x430\x42E\x3\x2"+
 		"\x2\x2\x430\x431\x3\x2\x2\x2\x431\x433\x3\x2\x2\x2\x432\x430\x3\x2\x2"+
 		"\x2\x433\x434\a\x9E\x2\x2\x434\x436\x3\x2\x2\x2\x435\x426\x3\x2\x2\x2"+
-		"\x435\x427\x3\x2\x2\x2\x436\x8F\x3\x2\x2\x2\x437\x438\a\n\x2\x2\x438\x43C"+
+		"\x435\x427\x3\x2\x2\x2\x436\x8F\x3\x2\x2\x2\x437\x438\a\b\x2\x2\x438\x43C"+
 		"\bI\x1\x2\x439\x43A\x5\x92J\x2\x43A\x43B\bI\x1\x2\x43B\x43D\x3\x2\x2\x2"+
 		"\x43C\x439\x3\x2\x2\x2\x43C\x43D\x3\x2\x2\x2\x43D\x43E\x3\x2\x2\x2\x43E"+
 		"\x43F\a\v\x2\x2\x43F\x91\x3\x2\x2\x2\x440\x441\x5\x94K\x2\x441\x448\b"+
-		"J\x1\x2\x442\x446\a\xF\x2\x2\x443\x444\x5\x92J\x2\x444\x445\bJ\x1\x2\x445"+
-		"\x447\x3\x2\x2\x2\x446\x443\x3\x2\x2\x2\x446\x447\x3\x2\x2\x2\x447\x449"+
-		"\x3\x2\x2\x2\x448\x442\x3\x2\x2\x2\x448\x449\x3\x2\x2\x2\x449\x93\x3\x2"+
-		"\x2\x2\x44A\x44B\bK\x1\x2\x44B\x44C\x5\xA6T\x2\x44C\x44D\x5\x96L\x2\x44D"+
-		"\x454\x3\x2\x2\x2\x44E\x44F\bK\x1\x2\x44F\x451\x5\xA2R\x2\x450\x452\x5"+
-		"\x96L\x2\x451\x450\x3\x2\x2\x2\x451\x452\x3\x2\x2\x2\x452\x454\x3\x2\x2"+
-		"\x2\x453\x44A\x3\x2\x2\x2\x453\x44E\x3\x2\x2\x2\x454\x95\x3\x2\x2\x2\x455"+
-		"\x456\x5\x98M\x2\x456\x45F\x5\x9AN\x2\x457\x45B\a\x12\x2\x2\x458\x459"+
-		"\x5\x98M\x2\x459\x45A\x5\x9AN\x2\x45A\x45C\x3\x2\x2\x2\x45B\x458\x3\x2"+
-		"\x2\x2\x45B\x45C\x3\x2\x2\x2\x45C\x45E\x3\x2\x2\x2\x45D\x457\x3\x2\x2"+
-		"\x2\x45E\x461\x3\x2\x2\x2\x45F\x45D\x3\x2\x2\x2\x45F\x460\x3\x2\x2\x2"+
-		"\x460\x97\x3\x2\x2\x2\x461\x45F\x3\x2\x2\x2\x462\x463\x5\xC8\x65\x2\x463"+
-		"\x464\bM\x1\x2\x464\x468\x3\x2\x2\x2\x465\x466\a\xE\x2\x2\x466\x468\b"+
-		"M\x1\x2\x467\x462\x3\x2\x2\x2\x467\x465\x3\x2\x2\x2\x468\x99\x3\x2\x2"+
-		"\x2\x469\x46E\x5\x9CO\x2\x46A\x46B\a\x3\x2\x2\x46B\x46D\x5\x9CO\x2\x46C"+
-		"\x46A\x3\x2\x2\x2\x46D\x470\x3\x2\x2\x2\x46E\x46C\x3\x2\x2\x2\x46E\x46F"+
-		"\x3\x2\x2\x2\x46F\x9B\x3\x2\x2\x2\x470\x46E\x3\x2\x2\x2\x471\x472\x5\x9E"+
-		"P\x2\x472\x473\bO\x1\x2\x473\x9D\x3\x2\x2\x2\x474\x475\x5\xC6\x64\x2\x475"+
-		"\x476\bP\x1\x2\x476\x47B\x3\x2\x2\x2\x477\x478\x5\xA2R\x2\x478\x479\b"+
-		"P\x1\x2\x479\x47B\x3\x2\x2\x2\x47A\x474\x3\x2\x2\x2\x47A\x477\x3\x2\x2"+
-		"\x2\x47B\x9F\x3\x2\x2\x2\x47C\x47D\a\x9D\x2\x2\x47D\x481\bQ\x1\x2\x47E"+
-		"\x47F\x5\x9EP\x2\x47F\x480\bQ\x1\x2\x480\x482\x3\x2\x2\x2\x481\x47E\x3"+
-		"\x2\x2\x2\x482\x483\x3\x2\x2\x2\x483\x481\x3\x2\x2\x2\x483\x484\x3\x2"+
-		"\x2\x2\x484\x485\x3\x2\x2\x2\x485\x486\a\x9E\x2\x2\x486\xA1\x3\x2\x2\x2"+
-		"\x487\x488\x5\xA0Q\x2\x488\x489\bR\x1\x2\x489\x48D\x3\x2\x2\x2\x48A\x48B"+
-		"\bR\x1\x2\x48B\x48D\x5\xA4S\x2\x48C\x487\x3\x2\x2\x2\x48C\x48A\x3\x2\x2"+
-		"\x2\x48D\xA3\x3\x2\x2\x2\x48E\x48F\a\xA1\x2\x2\x48F\x490\x5\x96L\x2\x490"+
-		"\x491\a\xA2\x2\x2\x491\xA5\x3\x2\x2\x2\x492\x493\x5\xC6\x64\x2\x493\x494"+
-		"\bT\x1\x2\x494\xA7\x3\x2\x2\x2\x495\x496\bU\x1\x2\x496\x497\x5\xA6T\x2"+
-		"\x497\x498\x5\xAAV\x2\x498\x49F\x3\x2\x2\x2\x499\x49A\bU\x1\x2\x49A\x49C"+
-		"\x5\xBE`\x2\x49B\x49D\x5\xAAV\x2\x49C\x49B\x3\x2\x2\x2\x49C\x49D\x3\x2"+
-		"\x2\x2\x49D\x49F\x3\x2\x2\x2\x49E\x495\x3\x2\x2\x2\x49E\x499\x3\x2\x2"+
-		"\x2\x49F\xA9\x3\x2\x2\x2\x4A0\x4A1\x5\xB0Y\x2\x4A1\x4A2\x5\xACW\x2\x4A2"+
-		"\x4A7\x3\x2\x2\x2\x4A3\x4A4\x5\xCA\x66\x2\x4A4\x4A5\x5\xACW\x2\x4A5\x4A7"+
-		"\x3\x2\x2\x2\x4A6\x4A0\x3\x2\x2\x2\x4A6\x4A3\x3\x2\x2\x2\x4A7\x4B5\x3"+
-		"\x2\x2\x2\x4A8\x4B1\a\x12\x2\x2\x4A9\x4AA\x5\xB0Y\x2\x4AA\x4AB\x5\xAC"+
-		"W\x2\x4AB\x4B0\x3\x2\x2\x2\x4AC\x4AD\x5\xCA\x66\x2\x4AD\x4AE\x5\xACW\x2"+
-		"\x4AE\x4B0\x3\x2\x2\x2\x4AF\x4A9\x3\x2\x2\x2\x4AF\x4AC\x3\x2\x2\x2\x4B0"+
-		"\x4B2\x3\x2\x2\x2\x4B1\x4AF\x3\x2\x2\x2\x4B1\x4B2\x3\x2\x2\x2\x4B2\x4B4"+
-		"\x3\x2\x2\x2\x4B3\x4A8\x3\x2\x2\x2\x4B4\x4B7\x3\x2\x2\x2\x4B5\x4B3\x3"+
-		"\x2\x2\x2\x4B5\x4B6\x3\x2\x2\x2\x4B6\xAB\x3\x2\x2\x2\x4B7\x4B5\x3\x2\x2"+
-		"\x2\x4B8\x4BD\x5\xAEX\x2\x4B9\x4BA\a\x3\x2\x2\x4BA\x4BC\x5\xAEX\x2\x4BB"+
-		"\x4B9\x3\x2\x2\x2\x4BC\x4BF\x3\x2\x2\x2\x4BD\x4BB\x3\x2\x2\x2\x4BD\x4BE"+
-		"\x3\x2\x2\x2\x4BE\xAD\x3\x2\x2\x2\x4BF\x4BD\x3\x2\x2\x2\x4C0\x4C1\x5\xC4"+
-		"\x63\x2\x4C1\x4C2\bX\x1\x2\x4C2\xAF\x3\x2\x2\x2\x4C3\x4C4\x5\xB2Z\x2\x4C4"+
-		"\x4CB\bY\x1\x2\x4C5\x4C6\a\x18\x2\x2\x4C6\x4C7\x5\xB2Z\x2\x4C7\x4C8\b"+
-		"Y\x1\x2\x4C8\x4CA\x3\x2\x2\x2\x4C9\x4C5\x3\x2\x2\x2\x4CA\x4CD\x3\x2\x2"+
-		"\x2\x4CB\x4C9\x3\x2\x2\x2\x4CB\x4CC\x3\x2\x2\x2\x4CC\xB1\x3\x2\x2\x2\x4CD"+
-		"\x4CB\x3\x2\x2\x2\x4CE\x4CF\x5\xB4[\x2\x4CF\x4D6\bZ\x1\x2\x4D0\x4D1\a"+
-		"\x16\x2\x2\x4D1\x4D2\x5\xB4[\x2\x4D2\x4D3\bZ\x1\x2\x4D3\x4D5\x3\x2\x2"+
-		"\x2\x4D4\x4D0\x3\x2\x2\x2\x4D5\x4D8\x3\x2\x2\x2\x4D6\x4D4\x3\x2\x2\x2"+
-		"\x4D6\x4D7\x3\x2\x2\x2\x4D7\xB3\x3\x2\x2\x2\x4D8\x4D6\x3\x2\x2\x2\x4D9"+
-		"\x4DA\x5\xB6\\\x2\x4DA\x4DB\b[\x1\x2\x4DB\x4E1\x3\x2\x2\x2\x4DC\x4DD\a"+
-		"\r\x2\x2\x4DD\x4DE\x5\xB6\\\x2\x4DE\x4DF\b[\x1\x2\x4DF\x4E1\x3\x2\x2\x2"+
-		"\x4E0\x4D9\x3\x2\x2\x2\x4E0\x4DC\x3\x2\x2\x2\x4E1\xB5\x3\x2\x2\x2\x4E2"+
-		"\x4E3\x5\xB8]\x2\x4E3\x4EA\b\\\x1\x2\x4E4\x4E5\a\t\x2\x2\x4E5\x4EB\b\\"+
-		"\x1\x2\x4E6\x4E7\a\x4\x2\x2\x4E7\x4EB\b\\\x1\x2\x4E8\x4E9\a\x10\x2\x2"+
-		"\x4E9\x4EB\b\\\x1\x2\x4EA\x4E4\x3\x2\x2\x2\x4EA\x4E6\x3\x2\x2\x2\x4EA"+
-		"\x4E8\x3\x2\x2\x2\x4EA\x4EB\x3\x2\x2\x2\x4EB\xB7\x3\x2\x2\x2\x4EC\x4ED"+
-		"\x5\xFE\x80\x2\x4ED\x4EE\b]\x1\x2\x4EE\x4FB\x3\x2\x2\x2\x4EF\x4F0\a\xE"+
-		"\x2\x2\x4F0\x4FB\b]\x1\x2\x4F1\x4F2\a\x19\x2\x2\x4F2\x4F3\x5\xBA^\x2\x4F3"+
-		"\x4F4\b]\x1\x2\x4F4\x4FB\x3\x2\x2\x2\x4F5\x4F6\a\x9D\x2\x2\x4F6\x4F7\x5"+
-		"\xB0Y\x2\x4F7\x4F8\b]\x1\x2\x4F8\x4F9\a\x9E\x2\x2\x4F9\x4FB\x3\x2\x2\x2"+
-		"\x4FA\x4EC\x3\x2\x2\x2\x4FA\x4EF\x3\x2\x2\x2\x4FA\x4F1\x3\x2\x2\x2\x4FA"+
-		"\x4F5\x3\x2\x2\x2\x4FB\xB9\x3\x2\x2\x2\x4FC\x4FD\x5\xBC_\x2\x4FD\x4FE"+
-		"\b^\x1\x2\x4FE\x50F\x3\x2\x2\x2\x4FF\x50B\a\x9D\x2\x2\x500\x501\x5\xBC"+
-		"_\x2\x501\x508\b^\x1\x2\x502\x503\a\x18\x2\x2\x503\x504\x5\xBC_\x2\x504"+
-		"\x505\b^\x1\x2\x505\x507\x3\x2\x2\x2\x506\x502\x3\x2\x2\x2\x507\x50A\x3"+
-		"\x2\x2\x2\x508\x506\x3\x2\x2\x2\x508\x509\x3\x2\x2\x2\x509\x50C\x3\x2"+
-		"\x2\x2\x50A\x508\x3\x2\x2\x2\x50B\x500\x3\x2\x2\x2\x50B\x50C\x3\x2\x2"+
-		"\x2\x50C\x50D\x3\x2\x2\x2\x50D\x50F\a\x9E\x2\x2\x50E\x4FC\x3\x2\x2\x2"+
-		"\x50E\x4FF\x3\x2\x2\x2\x50F\xBB\x3\x2\x2\x2\x510\x511\x5\xFE\x80\x2\x511"+
-		"\x512\b_\x1\x2\x512\x51E\x3\x2\x2\x2\x513\x514\a\xE\x2\x2\x514\x51E\b"+
-		"_\x1\x2\x515\x51B\a\r\x2\x2\x516\x517\x5\xFE\x80\x2\x517\x518\b_\x1\x2"+
-		"\x518\x51C\x3\x2\x2\x2\x519\x51A\a\xE\x2\x2\x51A\x51C\b_\x1\x2\x51B\x516"+
-		"\x3\x2\x2\x2\x51B\x519\x3\x2\x2\x2\x51C\x51E\x3\x2\x2\x2\x51D\x510\x3"+
-		"\x2\x2\x2\x51D\x513\x3\x2\x2\x2\x51D\x515\x3\x2\x2\x2\x51E\xBD\x3\x2\x2"+
-		"\x2\x51F\x520\x5\xC2\x62\x2\x520\x521\b`\x1\x2\x521\x525\x3\x2\x2\x2\x522"+
-		"\x523\b`\x1\x2\x523\x525\x5\xC0\x61\x2\x524\x51F\x3\x2\x2\x2\x524\x522"+
-		"\x3\x2\x2\x2\x525\xBF\x3\x2\x2\x2\x526\x527\a\xA1\x2\x2\x527\x528\x5\xAA"+
-		"V\x2\x528\x529\a\xA2\x2\x2\x529\xC1\x3\x2\x2\x2\x52A\x52B\a\x9D\x2\x2"+
-		"\x52B\x52F\b\x62\x1\x2\x52C\x52D\x5\xC4\x63\x2\x52D\x52E\b\x62\x1\x2\x52E"+
-		"\x530\x3\x2\x2\x2\x52F\x52C\x3\x2\x2\x2\x530\x531\x3\x2\x2\x2\x531\x52F"+
-		"\x3\x2\x2\x2\x531\x532\x3\x2\x2\x2\x532\x533\x3\x2\x2\x2\x533\x534\a\x9E"+
-		"\x2\x2\x534\xC3\x3\x2\x2\x2\x535\x536\x5\xC6\x64\x2\x536\x537\b\x63\x1"+
-		"\x2\x537\x53C\x3\x2\x2\x2\x538\x539\x5\xBE`\x2\x539\x53A\b\x63\x1\x2\x53A"+
-		"\x53C\x3\x2\x2\x2\x53B\x535\x3\x2\x2\x2\x53B\x538\x3\x2\x2\x2\x53C\xC5"+
-		"\x3\x2\x2\x2\x53D\x53E\x5\xCA\x66\x2\x53E\x53F\b\x64\x1\x2\x53F\x544\x3"+
-		"\x2\x2\x2\x540\x541\x5\xCEh\x2\x541\x542\b\x64\x1\x2\x542\x544\x3\x2\x2"+
-		"\x2\x543\x53D\x3\x2\x2\x2\x543\x540\x3\x2\x2\x2\x544\xC7\x3\x2\x2\x2\x545"+
-		"\x546\x5\xCA\x66\x2\x546\x547\b\x65\x1\x2\x547\x54C\x3\x2\x2\x2\x548\x549"+
-		"\x5\xFE\x80\x2\x549\x54A\b\x65\x1\x2\x54A\x54C\x3\x2\x2\x2\x54B\x545\x3"+
-		"\x2\x2\x2\x54B\x548\x3\x2\x2\x2\x54C\xC9\x3\x2\x2\x2\x54D\x54E\x5\xCC"+
-		"g\x2\x54E\x54F\b\x66\x1\x2\x54F\xCB\x3\x2\x2\x2\x550\x551\t\x2\x2\x2\x551"+
-		"\xCD\x3\x2\x2\x2\x552\x553\x5\xFE\x80\x2\x553\x554\bh\x1\x2\x554\x564"+
-		"\x3\x2\x2\x2\x555\x556\x5\xEEx\x2\x556\x557\bh\x1\x2\x557\x564\x3\x2\x2"+
-		"\x2\x558\x559\x5\xF0y\x2\x559\x55A\bh\x1\x2\x55A\x564\x3\x2\x2\x2\x55B"+
-		"\x55C\x5\xF8}\x2\x55C\x55D\bh\x1\x2\x55D\x564\x3\x2\x2\x2\x55E\x55F\x5"+
-		"\x102\x82\x2\x55F\x560\bh\x1\x2\x560\x564\x3\x2\x2\x2\x561\x562\a\x9C"+
-		"\x2\x2\x562\x564\bh\x1\x2\x563\x552\x3\x2\x2\x2\x563\x555\x3\x2\x2\x2"+
-		"\x563\x558\x3\x2\x2\x2\x563\x55B\x3\x2\x2\x2\x563\x55E\x3\x2\x2\x2\x563"+
-		"\x561\x3\x2\x2\x2\x564\xCF\x3\x2\x2\x2\x565\x566\x5\xD2j\x2\x566\x56D"+
-		"\bi\x1\x2\x567\x568\a\x14\x2\x2\x568\x569\x5\xD2j\x2\x569\x56A\bi\x1\x2"+
-		"\x56A\x56C\x3\x2\x2\x2\x56B\x567\x3\x2\x2\x2\x56C\x56F\x3\x2\x2\x2\x56D"+
-		"\x56B\x3\x2\x2\x2\x56D\x56E\x3\x2\x2\x2\x56E\xD1\x3\x2\x2\x2\x56F\x56D"+
-		"\x3\x2\x2\x2\x570\x571\x5\xD4k\x2\x571\x578\bj\x1\x2\x572\x573\a\x13\x2"+
-		"\x2\x573\x574\x5\xD4k\x2\x574\x575\bj\x1\x2\x575\x577\x3\x2\x2\x2\x576"+
-		"\x572\x3\x2\x2\x2\x577\x57A\x3\x2\x2\x2\x578\x576\x3\x2\x2\x2\x578\x579"+
-		"\x3\x2\x2\x2\x579\xD3\x3\x2\x2\x2\x57A\x578\x3\x2\x2\x2\x57B\x57C\x5\xD6"+
-		"l\x2\x57C\x59E\bk\x1\x2\x57D\x57E\a\x11\x2\x2\x57E\x57F\x5\xD6l\x2\x57F"+
-		"\x580\bk\x1\x2\x580\x59F\x3\x2\x2\x2\x581\x582\a\a\x2\x2\x582\x583\x5"+
-		"\xD6l\x2\x583\x584\bk\x1\x2\x584\x59F\x3\x2\x2\x2\x585\x586\a\x6\x2\x2"+
-		"\x586\x587\x5\xD6l\x2\x587\x588\bk\x1\x2\x588\x59F\x3\x2\x2\x2\x589\x58A"+
-		"\a\x15\x2\x2\x58A\x58B\x5\xD6l\x2\x58B\x58C\bk\x1\x2\x58C\x59F\x3\x2\x2"+
-		"\x2\x58D\x58E\a\b\x2\x2\x58E\x58F\x5\xD6l\x2\x58F\x590\bk\x1\x2\x590\x59F"+
-		"\x3\x2\x2\x2\x591\x592\a\x17\x2\x2\x592\x593\x5\xD6l\x2\x593\x594\bk\x1"+
-		"\x2\x594\x59F\x3\x2\x2\x2\x595\x596\a\x31\x2\x2\x596\x597\x5\x8EH\x2\x597"+
-		"\x598\bk\x1\x2\x598\x59F\x3\x2\x2\x2\x599\x59A\a:\x2\x2\x59A\x59B\a\x31"+
-		"\x2\x2\x59B\x59C\x5\x8EH\x2\x59C\x59D\bk\x1\x2\x59D\x59F\x3\x2\x2\x2\x59E"+
-		"\x57D\x3\x2\x2\x2\x59E\x581\x3\x2\x2\x2\x59E\x585\x3\x2\x2\x2\x59E\x589"+
-		"\x3\x2\x2\x2\x59E\x58D\x3\x2\x2\x2\x59E\x591\x3\x2\x2\x2\x59E\x595\x3"+
-		"\x2\x2\x2\x59E\x599\x3\x2\x2\x2\x59E\x59F\x3\x2\x2\x2\x59F\xD5\x3\x2\x2"+
-		"\x2\x5A0\x5A1\x5\xD8m\x2\x5A1\x5C4\bl\x1\x2\x5A2\x5A3\a\x10\x2\x2\x5A3"+
-		"\x5A4\x5\xD8m\x2\x5A4\x5A5\bl\x1\x2\x5A5\x5C3\x3\x2\x2\x2\x5A6\x5A7\a"+
-		"\x5\x2\x2\x5A7\x5A8\x5\xD8m\x2\x5A8\x5A9\bl\x1\x2\x5A9\x5C3\x3\x2\x2\x2"+
-		"\x5AA\x5B1\bl\x1\x2\x5AB\x5AC\x5\xF4{\x2\x5AC\x5AD\bl\x1\x2\x5AD\x5B2"+
-		"\x3\x2\x2\x2\x5AE\x5AF\x5\xF6|\x2\x5AF\x5B0\bl\x1\x2\x5B0\x5B2\x3\x2\x2"+
-		"\x2\x5B1\x5AB\x3\x2\x2\x2\x5B1\x5AE\x3\x2\x2\x2\x5B2\x5BD\x3\x2\x2\x2"+
-		"\x5B3\x5B4\a\x4\x2\x2\x5B4\x5B5\x5\xDAn\x2\x5B5\x5B6\bl\x1\x2\x5B6\x5BC"+
-		"\x3\x2\x2\x2\x5B7\x5B8\a\x16\x2\x2\x5B8\x5B9\x5\xDAn\x2\x5B9\x5BA\bl\x1"+
-		"\x2\x5BA\x5BC\x3\x2\x2\x2\x5BB\x5B3\x3\x2\x2\x2\x5BB\x5B7\x3\x2\x2\x2"+
-		"\x5BC\x5BF\x3\x2\x2\x2\x5BD\x5BB\x3\x2\x2\x2\x5BD\x5BE\x3\x2\x2\x2\x5BE"+
-		"\x5C0\x3\x2\x2\x2\x5BF\x5BD\x3\x2\x2\x2\x5C0\x5C1\bl\x1\x2\x5C1\x5C3\x3"+
-		"\x2\x2\x2\x5C2\x5A2\x3\x2\x2\x2\x5C2\x5A6\x3\x2\x2\x2\x5C2\x5AA\x3\x2"+
-		"\x2\x2\x5C3\x5C6\x3\x2\x2\x2\x5C4\x5C2\x3\x2\x2\x2\x5C4\x5C5\x3\x2\x2"+
-		"\x2\x5C5\xD7\x3\x2\x2\x2\x5C6\x5C4\x3\x2\x2\x2\x5C7\x5C8\x5\xDAn\x2\x5C8"+
-		"\x5D3\bm\x1\x2\x5C9\x5CA\a\x4\x2\x2\x5CA\x5CB\x5\xDAn\x2\x5CB\x5CC\bm"+
-		"\x1\x2\x5CC\x5D2\x3\x2\x2\x2\x5CD\x5CE\a\x16\x2\x2\x5CE\x5CF\x5\xDAn\x2"+
-		"\x5CF\x5D0\bm\x1\x2\x5D0\x5D2\x3\x2\x2\x2\x5D1\x5C9\x3\x2\x2\x2\x5D1\x5CD"+
-		"\x3\x2\x2\x2\x5D2\x5D5\x3\x2\x2\x2\x5D3\x5D1\x3\x2\x2\x2\x5D3\x5D4\x3"+
-		"\x2\x2\x2\x5D4\xD9\x3\x2\x2\x2\x5D5\x5D3\x3\x2\x2\x2\x5D6\x5D7\a\x19\x2"+
-		"\x2\x5D7\x5D8\x5\xDCo\x2\x5D8\x5D9\bn\x1\x2\x5D9\x5E6\x3\x2\x2\x2\x5DA"+
-		"\x5DB\a\x10\x2\x2\x5DB\x5DC\x5\xDCo\x2\x5DC\x5DD\bn\x1\x2\x5DD\x5E6\x3"+
-		"\x2\x2\x2\x5DE\x5DF\a\x5\x2\x2\x5DF\x5E0\x5\xDCo\x2\x5E0\x5E1\bn\x1\x2"+
-		"\x5E1\x5E6\x3\x2\x2\x2\x5E2\x5E3\x5\xDCo\x2\x5E3\x5E4\bn\x1\x2\x5E4\x5E6"+
-		"\x3\x2\x2\x2\x5E5\x5D6\x3\x2\x2\x2\x5E5\x5DA\x3\x2\x2\x2\x5E5\x5DE\x3"+
-		"\x2\x2\x2\x5E5\x5E2\x3\x2\x2\x2\x5E6\xDB\x3\x2\x2\x2\x5E7\x5E8\x5\xDE"+
-		"p\x2\x5E8\x5E9\bo\x1\x2\x5E9\x601\x3\x2\x2\x2\x5EA\x5EB\x5\xE0q\x2\x5EB"+
-		"\x5EC\bo\x1\x2\x5EC\x601\x3\x2\x2\x2\x5ED\x5EE\x5\x100\x81\x2\x5EE\x5F2"+
-		"\bo\x1\x2\x5EF\x5F0\x5\x8CG\x2\x5F0\x5F1\bo\x1\x2\x5F1\x5F3\x3\x2\x2\x2"+
-		"\x5F2\x5EF\x3\x2\x2\x2\x5F2\x5F3\x3\x2\x2\x2\x5F3\x601\x3\x2\x2\x2\x5F4"+
-		"\x5F5\x5\xEEx\x2\x5F5\x5F6\bo\x1\x2\x5F6\x601\x3\x2\x2\x2\x5F7\x5F8\x5"+
-		"\xF0y\x2\x5F8\x5F9\bo\x1\x2\x5F9\x601\x3\x2\x2\x2\x5FA\x5FB\x5\xF8}\x2"+
-		"\x5FB\x5FC\bo\x1\x2\x5FC\x601\x3\x2\x2\x2\x5FD\x5FE\x5\xCA\x66\x2\x5FE"+
-		"\x5FF\bo\x1\x2\x5FF\x601\x3\x2\x2\x2\x600\x5E7\x3\x2\x2\x2\x600\x5EA\x3"+
-		"\x2\x2\x2\x600\x5ED\x3\x2\x2\x2\x600\x5F4\x3\x2\x2\x2\x600\x5F7\x3\x2"+
-		"\x2\x2\x600\x5FA\x3\x2\x2\x2\x600\x5FD\x3\x2\x2\x2\x601\xDD\x3\x2\x2\x2"+
-		"\x602\x603\a\x9D\x2\x2\x603\x604\x5\xD0i\x2\x604\x605\a\x9E\x2\x2\x605"+
-		"\x606\bp\x1\x2\x606\xDF\x3\x2\x2\x2\x607\x608\x5\xECw\x2\x608\x609\bq"+
-		"\x1\x2\x609\x74A\x3\x2\x2\x2\x60A\x60B\aH\x2\x2\x60B\x60C\a\x9D\x2\x2"+
-		"\x60C\x60D\x5\xD0i\x2\x60D\x60E\a\x9E\x2\x2\x60E\x60F\bq\x1\x2\x60F\x74A"+
-		"\x3\x2\x2\x2\x610\x611\aI\x2\x2\x611\x612\a\x9D\x2\x2\x612\x613\x5\xD0"+
-		"i\x2\x613\x614\a\x9E\x2\x2\x614\x615\bq\x1\x2\x615\x74A\x3\x2\x2\x2\x616"+
-		"\x617\aJ\x2\x2\x617\x618\a\x9D\x2\x2\x618\x619\x5\xD0i\x2\x619\x61A\a"+
-		"\x3\x2\x2\x61A\x61B\x5\xD0i\x2\x61B\x61C\a\x9E\x2\x2\x61C\x61D\bq\x1\x2"+
-		"\x61D\x74A\x3\x2\x2\x2\x61E\x61F\aK\x2\x2\x61F\x620\a\x9D\x2\x2\x620\x621"+
-		"\x5\xD0i\x2\x621\x622\a\x9E\x2\x2\x622\x623\bq\x1\x2\x623\x74A\x3\x2\x2"+
-		"\x2\x624\x625\aL\x2\x2\x625\x626\a\x9D\x2\x2\x626\x627\x5\xCA\x66\x2\x627"+
-		"\x628\a\x9E\x2\x2\x628\x629\bq\x1\x2\x629\x74A\x3\x2\x2\x2\x62A\x62B\a"+
-		"M\x2\x2\x62B\x62C\a\x9D\x2\x2\x62C\x62D\x5\xD0i\x2\x62D\x62E\a\x9E\x2"+
-		"\x2\x62E\x62F\bq\x1\x2\x62F\x74A\x3\x2\x2\x2\x630\x631\aN\x2\x2\x631\x632"+
-		"\a\x9D\x2\x2\x632\x633\x5\xD0i\x2\x633\x634\a\x9E\x2\x2\x634\x635\bq\x1"+
-		"\x2\x635\x74A\x3\x2\x2\x2\x636\x63E\aO\x2\x2\x637\x638\a\x9D\x2\x2\x638"+
-		"\x639\x5\xD0i\x2\x639\x63A\a\x9E\x2\x2\x63A\x63B\bq\x1\x2\x63B\x63F\x3"+
-		"\x2\x2\x2\x63C\x63D\a\x9C\x2\x2\x63D\x63F\bq\x1\x2\x63E\x637\x3\x2\x2"+
-		"\x2\x63E\x63C\x3\x2\x2\x2\x63F\x74A\x3\x2\x2\x2\x640\x641\aP\x2\x2\x641"+
-		"\x642\a\x9C\x2\x2\x642\x74A\bq\x1\x2\x643\x644\aQ\x2\x2\x644\x645\a\x9D"+
-		"\x2\x2\x645\x646\x5\xD0i\x2\x646\x647\a\x9E\x2\x2\x647\x648\bq\x1\x2\x648"+
-		"\x74A\x3\x2\x2\x2\x649\x64A\aR\x2\x2\x64A\x64B\a\x9D\x2\x2\x64B\x64C\x5"+
-		"\xD0i\x2\x64C\x64D\a\x9E\x2\x2\x64D\x64E\bq\x1\x2\x64E\x74A\x3\x2\x2\x2"+
-		"\x64F\x650\aS\x2\x2\x650\x651\a\x9D\x2\x2\x651\x652\x5\xD0i\x2\x652\x653"+
-		"\a\x9E\x2\x2\x653\x654\bq\x1\x2\x654\x74A\x3\x2\x2\x2\x655\x656\aT\x2"+
-		"\x2\x656\x657\a\x9D\x2\x2\x657\x658\x5\xD0i\x2\x658\x659\a\x9E\x2\x2\x659"+
-		"\x65A\bq\x1\x2\x65A\x74A\x3\x2\x2\x2\x65B\x65C\aU\x2\x2\x65C\x65D\x5\x8E"+
-		"H\x2\x65D\x65E\bq\x1\x2\x65E\x74A\x3\x2\x2\x2\x65F\x660\x5\xE4s\x2\x660"+
-		"\x661\bq\x1\x2\x661\x74A\x3\x2\x2\x2\x662\x663\aV\x2\x2\x663\x664\a\x9D"+
-		"\x2\x2\x664\x665\x5\xD0i\x2\x665\x666\a\x9E\x2\x2\x666\x667\bq\x1\x2\x667"+
-		"\x74A\x3\x2\x2\x2\x668\x669\x5\xE6t\x2\x669\x66A\bq\x1\x2\x66A\x74A\x3"+
-		"\x2\x2\x2\x66B\x66C\aW\x2\x2\x66C\x66D\a\x9D\x2\x2\x66D\x66E\x5\xD0i\x2"+
-		"\x66E\x66F\a\x9E\x2\x2\x66F\x670\bq\x1\x2\x670\x74A\x3\x2\x2\x2\x671\x672"+
-		"\aX\x2\x2\x672\x673\a\x9D\x2\x2\x673\x674\x5\xD0i\x2\x674\x675\a\x9E\x2"+
-		"\x2\x675\x676\bq\x1\x2\x676\x74A\x3\x2\x2\x2\x677\x678\aY\x2\x2\x678\x679"+
-		"\a\x9D\x2\x2\x679\x67A\x5\xD0i\x2\x67A\x67B\a\x9E\x2\x2\x67B\x67C\bq\x1"+
-		"\x2\x67C\x74A\x3\x2\x2\x2\x67D\x67E\aZ\x2\x2\x67E\x67F\a\x9D\x2\x2\x67F"+
-		"\x680\x5\xD0i\x2\x680\x681\a\x3\x2\x2\x681\x682\x5\xD0i\x2\x682\x683\a"+
-		"\x9E\x2\x2\x683\x684\bq\x1\x2\x684\x74A\x3\x2\x2\x2\x685\x686\a[\x2\x2"+
-		"\x686\x687\a\x9D\x2\x2\x687\x688\x5\xD0i\x2\x688\x689\a\x3\x2\x2\x689"+
-		"\x68A\x5\xD0i\x2\x68A\x68B\a\x9E\x2\x2\x68B\x68C\bq\x1\x2\x68C\x74A\x3"+
-		"\x2\x2\x2\x68D\x68E\a\\\x2\x2\x68E\x68F\a\x9D\x2\x2\x68F\x690\x5\xD0i"+
-		"\x2\x690\x691\a\x3\x2\x2\x691\x692\x5\xD0i\x2\x692\x693\a\x9E\x2\x2\x693"+
-		"\x694\bq\x1\x2\x694\x74A\x3\x2\x2\x2\x695\x696\a]\x2\x2\x696\x697\a\x9D"+
-		"\x2\x2\x697\x698\x5\xD0i\x2\x698\x699\a\x3\x2\x2\x699\x69A\x5\xD0i\x2"+
-		"\x69A\x69B\a\x9E\x2\x2\x69B\x69C\bq\x1\x2\x69C\x74A\x3\x2\x2\x2\x69D\x69E"+
-		"\a^\x2\x2\x69E\x69F\a\x9D\x2\x2\x69F\x6A0\x5\xD0i\x2\x6A0\x6A1\a\x3\x2"+
-		"\x2\x6A1\x6A2\x5\xD0i\x2\x6A2\x6A3\a\x9E\x2\x2\x6A3\x6A4\bq\x1\x2\x6A4"+
-		"\x74A\x3\x2\x2\x2\x6A5\x6A6\a_\x2\x2\x6A6\x6A7\a\x9D\x2\x2\x6A7\x6A8\x5"+
-		"\xD0i\x2\x6A8\x6A9\a\x9E\x2\x2\x6A9\x6AA\bq\x1\x2\x6AA\x74A\x3\x2\x2\x2"+
-		"\x6AB\x6AC\a`\x2\x2\x6AC\x6AD\a\x9D\x2\x2\x6AD\x6AE\x5\xD0i\x2\x6AE\x6AF"+
-		"\a\x9E\x2\x2\x6AF\x6B0\bq\x1\x2\x6B0\x74A\x3\x2\x2\x2\x6B1\x6B2\a\x61"+
-		"\x2\x2\x6B2\x6B3\a\x9D\x2\x2\x6B3\x6B4\x5\xD0i\x2\x6B4\x6B5\a\x9E\x2\x2"+
-		"\x6B5\x6B6\bq\x1\x2\x6B6\x74A\x3\x2\x2\x2\x6B7\x6B8\a\x62\x2\x2\x6B8\x6B9"+
-		"\a\x9D\x2\x2\x6B9\x6BA\x5\xD0i\x2\x6BA\x6BB\a\x9E\x2\x2\x6BB\x6BC\bq\x1"+
-		"\x2\x6BC\x74A\x3\x2\x2\x2\x6BD\x6BE\a\x63\x2\x2\x6BE\x6BF\a\x9D\x2\x2"+
-		"\x6BF\x6C0\x5\xD0i\x2\x6C0\x6C1\a\x9E\x2\x2\x6C1\x6C2\bq\x1\x2\x6C2\x74A"+
-		"\x3\x2\x2\x2\x6C3\x6C4\a\x64\x2\x2\x6C4\x6C5\a\x9D\x2\x2\x6C5\x6C6\x5"+
-		"\xD0i\x2\x6C6\x6C7\a\x9E\x2\x2\x6C7\x6C8\bq\x1\x2\x6C8\x74A\x3\x2\x2\x2"+
-		"\x6C9\x6CA\a\x65\x2\x2\x6CA\x6CB\a\x9D\x2\x2\x6CB\x6CC\x5\xD0i\x2\x6CC"+
-		"\x6CD\a\x9E\x2\x2\x6CD\x6CE\bq\x1\x2\x6CE\x74A\x3\x2\x2\x2\x6CF\x6D0\a"+
-		"\x66\x2\x2\x6D0\x6D1\a\x9D\x2\x2\x6D1\x6D2\x5\xD0i\x2\x6D2\x6D3\a\x9E"+
-		"\x2\x2\x6D3\x6D4\bq\x1\x2\x6D4\x74A\x3\x2\x2\x2\x6D5\x6D6\ag\x2\x2\x6D6"+
-		"\x6D7\a\x9C\x2\x2\x6D7\x74A\bq\x1\x2\x6D8\x6D9\ah\x2\x2\x6D9\x6DA\a\x9C"+
-		"\x2\x2\x6DA\x74A\bq\x1\x2\x6DB\x6DC\ai\x2\x2\x6DC\x6DD\a\x9C\x2\x2\x6DD"+
-		"\x74A\bq\x1\x2\x6DE\x6DF\aj\x2\x2\x6DF\x6E0\a\x9D\x2\x2\x6E0\x6E1\x5\xD0"+
-		"i\x2\x6E1\x6E2\a\x9E\x2\x2\x6E2\x6E3\bq\x1\x2\x6E3\x74A\x3\x2\x2\x2\x6E4"+
-		"\x6E5\ak\x2\x2\x6E5\x6E6\a\x9D\x2\x2\x6E6\x6E7\x5\xD0i\x2\x6E7\x6E8\a"+
-		"\x9E\x2\x2\x6E8\x6E9\bq\x1\x2\x6E9\x74A\x3\x2\x2\x2\x6EA\x6EB\al\x2\x2"+
-		"\x6EB\x6EC\a\x9D\x2\x2\x6EC\x6ED\x5\xD0i\x2\x6ED\x6EE\a\x9E\x2\x2\x6EE"+
-		"\x6EF\bq\x1\x2\x6EF\x74A\x3\x2\x2\x2\x6F0\x6F1\am\x2\x2\x6F1\x6F2\a\x9D"+
-		"\x2\x2\x6F2\x6F3\x5\xD0i\x2\x6F3\x6F4\a\x9E\x2\x2\x6F4\x6F5\bq\x1\x2\x6F5"+
-		"\x74A\x3\x2\x2\x2\x6F6\x6F7\an\x2\x2\x6F7\x6F8\a\x9D\x2\x2\x6F8\x6F9\x5"+
-		"\xD0i\x2\x6F9\x6FA\a\x9E\x2\x2\x6FA\x6FB\bq\x1\x2\x6FB\x74A\x3\x2\x2\x2"+
-		"\x6FC\x6FD\ao\x2\x2\x6FD\x6FE\x5\x8EH\x2\x6FE\x6FF\bq\x1\x2\x6FF\x74A"+
-		"\x3\x2\x2\x2\x700\x701\ap\x2\x2\x701\x702\a\x9D\x2\x2\x702\x703\x5\xD0"+
-		"i\x2\x703\x704\a\x3\x2\x2\x704\x705\x5\xD0i\x2\x705\x706\a\x3\x2\x2\x706"+
-		"\x707\x5\xD0i\x2\x707\x708\a\x9E\x2\x2\x708\x709\bq\x1\x2\x709\x74A\x3"+
-		"\x2\x2\x2\x70A\x70B\aq\x2\x2\x70B\x70C\a\x9D\x2\x2\x70C\x70D\x5\xD0i\x2"+
-		"\x70D\x70E\a\x3\x2\x2\x70E\x70F\x5\xD0i\x2\x70F\x710\a\x9E\x2\x2\x710"+
-		"\x711\bq\x1\x2\x711\x74A\x3\x2\x2\x2\x712\x713\ar\x2\x2\x713\x714\a\x9D"+
-		"\x2\x2\x714\x715\x5\xD0i\x2\x715\x716\a\x3\x2\x2\x716\x717\x5\xD0i\x2"+
-		"\x717\x718\a\x9E\x2\x2\x718\x719\bq\x1\x2\x719\x74A\x3\x2\x2\x2\x71A\x71B"+
-		"\as\x2\x2\x71B\x71C\a\x9D\x2\x2\x71C\x71D\x5\xD0i\x2\x71D\x71E\a\x3\x2"+
-		"\x2\x71E\x71F\x5\xD0i\x2\x71F\x720\a\x9E\x2\x2\x720\x721\bq\x1\x2\x721"+
-		"\x74A\x3\x2\x2\x2\x722\x723\at\x2\x2\x723\x724\a\x9D\x2\x2\x724\x725\x5"+
-		"\xD0i\x2\x725\x726\a\x9E\x2\x2\x726\x727\bq\x1\x2\x727\x74A\x3\x2\x2\x2"+
-		"\x728\x729\au\x2\x2\x729\x72A\a\x9D\x2\x2\x72A\x72B\x5\xD0i\x2\x72B\x72C"+
-		"\a\x9E\x2\x2\x72C\x72D\bq\x1\x2\x72D\x74A\x3\x2\x2\x2\x72E\x72F\av\x2"+
-		"\x2\x72F\x730\a\x9D\x2\x2\x730\x731\x5\xD0i\x2\x731\x732\a\x9E\x2\x2\x732"+
-		"\x733\bq\x1\x2\x733\x74A\x3\x2\x2\x2\x734\x735\aw\x2\x2\x735\x736\a\x9D"+
-		"\x2\x2\x736\x737\x5\xD0i\x2\x737\x738\a\x9E\x2\x2\x738\x739\bq\x1\x2\x739"+
-		"\x74A\x3\x2\x2\x2\x73A\x73B\ax\x2\x2\x73B\x73C\a\x9D\x2\x2\x73C\x73D\x5"+
-		"\xD0i\x2\x73D\x73E\a\x9E\x2\x2\x73E\x73F\bq\x1\x2\x73F\x74A\x3\x2\x2\x2"+
-		"\x740\x741\x5\xE2r\x2\x741\x742\bq\x1\x2\x742\x74A\x3\x2\x2\x2\x743\x744"+
-		"\x5\xE8u\x2\x744\x745\bq\x1\x2\x745\x74A\x3\x2\x2\x2\x746\x747\x5\xEA"+
-		"v\x2\x747\x748\bq\x1\x2\x748\x74A\x3\x2\x2\x2\x749\x607\x3\x2\x2\x2\x749"+
-		"\x60A\x3\x2\x2\x2\x749\x610\x3\x2\x2\x2\x749\x616\x3\x2\x2\x2\x749\x61E"+
-		"\x3\x2\x2\x2\x749\x624\x3\x2\x2\x2\x749\x62A\x3\x2\x2\x2\x749\x630\x3"+
-		"\x2\x2\x2\x749\x636\x3\x2\x2\x2\x749\x640\x3\x2\x2\x2\x749\x643\x3\x2"+
-		"\x2\x2\x749\x649\x3\x2\x2\x2\x749\x64F\x3\x2\x2\x2\x749\x655\x3\x2\x2"+
-		"\x2\x749\x65B\x3\x2\x2\x2\x749\x65F\x3\x2\x2\x2\x749\x662\x3\x2\x2\x2"+
-		"\x749\x668\x3\x2\x2\x2\x749\x66B\x3\x2\x2\x2\x749\x671\x3\x2\x2\x2\x749"+
-		"\x677\x3\x2\x2\x2\x749\x67D\x3\x2\x2\x2\x749\x685\x3\x2\x2\x2\x749\x68D"+
-		"\x3\x2\x2\x2\x749\x695\x3\x2\x2\x2\x749\x69D\x3\x2\x2\x2\x749\x6A5\x3"+
-		"\x2\x2\x2\x749\x6AB\x3\x2\x2\x2\x749\x6B1\x3\x2\x2\x2\x749\x6B7\x3\x2"+
-		"\x2\x2\x749\x6BD\x3\x2\x2\x2\x749\x6C3\x3\x2\x2\x2\x749\x6C9\x3\x2\x2"+
-		"\x2\x749\x6CF\x3\x2\x2\x2\x749\x6D5\x3\x2\x2\x2\x749\x6D8\x3\x2\x2\x2"+
-		"\x749\x6DB\x3\x2\x2\x2\x749\x6DE\x3\x2\x2\x2\x749\x6E4\x3\x2\x2\x2\x749"+
-		"\x6EA\x3\x2\x2\x2\x749\x6F0\x3\x2\x2\x2\x749\x6F6\x3\x2\x2\x2\x749\x6FC"+
-		"\x3\x2\x2\x2\x749\x700\x3\x2\x2\x2\x749\x70A\x3\x2\x2\x2\x749\x712\x3"+
-		"\x2\x2\x2\x749\x71A\x3\x2\x2\x2\x749\x722\x3\x2\x2\x2\x749\x728\x3\x2"+
-		"\x2\x2\x749\x72E\x3\x2\x2\x2\x749\x734\x3\x2\x2\x2\x749\x73A\x3\x2\x2"+
-		"\x2\x749\x740\x3\x2\x2\x2\x749\x743\x3\x2\x2\x2\x749\x746\x3\x2\x2\x2"+
-		"\x74A\xE1\x3\x2\x2\x2\x74B\x74C\ay\x2\x2\x74C\x74D\br\x1\x2\x74D\x74E"+
-		"\a\x9D\x2\x2\x74E\x74F\x5\xD0i\x2\x74F\x750\br\x1\x2\x750\x751\a\x3\x2"+
-		"\x2\x751\x756\x5\xD0i\x2\x752\x753\a\x3\x2\x2\x753\x754\x5\xD0i\x2\x754"+
-		"\x755\br\x1\x2\x755\x757\x3\x2\x2\x2\x756\x752\x3\x2\x2\x2\x756\x757\x3"+
-		"\x2\x2\x2\x757\x758\x3\x2\x2\x2\x758\x759\a\x9E\x2\x2\x759\x75A\br\x1"+
-		"\x2\x75A\xE3\x3\x2\x2\x2\x75B\x75C\az\x2\x2\x75C\x75D\bs\x1\x2\x75D\x75E"+
-		"\a\x9D\x2\x2\x75E\x75F\x5\xD0i\x2\x75F\x760\bs\x1\x2\x760\x761\a\x3\x2"+
-		"\x2\x761\x762\x5\xD0i\x2\x762\x767\bs\x1\x2\x763\x764\a\x3\x2\x2\x764"+
-		"\x765\x5\xD0i\x2\x765\x766\bs\x1\x2\x766\x768\x3\x2\x2\x2\x767\x763\x3"+
-		"\x2\x2\x2\x767\x768\x3\x2\x2\x2\x768\x769\x3\x2\x2\x2\x769\x76A\a\x9E"+
-		"\x2\x2\x76A\xE5\x3\x2\x2\x2\x76B\x76C\a{\x2\x2\x76C\x76D\bt\x1\x2\x76D"+
-		"\x76E\a\x9D\x2\x2\x76E\x76F\x5\xD0i\x2\x76F\x770\bt\x1\x2\x770\x771\a"+
-		"\x3\x2\x2\x771\x772\x5\xD0i\x2\x772\x773\bt\x1\x2\x773\x774\a\x3\x2\x2"+
-		"\x774\x775\x5\xD0i\x2\x775\x77A\bt\x1\x2\x776\x777\a\x3\x2\x2\x777\x778"+
-		"\x5\xD0i\x2\x778\x779\bt\x1\x2\x779\x77B\x3\x2\x2\x2\x77A\x776\x3\x2\x2"+
-		"\x2\x77A\x77B\x3\x2\x2\x2\x77B\x77C\x3\x2\x2\x2\x77C\x77D\bt\x1\x2\x77D"+
-		"\x77E\a\x9E\x2\x2\x77E\xE7\x3\x2\x2\x2\x77F\x780\a|\x2\x2\x780\x781\x5"+
-		"h\x35\x2\x781\x782\bu\x1\x2\x782\xE9\x3\x2\x2\x2\x783\x784\a:\x2\x2\x784"+
-		"\x785\a|\x2\x2\x785\x786\x5h\x35\x2\x786\x787\bv\x1\x2\x787\xEB\x3\x2"+
-		"\x2\x2\x788\x789\a}\x2\x2\x789\x78A\bw\x1\x2\x78A\x78D\a\x9D\x2\x2\x78B"+
-		"\x78C\a,\x2\x2\x78C\x78E\bw\x1\x2\x78D\x78B\x3\x2\x2\x2\x78D\x78E\x3\x2"+
-		"\x2\x2\x78E\x794\x3\x2\x2\x2\x78F\x790\a\x4\x2\x2\x790\x795\bw\x1\x2\x791"+
-		"\x792\x5\xD0i\x2\x792\x793\bw\x1\x2\x793\x795\x3\x2\x2\x2\x794\x78F\x3"+
-		"\x2\x2\x2\x794\x791\x3\x2\x2\x2\x795\x796\x3\x2\x2\x2\x796\x7E2\a\x9E"+
-		"\x2\x2\x797\x798\a~\x2\x2\x798\x799\bw\x1\x2\x799\x79C\a\x9D\x2\x2\x79A"+
-		"\x79B\a,\x2\x2\x79B\x79D\bw\x1\x2\x79C\x79A\x3\x2\x2\x2\x79C\x79D\x3\x2"+
-		"\x2\x2\x79D\x79E\x3\x2\x2\x2\x79E\x79F\x5\xD0i\x2\x79F\x7A0\bw\x1\x2\x7A0"+
-		"\x7A1\a\x9E\x2\x2\x7A1\x7E2\x3\x2\x2\x2\x7A2\x7A3\a\x7F\x2\x2\x7A3\x7A4"+
-		"\bw\x1\x2\x7A4\x7A7\a\x9D\x2\x2\x7A5\x7A6\a,\x2\x2\x7A6\x7A8\bw\x1\x2"+
-		"\x7A7\x7A5\x3\x2\x2\x2\x7A7\x7A8\x3\x2\x2\x2\x7A8\x7A9\x3\x2\x2\x2\x7A9"+
-		"\x7AA\x5\xD0i\x2\x7AA\x7AB\bw\x1\x2\x7AB\x7AC\a\x9E\x2\x2\x7AC\x7E2\x3"+
-		"\x2\x2\x2\x7AD\x7AE\a\x80\x2\x2\x7AE\x7AF\bw\x1\x2\x7AF\x7B2\a\x9D\x2"+
-		"\x2\x7B0\x7B1\a,\x2\x2\x7B1\x7B3\bw\x1\x2\x7B2\x7B0\x3\x2\x2\x2\x7B2\x7B3"+
-		"\x3\x2\x2\x2\x7B3\x7B4\x3\x2\x2\x2\x7B4\x7B5\x5\xD0i\x2\x7B5\x7B6\bw\x1"+
-		"\x2\x7B6\x7B7\a\x9E\x2\x2\x7B7\x7E2\x3\x2\x2\x2\x7B8\x7B9\a\x81\x2\x2"+
-		"\x7B9\x7BA\bw\x1\x2\x7BA\x7BD\a\x9D\x2\x2\x7BB\x7BC\a,\x2\x2\x7BC\x7BE"+
-		"\bw\x1\x2\x7BD\x7BB\x3\x2\x2\x2\x7BD\x7BE\x3\x2\x2\x2\x7BE\x7BF\x3\x2"+
-		"\x2\x2\x7BF\x7C0\x5\xD0i\x2\x7C0\x7C1\bw\x1\x2\x7C1\x7C2\a\x9E\x2\x2\x7C2"+
-		"\x7E2\x3\x2\x2\x2\x7C3\x7C4\a\x82\x2\x2\x7C4\x7C5\bw\x1\x2\x7C5\x7C8\a"+
-		"\x9D\x2\x2\x7C6\x7C7\a,\x2\x2\x7C7\x7C9\bw\x1\x2\x7C8\x7C6\x3\x2\x2\x2"+
-		"\x7C8\x7C9\x3\x2\x2\x2\x7C9\x7CA\x3\x2\x2\x2\x7CA\x7CB\x5\xD0i\x2\x7CB"+
-		"\x7CC\bw\x1\x2\x7CC\x7CD\a\x9E\x2\x2\x7CD\x7E2\x3\x2\x2\x2\x7CE\x7CF\a"+
-		"\x83\x2\x2\x7CF\x7D0\bw\x1\x2\x7D0\x7D3\a\x9D\x2\x2\x7D1\x7D2\a,\x2\x2"+
-		"\x7D2\x7D4\bw\x1\x2\x7D3\x7D1\x3\x2\x2\x2\x7D3\x7D4\x3\x2\x2\x2\x7D4\x7D5"+
-		"\x3\x2\x2\x2\x7D5\x7D6\x5\xD0i\x2\x7D6\x7DD\bw\x1\x2\x7D7\x7D8\a\x12\x2"+
-		"\x2\x7D8\x7D9\a\xB0\x2\x2\x7D9\x7DA\a\x11\x2\x2\x7DA\x7DB\x5\xFC\x7F\x2"+
-		"\x7DB\x7DC\bw\x1\x2\x7DC\x7DE\x3\x2\x2\x2\x7DD\x7D7\x3\x2\x2\x2\x7DD\x7DE"+
-		"\x3\x2\x2\x2\x7DE\x7DF\x3\x2\x2\x2\x7DF\x7E0\a\x9E\x2\x2\x7E0\x7E2\x3"+
-		"\x2\x2\x2\x7E1\x788\x3\x2\x2\x2\x7E1\x797\x3\x2\x2\x2\x7E1\x7A2\x3\x2"+
-		"\x2\x2\x7E1\x7AD\x3\x2\x2\x2\x7E1\x7B8\x3\x2\x2\x2\x7E1\x7C3\x3\x2\x2"+
-		"\x2\x7E1\x7CE\x3\x2\x2\x2\x7E2\xED\x3\x2\x2\x2\x7E3\x7E4\x5\xFC\x7F\x2"+
-		"\x7E4\x7E5\bx\x1\x2\x7E5\x7F0\x3\x2\x2\x2\x7E6\x7E7\x5\xFC\x7F\x2\x7E7"+
-		"\x7E8\a\x8C\x2\x2\x7E8\x7E9\bx\x1\x2\x7E9\x7F0\x3\x2\x2\x2\x7EA\x7EB\x5"+
-		"\xFC\x7F\x2\x7EB\x7EC\a\f\x2\x2\x7EC\x7ED\x5\x100\x81\x2\x7ED\x7EE\bx"+
-		"\x1\x2\x7EE\x7F0\x3\x2\x2\x2\x7EF\x7E3\x3\x2\x2\x2\x7EF\x7E6\x3\x2\x2"+
-		"\x2\x7EF\x7EA\x3\x2\x2\x2\x7F0\xEF\x3\x2\x2\x2\x7F1\x7F2\x5\xF2z\x2\x7F2"+
-		"\x7F3\by\x1\x2\x7F3\x7FB\x3\x2\x2\x2\x7F4\x7F5\x5\xF4{\x2\x7F5\x7F6\b"+
-		"y\x1\x2\x7F6\x7FB\x3\x2\x2\x2\x7F7\x7F8\x5\xF6|\x2\x7F8\x7F9\by\x1\x2"+
-		"\x7F9\x7FB\x3\x2\x2\x2\x7FA\x7F1\x3\x2\x2\x2\x7FA\x7F4\x3\x2\x2\x2\x7FA"+
-		"\x7F7\x3\x2\x2\x2\x7FB\xF1\x3\x2\x2\x2\x7FC\x7FD\a\x8D\x2\x2\x7FD\x803"+
-		"\bz\x1\x2\x7FE\x7FF\a\x8E\x2\x2\x7FF\x803\bz\x1\x2\x800\x801\a\x8F\x2"+
-		"\x2\x801\x803\bz\x1\x2\x802\x7FC\x3\x2\x2\x2\x802\x7FE\x3\x2\x2\x2\x802"+
-		"\x800\x3\x2\x2\x2\x803\xF3\x3\x2\x2\x2\x804\x805\a\x90\x2\x2\x805\x80B"+
-		"\b{\x1\x2\x806\x807\a\x91\x2\x2\x807\x80B\b{\x1\x2\x808\x809\a\x92\x2"+
-		"\x2\x809\x80B\b{\x1\x2\x80A\x804\x3\x2\x2\x2\x80A\x806\x3\x2\x2\x2\x80A"+
-		"\x808\x3\x2\x2\x2\x80B\xF5\x3\x2\x2\x2\x80C\x80D\a\x93\x2\x2\x80D\x813"+
-		"\b|\x1\x2\x80E\x80F\a\x94\x2\x2\x80F\x813\b|\x1\x2\x810\x811\a\x95\x2"+
-		"\x2\x811\x813\b|\x1\x2\x812\x80C\x3\x2\x2\x2\x812\x80E\x3\x2\x2\x2\x812"+
-		"\x810\x3\x2\x2\x2\x813\xF7\x3\x2\x2\x2\x814\x815\x5\xFA~\x2\x815\x816"+
-		"\b}\x1\x2\x816\xF9\x3\x2\x2\x2\x817\x818\a\x84\x2\x2\x818\x81C\b~\x1\x2"+
-		"\x819\x81A\a\x85\x2\x2\x81A\x81C\b~\x1\x2\x81B\x817\x3\x2\x2\x2\x81B\x819"+
-		"\x3\x2\x2\x2\x81C\xFB\x3\x2\x2\x2\x81D\x81E\t\x3\x2\x2\x81E\xFD\x3\x2"+
-		"\x2\x2\x81F\x820\x5\x100\x81\x2\x820\x821\b\x80\x1\x2\x821\xFF\x3\x2\x2"+
-		"\x2\x822\x823\a\x86\x2\x2\x823\x829\b\x81\x1\x2\x824\x825\a\x87\x2\x2"+
-		"\x825\x829\b\x81\x1\x2\x826\x827\a\x88\x2\x2\x827\x829\b\x81\x1\x2\x828"+
-		"\x822\x3\x2\x2\x2\x828\x824\x3\x2\x2\x2\x828\x826\x3\x2\x2\x2\x829\x101"+
-		"\x3\x2\x2\x2\x82A\x82B\a\x89\x2\x2\x82B\x82F\b\x82\x1\x2\x82C\x82D\a\xA0"+
-		"\x2\x2\x82D\x82F\b\x82\x1\x2\x82E\x82A\x3\x2\x2\x2\x82E\x82C\x3\x2\x2"+
-		"\x2\x82F\x103\x3\x2\x2\x2\xA0\x112\x11A\x11E\x120\x131\x146\x152\x154"+
-		"\x158\x160\x16A\x172\x178\x181\x185\x18A\x190\x19A\x1A4\x1B1\x1BA\x1BF"+
-		"\x1C4\x1C9\x1D3\x1E2\x1E9\x1F2\x1FF\x203\x214\x216\x21E\x225\x227\x238"+
-		"\x243\x245\x268\x26E\x276\x27C\x285\x28E\x297\x2A2\x2AD\x2C8\x2CF\x2D4"+
-		"\x2DA\x2DC\x2F2\x2F6\x2FB\x30A\x31A\x31F\x324\x328\x332\x33C\x33E\x347"+
-		"\x34F\x354\x359\x35D\x366\x368\x382\x392\x3AA\x3B4\x3C1\x3C5\x3CE\x3D4"+
-		"\x3D6\x3EC\x3FA\x40A\x415\x41F\x424\x430\x435\x43C\x446\x448\x451\x453"+
-		"\x45B\x45F\x467\x46E\x47A\x483\x48C\x49C\x49E\x4A6\x4AF\x4B1\x4B5\x4BD"+
-		"\x4CB\x4D6\x4E0\x4EA\x4FA\x508\x50B\x50E\x51B\x51D\x524\x531\x53B\x543"+
-		"\x54B\x563\x56D\x578\x59E\x5B1\x5BB\x5BD\x5C2\x5C4\x5D1\x5D3\x5E5\x5F2"+
-		"\x600\x63E\x749\x756\x767\x77A\x78D\x794\x79C\x7A7\x7B2\x7BD\x7C8\x7D3"+
-		"\x7DD\x7E1\x7EF\x7FA\x802\x80A\x812\x81B\x828\x82E";
+		"J\x1\x2\x442\x446\a\x11\x2\x2\x443\x444\x5\x92J\x2\x444\x445\bJ\x1\x2"+
+		"\x445\x447\x3\x2\x2\x2\x446\x443\x3\x2\x2\x2\x446\x447\x3\x2\x2\x2\x447"+
+		"\x449\x3\x2\x2\x2\x448\x442\x3\x2\x2\x2\x448\x449\x3\x2\x2\x2\x449\x93"+
+		"\x3\x2\x2\x2\x44A\x44B\bK\x1\x2\x44B\x44C\x5\xA6T\x2\x44C\x44D\x5\x96"+
+		"L\x2\x44D\x454\x3\x2\x2\x2\x44E\x44F\bK\x1\x2\x44F\x451\x5\xA2R\x2\x450"+
+		"\x452\x5\x96L\x2\x451\x450\x3\x2\x2\x2\x451\x452\x3\x2\x2\x2\x452\x454"+
+		"\x3\x2\x2\x2\x453\x44A\x3\x2\x2\x2\x453\x44E\x3\x2\x2\x2\x454\x95\x3\x2"+
+		"\x2\x2\x455\x456\x5\x98M\x2\x456\x45F\x5\x9AN\x2\x457\x45B\a\a\x2\x2\x458"+
+		"\x459\x5\x98M\x2\x459\x45A\x5\x9AN\x2\x45A\x45C\x3\x2\x2\x2\x45B\x458"+
+		"\x3\x2\x2\x2\x45B\x45C\x3\x2\x2\x2\x45C\x45E\x3\x2\x2\x2\x45D\x457\x3"+
+		"\x2\x2\x2\x45E\x461\x3\x2\x2\x2\x45F\x45D\x3\x2\x2\x2\x45F\x460\x3\x2"+
+		"\x2\x2\x460\x97\x3\x2\x2\x2\x461\x45F\x3\x2\x2\x2\x462\x463\x5\xC8\x65"+
+		"\x2\x463\x464\bM\x1\x2\x464\x468\x3\x2\x2\x2\x465\x466\a\x17\x2\x2\x466"+
+		"\x468\bM\x1\x2\x467\x462\x3\x2\x2\x2\x467\x465\x3\x2\x2\x2\x468\x99\x3"+
+		"\x2\x2\x2\x469\x46E\x5\x9CO\x2\x46A\x46B\a\x10\x2\x2\x46B\x46D\x5\x9C"+
+		"O\x2\x46C\x46A\x3\x2\x2\x2\x46D\x470\x3\x2\x2\x2\x46E\x46C\x3\x2\x2\x2"+
+		"\x46E\x46F\x3\x2\x2\x2\x46F\x9B\x3\x2\x2\x2\x470\x46E\x3\x2\x2\x2\x471"+
+		"\x472\x5\x9EP\x2\x472\x473\bO\x1\x2\x473\x9D\x3\x2\x2\x2\x474\x475\x5"+
+		"\xC6\x64\x2\x475\x476\bP\x1\x2\x476\x47B\x3\x2\x2\x2\x477\x478\x5\xA2"+
+		"R\x2\x478\x479\bP\x1\x2\x479\x47B\x3\x2\x2\x2\x47A\x474\x3\x2\x2\x2\x47A"+
+		"\x477\x3\x2\x2\x2\x47B\x9F\x3\x2\x2\x2\x47C\x47D\a\x9D\x2\x2\x47D\x481"+
+		"\bQ\x1\x2\x47E\x47F\x5\x9EP\x2\x47F\x480\bQ\x1\x2\x480\x482\x3\x2\x2\x2"+
+		"\x481\x47E\x3\x2\x2\x2\x482\x483\x3\x2\x2\x2\x483\x481\x3\x2\x2\x2\x483"+
+		"\x484\x3\x2\x2\x2\x484\x485\x3\x2\x2\x2\x485\x486\a\x9E\x2\x2\x486\xA1"+
+		"\x3\x2\x2\x2\x487\x488\x5\xA0Q\x2\x488\x489\bR\x1\x2\x489\x48D\x3\x2\x2"+
+		"\x2\x48A\x48B\bR\x1\x2\x48B\x48D\x5\xA4S\x2\x48C\x487\x3\x2\x2\x2\x48C"+
+		"\x48A\x3\x2\x2\x2\x48D\xA3\x3\x2\x2\x2\x48E\x48F\a\xA1\x2\x2\x48F\x490"+
+		"\x5\x96L\x2\x490\x491\a\xA2\x2\x2\x491\xA5\x3\x2\x2\x2\x492\x493\x5\xC6"+
+		"\x64\x2\x493\x494\bT\x1\x2\x494\xA7\x3\x2\x2\x2\x495\x496\bU\x1\x2\x496"+
+		"\x497\x5\xA6T\x2\x497\x498\x5\xAAV\x2\x498\x49F\x3\x2\x2\x2\x499\x49A"+
+		"\bU\x1\x2\x49A\x49C\x5\xBE`\x2\x49B\x49D\x5\xAAV\x2\x49C\x49B\x3\x2\x2"+
+		"\x2\x49C\x49D\x3\x2\x2\x2\x49D\x49F\x3\x2\x2\x2\x49E\x495\x3\x2\x2\x2"+
+		"\x49E\x499\x3\x2\x2\x2\x49F\xA9\x3\x2\x2\x2\x4A0\x4A1\x5\xB0Y\x2\x4A1"+
+		"\x4A2\x5\xACW\x2\x4A2\x4A7\x3\x2\x2\x2\x4A3\x4A4\x5\xCA\x66\x2\x4A4\x4A5"+
+		"\x5\xACW\x2\x4A5\x4A7\x3\x2\x2\x2\x4A6\x4A0\x3\x2\x2\x2\x4A6\x4A3\x3\x2"+
+		"\x2\x2\x4A7\x4B5\x3\x2\x2\x2\x4A8\x4B1\a\a\x2\x2\x4A9\x4AA\x5\xB0Y\x2"+
+		"\x4AA\x4AB\x5\xACW\x2\x4AB\x4B0\x3\x2\x2\x2\x4AC\x4AD\x5\xCA\x66\x2\x4AD"+
+		"\x4AE\x5\xACW\x2\x4AE\x4B0\x3\x2\x2\x2\x4AF\x4A9\x3\x2\x2\x2\x4AF\x4AC"+
+		"\x3\x2\x2\x2\x4B0\x4B2\x3\x2\x2\x2\x4B1\x4AF\x3\x2\x2\x2\x4B1\x4B2\x3"+
+		"\x2\x2\x2\x4B2\x4B4\x3\x2\x2\x2\x4B3\x4A8\x3\x2\x2\x2\x4B4\x4B7\x3\x2"+
+		"\x2\x2\x4B5\x4B3\x3\x2\x2\x2\x4B5\x4B6\x3\x2\x2\x2\x4B6\xAB\x3\x2\x2\x2"+
+		"\x4B7\x4B5\x3\x2\x2\x2\x4B8\x4BD\x5\xAEX\x2\x4B9\x4BA\a\x10\x2\x2\x4BA"+
+		"\x4BC\x5\xAEX\x2\x4BB\x4B9\x3\x2\x2\x2\x4BC\x4BF\x3\x2\x2\x2\x4BD\x4BB"+
+		"\x3\x2\x2\x2\x4BD\x4BE\x3\x2\x2\x2\x4BE\xAD\x3\x2\x2\x2\x4BF\x4BD\x3\x2"+
+		"\x2\x2\x4C0\x4C1\x5\xC4\x63\x2\x4C1\x4C2\bX\x1\x2\x4C2\xAF\x3\x2\x2\x2"+
+		"\x4C3\x4C4\x5\xB2Z\x2\x4C4\x4CB\bY\x1\x2\x4C5\x4C6\a\x14\x2\x2\x4C6\x4C7"+
+		"\x5\xB2Z\x2\x4C7\x4C8\bY\x1\x2\x4C8\x4CA\x3\x2\x2\x2\x4C9\x4C5\x3\x2\x2"+
+		"\x2\x4CA\x4CD\x3\x2\x2\x2\x4CB\x4C9\x3\x2\x2\x2\x4CB\x4CC\x3\x2\x2\x2"+
+		"\x4CC\xB1\x3\x2\x2\x2\x4CD\x4CB\x3\x2\x2\x2\x4CE\x4CF\x5\xB4[\x2\x4CF"+
+		"\x4D6\bZ\x1\x2\x4D0\x4D1\a\x3\x2\x2\x4D1\x4D2\x5\xB4[\x2\x4D2\x4D3\bZ"+
+		"\x1\x2\x4D3\x4D5\x3\x2\x2\x2\x4D4\x4D0\x3\x2\x2\x2\x4D5\x4D8\x3\x2\x2"+
+		"\x2\x4D6\x4D4\x3\x2\x2\x2\x4D6\x4D7\x3\x2\x2\x2\x4D7\xB3\x3\x2\x2\x2\x4D8"+
+		"\x4D6\x3\x2\x2\x2\x4D9\x4DA\x5\xB6\\\x2\x4DA\x4DB\b[\x1\x2\x4DB\x4E1\x3"+
+		"\x2\x2\x2\x4DC\x4DD\a\f\x2\x2\x4DD\x4DE\x5\xB6\\\x2\x4DE\x4DF\b[\x1\x2"+
+		"\x4DF\x4E1\x3\x2\x2\x2\x4E0\x4D9\x3\x2\x2\x2\x4E0\x4DC\x3\x2\x2\x2\x4E1"+
+		"\xB5\x3\x2\x2\x2\x4E2\x4E3\x5\xB8]\x2\x4E3\x4EA\b\\\x1\x2\x4E4\x4E5\a"+
+		"\r\x2\x2\x4E5\x4EB\b\\\x1\x2\x4E6\x4E7\a\xF\x2\x2\x4E7\x4EB\b\\\x1\x2"+
+		"\x4E8\x4E9\a\x18\x2\x2\x4E9\x4EB\b\\\x1\x2\x4EA\x4E4\x3\x2\x2\x2\x4EA"+
+		"\x4E6\x3\x2\x2\x2\x4EA\x4E8\x3\x2\x2\x2\x4EA\x4EB\x3\x2\x2\x2\x4EB\xB7"+
+		"\x3\x2\x2\x2\x4EC\x4ED\x5\xFE\x80\x2\x4ED\x4EE\b]\x1\x2\x4EE\x4FB\x3\x2"+
+		"\x2\x2\x4EF\x4F0\a\x17\x2\x2\x4F0\x4FB\b]\x1\x2\x4F1\x4F2\a\x16\x2\x2"+
+		"\x4F2\x4F3\x5\xBA^\x2\x4F3\x4F4\b]\x1\x2\x4F4\x4FB\x3\x2\x2\x2\x4F5\x4F6"+
+		"\a\x9D\x2\x2\x4F6\x4F7\x5\xB0Y\x2\x4F7\x4F8\b]\x1\x2\x4F8\x4F9\a\x9E\x2"+
+		"\x2\x4F9\x4FB\x3\x2\x2\x2\x4FA\x4EC\x3\x2\x2\x2\x4FA\x4EF\x3\x2\x2\x2"+
+		"\x4FA\x4F1\x3\x2\x2\x2\x4FA\x4F5\x3\x2\x2\x2\x4FB\xB9\x3\x2\x2\x2\x4FC"+
+		"\x4FD\x5\xBC_\x2\x4FD\x4FE\b^\x1\x2\x4FE\x50F\x3\x2\x2\x2\x4FF\x50B\a"+
+		"\x9D\x2\x2\x500\x501\x5\xBC_\x2\x501\x508\b^\x1\x2\x502\x503\a\x14\x2"+
+		"\x2\x503\x504\x5\xBC_\x2\x504\x505\b^\x1\x2\x505\x507\x3\x2\x2\x2\x506"+
+		"\x502\x3\x2\x2\x2\x507\x50A\x3\x2\x2\x2\x508\x506\x3\x2\x2\x2\x508\x509"+
+		"\x3\x2\x2\x2\x509\x50C\x3\x2\x2\x2\x50A\x508\x3\x2\x2\x2\x50B\x500\x3"+
+		"\x2\x2\x2\x50B\x50C\x3\x2\x2\x2\x50C\x50D\x3\x2\x2\x2\x50D\x50F\a\x9E"+
+		"\x2\x2\x50E\x4FC\x3\x2\x2\x2\x50E\x4FF\x3\x2\x2\x2\x50F\xBB\x3\x2\x2\x2"+
+		"\x510\x511\x5\xFE\x80\x2\x511\x512\b_\x1\x2\x512\x51E\x3\x2\x2\x2\x513"+
+		"\x514\a\x17\x2\x2\x514\x51E\b_\x1\x2\x515\x51B\a\f\x2\x2\x516\x517\x5"+
+		"\xFE\x80\x2\x517\x518\b_\x1\x2\x518\x51C\x3\x2\x2\x2\x519\x51A\a\x17\x2"+
+		"\x2\x51A\x51C\b_\x1\x2\x51B\x516\x3\x2\x2\x2\x51B\x519\x3\x2\x2\x2\x51C"+
+		"\x51E\x3\x2\x2\x2\x51D\x510\x3\x2\x2\x2\x51D\x513\x3\x2\x2\x2\x51D\x515"+
+		"\x3\x2\x2\x2\x51E\xBD\x3\x2\x2\x2\x51F\x520\x5\xC2\x62\x2\x520\x521\b"+
+		"`\x1\x2\x521\x525\x3\x2\x2\x2\x522\x523\b`\x1\x2\x523\x525\x5\xC0\x61"+
+		"\x2\x524\x51F\x3\x2\x2\x2\x524\x522\x3\x2\x2\x2\x525\xBF\x3\x2\x2\x2\x526"+
+		"\x527\a\xA1\x2\x2\x527\x528\x5\xAAV\x2\x528\x529\a\xA2\x2\x2\x529\xC1"+
+		"\x3\x2\x2\x2\x52A\x52B\a\x9D\x2\x2\x52B\x52F\b\x62\x1\x2\x52C\x52D\x5"+
+		"\xC4\x63\x2\x52D\x52E\b\x62\x1\x2\x52E\x530\x3\x2\x2\x2\x52F\x52C\x3\x2"+
+		"\x2\x2\x530\x531\x3\x2\x2\x2\x531\x52F\x3\x2\x2\x2\x531\x532\x3\x2\x2"+
+		"\x2\x532\x533\x3\x2\x2\x2\x533\x534\a\x9E\x2\x2\x534\xC3\x3\x2\x2\x2\x535"+
+		"\x536\x5\xC6\x64\x2\x536\x537\b\x63\x1\x2\x537\x53C\x3\x2\x2\x2\x538\x539"+
+		"\x5\xBE`\x2\x539\x53A\b\x63\x1\x2\x53A\x53C\x3\x2\x2\x2\x53B\x535\x3\x2"+
+		"\x2\x2\x53B\x538\x3\x2\x2\x2\x53C\xC5\x3\x2\x2\x2\x53D\x53E\x5\xCA\x66"+
+		"\x2\x53E\x53F\b\x64\x1\x2\x53F\x544\x3\x2\x2\x2\x540\x541\x5\xCEh\x2\x541"+
+		"\x542\b\x64\x1\x2\x542\x544\x3\x2\x2\x2\x543\x53D\x3\x2\x2\x2\x543\x540"+
+		"\x3\x2\x2\x2\x544\xC7\x3\x2\x2\x2\x545\x546\x5\xCA\x66\x2\x546\x547\b"+
+		"\x65\x1\x2\x547\x54C\x3\x2\x2\x2\x548\x549\x5\xFE\x80\x2\x549\x54A\b\x65"+
+		"\x1\x2\x54A\x54C\x3\x2\x2\x2\x54B\x545\x3\x2\x2\x2\x54B\x548\x3\x2\x2"+
+		"\x2\x54C\xC9\x3\x2\x2\x2\x54D\x54E\x5\xCCg\x2\x54E\x54F\b\x66\x1\x2\x54F"+
+		"\xCB\x3\x2\x2\x2\x550\x551\t\x2\x2\x2\x551\xCD\x3\x2\x2\x2\x552\x553\x5"+
+		"\xFE\x80\x2\x553\x554\bh\x1\x2\x554\x564\x3\x2\x2\x2\x555\x556\x5\xEE"+
+		"x\x2\x556\x557\bh\x1\x2\x557\x564\x3\x2\x2\x2\x558\x559\x5\xF0y\x2\x559"+
+		"\x55A\bh\x1\x2\x55A\x564\x3\x2\x2\x2\x55B\x55C\x5\xF8}\x2\x55C\x55D\b"+
+		"h\x1\x2\x55D\x564\x3\x2\x2\x2\x55E\x55F\x5\x102\x82\x2\x55F\x560\bh\x1"+
+		"\x2\x560\x564\x3\x2\x2\x2\x561\x562\a\x9C\x2\x2\x562\x564\bh\x1\x2\x563"+
+		"\x552\x3\x2\x2\x2\x563\x555\x3\x2\x2\x2\x563\x558\x3\x2\x2\x2\x563\x55B"+
+		"\x3\x2\x2\x2\x563\x55E\x3\x2\x2\x2\x563\x561\x3\x2\x2\x2\x564\xCF\x3\x2"+
+		"\x2\x2\x565\x566\x5\xD2j\x2\x566\x56D\bi\x1\x2\x567\x568\a\x6\x2\x2\x568"+
+		"\x569\x5\xD2j\x2\x569\x56A\bi\x1\x2\x56A\x56C\x3\x2\x2\x2\x56B\x567\x3"+
+		"\x2\x2\x2\x56C\x56F\x3\x2\x2\x2\x56D\x56B\x3\x2\x2\x2\x56D\x56E\x3\x2"+
+		"\x2\x2\x56E\xD1\x3\x2\x2\x2\x56F\x56D\x3\x2\x2\x2\x570\x571\x5\xD4k\x2"+
+		"\x571\x578\bj\x1\x2\x572\x573\a\t\x2\x2\x573\x574\x5\xD4k\x2\x574\x575"+
+		"\bj\x1\x2\x575\x577\x3\x2\x2\x2\x576\x572\x3\x2\x2\x2\x577\x57A\x3\x2"+
+		"\x2\x2\x578\x576\x3\x2\x2\x2\x578\x579\x3\x2\x2\x2\x579\xD3\x3\x2\x2\x2"+
+		"\x57A\x578\x3\x2\x2\x2\x57B\x57C\x5\xD6l\x2\x57C\x59E\bk\x1\x2\x57D\x57E"+
+		"\a\n\x2\x2\x57E\x57F\x5\xD6l\x2\x57F\x580\bk\x1\x2\x580\x59F\x3\x2\x2"+
+		"\x2\x581\x582\a\x4\x2\x2\x582\x583\x5\xD6l\x2\x583\x584\bk\x1\x2\x584"+
+		"\x59F\x3\x2\x2\x2\x585\x586\a\x13\x2\x2\x586\x587\x5\xD6l\x2\x587\x588"+
+		"\bk\x1\x2\x588\x59F\x3\x2\x2\x2\x589\x58A\a\x15\x2\x2\x58A\x58B\x5\xD6"+
+		"l\x2\x58B\x58C\bk\x1\x2\x58C\x59F\x3\x2\x2\x2\x58D\x58E\a\xE\x2\x2\x58E"+
+		"\x58F\x5\xD6l\x2\x58F\x590\bk\x1\x2\x590\x59F\x3\x2\x2\x2\x591\x592\a"+
+		"\x12\x2\x2\x592\x593\x5\xD6l\x2\x593\x594\bk\x1\x2\x594\x59F\x3\x2\x2"+
+		"\x2\x595\x596\a\x31\x2\x2\x596\x597\x5\x8EH\x2\x597\x598\bk\x1\x2\x598"+
+		"\x59F\x3\x2\x2\x2\x599\x59A\a:\x2\x2\x59A\x59B\a\x31\x2\x2\x59B\x59C\x5"+
+		"\x8EH\x2\x59C\x59D\bk\x1\x2\x59D\x59F\x3\x2\x2\x2\x59E\x57D\x3\x2\x2\x2"+
+		"\x59E\x581\x3\x2\x2\x2\x59E\x585\x3\x2\x2\x2\x59E\x589\x3\x2\x2\x2\x59E"+
+		"\x58D\x3\x2\x2\x2\x59E\x591\x3\x2\x2\x2\x59E\x595\x3\x2\x2\x2\x59E\x599"+
+		"\x3\x2\x2\x2\x59E\x59F\x3\x2\x2\x2\x59F\xD5\x3\x2\x2\x2\x5A0\x5A1\x5\xD8"+
+		"m\x2\x5A1\x5C4\bl\x1\x2\x5A2\x5A3\a\x18\x2\x2\x5A3\x5A4\x5\xD8m\x2\x5A4"+
+		"\x5A5\bl\x1\x2\x5A5\x5C3\x3\x2\x2\x2\x5A6\x5A7\a\x19\x2\x2\x5A7\x5A8\x5"+
+		"\xD8m\x2\x5A8\x5A9\bl\x1\x2\x5A9\x5C3\x3\x2\x2\x2\x5AA\x5B1\bl\x1\x2\x5AB"+
+		"\x5AC\x5\xF4{\x2\x5AC\x5AD\bl\x1\x2\x5AD\x5B2\x3\x2\x2\x2\x5AE\x5AF\x5"+
+		"\xF6|\x2\x5AF\x5B0\bl\x1\x2\x5B0\x5B2\x3\x2\x2\x2\x5B1\x5AB\x3\x2\x2\x2"+
+		"\x5B1\x5AE\x3\x2\x2\x2\x5B2\x5BD\x3\x2\x2\x2\x5B3\x5B4\a\xF\x2\x2\x5B4"+
+		"\x5B5\x5\xDAn\x2\x5B5\x5B6\bl\x1\x2\x5B6\x5BC\x3\x2\x2\x2\x5B7\x5B8\a"+
+		"\x3\x2\x2\x5B8\x5B9\x5\xDAn\x2\x5B9\x5BA\bl\x1\x2\x5BA\x5BC\x3\x2\x2\x2"+
+		"\x5BB\x5B3\x3\x2\x2\x2\x5BB\x5B7\x3\x2\x2\x2\x5BC\x5BF\x3\x2\x2\x2\x5BD"+
+		"\x5BB\x3\x2\x2\x2\x5BD\x5BE\x3\x2\x2\x2\x5BE\x5C0\x3\x2\x2\x2\x5BF\x5BD"+
+		"\x3\x2\x2\x2\x5C0\x5C1\bl\x1\x2\x5C1\x5C3\x3\x2\x2\x2\x5C2\x5A2\x3\x2"+
+		"\x2\x2\x5C2\x5A6\x3\x2\x2\x2\x5C2\x5AA\x3\x2\x2\x2\x5C3\x5C6\x3\x2\x2"+
+		"\x2\x5C4\x5C2\x3\x2\x2\x2\x5C4\x5C5\x3\x2\x2\x2\x5C5\xD7\x3\x2\x2\x2\x5C6"+
+		"\x5C4\x3\x2\x2\x2\x5C7\x5C8\x5\xDAn\x2\x5C8\x5D3\bm\x1\x2\x5C9\x5CA\a"+
+		"\xF\x2\x2\x5CA\x5CB\x5\xDAn\x2\x5CB\x5CC\bm\x1\x2\x5CC\x5D2\x3\x2\x2\x2"+
+		"\x5CD\x5CE\a\x3\x2\x2\x5CE\x5CF\x5\xDAn\x2\x5CF\x5D0\bm\x1\x2\x5D0\x5D2"+
+		"\x3\x2\x2\x2\x5D1\x5C9\x3\x2\x2\x2\x5D1\x5CD\x3\x2\x2\x2\x5D2\x5D5\x3"+
+		"\x2\x2\x2\x5D3\x5D1\x3\x2\x2\x2\x5D3\x5D4\x3\x2\x2\x2\x5D4\xD9\x3\x2\x2"+
+		"\x2\x5D5\x5D3\x3\x2\x2\x2\x5D6\x5D7\a\x16\x2\x2\x5D7\x5D8\x5\xDCo\x2\x5D8"+
+		"\x5D9\bn\x1\x2\x5D9\x5E6\x3\x2\x2\x2\x5DA\x5DB\a\x18\x2\x2\x5DB\x5DC\x5"+
+		"\xDCo\x2\x5DC\x5DD\bn\x1\x2\x5DD\x5E6\x3\x2\x2\x2\x5DE\x5DF\a\x19\x2\x2"+
+		"\x5DF\x5E0\x5\xDCo\x2\x5E0\x5E1\bn\x1\x2\x5E1\x5E6\x3\x2\x2\x2\x5E2\x5E3"+
+		"\x5\xDCo\x2\x5E3\x5E4\bn\x1\x2\x5E4\x5E6\x3\x2\x2\x2\x5E5\x5D6\x3\x2\x2"+
+		"\x2\x5E5\x5DA\x3\x2\x2\x2\x5E5\x5DE\x3\x2\x2\x2\x5E5\x5E2\x3\x2\x2\x2"+
+		"\x5E6\xDB\x3\x2\x2\x2\x5E7\x5E8\x5\xDEp\x2\x5E8\x5E9\bo\x1\x2\x5E9\x601"+
+		"\x3\x2\x2\x2\x5EA\x5EB\x5\xE0q\x2\x5EB\x5EC\bo\x1\x2\x5EC\x601\x3\x2\x2"+
+		"\x2\x5ED\x5EE\x5\x100\x81\x2\x5EE\x5F2\bo\x1\x2\x5EF\x5F0\x5\x8CG\x2\x5F0"+
+		"\x5F1\bo\x1\x2\x5F1\x5F3\x3\x2\x2\x2\x5F2\x5EF\x3\x2\x2\x2\x5F2\x5F3\x3"+
+		"\x2\x2\x2\x5F3\x601\x3\x2\x2\x2\x5F4\x5F5\x5\xEEx\x2\x5F5\x5F6\bo\x1\x2"+
+		"\x5F6\x601\x3\x2\x2\x2\x5F7\x5F8\x5\xF0y\x2\x5F8\x5F9\bo\x1\x2\x5F9\x601"+
+		"\x3\x2\x2\x2\x5FA\x5FB\x5\xF8}\x2\x5FB\x5FC\bo\x1\x2\x5FC\x601\x3\x2\x2"+
+		"\x2\x5FD\x5FE\x5\xCA\x66\x2\x5FE\x5FF\bo\x1\x2\x5FF\x601\x3\x2\x2\x2\x600"+
+		"\x5E7\x3\x2\x2\x2\x600\x5EA\x3\x2\x2\x2\x600\x5ED\x3\x2\x2\x2\x600\x5F4"+
+		"\x3\x2\x2\x2\x600\x5F7\x3\x2\x2\x2\x600\x5FA\x3\x2\x2\x2\x600\x5FD\x3"+
+		"\x2\x2\x2\x601\xDD\x3\x2\x2\x2\x602\x603\a\x9D\x2\x2\x603\x604\x5\xD0"+
+		"i\x2\x604\x605\a\x9E\x2\x2\x605\x606\bp\x1\x2\x606\xDF\x3\x2\x2\x2\x607"+
+		"\x608\x5\xECw\x2\x608\x609\bq\x1\x2\x609\x74A\x3\x2\x2\x2\x60A\x60B\a"+
+		"H\x2\x2\x60B\x60C\a\x9D\x2\x2\x60C\x60D\x5\xD0i\x2\x60D\x60E\a\x9E\x2"+
+		"\x2\x60E\x60F\bq\x1\x2\x60F\x74A\x3\x2\x2\x2\x610\x611\aI\x2\x2\x611\x612"+
+		"\a\x9D\x2\x2\x612\x613\x5\xD0i\x2\x613\x614\a\x9E\x2\x2\x614\x615\bq\x1"+
+		"\x2\x615\x74A\x3\x2\x2\x2\x616\x617\aJ\x2\x2\x617\x618\a\x9D\x2\x2\x618"+
+		"\x619\x5\xD0i\x2\x619\x61A\a\x10\x2\x2\x61A\x61B\x5\xD0i\x2\x61B\x61C"+
+		"\a\x9E\x2\x2\x61C\x61D\bq\x1\x2\x61D\x74A\x3\x2\x2\x2\x61E\x61F\aK\x2"+
+		"\x2\x61F\x620\a\x9D\x2\x2\x620\x621\x5\xD0i\x2\x621\x622\a\x9E\x2\x2\x622"+
+		"\x623\bq\x1\x2\x623\x74A\x3\x2\x2\x2\x624\x625\aL\x2\x2\x625\x626\a\x9D"+
+		"\x2\x2\x626\x627\x5\xCA\x66\x2\x627\x628\a\x9E\x2\x2\x628\x629\bq\x1\x2"+
+		"\x629\x74A\x3\x2\x2\x2\x62A\x62B\aM\x2\x2\x62B\x62C\a\x9D\x2\x2\x62C\x62D"+
+		"\x5\xD0i\x2\x62D\x62E\a\x9E\x2\x2\x62E\x62F\bq\x1\x2\x62F\x74A\x3\x2\x2"+
+		"\x2\x630\x631\aN\x2\x2\x631\x632\a\x9D\x2\x2\x632\x633\x5\xD0i\x2\x633"+
+		"\x634\a\x9E\x2\x2\x634\x635\bq\x1\x2\x635\x74A\x3\x2\x2\x2\x636\x63E\a"+
+		"O\x2\x2\x637\x638\a\x9D\x2\x2\x638\x639\x5\xD0i\x2\x639\x63A\a\x9E\x2"+
+		"\x2\x63A\x63B\bq\x1\x2\x63B\x63F\x3\x2\x2\x2\x63C\x63D\a\x9C\x2\x2\x63D"+
+		"\x63F\bq\x1\x2\x63E\x637\x3\x2\x2\x2\x63E\x63C\x3\x2\x2\x2\x63F\x74A\x3"+
+		"\x2\x2\x2\x640\x641\aP\x2\x2\x641\x642\a\x9C\x2\x2\x642\x74A\bq\x1\x2"+
+		"\x643\x644\aQ\x2\x2\x644\x645\a\x9D\x2\x2\x645\x646\x5\xD0i\x2\x646\x647"+
+		"\a\x9E\x2\x2\x647\x648\bq\x1\x2\x648\x74A\x3\x2\x2\x2\x649\x64A\aR\x2"+
+		"\x2\x64A\x64B\a\x9D\x2\x2\x64B\x64C\x5\xD0i\x2\x64C\x64D\a\x9E\x2\x2\x64D"+
+		"\x64E\bq\x1\x2\x64E\x74A\x3\x2\x2\x2\x64F\x650\aS\x2\x2\x650\x651\a\x9D"+
+		"\x2\x2\x651\x652\x5\xD0i\x2\x652\x653\a\x9E\x2\x2\x653\x654\bq\x1\x2\x654"+
+		"\x74A\x3\x2\x2\x2\x655\x656\aT\x2\x2\x656\x657\a\x9D\x2\x2\x657\x658\x5"+
+		"\xD0i\x2\x658\x659\a\x9E\x2\x2\x659\x65A\bq\x1\x2\x65A\x74A\x3\x2\x2\x2"+
+		"\x65B\x65C\aU\x2\x2\x65C\x65D\x5\x8EH\x2\x65D\x65E\bq\x1\x2\x65E\x74A"+
+		"\x3\x2\x2\x2\x65F\x660\x5\xE4s\x2\x660\x661\bq\x1\x2\x661\x74A\x3\x2\x2"+
+		"\x2\x662\x663\aV\x2\x2\x663\x664\a\x9D\x2\x2\x664\x665\x5\xD0i\x2\x665"+
+		"\x666\a\x9E\x2\x2\x666\x667\bq\x1\x2\x667\x74A\x3\x2\x2\x2\x668\x669\x5"+
+		"\xE6t\x2\x669\x66A\bq\x1\x2\x66A\x74A\x3\x2\x2\x2\x66B\x66C\aW\x2\x2\x66C"+
+		"\x66D\a\x9D\x2\x2\x66D\x66E\x5\xD0i\x2\x66E\x66F\a\x9E\x2\x2\x66F\x670"+
+		"\bq\x1\x2\x670\x74A\x3\x2\x2\x2\x671\x672\aX\x2\x2\x672\x673\a\x9D\x2"+
+		"\x2\x673\x674\x5\xD0i\x2\x674\x675\a\x9E\x2\x2\x675\x676\bq\x1\x2\x676"+
+		"\x74A\x3\x2\x2\x2\x677\x678\aY\x2\x2\x678\x679\a\x9D\x2\x2\x679\x67A\x5"+
+		"\xD0i\x2\x67A\x67B\a\x9E\x2\x2\x67B\x67C\bq\x1\x2\x67C\x74A\x3\x2\x2\x2"+
+		"\x67D\x67E\aZ\x2\x2\x67E\x67F\a\x9D\x2\x2\x67F\x680\x5\xD0i\x2\x680\x681"+
+		"\a\x10\x2\x2\x681\x682\x5\xD0i\x2\x682\x683\a\x9E\x2\x2\x683\x684\bq\x1"+
+		"\x2\x684\x74A\x3\x2\x2\x2\x685\x686\a[\x2\x2\x686\x687\a\x9D\x2\x2\x687"+
+		"\x688\x5\xD0i\x2\x688\x689\a\x10\x2\x2\x689\x68A\x5\xD0i\x2\x68A\x68B"+
+		"\a\x9E\x2\x2\x68B\x68C\bq\x1\x2\x68C\x74A\x3\x2\x2\x2\x68D\x68E\a\\\x2"+
+		"\x2\x68E\x68F\a\x9D\x2\x2\x68F\x690\x5\xD0i\x2\x690\x691\a\x10\x2\x2\x691"+
+		"\x692\x5\xD0i\x2\x692\x693\a\x9E\x2\x2\x693\x694\bq\x1\x2\x694\x74A\x3"+
+		"\x2\x2\x2\x695\x696\a]\x2\x2\x696\x697\a\x9D\x2\x2\x697\x698\x5\xD0i\x2"+
+		"\x698\x699\a\x10\x2\x2\x699\x69A\x5\xD0i\x2\x69A\x69B\a\x9E\x2\x2\x69B"+
+		"\x69C\bq\x1\x2\x69C\x74A\x3\x2\x2\x2\x69D\x69E\a^\x2\x2\x69E\x69F\a\x9D"+
+		"\x2\x2\x69F\x6A0\x5\xD0i\x2\x6A0\x6A1\a\x10\x2\x2\x6A1\x6A2\x5\xD0i\x2"+
+		"\x6A2\x6A3\a\x9E\x2\x2\x6A3\x6A4\bq\x1\x2\x6A4\x74A\x3\x2\x2\x2\x6A5\x6A6"+
+		"\a_\x2\x2\x6A6\x6A7\a\x9D\x2\x2\x6A7\x6A8\x5\xD0i\x2\x6A8\x6A9\a\x9E\x2"+
+		"\x2\x6A9\x6AA\bq\x1\x2\x6AA\x74A\x3\x2\x2\x2\x6AB\x6AC\a`\x2\x2\x6AC\x6AD"+
+		"\a\x9D\x2\x2\x6AD\x6AE\x5\xD0i\x2\x6AE\x6AF\a\x9E\x2\x2\x6AF\x6B0\bq\x1"+
+		"\x2\x6B0\x74A\x3\x2\x2\x2\x6B1\x6B2\a\x61\x2\x2\x6B2\x6B3\a\x9D\x2\x2"+
+		"\x6B3\x6B4\x5\xD0i\x2\x6B4\x6B5\a\x9E\x2\x2\x6B5\x6B6\bq\x1\x2\x6B6\x74A"+
+		"\x3\x2\x2\x2\x6B7\x6B8\a\x62\x2\x2\x6B8\x6B9\a\x9D\x2\x2\x6B9\x6BA\x5"+
+		"\xD0i\x2\x6BA\x6BB\a\x9E\x2\x2\x6BB\x6BC\bq\x1\x2\x6BC\x74A\x3\x2\x2\x2"+
+		"\x6BD\x6BE\a\x63\x2\x2\x6BE\x6BF\a\x9D\x2\x2\x6BF\x6C0\x5\xD0i\x2\x6C0"+
+		"\x6C1\a\x9E\x2\x2\x6C1\x6C2\bq\x1\x2\x6C2\x74A\x3\x2\x2\x2\x6C3\x6C4\a"+
+		"\x64\x2\x2\x6C4\x6C5\a\x9D\x2\x2\x6C5\x6C6\x5\xD0i\x2\x6C6\x6C7\a\x9E"+
+		"\x2\x2\x6C7\x6C8\bq\x1\x2\x6C8\x74A\x3\x2\x2\x2\x6C9\x6CA\a\x65\x2\x2"+
+		"\x6CA\x6CB\a\x9D\x2\x2\x6CB\x6CC\x5\xD0i\x2\x6CC\x6CD\a\x9E\x2\x2\x6CD"+
+		"\x6CE\bq\x1\x2\x6CE\x74A\x3\x2\x2\x2\x6CF\x6D0\a\x66\x2\x2\x6D0\x6D1\a"+
+		"\x9D\x2\x2\x6D1\x6D2\x5\xD0i\x2\x6D2\x6D3\a\x9E\x2\x2\x6D3\x6D4\bq\x1"+
+		"\x2\x6D4\x74A\x3\x2\x2\x2\x6D5\x6D6\ag\x2\x2\x6D6\x6D7\a\x9C\x2\x2\x6D7"+
+		"\x74A\bq\x1\x2\x6D8\x6D9\ah\x2\x2\x6D9\x6DA\a\x9C\x2\x2\x6DA\x74A\bq\x1"+
+		"\x2\x6DB\x6DC\ai\x2\x2\x6DC\x6DD\a\x9C\x2\x2\x6DD\x74A\bq\x1\x2\x6DE\x6DF"+
+		"\aj\x2\x2\x6DF\x6E0\a\x9D\x2\x2\x6E0\x6E1\x5\xD0i\x2\x6E1\x6E2\a\x9E\x2"+
+		"\x2\x6E2\x6E3\bq\x1\x2\x6E3\x74A\x3\x2\x2\x2\x6E4\x6E5\ak\x2\x2\x6E5\x6E6"+
+		"\a\x9D\x2\x2\x6E6\x6E7\x5\xD0i\x2\x6E7\x6E8\a\x9E\x2\x2\x6E8\x6E9\bq\x1"+
+		"\x2\x6E9\x74A\x3\x2\x2\x2\x6EA\x6EB\al\x2\x2\x6EB\x6EC\a\x9D\x2\x2\x6EC"+
+		"\x6ED\x5\xD0i\x2\x6ED\x6EE\a\x9E\x2\x2\x6EE\x6EF\bq\x1\x2\x6EF\x74A\x3"+
+		"\x2\x2\x2\x6F0\x6F1\am\x2\x2\x6F1\x6F2\a\x9D\x2\x2\x6F2\x6F3\x5\xD0i\x2"+
+		"\x6F3\x6F4\a\x9E\x2\x2\x6F4\x6F5\bq\x1\x2\x6F5\x74A\x3\x2\x2\x2\x6F6\x6F7"+
+		"\an\x2\x2\x6F7\x6F8\a\x9D\x2\x2\x6F8\x6F9\x5\xD0i\x2\x6F9\x6FA\a\x9E\x2"+
+		"\x2\x6FA\x6FB\bq\x1\x2\x6FB\x74A\x3\x2\x2\x2\x6FC\x6FD\ao\x2\x2\x6FD\x6FE"+
+		"\x5\x8EH\x2\x6FE\x6FF\bq\x1\x2\x6FF\x74A\x3\x2\x2\x2\x700\x701\ap\x2\x2"+
+		"\x701\x702\a\x9D\x2\x2\x702\x703\x5\xD0i\x2\x703\x704\a\x10\x2\x2\x704"+
+		"\x705\x5\xD0i\x2\x705\x706\a\x10\x2\x2\x706\x707\x5\xD0i\x2\x707\x708"+
+		"\a\x9E\x2\x2\x708\x709\bq\x1\x2\x709\x74A\x3\x2\x2\x2\x70A\x70B\aq\x2"+
+		"\x2\x70B\x70C\a\x9D\x2\x2\x70C\x70D\x5\xD0i\x2\x70D\x70E\a\x10\x2\x2\x70E"+
+		"\x70F\x5\xD0i\x2\x70F\x710\a\x9E\x2\x2\x710\x711\bq\x1\x2\x711\x74A\x3"+
+		"\x2\x2\x2\x712\x713\ar\x2\x2\x713\x714\a\x9D\x2\x2\x714\x715\x5\xD0i\x2"+
+		"\x715\x716\a\x10\x2\x2\x716\x717\x5\xD0i\x2\x717\x718\a\x9E\x2\x2\x718"+
+		"\x719\bq\x1\x2\x719\x74A\x3\x2\x2\x2\x71A\x71B\as\x2\x2\x71B\x71C\a\x9D"+
+		"\x2\x2\x71C\x71D\x5\xD0i\x2\x71D\x71E\a\x10\x2\x2\x71E\x71F\x5\xD0i\x2"+
+		"\x71F\x720\a\x9E\x2\x2\x720\x721\bq\x1\x2\x721\x74A\x3\x2\x2\x2\x722\x723"+
+		"\at\x2\x2\x723\x724\a\x9D\x2\x2\x724\x725\x5\xD0i\x2\x725\x726\a\x9E\x2"+
+		"\x2\x726\x727\bq\x1\x2\x727\x74A\x3\x2\x2\x2\x728\x729\au\x2\x2\x729\x72A"+
+		"\a\x9D\x2\x2\x72A\x72B\x5\xD0i\x2\x72B\x72C\a\x9E\x2\x2\x72C\x72D\bq\x1"+
+		"\x2\x72D\x74A\x3\x2\x2\x2\x72E\x72F\av\x2\x2\x72F\x730\a\x9D\x2\x2\x730"+
+		"\x731\x5\xD0i\x2\x731\x732\a\x9E\x2\x2\x732\x733\bq\x1\x2\x733\x74A\x3"+
+		"\x2\x2\x2\x734\x735\aw\x2\x2\x735\x736\a\x9D\x2\x2\x736\x737\x5\xD0i\x2"+
+		"\x737\x738\a\x9E\x2\x2\x738\x739\bq\x1\x2\x739\x74A\x3\x2\x2\x2\x73A\x73B"+
+		"\ax\x2\x2\x73B\x73C\a\x9D\x2\x2\x73C\x73D\x5\xD0i\x2\x73D\x73E\a\x9E\x2"+
+		"\x2\x73E\x73F\bq\x1\x2\x73F\x74A\x3\x2\x2\x2\x740\x741\x5\xE2r\x2\x741"+
+		"\x742\bq\x1\x2\x742\x74A\x3\x2\x2\x2\x743\x744\x5\xE8u\x2\x744\x745\b"+
+		"q\x1\x2\x745\x74A\x3\x2\x2\x2\x746\x747\x5\xEAv\x2\x747\x748\bq\x1\x2"+
+		"\x748\x74A\x3\x2\x2\x2\x749\x607\x3\x2\x2\x2\x749\x60A\x3\x2\x2\x2\x749"+
+		"\x610\x3\x2\x2\x2\x749\x616\x3\x2\x2\x2\x749\x61E\x3\x2\x2\x2\x749\x624"+
+		"\x3\x2\x2\x2\x749\x62A\x3\x2\x2\x2\x749\x630\x3\x2\x2\x2\x749\x636\x3"+
+		"\x2\x2\x2\x749\x640\x3\x2\x2\x2\x749\x643\x3\x2\x2\x2\x749\x649\x3\x2"+
+		"\x2\x2\x749\x64F\x3\x2\x2\x2\x749\x655\x3\x2\x2\x2\x749\x65B\x3\x2\x2"+
+		"\x2\x749\x65F\x3\x2\x2\x2\x749\x662\x3\x2\x2\x2\x749\x668\x3\x2\x2\x2"+
+		"\x749\x66B\x3\x2\x2\x2\x749\x671\x3\x2\x2\x2\x749\x677\x3\x2\x2\x2\x749"+
+		"\x67D\x3\x2\x2\x2\x749\x685\x3\x2\x2\x2\x749\x68D\x3\x2\x2\x2\x749\x695"+
+		"\x3\x2\x2\x2\x749\x69D\x3\x2\x2\x2\x749\x6A5\x3\x2\x2\x2\x749\x6AB\x3"+
+		"\x2\x2\x2\x749\x6B1\x3\x2\x2\x2\x749\x6B7\x3\x2\x2\x2\x749\x6BD\x3\x2"+
+		"\x2\x2\x749\x6C3\x3\x2\x2\x2\x749\x6C9\x3\x2\x2\x2\x749\x6CF\x3\x2\x2"+
+		"\x2\x749\x6D5\x3\x2\x2\x2\x749\x6D8\x3\x2\x2\x2\x749\x6DB\x3\x2\x2\x2"+
+		"\x749\x6DE\x3\x2\x2\x2\x749\x6E4\x3\x2\x2\x2\x749\x6EA\x3\x2\x2\x2\x749"+
+		"\x6F0\x3\x2\x2\x2\x749\x6F6\x3\x2\x2\x2\x749\x6FC\x3\x2\x2\x2\x749\x700"+
+		"\x3\x2\x2\x2\x749\x70A\x3\x2\x2\x2\x749\x712\x3\x2\x2\x2\x749\x71A\x3"+
+		"\x2\x2\x2\x749\x722\x3\x2\x2\x2\x749\x728\x3\x2\x2\x2\x749\x72E\x3\x2"+
+		"\x2\x2\x749\x734\x3\x2\x2\x2\x749\x73A\x3\x2\x2\x2\x749\x740\x3\x2\x2"+
+		"\x2\x749\x743\x3\x2\x2\x2\x749\x746\x3\x2\x2\x2\x74A\xE1\x3\x2\x2\x2\x74B"+
+		"\x74C\ay\x2\x2\x74C\x74D\br\x1\x2\x74D\x74E\a\x9D\x2\x2\x74E\x74F\x5\xD0"+
+		"i\x2\x74F\x750\br\x1\x2\x750\x751\a\x10\x2\x2\x751\x756\x5\xD0i\x2\x752"+
+		"\x753\a\x10\x2\x2\x753\x754\x5\xD0i\x2\x754\x755\br\x1\x2\x755\x757\x3"+
+		"\x2\x2\x2\x756\x752\x3\x2\x2\x2\x756\x757\x3\x2\x2\x2\x757\x758\x3\x2"+
+		"\x2\x2\x758\x759\a\x9E\x2\x2\x759\x75A\br\x1\x2\x75A\xE3\x3\x2\x2\x2\x75B"+
+		"\x75C\az\x2\x2\x75C\x75D\bs\x1\x2\x75D\x75E\a\x9D\x2\x2\x75E\x75F\x5\xD0"+
+		"i\x2\x75F\x760\bs\x1\x2\x760\x761\a\x10\x2\x2\x761\x762\x5\xD0i\x2\x762"+
+		"\x767\bs\x1\x2\x763\x764\a\x10\x2\x2\x764\x765\x5\xD0i\x2\x765\x766\b"+
+		"s\x1\x2\x766\x768\x3\x2\x2\x2\x767\x763\x3\x2\x2\x2\x767\x768\x3\x2\x2"+
+		"\x2\x768\x769\x3\x2\x2\x2\x769\x76A\a\x9E\x2\x2\x76A\xE5\x3\x2\x2\x2\x76B"+
+		"\x76C\a{\x2\x2\x76C\x76D\bt\x1\x2\x76D\x76E\a\x9D\x2\x2\x76E\x76F\x5\xD0"+
+		"i\x2\x76F\x770\bt\x1\x2\x770\x771\a\x10\x2\x2\x771\x772\x5\xD0i\x2\x772"+
+		"\x773\bt\x1\x2\x773\x774\a\x10\x2\x2\x774\x775\x5\xD0i\x2\x775\x77A\b"+
+		"t\x1\x2\x776\x777\a\x10\x2\x2\x777\x778\x5\xD0i\x2\x778\x779\bt\x1\x2"+
+		"\x779\x77B\x3\x2\x2\x2\x77A\x776\x3\x2\x2\x2\x77A\x77B\x3\x2\x2\x2\x77B"+
+		"\x77C\x3\x2\x2\x2\x77C\x77D\bt\x1\x2\x77D\x77E\a\x9E\x2\x2\x77E\xE7\x3"+
+		"\x2\x2\x2\x77F\x780\a|\x2\x2\x780\x781\x5h\x35\x2\x781\x782\bu\x1\x2\x782"+
+		"\xE9\x3\x2\x2\x2\x783\x784\a:\x2\x2\x784\x785\a|\x2\x2\x785\x786\x5h\x35"+
+		"\x2\x786\x787\bv\x1\x2\x787\xEB\x3\x2\x2\x2\x788\x789\a}\x2\x2\x789\x78A"+
+		"\bw\x1\x2\x78A\x78D\a\x9D\x2\x2\x78B\x78C\a,\x2\x2\x78C\x78E\bw\x1\x2"+
+		"\x78D\x78B\x3\x2\x2\x2\x78D\x78E\x3\x2\x2\x2\x78E\x794\x3\x2\x2\x2\x78F"+
+		"\x790\a\xF\x2\x2\x790\x795\bw\x1\x2\x791\x792\x5\xD0i\x2\x792\x793\bw"+
+		"\x1\x2\x793\x795\x3\x2\x2\x2\x794\x78F\x3\x2\x2\x2\x794\x791\x3\x2\x2"+
+		"\x2\x795\x796\x3\x2\x2\x2\x796\x7E2\a\x9E\x2\x2\x797\x798\a~\x2\x2\x798"+
+		"\x799\bw\x1\x2\x799\x79C\a\x9D\x2\x2\x79A\x79B\a,\x2\x2\x79B\x79D\bw\x1"+
+		"\x2\x79C\x79A\x3\x2\x2\x2\x79C\x79D\x3\x2\x2\x2\x79D\x79E\x3\x2\x2\x2"+
+		"\x79E\x79F\x5\xD0i\x2\x79F\x7A0\bw\x1\x2\x7A0\x7A1\a\x9E\x2\x2\x7A1\x7E2"+
+		"\x3\x2\x2\x2\x7A2\x7A3\a\x7F\x2\x2\x7A3\x7A4\bw\x1\x2\x7A4\x7A7\a\x9D"+
+		"\x2\x2\x7A5\x7A6\a,\x2\x2\x7A6\x7A8\bw\x1\x2\x7A7\x7A5\x3\x2\x2\x2\x7A7"+
+		"\x7A8\x3\x2\x2\x2\x7A8\x7A9\x3\x2\x2\x2\x7A9\x7AA\x5\xD0i\x2\x7AA\x7AB"+
+		"\bw\x1\x2\x7AB\x7AC\a\x9E\x2\x2\x7AC\x7E2\x3\x2\x2\x2\x7AD\x7AE\a\x80"+
+		"\x2\x2\x7AE\x7AF\bw\x1\x2\x7AF\x7B2\a\x9D\x2\x2\x7B0\x7B1\a,\x2\x2\x7B1"+
+		"\x7B3\bw\x1\x2\x7B2\x7B0\x3\x2\x2\x2\x7B2\x7B3\x3\x2\x2\x2\x7B3\x7B4\x3"+
+		"\x2\x2\x2\x7B4\x7B5\x5\xD0i\x2\x7B5\x7B6\bw\x1\x2\x7B6\x7B7\a\x9E\x2\x2"+
+		"\x7B7\x7E2\x3\x2\x2\x2\x7B8\x7B9\a\x81\x2\x2\x7B9\x7BA\bw\x1\x2\x7BA\x7BD"+
+		"\a\x9D\x2\x2\x7BB\x7BC\a,\x2\x2\x7BC\x7BE\bw\x1\x2\x7BD\x7BB\x3\x2\x2"+
+		"\x2\x7BD\x7BE\x3\x2\x2\x2\x7BE\x7BF\x3\x2\x2\x2\x7BF\x7C0\x5\xD0i\x2\x7C0"+
+		"\x7C1\bw\x1\x2\x7C1\x7C2\a\x9E\x2\x2\x7C2\x7E2\x3\x2\x2\x2\x7C3\x7C4\a"+
+		"\x82\x2\x2\x7C4\x7C5\bw\x1\x2\x7C5\x7C8\a\x9D\x2\x2\x7C6\x7C7\a,\x2\x2"+
+		"\x7C7\x7C9\bw\x1\x2\x7C8\x7C6\x3\x2\x2\x2\x7C8\x7C9\x3\x2\x2\x2\x7C9\x7CA"+
+		"\x3\x2\x2\x2\x7CA\x7CB\x5\xD0i\x2\x7CB\x7CC\bw\x1\x2\x7CC\x7CD\a\x9E\x2"+
+		"\x2\x7CD\x7E2\x3\x2\x2\x2\x7CE\x7CF\a\x83\x2\x2\x7CF\x7D0\bw\x1\x2\x7D0"+
+		"\x7D3\a\x9D\x2\x2\x7D1\x7D2\a,\x2\x2\x7D2\x7D4\bw\x1\x2\x7D3\x7D1\x3\x2"+
+		"\x2\x2\x7D3\x7D4\x3\x2\x2\x2\x7D4\x7D5\x3\x2\x2\x2\x7D5\x7D6\x5\xD0i\x2"+
+		"\x7D6\x7DD\bw\x1\x2\x7D7\x7D8\a\a\x2\x2\x7D8\x7D9\a\xB0\x2\x2\x7D9\x7DA"+
+		"\a\n\x2\x2\x7DA\x7DB\x5\xFC\x7F\x2\x7DB\x7DC\bw\x1\x2\x7DC\x7DE\x3\x2"+
+		"\x2\x2\x7DD\x7D7\x3\x2\x2\x2\x7DD\x7DE\x3\x2\x2\x2\x7DE\x7DF\x3\x2\x2"+
+		"\x2\x7DF\x7E0\a\x9E\x2\x2\x7E0\x7E2\x3\x2\x2\x2\x7E1\x788\x3\x2\x2\x2"+
+		"\x7E1\x797\x3\x2\x2\x2\x7E1\x7A2\x3\x2\x2\x2\x7E1\x7AD\x3\x2\x2\x2\x7E1"+
+		"\x7B8\x3\x2\x2\x2\x7E1\x7C3\x3\x2\x2\x2\x7E1\x7CE\x3\x2\x2\x2\x7E2\xED"+
+		"\x3\x2\x2\x2\x7E3\x7E4\x5\xFC\x7F\x2\x7E4\x7E5\bx\x1\x2\x7E5\x7F0\x3\x2"+
+		"\x2\x2\x7E6\x7E7\x5\xFC\x7F\x2\x7E7\x7E8\a\x8C\x2\x2\x7E8\x7E9\bx\x1\x2"+
+		"\x7E9\x7F0\x3\x2\x2\x2\x7EA\x7EB\x5\xFC\x7F\x2\x7EB\x7EC\a\x5\x2\x2\x7EC"+
+		"\x7ED\x5\x100\x81\x2\x7ED\x7EE\bx\x1\x2\x7EE\x7F0\x3\x2\x2\x2\x7EF\x7E3"+
+		"\x3\x2\x2\x2\x7EF\x7E6\x3\x2\x2\x2\x7EF\x7EA\x3\x2\x2\x2\x7F0\xEF\x3\x2"+
+		"\x2\x2\x7F1\x7F2\x5\xF2z\x2\x7F2\x7F3\by\x1\x2\x7F3\x7FB\x3\x2\x2\x2\x7F4"+
+		"\x7F5\x5\xF4{\x2\x7F5\x7F6\by\x1\x2\x7F6\x7FB\x3\x2\x2\x2\x7F7\x7F8\x5"+
+		"\xF6|\x2\x7F8\x7F9\by\x1\x2\x7F9\x7FB\x3\x2\x2\x2\x7FA\x7F1\x3\x2\x2\x2"+
+		"\x7FA\x7F4\x3\x2\x2\x2\x7FA\x7F7\x3\x2\x2\x2\x7FB\xF1\x3\x2\x2\x2\x7FC"+
+		"\x7FD\a\x8D\x2\x2\x7FD\x803\bz\x1\x2\x7FE\x7FF\a\x8E\x2\x2\x7FF\x803\b"+
+		"z\x1\x2\x800\x801\a\x8F\x2\x2\x801\x803\bz\x1\x2\x802\x7FC\x3\x2\x2\x2"+
+		"\x802\x7FE\x3\x2\x2\x2\x802\x800\x3\x2\x2\x2\x803\xF3\x3\x2\x2\x2\x804"+
+		"\x805\a\x90\x2\x2\x805\x80B\b{\x1\x2\x806\x807\a\x91\x2\x2\x807\x80B\b"+
+		"{\x1\x2\x808\x809\a\x92\x2\x2\x809\x80B\b{\x1\x2\x80A\x804\x3\x2\x2\x2"+
+		"\x80A\x806\x3\x2\x2\x2\x80A\x808\x3\x2\x2\x2\x80B\xF5\x3\x2\x2\x2\x80C"+
+		"\x80D\a\x93\x2\x2\x80D\x813\b|\x1\x2\x80E\x80F\a\x94\x2\x2\x80F\x813\b"+
+		"|\x1\x2\x810\x811\a\x95\x2\x2\x811\x813\b|\x1\x2\x812\x80C\x3\x2\x2\x2"+
+		"\x812\x80E\x3\x2\x2\x2\x812\x810\x3\x2\x2\x2\x813\xF7\x3\x2\x2\x2\x814"+
+		"\x815\x5\xFA~\x2\x815\x816\b}\x1\x2\x816\xF9\x3\x2\x2\x2\x817\x818\a\x84"+
+		"\x2\x2\x818\x81C\b~\x1\x2\x819\x81A\a\x85\x2\x2\x81A\x81C\b~\x1\x2\x81B"+
+		"\x817\x3\x2\x2\x2\x81B\x819\x3\x2\x2\x2\x81C\xFB\x3\x2\x2\x2\x81D\x81E"+
+		"\t\x3\x2\x2\x81E\xFD\x3\x2\x2\x2\x81F\x820\x5\x100\x81\x2\x820\x821\b"+
+		"\x80\x1\x2\x821\xFF\x3\x2\x2\x2\x822\x823\a\x86\x2\x2\x823\x829\b\x81"+
+		"\x1\x2\x824\x825\a\x87\x2\x2\x825\x829\b\x81\x1\x2\x826\x827\a\x88\x2"+
+		"\x2\x827\x829\b\x81\x1\x2\x828\x822\x3\x2\x2\x2\x828\x824\x3\x2\x2\x2"+
+		"\x828\x826\x3\x2\x2\x2\x829\x101\x3\x2\x2\x2\x82A\x82B\a\x89\x2\x2\x82B"+
+		"\x82F\b\x82\x1\x2\x82C\x82D\a\xA0\x2\x2\x82D\x82F\b\x82\x1\x2\x82E\x82A"+
+		"\x3\x2\x2\x2\x82E\x82C\x3\x2\x2\x2\x82F\x103\x3\x2\x2\x2\xA0\x112\x11A"+
+		"\x11E\x120\x131\x146\x152\x154\x158\x160\x16A\x172\x178\x181\x185\x18A"+
+		"\x190\x19A\x1A4\x1B1\x1BA\x1BF\x1C4\x1C9\x1D3\x1E2\x1E9\x1F2\x1FF\x203"+
+		"\x214\x216\x21E\x225\x227\x238\x243\x245\x268\x26E\x276\x27C\x285\x28E"+
+		"\x297\x2A2\x2AD\x2C8\x2CF\x2D4\x2DA\x2DC\x2F2\x2F6\x2FB\x30A\x31A\x31F"+
+		"\x324\x328\x332\x33C\x33E\x347\x34F\x354\x359\x35D\x366\x368\x382\x392"+
+		"\x3AA\x3B4\x3C1\x3C5\x3CE\x3D4\x3D6\x3EC\x3FA\x40A\x415\x41F\x424\x430"+
+		"\x435\x43C\x446\x448\x451\x453\x45B\x45F\x467\x46E\x47A\x483\x48C\x49C"+
+		"\x49E\x4A6\x4AF\x4B1\x4B5\x4BD\x4CB\x4D6\x4E0\x4EA\x4FA\x508\x50B\x50E"+
+		"\x51B\x51D\x524\x531\x53B\x543\x54B\x563\x56D\x578\x59E\x5B1\x5BB\x5BD"+
+		"\x5C2\x5C4\x5D1\x5D3\x5E5\x5F2\x600\x63E\x749\x756\x767\x77A\x78D\x794"+
+		"\x79C\x7A7\x7B2\x7BD\x7C8\x7D3\x7DD\x7E1\x7EF\x7FA\x802\x80A\x812\x81B"+
+		"\x828\x82E";
 	public static readonly ATN _ATN =
 		new ATNDeserializer().Deserialize(_serializedATN.ToCharArray());
 }

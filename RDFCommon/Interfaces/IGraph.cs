@@ -25,7 +25,7 @@ namespace RDFCommon
 
         void Delete(ObjectVariants subject, ObjectVariants predicate, ObjectVariants obj);
 
-        void FromTurtle(long iri_Count, string gString);
+        void AddFromTurtle(long iri_Count, string gString);
 
         void FromTurtle(string fullName);
 

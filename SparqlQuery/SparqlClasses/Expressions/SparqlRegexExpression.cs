@@ -115,6 +115,6 @@ namespace SparqlQuery.SparqlClasses.Expressions
             if (parameters.Contains("x"))
                 ignorePatternWhitespace |= RegexOptions.IgnorePatternWhitespace;
         }
-        private static Regex isSimple=new Regex(@"[\w\n\d\s\t_\.\,\!""']*");
+        private static readonly Regex isSimple=new Regex(@"[\w\n\d\s\t_\.\,\!""']*");
     }
 }

@@ -6,8 +6,15 @@ C:\Users\Admin\Source\Repos\next\RDF-Store\RDFCommon\bin\Release\UniversalIndex.
 C:\Users\Admin\Source\Repos\next\RDF-Store\RDFCommon\bin\Release\System.Data.HashFunction.BernsteinHash.dll
 C:\Users\Admin\Source\Repos\next\RDF-Store\RDFCommon\bin\Release\PolarDB.pdb
 C:\Users\Admin\Source\Repos\next\RDF-Store\RDFCommon\bin\Release\UniversalIndex.pdb
-C:\Users\Admin\Source\Repos\next\RDF-Store\RDFCommon\bin\Release\UniversalIndex.xml
 C:\Users\Admin\Source\Repos\next\RDF-Store\RDFCommon\bin\Release\System.Data.HashFunction.BernsteinHash.xml
 C:\Users\Admin\Source\Repos\next\RDF-Store\RDFCommon\obj\Release\RDFCommon.dll
 C:\Users\Admin\Source\Repos\next\RDF-Store\RDFCommon\obj\Release\RDFCommon.pdb
 C:\Users\Admin\Source\Repos\next\RDF-Store\RDFCommon\obj\Release\RDFCommon.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Source\Repos\next\RDF-Store\RDFCommon\bin\Release\System.Data.HashFunction.Core.dll
+C:\Users\Admin\Source\Repos\next\RDF-Store\RDFCommon\bin\Release\System.Data.HashFunction.Interfaces.dll
+C:\Users\Admin\Source\Repos\next\RDF-Store\RDFCommon\bin\Release\System.Data.HashFunction.SpookyHash.dll
+C:\Users\Admin\Source\Repos\next\RDF-Store\RDFCommon\bin\Release\Newtonsoft.Json.dll
+C:\Users\Admin\Source\Repos\next\RDF-Store\RDFCommon\bin\Release\System.Data.HashFunction.Core.xml
+C:\Users\Admin\Source\Repos\next\RDF-Store\RDFCommon\bin\Release\System.Data.HashFunction.Interfaces.xml
+C:\Users\Admin\Source\Repos\next\RDF-Store\RDFCommon\bin\Release\System.Data.HashFunction.SpookyHash.xml
+C:\Users\Admin\Source\Repos\next\RDF-Store\RDFCommon\bin\Release\Newtonsoft.Json.xml

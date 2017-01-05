@@ -5,6 +5,7 @@ using RDFCommon.OVns;
 using RDFTurtleParser;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using UniversalIndex;
@@ -44,8 +45,13 @@ namespace RDFTripleStore
                 ob => (int)((object[])((object[])ob)[1])[1],
                 ob => ((object[])((object[])ob)[1])[2].ToOVariant(NodeGenerator),
                 ov => ov.GetHashCode());
-            textObjectIndex=new TextObjectIndex((ulong) (table.TableCell.IsEmpty ? 10 : table.TableCell.Root.Count()), this);
-            OnAddPortion=(portion)=>{};
+            textObjectIndex=new TextObjectIndex((ulong) (table.TableCell.IsEmpty ? 10 : table.TableCell.Root.Count()/3+1), this);
+            OnAddPortion += po_index.index_arr.FillPortion;
+            OnAddPortion += ps_index.index_arr.FillPortion;
+            OnAddPortion += textObjectIndex.FillPortion;
+            NodeGenerator = NodeGeneratorInt.Create(path);
+            var ng = NodeGenerator as NodeGeneratorInt;
+            ng.coding_table.Expand((int)10000/3+1, Enumerable.Repeat(SpecialTypesClass.RdfType, 1));
         }
 
         public string Name { get; set; }
@@ -77,39 +83,29 @@ namespace RDFTripleStore
             throw new NotImplementedException();
         }
 
-        public void Build(long iri_Count, IGenerator<List<TripleStrOV>> generator)
+        
+        public void AddTriples(long tripletsCount, IGenerator<List<TripleStrOV>> generator)
         {
-            System.Diagnostics.Stopwatch sw = new System.Diagnostics.Stopwatch();
-            sw.Start();
-            textObjectIndex=new TextObjectIndex((ulong) (iri_Count/3), this);
-            OnAddPortion += po_index.index_arr.FillPortion;
-            OnAddPortion += ps_index.index_arr.FillPortion;
-            OnAddPortion += textObjectIndex.FillPortion;
-
-            po_index.index_arr.FillInit();
-            ps_index.index_arr.FillInit();
-
-            table.Clear();
-            table.Fill(new object[0]);
-            var ng = NodeGenerator as NodeGeneratorInt;
-            ng.Clear();
-
-
-            ng.coding_table.Load((int)iri_Count, Enumerable.Repeat(SpecialTypesClass.RdfType, 1));
-
+          //  textObjectIndex=new TextObjectIndex((ulong) (tripletsCount/3)+1, this);
             generator.Start(ProcessPortion);
             table.TableCell.Flush();
-            ng.coding_table.Save();
-
-            OnAddPortion -= po_index.index_arr.FillPortion;
-            OnAddPortion -= ps_index.index_arr.FillPortion;
-            OnAddPortion -= textObjectIndex.FillPortion;
+           
 
             po_index.index_arr.FillFinish();
             ps_index.index_arr.FillFinish();
-            ng.coding_table.FreeMemory();
             GC.Collect();
             GC.WaitForPendingFinalizers();
+            
+        }
+
+        public void BuildIndexes()
+        {
+            var ng = NodeGenerator as NodeGeneratorInt;
+            ng.coding_table.Save();
+            ng.coding_table.FreeMemory();
+
+            System.Diagnostics.Stopwatch sw = new System.Diagnostics.Stopwatch();
+            sw.Start();
             if (!table.TableCell.Root.Elements().Any())
             {
                 Console.WriteLine("table empty!");
@@ -132,8 +128,11 @@ namespace RDFTripleStore
             sw.Stop();
             Console.WriteLine("Build index ok. Duration={0}", sw.ElapsedMilliseconds);
             sw.Restart();
-        }
 
+            NodeGenerator.Build();
+        }
+        
+        [ObsoleteAttribute]
         public void Build(long nodesCount, IEnumerable<TripleStrOV> triples)
         {
             System.Diagnostics.Stopwatch sw = new System.Diagnostics.Stopwatch();
@@ -146,7 +145,7 @@ namespace RDFTripleStore
             table.Clear();
             table.Fill(new object[0]);
             var ng = NodeGenerator as NodeGeneratorInt;
-            ng.coding_table.Load((int)nodesCount, Enumerable.Repeat(SpecialTypesClass.RdfType, 1));
+            ng.coding_table.Expand((int)nodesCount, Enumerable.Repeat(SpecialTypesClass.RdfType, 1));
             //((NameTableUniversal)ng.coding_table).BuildIndexes();
             //((NameTableUniversal)ng.coding_table).BuildScale();
             List<TripleStrOV> buff = new List<TripleStrOV>();
@@ -207,10 +206,10 @@ namespace RDFTripleStore
             throw new NotImplementedException();
         }
 
-        public void FromTurtle(long iri_Count, string gString)
+        public void AddFromTurtle(long iri_Count, string gString)
         {
-            Build(iri_Count, new TripleGeneratorBuffered(gString, null, portionOfTriplesToLoad));
-            NodeGenerator.Build();
+            AddTriples(iri_Count, new TripleGeneratorBuffered(gString, null, portionOfTriplesToLoad));
+            
         }
 
         public void FromTurtle(string fullName)
@@ -220,8 +219,8 @@ namespace RDFTripleStore
 
         public void FromTurtle(long iri_Count, Stream inputStream)
         {
-            Build(iri_Count, new TripleGeneratorBufferedParallel(inputStream, null));
-            NodeGenerator.Build();
+            AddTriples(iri_Count, new TripleGeneratorBufferedParallel(inputStream, null));
+         
         }
 
         #region Get triples

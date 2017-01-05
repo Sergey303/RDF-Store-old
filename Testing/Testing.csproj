@@ -422,7 +422,7 @@
       <Name>RDFTurtleParser</Name>
     </ProjectReference>
     <ProjectReference Include="..\SparqlQuery\SparqlQuery.csproj">
-      <Project>{FB42AD1D-B327-4720-87B3-88DADDF0ADF3}</Project>
+      <Project>{fb42ad1d-b327-4720-87b3-88daddf0adf3}</Project>
       <Name>SparqlQuery</Name>
     </ProjectReference>
   </ItemGroup>

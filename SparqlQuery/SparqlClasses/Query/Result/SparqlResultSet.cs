@@ -48,10 +48,7 @@ namespace SparqlQuery.SparqlClasses.Query.Result
                         new XElement(xn + "results",
                             Results.Select(result =>
                                 new XElement(xn + "result",
-                                    result.GetSelected((var, value)=> 
-                                        new XElement(xn + "binding",    
-                                            new XAttribute(xn + "name", var.VariableName),
-                                            BindingToXml(xn, value)))))));
+                                    ToXML(result)))));
                 case ResultType.Describe:
                 case ResultType.Construct:
                     return GraphResult.ToXml(prologue);
@@ -67,9 +64,18 @@ namespace SparqlQuery.SparqlClasses.Query.Result
             }
         }
 
+        public static IEnumerable<XElement> ToXML(SparqlResult result)
+        {
+            XNamespace xn = "http://www.w3.org/2005/sparql-results#";
+            return result.GetSelected((var, value)=> 
+                new XElement(xn + "binding",    
+                    new XAttribute(xn + "name", var.VariableName),
+                    BindingToXml(xn, value)));
+        }
+
         //public JsonConvert ToJson()
 
-        private XElement BindingToXml(XNamespace xn, ObjectVariants b)
+        public static XElement BindingToXml(XNamespace xn, ObjectVariants b)
         {
             if (b is IIriNode)
             {
@@ -97,7 +103,6 @@ namespace SparqlQuery.SparqlClasses.Query.Result
                         literalNode.Content);
                 }
             }
-
             else
             {
                 throw new ArgumentOutOfRangeException();
@@ -122,7 +127,7 @@ namespace SparqlQuery.SparqlClasses.Query.Result
 
         }
 
-        public string ToJson()
+        public string ToFullJson()
         {
             string headVars;
             switch (ResultType)
@@ -133,11 +138,7 @@ namespace SparqlQuery.SparqlClasses.Query.Result
                                 Variables.Keys.Select(v => string.Format("\"{0}\"", v))));
                     return
                      string.Format(@"{{ {0}, ""results"": {{ ""bindings"" : [{1}] }} }}", headVars,
-                         string.Join("," + Environment.NewLine, Results.Select(result => string.Format("{{{0}}}",
-                             string.Join("," + Environment.NewLine,
-                                 result.GetSelected((var, value) =>
-                                     string.Format("\"{0}\" : {1}", var.VariableName,
-                                         value.ToJson())))))) );
+                         ToJson() );
                 case ResultType.Describe:
                 case ResultType.Construct:
                     return GraphResult.ToJson();
@@ -156,6 +157,22 @@ namespace SparqlQuery.SparqlClasses.Query.Result
                     throw new ArgumentOutOfRangeException();
             }
         }
+
+        public string ToJson()
+        {
+            return string.Join("," + Environment.NewLine, 
+                Results.Select(ToJson));
+        }
+
+        public static string ToJson(SparqlResult result)
+        {
+            return string.Format("{{{0}}}",
+                string.Join("," + Environment.NewLine,
+                    result.GetSelected((var, value) =>
+                        string.Format("\"{0}\" : {1}", var.VariableName.Replace("?", ""),
+                            value.ToJson()))));
+        }
+
         public static string GetValue(VariableNode vari, ObjectVariants value)
         {
             return value.ToString();

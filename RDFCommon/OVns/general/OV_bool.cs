@@ -52,6 +52,9 @@ namespace RDFCommon.OVns
         }
 
         public string DataType { get { return SpecialTypesClass.Bool; } }
+        public static OV_bool True =new OV_bool(true);
+        public static OV_bool False =new OV_bool(false);
+
         public override string ToString()
         {
             return value.ToString();

@@ -88,7 +88,7 @@ namespace RDFTripleStore
         {
             codingIndex.Build();
             codingIndex.Table.AppendValue(new object[] { node, code });
-            decodingIndex.Table.Add(new object[] { node, code });
+            decodingIndex.Table.AppendValue(new object[] { node, code });
             
 
             int i = 1;

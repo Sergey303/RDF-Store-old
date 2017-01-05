@@ -14,9 +14,9 @@ namespace SparqlQuery.SparqlClasses.Query.Result
 
         private readonly Lazy<string> id;
 
-        private readonly RdfQuery11Translator q;
+        protected readonly RdfQuery11Translator q;
 
-        private readonly ObjectVariants[] rowArray;
+        protected readonly ObjectVariants[] rowArray;
 
         private IEnumerable<VariableNode> selected;
 
@@ -28,7 +28,7 @@ namespace SparqlQuery.SparqlClasses.Query.Result
         }
 
         // private readonly Dictionary<string, VariableNode> Variables;
-        private SparqlResult(ObjectVariants[] copy, RdfQuery11Translator q)
+        protected SparqlResult(ObjectVariants[] copy, RdfQuery11Translator q)
         {
             id = new Lazy<string>(() => this.q.Store.NodeGenerator.BlankNodeGenerateNums());
             this.q = q;
@@ -46,7 +46,6 @@ namespace SparqlQuery.SparqlClasses.Query.Result
             set
             {
                 rowArray[var.Index] = value;
-
             }
         }
 
@@ -59,7 +58,6 @@ namespace SparqlQuery.SparqlClasses.Query.Result
             set
             {
                 rowArray[index] = value;
-
             }
         }
 
@@ -103,7 +101,7 @@ namespace SparqlQuery.SparqlClasses.Query.Result
             rowArray[variable.Index] = value;
         }
 
-        public SparqlResult Clone()
+        public virtual SparqlResult Clone()
         {
             ObjectVariants[] copy = new ObjectVariants[rowArray.Length];
             rowArray.CopyTo(copy, 0);

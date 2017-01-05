@@ -1,0 +1,17 @@
+C:\Users\Admin\Source\Repos\next\SimpleTripleStore\SimpleTripleStore\obj\Debug\SimpleTripleStore.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Source\Repos\next\SimpleTripleStore\SimpleTripleStore\bin\Debug\SimpleTripleStore.pdb
+C:\Users\Admin\Source\Repos\next\SimpleTripleStore\SimpleTripleStore\bin\Debug\PolarDB.dll
+C:\Users\Admin\Source\Repos\next\SimpleTripleStore\SimpleTripleStore\bin\Debug\UniversalIndex.dll
+C:\Users\Admin\Source\Repos\next\SimpleTripleStore\SimpleTripleStore\bin\Debug\System.Data.HashFunction.BernsteinHash.dll
+C:\Users\Admin\Source\Repos\next\SimpleTripleStore\SimpleTripleStore\bin\Debug\System.Data.HashFunction.SpookyHash.dll
+C:\Users\Admin\Source\Repos\next\SimpleTripleStore\SimpleTripleStore\bin\Debug\System.Data.HashFunction.Core.dll
+C:\Users\Admin\Source\Repos\next\SimpleTripleStore\SimpleTripleStore\bin\Debug\System.Data.HashFunction.Interfaces.dll
+C:\Users\Admin\Source\Repos\next\SimpleTripleStore\SimpleTripleStore\bin\Debug\UniversalIndex.pdb
+C:\Users\Admin\Source\Repos\next\SimpleTripleStore\SimpleTripleStore\bin\Debug\PolarDB.pdb
+C:\Users\Admin\Source\Repos\next\SimpleTripleStore\SimpleTripleStore\bin\Debug\System.Data.HashFunction.BernsteinHash.xml
+C:\Users\Admin\Source\Repos\next\SimpleTripleStore\SimpleTripleStore\bin\Debug\System.Data.HashFunction.SpookyHash.xml
+C:\Users\Admin\Source\Repos\next\SimpleTripleStore\SimpleTripleStore\bin\Debug\System.Data.HashFunction.Core.xml
+C:\Users\Admin\Source\Repos\next\SimpleTripleStore\SimpleTripleStore\bin\Debug\System.Data.HashFunction.Interfaces.xml
+C:\Users\Admin\Source\Repos\next\SimpleTripleStore\SimpleTripleStore\obj\Debug\SimpleTripleStore.pdb
+C:\Users\Admin\Source\Repos\next\SimpleTripleStore\SimpleTripleStore\bin\Debug\SimpleTripleStore.exe
+C:\Users\Admin\Source\Repos\next\SimpleTripleStore\SimpleTripleStore\obj\Debug\SimpleTripleStore.exe

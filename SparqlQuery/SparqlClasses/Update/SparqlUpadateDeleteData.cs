@@ -18,7 +18,7 @@ namespace SparqlQuery.SparqlClasses.Update
 
         public void Run(IStore store)
         {
-            throw new NotImplementedException();
+           
             foreach (var triple in sparqlQuadsPattern
                 .Where(pattern => pattern.PatternType == SparqlGraphPatternType.SparqlTriple)
                 .Cast<SparqlTriple>())

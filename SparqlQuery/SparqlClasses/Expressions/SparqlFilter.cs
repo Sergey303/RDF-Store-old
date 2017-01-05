@@ -21,7 +21,7 @@ namespace SparqlQuery.SparqlClasses.Expressions
 
         public IEnumerable<SparqlResult> Run(IEnumerable<SparqlResult> variableBindings)
         {                    
-            return variableBindings.SelectMany(SparqlExpression.Test);
+            return variableBindings.Where(SparqlExpression.Test);
         }
 
         public SparqlGraphPatternType PatternType { get{return SparqlGraphPatternType.Filter;} }

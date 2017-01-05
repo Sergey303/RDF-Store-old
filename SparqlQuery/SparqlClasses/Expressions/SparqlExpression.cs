@@ -180,10 +180,10 @@ namespace SparqlQuery.SparqlClasses.Expressions
             return uminus;
         }
 
-        internal IEnumerable<SparqlResult> Test(SparqlResult result)
+        internal bool Test(SparqlResult result)
         {
             var res = Operator(result);
-            return res is bool ? Enumerable.Range(1, res) : (IEnumerable<SparqlResult>)res;
+            return (bool)res;
         }
 
         //public Func<SparqlResult, ObjectVariants> FunkClone

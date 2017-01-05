@@ -1,7 +1,5 @@
-C:\Users\Admin\Source\Repos\next\RDF-Store\Testing\bin\Debug\Testing.exe.config
-C:\Users\Admin\Source\Repos\next\RDF-Store\Testing\obj\Debug\Testing.exe
-C:\Users\Admin\Source\Repos\next\RDF-Store\Testing\obj\Debug\Testing.pdb
 C:\Users\Admin\Source\Repos\next\RDF-Store\Testing\obj\Debug\Testing.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Source\Repos\next\RDF-Store\Testing\bin\Debug\Testing.exe.config
 C:\Users\Admin\Source\Repos\next\RDF-Store\Testing\bin\Debug\Testing.exe
 C:\Users\Admin\Source\Repos\next\RDF-Store\Testing\bin\Debug\Testing.pdb
 C:\Users\Admin\Source\Repos\next\RDF-Store\Testing\bin\Debug\Antlr4.Runtime.net45.dll
@@ -47,3 +45,8 @@ C:\Users\Admin\Source\Repos\next\RDF-Store\Testing\bin\Debug\Microsoft.VisualStu
 C:\Users\Admin\Source\Repos\next\RDF-Store\Testing\bin\Debug\SparqlParseRun.pdb
 C:\Users\Admin\Source\Repos\next\RDF-Store\Testing\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.xml
 C:\Users\Admin\Source\Repos\next\RDF-Store\Testing\bin\Debug\ru\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+C:\Users\Admin\Source\Repos\next\RDF-Store\Testing\obj\Debug\Testing.exe
+C:\Users\Admin\Source\Repos\next\RDF-Store\Testing\obj\Debug\Testing.pdb
+C:\Repos\next\RDF-Store\Testing\bin\Debug\Testing.exe.config
+C:\Repos\next\RDF-Store\Testing\obj\Debug\Testing.exe
+C:\Repos\next\RDF-Store\Testing\obj\Debug\Testing.pdb

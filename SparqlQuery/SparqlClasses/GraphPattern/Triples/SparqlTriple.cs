@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Antlr4.Runtime.Atn;
 using RDFCommon;
 using RDFCommon.OVns;
 using SparqlQuery.SparqlClasses.Expressions;
@@ -33,7 +32,7 @@ namespace SparqlQuery.SparqlClasses.GraphPattern.Triples
         public SparqlTriple(ObjectVariants subj, ObjectVariants pred, ObjectVariants obj, RdfQuery11Translator q)
         {
             Subject = subj;
-            SemanticContext.Predicate = pred;
+            Predicate = pred;
             Object = obj;
             //if(!(subj is ObjectVariants)) throw new ArgumentException();
             graphs = q.ActiveGraphs;
@@ -527,7 +526,7 @@ namespace SparqlQuery.SparqlClasses.GraphPattern.Triples
         {
             return listOfFilters.Aggregate(baseStoreCall
                 .Select(node => new KeyValuePair<ObjectVariants, SparqlResult>(node, variablesBindings.Add(node, variable))),
-                (current, sparqlFilter) => current.Where(valueAndResult => sparqlFilter.SparqlExpression.Test(valueAndResult.Value))
+                (current, sparqlFilter) => current.Where(valueAndResult => sparqlFilter.SparqlExpression.Test(valueAndResult.Value)))
                         .Select(pair => pair.Key)
                         .Select(node => variablesBindings.Add(node, variable));
         }

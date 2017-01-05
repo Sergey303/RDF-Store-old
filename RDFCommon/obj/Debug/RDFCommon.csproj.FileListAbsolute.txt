@@ -26,11 +26,11 @@ C:\Users\Admin\Source\Repos\next\RDF-Store\RDFCommon\bin\Debug\System.Data.HashF
 C:\Users\Admin\Source\Repos\next\RDF-Store\RDFCommon\bin\Debug\System.Data.HashFunction.SpookyHash.dll
 C:\Users\Admin\Source\Repos\next\RDF-Store\RDFCommon\bin\Debug\UniversalIndex.dll
 C:\Users\Admin\Source\Repos\next\RDF-Store\RDFCommon\bin\Debug\PolarDB.pdb
+C:\Users\Admin\Source\Repos\next\RDF-Store\RDFCommon\bin\Debug\UniversalIndex.pdb
 C:\Users\Admin\Source\Repos\next\RDF-Store\RDFCommon\bin\Debug\System.Data.HashFunction.BernsteinHash.xml
 C:\Users\Admin\Source\Repos\next\RDF-Store\RDFCommon\bin\Debug\System.Data.HashFunction.Core.xml
 C:\Users\Admin\Source\Repos\next\RDF-Store\RDFCommon\bin\Debug\System.Data.HashFunction.Interfaces.xml
 C:\Users\Admin\Source\Repos\next\RDF-Store\RDFCommon\bin\Debug\System.Data.HashFunction.SpookyHash.xml
-C:\Users\Admin\Source\Repos\next\RDF-Store\RDFCommon\bin\Debug\UniversalIndex.pdb
-C:\Users\Admin\Source\Repos\next\RDF-Store\RDFCommon\obj\Debug\RDFCommon.csprojResolveAssemblyReference.cache
 C:\Users\Admin\Source\Repos\next\RDF-Store\RDFCommon\obj\Debug\RDFCommon.dll
 C:\Users\Admin\Source\Repos\next\RDF-Store\RDFCommon\obj\Debug\RDFCommon.pdb
+C:\Users\Admin\Source\Repos\next\RDF-Store\RDFCommon\obj\Debug\RDFCommon.csprojResolveAssemblyReference.cache

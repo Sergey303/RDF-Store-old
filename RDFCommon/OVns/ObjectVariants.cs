@@ -37,5 +37,13 @@ namespace RDFCommon.OVns
         public abstract object Content { get; }
         public abstract ObjectVariants Change(Func<dynamic, dynamic> changing);
 
+        public static string GenerateBlankIri(string graphName)
+        {
+            return "generated_blank_iri_of_" + graphName + "_" + Guid.NewGuid().ToString();
+        }
+        public static string GenerateBlankIri(string graphName, string blank_name)
+        {
+            return "generated_blank_iri_of_" + graphName + "_" + blank_name;
+        }
     }
 }

@@ -10,10 +10,11 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SparqlQuery</RootNamespace>
     <AssemblyName>SparqlQuery</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -23,6 +24,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -31,15 +33,45 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>x64</PlatformTarget>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Antlr4.Runtime.net45">
-      <HintPath>..\SparqlParseRun\bin\Debug\Antlr4.Runtime.net45.dll</HintPath>
+    <Reference Include="Antlr4.Runtime, Version=4.5.0.0, Culture=neutral, PublicKeyToken=09abb75b9ed49849, processorArchitecture=MSIL">
+      <HintPath>..\..\WebCassetteManager\WebCassetteManager\packages\Antlr4.Runtime.4.5.3\lib\net45\Antlr4.Runtime.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
+    <Reference Include="System.Activities" />
+    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.HashFunction.BernsteinHash, Version=1.8.2.2, Culture=neutral, PublicKeyToken=80c9288e394c1322, processorArchitecture=MSIL">
+      <HintPath>..\..\WebCassetteManager\WebCassetteManager\packages\System.Data.HashFunction.BernsteinHash.1.8.2.2\lib\net45\System.Data.HashFunction.BernsteinHash.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.HashFunction.Core, Version=1.8.2.2, Culture=neutral, PublicKeyToken=80c9288e394c1322, processorArchitecture=MSIL">
+      <HintPath>..\..\WebCassetteManager\WebCassetteManager\packages\System.Data.HashFunction.Core.1.8.2.2\lib\net45\System.Data.HashFunction.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.HashFunction.Interfaces, Version=1.0.0.2, Culture=neutral, PublicKeyToken=80c9288e394c1322, processorArchitecture=MSIL">
+      <HintPath>..\..\WebCassetteManager\WebCassetteManager\packages\System.Data.HashFunction.Interfaces.1.0.0.2\lib\net45\System.Data.HashFunction.Interfaces.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.HashFunction.SpookyHash, Version=1.8.2.2, Culture=neutral, PublicKeyToken=80c9288e394c1322, processorArchitecture=MSIL">
+      <HintPath>..\..\WebCassetteManager\WebCassetteManager\packages\System.Data.HashFunction.SpookyHash.1.8.2.2\lib\net45\System.Data.HashFunction.SpookyHash.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\WebCassetteManager\WebCassetteManager\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Activities" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data" />
@@ -49,12 +81,6 @@
   <ItemGroup>
     <Compile Include="DataSet.cs" />
     <Compile Include="NullableExt.cs" />
-    <Compile Include="obj\Debug\sparq11lTranslatorBaseListener.cs" />
-    <Compile Include="obj\Debug\sparq11lTranslatorBaseVisitor.cs" />
-    <Compile Include="obj\Debug\sparq11lTranslatorLexer.cs" />
-    <Compile Include="obj\Debug\sparq11lTranslatorListener.cs" />
-    <Compile Include="obj\Debug\sparq11lTranslatorParser.cs" />
-    <Compile Include="obj\Debug\sparq11lTranslatorVisitor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RdfQuery11Translator.cs" />
     <Compile Include="SparqlClasses\Expressions\SparqlAbs.cs" />
@@ -202,18 +228,29 @@
     <Compile Include="SparqlClasses\Update\UpdateGraph.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="obj\Debug\sparq11lTranslator.tokens" />
-    <None Include="obj\Debug\sparq11lTranslatorLexer.tokens" />
+    <Antlr4 Include="sparq11lTranslator.g4">
+      <Visitor>False</Visitor>
+      <Listener>False</Listener>
+    </Antlr4>
     <None Include="packages.config" />
-    <Antlr4 Include="sparq11lTranslator.g4" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Polar\PolarDB\PolarDB.csproj">
+      <Project>{e418d12c-9027-4292-aab4-d8130c6e3829}</Project>
+      <Name>PolarDB</Name>
+    </ProjectReference>
     <ProjectReference Include="..\RDFCommon\RDFCommon.csproj">
       <Project>{7eb60f80-87ca-4645-9e1f-051735195d92}</Project>
       <Name>RDFCommon</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\Debug\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>start /d "C:\work iis\nuget" nuget.exe pack $(ProjectPath)</PostBuildEvent>
+  </PropertyGroup>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>Данный проект ссылается на пакеты NuGet, отсутствующие на этом компьютере. Используйте восстановление пакетов NuGet, чтобы скачать их.  Дополнительную информацию см. по адресу: http://go.microsoft.com/fwlink/?LinkID=322105. Отсутствует следующий файл: {0}.</ErrorText>
@@ -222,9 +259,6 @@
     <Error Condition="!Exists('..\RDFTripleStore\packages\Antlr4.4.3.0\build\Antlr4.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\RDFTripleStore\packages\Antlr4.4.3.0\build\Antlr4.targets'))" />
   </Target>
   <Import Project="..\RDFTripleStore\packages\Antlr4.4.3.0\build\Antlr4.targets" Condition="Exists('..\RDFTripleStore\packages\Antlr4.4.3.0\build\Antlr4.targets')" />
-  <PropertyGroup>
-    <PostBuildEvent>start /d "C:\work iis\nuget" nuget.exe pack $(ProjectPath)</PostBuildEvent>
-  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

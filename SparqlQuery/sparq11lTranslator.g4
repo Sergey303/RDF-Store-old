@@ -5,10 +5,11 @@
  */
 
 grammar sparq11lTranslator;
-options	{ 	language = CSharp2; }
+options	{ 	 }
 @parser::namespace { SparqlQuery }
 @lexer::namespace  { SparqlQuery }
 @header{
+	using System;
 	using System;
 	using System.Linq;	  
 	using SparqlQuery.SparqlClasses;
@@ -34,6 +35,7 @@ options	{ 	language = CSharp2; }
 
 
 public RdfQuery11Translator q;
+public RdfQuery11Translator q1;
       
 }
  query returns [SparqlQuery value] : 

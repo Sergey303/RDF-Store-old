@@ -111,7 +111,7 @@ namespace RDFCommon
         {
             if (b is IIriNode)
             {
-                return "{ \"type\" : \"uri\", \"value\" : \"" + b +  "\" }";
+                return $@"{{ ""type"" : ""uri"", ""value"" : ""{b}"" }}";
             }
             else if (b is ILiteralNode)
             {
@@ -120,22 +120,22 @@ namespace RDFCommon
                 content = content.Replace('"', '\'');
                 if (literalNode is ILanguageLiteral)
                 {
-                    return "{ \"type\" : \"literal\", \"value\" : \"" + content +
-                         "\", \"xml:lang\": \"" + ((ILanguageLiteral)literalNode).Lang + "\" }";
+                    return
+                        $@"{{ ""type"" : ""literal"", ""value"" : ""{content}"", ""xml:lang"" : ""{
+                            ((ILanguageLiteral) literalNode).Lang}"" }}";
                 }
                 else if (literalNode is IStringLiteralNode)
                 {
-                    return "{ \"type\" : \"literal\", \"value\" : \"" + content + "\" }";
+                    return $@"{{ ""type"" : ""literal"", ""value"" : ""{content}"" }}";
                 }
-                else 
+                else
                 {
-                    return "{ \"type\" : \"literal\", \"value\" : \"" + content +
-                           "\", \"datatype\": \"" + literalNode.DataType + "\" }";
+                    return $@"{{ ""type"" : ""literal"", ""value"" : ""{content}"", ""datatype"" : ""{literalNode.DataType}""}}";
                 }
             }
             else if (b is IBlankNode)
             {
-                return "{ \"type\" : \"bnode\", \"value\" : \"" + b + "\" }";
+                return $@"{{ ""type"" : ""bnode"", ""value"" : ""{ b }"" }}";
             }
             else if (b == null)
                 return "";

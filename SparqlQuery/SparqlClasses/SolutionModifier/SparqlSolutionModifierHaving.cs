@@ -20,15 +20,15 @@ namespace SparqlQuery.SparqlClasses.SolutionModifier
                     case SparqlExpression.VariableDependenceGroupLevel.Const:
                         return (bool) testExpr.Const.Content ? result : Enumerable.Empty<SparqlResult>();
                     case SparqlExpression.VariableDependenceGroupLevel.UndependableFunc:
-                        return testExpr.Test(null).Any() ? result : Enumerable.Empty<SparqlResult>();
+                        return testExpr.Test(null) ? result : Enumerable.Empty<SparqlResult>();
                     case SparqlExpression.VariableDependenceGroupLevel.SimpleVariable:
-                        return result.SelectMany(testExpr.Test);
+                        return result.Where(testExpr.Test);
                     case SparqlExpression.VariableDependenceGroupLevel.Group:
-                        return testExpr.Test(new SparqlGroupOfResults(q) {Group = result });
+                        var sparqlGroupOfResults = new SparqlGroupOfResults(q) {Group = result.Select(sparqlResult => sparqlResult.Clone()).ToArray() };
+                        return testExpr.Test(sparqlGroupOfResults) ? sparqlGroupOfResults.Group : Enumerable.Empty<SparqlResult>();
                     case SparqlExpression.VariableDependenceGroupLevel.GroupOfGroups:
                     default:
                         throw new Exception("requested grouping");
-                        throw new ArgumentOutOfRangeException();
                 }
             });
         }
@@ -48,10 +48,14 @@ namespace SparqlQuery.SparqlClasses.SolutionModifier
                         else return Enumerable.Empty<SparqlGroupOfResults>();
                     case SparqlExpression.VariableDependenceGroupLevel.SimpleVariable:
                     case SparqlExpression.VariableDependenceGroupLevel.Group:
-                        SparqlExpression expr = testExpr;
-                        return result.Select(res => expr.Test(res));
+                        return result.Where(testExpr.Test);
                     case SparqlExpression.VariableDependenceGroupLevel.GroupOfGroups:
-                        return testExpr.Test(new SparqlGroupOfResults(q) {Group = resultsGroups});
+
+                        var group = new SparqlGroupOfResults(q)
+                        {
+                            Group = result.Select(sparqlResult => sparqlResult.Clone()).ToArray()
+                        };
+                        return testExpr.Test(group) ? group.Group.Cast<SparqlGroupOfResults>() : Enumerable.Empty<SparqlGroupOfResults>(); 
                     default:
                         throw new ArgumentOutOfRangeException();
                 }

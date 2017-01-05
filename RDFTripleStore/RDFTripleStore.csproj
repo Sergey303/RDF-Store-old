@@ -34,6 +34,9 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
     <Reference Include="RDFTurtleParser, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\RDFTurtleParser.1.0.0.0\lib\net45\RDFTurtleParser.dll</HintPath>
       <Private>True</Private>
@@ -60,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="NamedGraphSerialize.cs" />
+    <Compile Include="RDFRamStore.cs" />
     <Compile Include="TextObjectIndex.cs" />
     <Compile Include="RamListOfTriplesGraph.cs" />
     <Compile Include="RdfNamedGraphs.cs" />
@@ -79,7 +83,7 @@
       <Name>PolarDB</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\Polar\UniversalIndex\UniversalIndex.csproj">
-      <Project>{e4ab7a63-7b55-43e9-b1aa-c8e0f8aa87e3}</Project>
+      <Project>{a9af4a0a-5583-4b18-a434-07d7466bb277}</Project>
       <Name>UniversalIndex</Name>
     </ProjectReference>
     <ProjectReference Include="..\RDFCommon\RDFCommon.csproj">

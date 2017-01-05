@@ -30,5 +30,15 @@ namespace SparqlQuery.SparqlClasses.Query.Result
                 Add(variable, valuesArray[i]);
             }   
         }
+
+        public SparqlGroupOfResults(ObjectVariants[] rowArray, RdfQuery11Translator q)
+            :base(rowArray, q)
+        {
+        }
+
+        public override SparqlResult Clone()
+        {
+            return new SparqlGroupOfResults(base.rowArray, base.q) {Group = Group};
+        }
     }
 }
