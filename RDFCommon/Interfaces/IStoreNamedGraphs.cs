@@ -17,6 +17,7 @@ namespace RDFCommon
 
         IEnumerable<QuadOVStruct> GetTriplesWithSubjectFromGraph(ObjectVariants subjectNode, ObjectVariants graph);
         IEnumerable<QuadOVStruct> GetTriplesWithPredicateFromGraph(ObjectVariants predicateNode, ObjectVariants graph);
+        void Add(ObjectVariants name, IEnumerable<TripleOV> enumerable);
         IEnumerable<QuadOVStruct> GetTriplesWithObjectFromGraph(ObjectVariants objectNode, ObjectVariants graph);
 
         IEnumerable<QuadOVStruct> GetTriplesWithPredicate(ObjectVariants predicateNode);

@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>RDFCommon</RootNamespace>
     <AssemblyName>RDFCommon</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -30,6 +30,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
     <DebugSymbols>true</DebugSymbols>
@@ -50,24 +51,24 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\..\sparql`\WebNet452\packages\Newtonsoft.Json.9.0.2-beta2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Data.HashFunction.BernsteinHash, Version=1.8.2.2, Culture=neutral, PublicKeyToken=80c9288e394c1322, processorArchitecture=MSIL">
-      <HintPath>..\RDFTripleStore\packages\System.Data.HashFunction.BernsteinHash.1.8.2.2\lib\net45\System.Data.HashFunction.BernsteinHash.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="System.Data.HashFunction.BernsteinHash, Version=2.0.0.0, Culture=neutral, PublicKeyToken=80c9288e394c1322, processorArchitecture=MSIL">
+      <HintPath>..\..\..\sparql`\WebNet452\packages\System.Data.HashFunction.BernsteinHash.2.0.0-ci-00012\lib\net45\System.Data.HashFunction.BernsteinHash.dll</HintPath>
     </Reference>
-    <Reference Include="System.Data.HashFunction.Core, Version=1.8.2.2, Culture=neutral, PublicKeyToken=80c9288e394c1322, processorArchitecture=MSIL">
-      <HintPath>..\RDFTripleStore\packages\System.Data.HashFunction.Core.1.8.2.2\lib\net45\System.Data.HashFunction.Core.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="System.Data.HashFunction.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=80c9288e394c1322, processorArchitecture=MSIL">
+      <HintPath>..\..\..\sparql`\WebNet452\packages\System.Data.HashFunction.Core.2.0.0-ci-00012\lib\net45\System.Data.HashFunction.Core.dll</HintPath>
     </Reference>
-    <Reference Include="System.Data.HashFunction.Interfaces, Version=1.0.0.2, Culture=neutral, PublicKeyToken=80c9288e394c1322, processorArchitecture=MSIL">
-      <HintPath>..\RDFTripleStore\packages\System.Data.HashFunction.Interfaces.1.0.0.2\lib\net45\System.Data.HashFunction.Interfaces.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="System.Data.HashFunction.Interfaces, Version=2.0.0.0, Culture=neutral, PublicKeyToken=80c9288e394c1322, processorArchitecture=MSIL">
+      <HintPath>..\..\..\sparql`\WebNet452\packages\System.Data.HashFunction.Interfaces.2.0.0-ci-00012\lib\net45\System.Data.HashFunction.Interfaces.dll</HintPath>
     </Reference>
-    <Reference Include="System.Data.HashFunction.SpookyHash, Version=1.8.2.2, Culture=neutral, PublicKeyToken=80c9288e394c1322, processorArchitecture=MSIL">
-      <HintPath>..\RDFTripleStore\packages\System.Data.HashFunction.SpookyHash.1.8.2.2\lib\net45\System.Data.HashFunction.SpookyHash.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="System.Data.HashFunction.SpookyHash, Version=2.0.0.0, Culture=neutral, PublicKeyToken=80c9288e394c1322, processorArchitecture=MSIL">
+      <HintPath>..\..\..\sparql`\WebNet452\packages\System.Data.HashFunction.SpookyHash.2.0.0-ci-00012\lib\net45\System.Data.HashFunction.SpookyHash.dll</HintPath>
     </Reference>
+    <Reference Include="System.Numerics" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Xml" />
@@ -192,7 +193,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Polar\PolarDB\PolarDB.csproj">
-      <Project>{e418d12c-9027-4292-aab4-d8130c6e3829}</Project>
+      <Project>{cc45e2d9-5f03-4144-a344-e5bc2ec5ace9}</Project>
       <Name>PolarDB</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\Polar\UniversalIndex\UniversalIndex.csproj">

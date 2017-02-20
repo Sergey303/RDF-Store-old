@@ -31,7 +31,7 @@ namespace RDFCommon.OVns
 
         public override int GetHashCode()
         {
-            return (Content.ToString() + Variant).GetHashModifiedBernstein();
+            return (int) (Content.ToString() + Variant).GetHashModifiedBernstein();
         }
 
         public abstract object Content { get; }

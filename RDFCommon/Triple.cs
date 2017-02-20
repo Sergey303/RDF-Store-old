@@ -47,7 +47,7 @@ namespace RDFCommon
             }
             public override int GetHashCode()
             {
-                return (o.ToString() + subject + predicate).GetHashModifiedBernstein();
+                return (int) (o.ToString() + subject + predicate).GetHashModifiedBernstein();
             }
         }
     public class TripleIntOV : Triple<int, int, ObjectVariants>{
@@ -94,7 +94,7 @@ namespace RDFCommon
         }
         public override int GetHashCode()
         {
-            return (ov.ToString() + p).GetHashModifiedBernstein();
+            return (int) (ov.ToString() + p).GetHashModifiedBernstein();
         }
 
     }
@@ -196,7 +196,7 @@ namespace RDFCommon
 
         public override int GetHashCode()
         {
-            return (ov.ToString() + p).GetHashModifiedBernstein();
+            return (int) (ov.ToString() + p).GetHashModifiedBernstein();
         }
     }
 

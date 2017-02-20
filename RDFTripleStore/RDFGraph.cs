@@ -1,13 +1,12 @@
-﻿using PolarDB;
-using RDFCommon;
+﻿using RDFCommon;
 using RDFCommon.Interfaces;
 using RDFCommon.OVns;
 using RDFTurtleParser;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using PolarDB;
 using UniversalIndex;
 
 namespace RDFTripleStore
@@ -22,6 +21,7 @@ namespace RDFTripleStore
 
         private IndexCascadingDynamic<int> ps_index;
         private TextObjectIndex textObjectIndex;
+        private readonly NodeGeneratorInt _ng;
         private const int portionOfTriplesToLoad = 3000 * 1000;
 
         private event Action<IEnumerable<TableRow>> OnAddPortion;
@@ -50,8 +50,9 @@ namespace RDFTripleStore
             OnAddPortion += ps_index.index_arr.FillPortion;
             OnAddPortion += textObjectIndex.FillPortion;
             NodeGenerator = NodeGeneratorInt.Create(path);
-            var ng = NodeGenerator as NodeGeneratorInt;
-            ng.coding_table.Expand((int)10000/3+1, Enumerable.Repeat(SpecialTypesClass.RdfType, 1));
+            _ng = NodeGenerator as NodeGeneratorInt;
+            _ng.coding_table.Expand((int)10000/3+1, Enumerable.Repeat(SpecialTypesClass.RdfType, 1));
+           
         }
 
         public string Name { get; set; }
@@ -61,8 +62,7 @@ namespace RDFTripleStore
 
         public void ActivateCache()
         {
-            var ng = NodeGenerator as NodeGeneratorInt;
-            ((NametableLinearBuffered)ng.coding_table).ActivateCache();
+            ((NametableLinearBuffered)_ng.coding_table).ActivateCache();
             table.ActivateCache();
             ps_index.ActivateCache();
             po_index.ActivateCache();
@@ -70,7 +70,13 @@ namespace RDFTripleStore
 
         public void Add(ObjectVariants s, ObjectVariants p, ObjectVariants o)
         {
-            //po_index.
+            if(s.Variant==ObjectVariantEnum.Iri)
+                s=_ng.GetUri(s.Content);
+            if (p.Variant == ObjectVariantEnum.Iri)
+                p = _ng.GetUri(p.Content);
+            if (o.Variant == ObjectVariantEnum.Iri)
+                o = _ng.GetUri(o.Content);
+            OnAddPortion(table.Add(new []{new []{s, p, o}}).ToArray());
         }
 
         public bool Any()
@@ -78,10 +84,6 @@ namespace RDFTripleStore
             return table.Elements().Any(row => !(bool)row.Field(0).Get());
         }
 
-        public void Build(IEnumerable<TripleStrOV> triples)
-        {
-            throw new NotImplementedException();
-        }
 
         
         public void AddTriples(long tripletsCount, IGenerator<List<TripleStrOV>> generator)
@@ -100,9 +102,9 @@ namespace RDFTripleStore
 
         public void BuildIndexes()
         {
-            var ng = NodeGenerator as NodeGeneratorInt;
-            ng.coding_table.Save();
-            ng.coding_table.FreeMemory();
+            
+            _ng.coding_table.Save();
+            _ng.coding_table.FreeMemory();
 
             System.Diagnostics.Stopwatch sw = new System.Diagnostics.Stopwatch();
             sw.Start();
@@ -137,8 +139,7 @@ namespace RDFTripleStore
         {
             System.Diagnostics.Stopwatch sw = new System.Diagnostics.Stopwatch();
             sw.Start();
-            OnAddPortion += po_index.index_arr.FillPortion;
-            OnAddPortion += ps_index.index_arr.FillPortion;
+           
 
             po_index.index_arr.FillInit();
             ps_index.index_arr.FillInit();
@@ -163,8 +164,7 @@ namespace RDFTripleStore
             table.TableCell.Flush();
             ng.coding_table.Save();
 
-            OnAddPortion -= po_index.index_arr.FillPortion;
-            OnAddPortion -= ps_index.index_arr.FillPortion;
+          
 
             po_index.index_arr.FillFinish();
             ps_index.index_arr.FillFinish();
@@ -209,12 +209,18 @@ namespace RDFTripleStore
         public void AddFromTurtle(long iri_Count, string gString)
         {
             AddTriples(iri_Count, new TripleGeneratorBuffered(gString, null, portionOfTriplesToLoad));
+        }
+
+
+        public void FromTurtle(long iri_Count, string gString)
+        {
+            AddTriples(iri_Count, new TripleGeneratorBuffered(gString, null, portionOfTriplesToLoad));
             
         }
 
         public void FromTurtle(string fullName)
         {
-            throw new NotImplementedException();
+            AddTriples(1000*1000, new TripleGeneratorBufferedParallel(fullName, null));
         }
 
         public void FromTurtle(long iri_Count, Stream inputStream)
@@ -334,44 +340,80 @@ namespace RDFTripleStore
             table.Warmup();
         }
 
+        public void FromTurtle(Stream requestInputStream)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Add(IEnumerable<TripleOV> enumerable)
+        {
+            OnAddPortion(table.Add(enumerable.Select(ov =>
+            {
+                var objects = new object[]
+                {
+                    ov.Subject.Variant==ObjectVariantEnum.Iri ? _ng.AddIri((string) ov.Subject.Content).WritableValue : ov.Subject.WritableValue,
+                    ov.Predicate.Variant==ObjectVariantEnum.Iri ? _ng.AddIri((string) ov.Predicate.Content).WritableValue: ov.Predicate.WritableValue,
+                    ov.Object.Variant==ObjectVariantEnum.Iri ? _ng.AddIri((string) ov.Object.Content).ToWritable() : ov.Object.ToWritable()
+                };
+                return objects;
+            })).ToArray());
+            table.TableCell.Flush();
+
+
+            po_index.index_arr.FillFinish();
+            ps_index.index_arr.FillFinish();
+            GC.Collect();
+            GC.WaitForPendingFinalizers();
+            BuildIndexes();
+        }
+
+        public void Add(IEnumerable<TripleStrOV> selectMany)
+        {
+            ProcessPortion(selectMany.ToList());
+        }
+
         private void ProcessPortion(List<TripleStrOV> buff)
         {
             // Пополнение таблицы имен
-            var ng = NodeGenerator as NodeGeneratorInt;
+          
             Console.WriteLine("portion readed");
-            var dic = ng.coding_table.InsertPortion(buff.SelectMany(t =>
-             {
-                 ObjectVariants ov = t.Object;
-                 if (ov == null)
-                 {
-                     Console.WriteLine(t.Subject);
-                     return Enumerable.Empty<string>();
-                 }
-                 else if (ov.Variant == ObjectVariantEnum.Iri)
-                 {
-                     return new string[] { t.Subject, t.Predicate, ((OV_iri)ov).Name };
-                 }
-                 else
-                 {
-                     return new string[] { t.Subject, t.Predicate };
-                 }
-             }));
+            var portionCodedTriples = CodePortionTriples(buff);
 
-            // Пополнение триплетов
-            IEnumerable<object[]> portionCodedTriples = buff.Where(t => t.Object != null).Select(t =>
-                   {
-                       ObjectVariants ov = t.Object;
-                       if (ov.Variant == ObjectVariantEnum.Iri)
-                           ov = new OV_iriint(dic[((OV_iri)ov).Name], ng.coding_table.GetString);
-                       return new object[] {dic[t.Subject], dic[t.Predicate], ov.ToWritable()};
-                   });
-
-           OnAddPortion( table.Add(portionCodedTriples).ToArray());
+            OnAddPortion( table.Add(portionCodedTriples).ToArray());
             Console.WriteLine("portion writed");
             GC.Collect();
             GC.WaitForPendingFinalizers();
             GC.Collect();
         }
-        
+
+        private IEnumerable<object[]> CodePortionTriples(List<TripleStrOV> buff)
+        {
+            var dic = _ng.coding_table.InsertPortion(buff.SelectMany(t =>
+            {
+                ObjectVariants ov = t.Object;
+                //if (ov == null)
+                //{
+                //    Console.WriteLine(t.Subject);
+                //    return Enumerable.Empty<string>();
+                //}
+                //else
+                if (ov.Variant == ObjectVariantEnum.Iri)
+                {
+                    return new string[] {t.Subject, t.Predicate, ((OV_iri) ov).Name};
+                }
+                else
+                {
+                    return new string[] {t.Subject, t.Predicate};
+                }
+            }));
+
+            return buff.Where(t => t.Object != null).Select(t =>
+            {
+                ObjectVariants ov = t.Object;
+                if (ov.Variant == ObjectVariantEnum.Iri)
+                    ov = new OV_iriint(dic[((OV_iri) ov).Name], _ng.coding_table.GetString);
+                return new object[] { dic[t.Subject], dic[t.Predicate], ov.ToWritable()};
+            });
+        }
     }
 }

@@ -81,6 +81,13 @@ namespace RDFTripleStore
                     .Select(t => new QuadOVStruct(null, t.Predicate, t.Object, getGraphUriByName(g)));
         }
 
+        public void Add(ObjectVariants graph, IEnumerable<TripleOV> enumerable)
+        {
+            IGraph g;
+            if (!named.TryGetValue(graph.ToString(), out g)) return;
+            g.Add(enumerable);
+        }
+
         public IEnumerable<QuadOVStruct> GetTriplesWithObjectFromGraph(ObjectVariants objectNode, ObjectVariants graph)
         {                     
             IGraph g;

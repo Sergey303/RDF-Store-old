@@ -4,9 +4,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.UI.WebControls;
 using PolarDB;
 using RDFCommon.OVns;
 using UniversalIndex;
+using TableRow = UniversalIndex.TableRow;
 
 namespace RDFTripleStore
 {
@@ -40,5 +42,7 @@ namespace RDFTripleStore
           List<long> list;
           return nametable.TryGetValue(s, out list) ? list : new List<long>();
       }
+
+    
     }
 }

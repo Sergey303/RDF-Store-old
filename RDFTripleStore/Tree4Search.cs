@@ -11,8 +11,8 @@ namespace RDFTripleStore
        protected Dictionary<int, long> searchIndex;
        protected PaCell paCell;
        private int maxChildrenCount;
-       protected readonly IndexDynamic<int, IndexToSortableTableImmutable<int>> codingIndex;
-       protected readonly IndexDynamic<int, IndexToSortableTableImmutable<int>> decodingIndex;
+       protected readonly IndexDynamic<int, IndexViewImmutable<int>> codingIndex;
+       protected readonly IndexDynamic<int, IndexViewImmutable<int>> decodingIndex;
     //  protected readonly Dictionary<int, int> coding = new Dictionary<int, int>();
       // protected readonly Dictionary<int, int> decoding = new Dictionary<int, int>();
        protected int height;
@@ -20,13 +20,12 @@ namespace RDFTripleStore
        public Tree4Search(string path)
        {
 
-           this.codingIndex = new IndexDynamic<int, IndexToSortableTableImmutable<int>>(true,
-               new IndexToSortableTableImmutable<int>(new TableView(path + " coding.pa",
+           this.codingIndex = new IndexDynamic<int, IndexViewImmutable<int>>(true,
+               new IndexViewImmutable<int>(new TableView(path + " coding.pa",
                    new PTypeRecord(new NamedType("node", new PType(PTypeEnumeration.integer)),
-                       new NamedType("code", new PType(PTypeEnumeration.integer)))),
-                       o => (int)((object[])o)[0])) { Scale = new ScaleCell(path + "coding scale.pa")};
-            this.decodingIndex = new IndexDynamic<int, IndexToSortableTableImmutable<int>>(true,
-               new IndexToSortableTableImmutable<int>(new TableView(path + " decoding.pa",
+                       new NamedType("code", new PType(PTypeEnumeration.integer)))))) { Scale = new ScaleCell(path + "coding scale.pa"), KeyProducer = o => (int)((object[])o)[0]};
+            this.decodingIndex = new IndexDynamic<int, IndexViewImmutable<int>>(true,
+               new IndexViewImmutable<int>(new TableView(path + " decoding.pa",
                    new PTypeRecord(new NamedType("node", new PType(PTypeEnumeration.integer)),
                        new NamedType("code", new PType(PTypeEnumeration.integer)))),
                        o => (int)((object[])o)[1])) { Scale = new ScaleCell(path + "decoding scale.pa")};

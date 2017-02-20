@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SparqlQuery</RootNamespace>
     <AssemblyName>SparqlQuery</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
@@ -37,9 +37,8 @@
     <PlatformTarget>x64</PlatformTarget>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Antlr4.Runtime, Version=4.5.0.0, Culture=neutral, PublicKeyToken=09abb75b9ed49849, processorArchitecture=MSIL">
-      <HintPath>..\..\WebCassetteManager\WebCassetteManager\packages\Antlr4.Runtime.4.5.3\lib\net45\Antlr4.Runtime.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Antlr4.Runtime, Version=4.5.0.0, Culture=neutral, PublicKeyToken=e9931a4108ef2354, processorArchitecture=MSIL">
+      <HintPath>..\..\..\sparql`\WebNet452\packages\Antlr4.Runtime.4.5.4-beta001\lib\net45\Antlr4.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
@@ -47,20 +46,16 @@
     <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.HashFunction.BernsteinHash, Version=1.8.2.2, Culture=neutral, PublicKeyToken=80c9288e394c1322, processorArchitecture=MSIL">
-      <HintPath>..\..\WebCassetteManager\WebCassetteManager\packages\System.Data.HashFunction.BernsteinHash.1.8.2.2\lib\net45\System.Data.HashFunction.BernsteinHash.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\..\..\sparql`\WebNet452\packages\System.Data.HashFunction.BernsteinHash.1.8.2.2\lib\net45\System.Data.HashFunction.BernsteinHash.dll</HintPath>
     </Reference>
     <Reference Include="System.Data.HashFunction.Core, Version=1.8.2.2, Culture=neutral, PublicKeyToken=80c9288e394c1322, processorArchitecture=MSIL">
-      <HintPath>..\..\WebCassetteManager\WebCassetteManager\packages\System.Data.HashFunction.Core.1.8.2.2\lib\net45\System.Data.HashFunction.Core.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\..\..\sparql`\WebNet452\packages\System.Data.HashFunction.Core.1.8.2.2\lib\net45\System.Data.HashFunction.Core.dll</HintPath>
     </Reference>
     <Reference Include="System.Data.HashFunction.Interfaces, Version=1.0.0.2, Culture=neutral, PublicKeyToken=80c9288e394c1322, processorArchitecture=MSIL">
-      <HintPath>..\..\WebCassetteManager\WebCassetteManager\packages\System.Data.HashFunction.Interfaces.1.0.0.2\lib\net45\System.Data.HashFunction.Interfaces.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\..\..\sparql`\WebNet452\packages\System.Data.HashFunction.Interfaces.1.0.0.2\lib\net45\System.Data.HashFunction.Interfaces.dll</HintPath>
     </Reference>
     <Reference Include="System.Data.HashFunction.SpookyHash, Version=1.8.2.2, Culture=neutral, PublicKeyToken=80c9288e394c1322, processorArchitecture=MSIL">
-      <HintPath>..\..\WebCassetteManager\WebCassetteManager\packages\System.Data.HashFunction.SpookyHash.1.8.2.2\lib\net45\System.Data.HashFunction.SpookyHash.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\..\..\sparql`\WebNet452\packages\System.Data.HashFunction.SpookyHash.1.8.2.2\lib\net45\System.Data.HashFunction.SpookyHash.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.Compression" />
     <Reference Include="System.Numerics" />
@@ -233,16 +228,6 @@
       <Listener>False</Listener>
     </Antlr4>
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\Polar\PolarDB\PolarDB.csproj">
-      <Project>{e418d12c-9027-4292-aab4-d8130c6e3829}</Project>
-      <Name>PolarDB</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\RDFCommon\RDFCommon.csproj">
-      <Project>{7eb60f80-87ca-4645-9e1f-051735195d92}</Project>
-      <Name>RDFCommon</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="obj\Debug\" />

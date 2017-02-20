@@ -14,8 +14,7 @@ namespace RDFCommon
         void Add(ObjectVariants s, ObjectVariants p, ObjectVariants o);
 
         bool Any();
-
-        void Build(IEnumerable<TripleStrOV> triples);
+        
 
         void Build(long nodesCount, IEnumerable<TripleStrOV> triples);
 
@@ -84,5 +83,8 @@ namespace RDFCommon
         /// <returns></returns>
         IEnumerable<ObjectVariants> GetTriplesWithSubjectPredicate(ObjectVariants subj, ObjectVariants pred);
         void Warmup();
+        void FromTurtle(Stream requestInputStream);
+        void Add(IEnumerable<TripleOV> enumerable);
+        void Add(IEnumerable<TripleStrOV> selectMany);
     }
 }

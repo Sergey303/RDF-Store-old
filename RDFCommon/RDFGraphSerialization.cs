@@ -168,7 +168,7 @@ namespace RDFCommon
 
         public static void AddFromXml(this IGraph g, XElement xRDF)
         {
-            g.Build(xRDF.Elements().SelectMany(element => Xml2Triples(element,g)));
+            g.Add(xRDF.Elements().SelectMany(element => Xml2Triples(element,g)));
         }
 
         private static IEnumerable<TripleStrOV> Xml2Triples(XElement xItem, IGraph graph)

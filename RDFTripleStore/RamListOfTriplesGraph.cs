@@ -80,7 +80,11 @@ namespace RDFTripleStore
             
         }
 
-   
+        public void AddFromTurtle(long iri_Count, string gString)
+        {
+            throw new NotImplementedException();
+        }
+
 
         public IEnumerable<ObjectVariants> GetAllSubjects()
         {
@@ -97,12 +101,7 @@ namespace RDFTripleStore
             throw new NotImplementedException();
         }
 
-        public void AddFromTurtle(long iri_Count, string gString)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void FromTurtle(string fileName)
+        public void FromTurtle(long count, string fileName)
         {
             var generator = new TripleGeneratorBufferedParallel(fileName, Name);
             generator.Start(list => triples.AddRange(
@@ -125,6 +124,16 @@ namespace RDFTripleStore
         }
 
         public void FromTurtle(Stream inputStream)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Add(IEnumerable<TripleOV> enumerable)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Add(IEnumerable<TripleStrOV> selectMany)
         {
             throw new NotImplementedException();
         }
@@ -155,10 +164,11 @@ namespace RDFTripleStore
         //    throw new NotImplementedException();
         //}
 
+      
 
-        public void Dispose()
+        public void FromTurtle(string fullName)
         {
-            throw new NotImplementedException();
+           FromTurtle(1000*1000, fullName);
         }
     }
 }

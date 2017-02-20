@@ -1,11 +1,10 @@
 ﻿using System.IO;
 using RDFCommon;
 using RDFCommon.OVns;
-using SparqlQuery.SparqlClasses.Query.Result;
 
 namespace RDFTripleStore
 {
-    public class Store : RDFGraph, IStore //CacheMeasure  GraphCached   InterpretMeasure
+    public class Store : RDFGraph, RDFCommon.IStore //CacheMeasure  GraphCached   InterpretMeasure
     {
 
         public Store(string path)
@@ -22,19 +21,18 @@ namespace RDFTripleStore
 
         public void ReloadFrom(long iri_Count, string fileName)
         {
-            AddFromTurtle(iri_Count, fileName);
+           FromTurtle(iri_Count, fileName);
            // ActivateCache();
         }
+        
+      
 
 
-
-
-
-        private SparqlResultSet Run(SparqlQuery.SparqlClasses.Query.SparqlQuery queryContext)
+        public void ReloadFrom(string filePath)
         {
-            return queryContext.Run();
-        }
+            FromTurtle(1000*1000, filePath);
 
+        }
 
         public IStoreNamedGraphs NamedGraphs { get; set; }
         public void ClearAll()
@@ -47,9 +45,6 @@ namespace RDFTripleStore
             return new RamListOfTriplesGraph("temp");
         }
 
-        public void ReloadFrom(string filePath)
-        {
-            throw new System.NotImplementedException();
-        }
+     
     }
 }
